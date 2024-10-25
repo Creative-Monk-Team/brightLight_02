@@ -1,0 +1,73 @@
+.mapParent {
+    background-image: url("../assets/mainbg.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 100px 0px;
+  }
+  
+  .mapSection {
+    width: 1440px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .mapSection iframe {
+    width: 100%;
+    height: 590px;
+    border-radius: 20px;
+    border: none;
+  }
+  
+  .theButton {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 33px;
+    border-style: none;
+    border: 2px solid #285a83;
+    box-sizing: border-box;
+    color: #132f46;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-size: 18px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: 0.25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 30px 50px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform, opacity;
+    z-index: 0;
+    margin-top: 60px;
+  }
+  
+  .theButton:hover {
+    background: #f6f9fe;
+    color: #174ea6;
+  }
+
+  @media (max-width: 1460px) {
+    .mapSection {
+      width: 95%;
+    }
+  }
+
+
+  @media (max-width: 560px) {
+    .mapSection iframe {
+      width: 95%;
+      height: 300px;
+    }
+  }

@@ -1,0 +1,953 @@
+.navbar {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0px;
+  background-color: #132f46;
+  font-family: "Madera-Regular.tff", sans-serif;
+  position: relative;
+  font-size: 15px;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+}
+
+.firstNavbar {
+  width: 1440px;
+  /* margin: auto; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  /* margin-bottom: 20px; */
+}
+
+.calculatorIcon {
+  color: #ead9b0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.firstNavbar .ancor {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 80px;
+  transition: 0.3 and color ease-in-out;
+}
+
+.ancor a {
+  color: #ead9b0;
+  text-decoration: none;
+}
+
+.ancor a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.mobileIcon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.secondNavbar {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  top: -5px;
+  z-index: 3;
+  transition: 0.3s color ease-in-out;
+}
+
+.logo {
+  padding-right: 30px;
+  border-right: 1px solid #132f46;
+}
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+.mainNavbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 35px;
+}
+
+.mainNavbar a {
+  color: #132f46;
+  text-decoration: none;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid #dec18f; /* Border color for the overall shape */
+  width: fit-content;
+  overflow: hidden;
+}
+
+.inputWrapper {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50px; /* Round left side only */
+  padding-left: 10px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  color: #dec18f;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.searchBar input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 10px 10px 35px; /* Add left padding to accommodate the icon */
+  font-size: 16px;
+  border-radius: 50px 0 0 50px; /* Round left side only */
+}
+
+.searchBar button {
+  background-color: #dec18f; /* Button background color */
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.searchBar button:hover {
+  background-color: #dec18f; /* Button background color */
+  color: white;
+  cursor: pointer;
+}
+
+.contactNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #0b3d6e; */
+  padding: 10px 20px;
+  color: white;
+  width: 1340px;
+  margin: auto;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s all ease-in-out;
+  margin-top: 0px;
+}
+
+.hideContactNumber {
+  opacity: 0;
+  visibility: hidden;
+  margin-top: -30px;
+}
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+}
+
+.location,
+.email {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.icon {
+  width: 18px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.email .icon {
+  margin-left: 9px;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+}
+
+.socialMedia img {
+  width: 24px;
+  height: 24px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.socialIcon {
+  width: 24px;
+  height: 24px;
+  margin-left: 15px;
+  fill: white;
+  cursor: pointer;
+}
+
+.socialIcon:hover {
+  fill: #f1c40f;
+}
+
+.bottomSectionNavbar {
+  position: absolute;
+  top: auto;
+  bottom: -150px;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+
+.makeNavbarFixed {
+  position: fixed;
+  height: auto;
+  bottom: auto;
+  top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.lowerFooterText {
+  font-weight: 700;
+}
+.lowerFooterText a {
+  color: #132f46;
+}
+
+/* Navbar1.module.css */
+.navItem {
+  position: relative;
+  display: inline-block;
+}
+
+.relativeDiv {
+  position: relative;
+}
+
+.aboutDropdown {
+  position: absolute;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  top: 50px;
+  transition: 0.2s all ease-in-out;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 15px;
+  background-color: white;
+  z-index: 4;
+}
+
+.aboutDropdown a {
+  display: block;
+  margin-top: 10px;
+  color: #132f46;
+}
+
+.aboutDropdown a:first-child {
+  margin-top: 0;
+}
+
+.showAboutDropdown {
+  top: 30px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.servicesDropdown {
+  position: absolute;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  top: 50px;
+  transition: 0.2s all ease-in-out;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 15px;
+  background-color: white;
+  z-index: 4;
+}
+
+.servicesDropdown a {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #132f46;
+}
+
+.servicesDropdown a:first-child :not(.relativeDiv) {
+  margin-top: 0;
+}
+
+/* .permanentNestedSection a:first-child {
+    margin-top: 0;
+  } */
+
+.showServicesDropdown {
+  top: 30px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.calculatorsDropdown {
+  position: absolute;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  top: 50px;
+  transition: 0.2s all ease-in-out;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 15px;
+  background-color: white;
+  z-index: 4;
+}
+
+.calculatorsDropdown a {
+  display: block;
+  margin-top: 10px;
+}
+
+.calculatorsDropdown a:first-child {
+  margin-top: 0;
+}
+
+.showCalculatorsDropdown {
+  top: 30px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.searchIcon g path {
+  fill: #dec18f;
+}
+
+.logoMobile {
+  display: none;
+}
+
+.flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.permanentNestedSection {
+  position: absolute;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  top: 10px;
+  left: 190px;
+  transition: 0.2s all ease-in-out;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 15px;
+  background-color: white;
+  z-index: 4;
+}
+
+.doubleNested {
+  position: absolute;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  top: 10px;
+  left: 190px;
+  transition: 0.2s all ease-in-out;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 15px;
+  background-color: white;
+  z-index: 5;
+}
+.doubleNested.showNested {
+  opacity: 1;
+  visibility: visible;
+  top: 0px;
+  left: 150px;
+}
+.permanentNestedSection.showNested {
+  opacity: 1;
+  visibility: visible;
+  top: 0px;
+  left: 150px;
+}
+
+.arrow {
+  font-size: 12px;
+}
+
+.subDropdown a {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+.secondNavbar a:hover {
+  color: #dec18f;
+  transition: 0.3s color ease-in-out;
+}
+.dropdownArrow {
+  margin-left: 5px; /* Adjust as needed */
+}
+
+.categoryBasedDropdown {
+  display: none; /* Hide by default */
+}
+
+.showNested {
+  display: block; /* Show when active */
+  position: absolute; /* Position as needed */
+  background-color: white; /* Adjust background */
+  z-index: 1000; /* Ensure it’s on top */
+}
+
+.dropdownContent {
+  padding: 0px 4px;
+}
+
+.dropdownContent .subDropdown {
+  width: 100%;
+  margin: auto;
+}
+
+@media all and (max-width: 1439px) {
+  .firstNavbar {
+    width: 95%;
+  }
+  .secondNavbar {
+    width: 95%;
+  }
+  .contactNavbar {
+    width: 95%;
+  }
+  .mainNavbar {
+    gap: 25px;
+  }
+  .logo {
+    margin-right: 18px;
+  }
+  .searchBar {
+    margin-left: 30px;
+  }
+}
+
+@media all and (max-width: 1290px) {
+  .firstNavbar {
+    width: 90%;
+  }
+  .secondNavbar {
+    width: 90%;
+    padding: 30px 50px;
+  }
+  .contactNavbar {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 1080px) {
+  .firstNavbar .ancor {
+    display: none;
+  }
+  .logoDesktop {
+    display: none;
+  }
+
+  .logoMobile {
+    display: block;
+  }
+
+  .firstNavbar {
+    width: 90%;
+    justify-content: center;
+  }
+  .firstNavbar .ancor {
+    gap: 40px;
+    font-size: 14px;
+  }
+
+  .secondNavbar {
+    width: 100%;
+    padding: 30px 0px;
+  }
+  .contactNavbar {
+    width: 90%;
+  }
+
+  .bottomSectionNavbar {
+    width: 95%;
+  }
+  .searchBar {
+    margin-left: 0px;
+  }
+
+  /* //// */
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropbtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 10px;
+    color: #333;
+  }
+
+  .arrow {
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+  .dropdownContent {
+    display: none;
+    /* position: absolute; */
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdownContent a:hover {
+    background-color: white;
+  }
+
+  .dropdown:hover .dropdownContent {
+    display: block;
+  }
+
+  /* .dropdown:hover .dropbtn {
+      background-color: #132f46;
+      color: white;
+    } */
+
+  /*/ FIXING ALLIGNMENT OF SIDE-BAR // */
+
+  .sidebarContent {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white; /* Lighter background for better contrast */
+    width: 300px; /* Fixed width for better alignment */
+    height: 100vh; /* Full height sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+
+  .sidebarContent a {
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 15px; /* Increased spacing for better readability */
+    font-size: 18px;
+    padding: 10px 0; /* Padding for larger clickable area */
+    /* background-color: #f7f7f7; */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+    background-color: white;
+  }
+
+  .sidebarContent a:hover {
+    background-color: white;
+  }
+
+  .closeBtn {
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .closeBtn:hover {
+    color: rgb(223, 51, 51);
+  }
+
+  .dropdown {
+    position: relative;
+    display: block;
+  }
+
+  .dropbtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 10px;
+    color: #132f46;
+    background-color: white; /* Light background for dropbtn */
+    border-radius: 4px; /* Rounded corners for a modern look */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  }
+
+  .arrow {
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+  .dropdownContent {
+    display: none;
+    /* position: absolute; */
+    background-color: white; /* White background for dropdown items */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    flex-direction: column;
+    border-radius: 4px; /* Rounded corners for dropdown */
+    /* overflow: hidden;  */
+    width: 100%;
+    color: #132f46;
+  }
+
+  .dropdownContent a {
+    color: #132f46;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  }
+
+  .dropdownContent a:hover {
+    background-color: white;
+    color: #dec18f;
+  }
+
+  .dropdown:hover .dropdownContent {
+    display: block;
+  }
+
+  /* .dropdown:hover .dropbtn {
+      background-color: #132f46;
+      color: white;
+    } */
+  .subDropdownContent,
+  .subSubDropdownContent {
+    display: none;
+  }
+
+  .subDropdownContent.show,
+  .subSubDropdownContent.show {
+    display: block;
+  }
+
+  .subDropdown,
+  .subSubDropdown {
+    position: relative;
+  }
+
+  .subDropdownContent,
+  .subSubDropdownContent {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    z-index: 10;
+  }
+
+  .subDropdownContent {
+    left: 100%;
+  }
+
+  .subSubDropdownContent {
+    left: 100%;
+    top: 0;
+  }
+}
+
+/* Add these styles to Navbar1.module.css */
+
+/* Hides all menu items except logo and search bar on screens <= 1080px */
+
+/* Initially hide the hamburger icon */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #132f46;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.showSidebar {
+  right: 0;
+}
+
+.sidebarContent {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #132f46;
+  margin-bottom: 1px;
+  font-size: 13px;
+  padding: 9px 5px;
+}
+
+.sidebar a:hover {
+  color: #dec18f;
+}
+
+.closeBtn {
+  align-self: flex-end;
+  cursor: pointer;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1080px) {
+  .mainNavbar {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .hamburgerColoredIcon {
+    width: 30px;
+    height: 30px;
+  }
+  .logo {
+    padding-right: 0px;
+    border: none;
+  }
+  .secondNavbar {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .searchBar input {
+    padding: 0px;
+    width: 120px;
+    background-color: transparent;
+  }
+  .searchBar button {
+    padding: 9px 17px;
+    font-size: 10px;
+    height: 100%;
+  }
+  .searchBar {
+    height: 45px;
+  }
+  .searchIcon {
+    width: 12px;
+    height: 12px;
+  }
+  .contactInfo {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 0px;
+  }
+  .location {
+    margin-right: 0px;
+  }
+  .email {
+    margin-right: 0px;
+    padding-top: 5px;
+  }
+  .email .icon {
+    margin-left: 0px;
+    width: 14px;
+  }
+  .icon {
+    width: 11px;
+  }
+
+  .socialMedia img {
+    width: 18px;
+    height: 18px;
+    margin-left: 14px;
+  }
+  .socialIcon {
+    width: 16px;
+    height: 16px;
+    margin-left: 9px;
+  }
+
+  .socialMedia {
+    margin-top: 20px;
+  }
+  .contactNavbar {
+    width: 100%;
+    padding: 0px;
+  }
+  .secondNavbar form {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  .inputWrapper {
+    background-color: transparent;
+  }
+}
+
+@media all and (max-width: 670px) {
+  .firstNavbar .ancor {
+    gap: 20px;
+    font-size: 11px;
+  }
+  .calculatorIcon p {
+    font-size: 11px;
+  }
+  .iconGearIcon {
+    width: 15px;
+    height: 15px;
+  }
+  .RightArrowIcon {
+    width: 8px;
+    height: 8px;
+  }
+  .mobileIcon svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .lowerFooterText {
+    font-size: 10px;
+  }
+  .socialMedia img {
+    width: 16px;
+    height: 16px;
+    margin-left: 9px;
+  }
+  .socialIcon {
+    width: 16px;
+    height: 16px;
+    margin-left: 9px;
+  }
+
+  .firstNavbar .ancor {
+    gap: 10px;
+    font-size: 9px;
+  }
+  .calculatorIcon p {
+    font-size: 13px;
+  }
+  .iconGearIcon {
+    width: 18px;
+    height: 18px;
+  }
+  .RightArrowIcon {
+    width: 10px;
+    height: 10px;
+  }
+
+  .searchBar input {
+    padding: 0px;
+    width: 70px;
+  }
+  .searchBar button {
+    padding: 10px 13px;
+    font-size: 7px;
+  }
+  .searchBar {
+    height: 40px;
+  }
+  .searchIcon {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.subDropdown {
+  position: relative;
+}
+
+.subDropdownContent {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+  border: none;
+  width: 100%;
+  padding: 5px 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.subSubDropdown {
+  position: relative;
+}
+
+.subSubDropdownContent {
+  display: none;
+  /* position: absolute; */
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+  border: none;
+  padding: 5px 10px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.subDropdown:hover .subDropdownContent,
+.subDropdown .subDropdownContent {
+  display: block;
+}
+
+.subSubDropdown:hover .subSubDropdownContent,
+.subSubDropdown .subSubDropdownContent {
+  display: block;
+}

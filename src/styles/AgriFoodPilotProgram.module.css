@@ -1,0 +1,292 @@
+.bannerParent {
+  background-image: url("../assets/canadaBlue.jpeg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0px;
+  padding-top: 150px;
+}
+.banner {
+  width: 1440px;
+  margin: auto;
+  text-align: center;
+}
+
+.bannerHeading h1 {
+  color: #e8c47c;
+  font-size: 50px;
+}
+
+.bannerHeading p {
+  color: #ffffff;
+  width: 74%;
+  margin: auto;
+  font-size: 25px;
+  line-height: 1.8;
+  padding-top: 60px;
+}
+
+.bannerHeadingRotateParent {
+  width: 700px;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* gap: 10px; */
+  align-items: center;
+  color: white;
+  /* margin-top: 150px; */
+}
+
+.bannerHeadingRotate {
+  transform: rotate(-90deg);
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+
+.bannerHeadingRotatePara p {
+  text-align: left;
+  padding-bottom: 8px;
+  font-size: 28px;
+}
+
+
+.bannerHeadingRotatePara p {
+  cursor: pointer;
+}
+  
+  @media (max-width: 1450px) {
+    .banner {
+      width: 95%;
+    }
+  }
+  
+  @media (max-width: 1080px) {
+    .bannerHeadingRotateParent {
+      flex-direction: column;
+      text-align: center;
+      /* margin-top: 50px; */
+      position: relative;
+      width: 100%;
+    }
+  
+    .bannerHeadingRotate {
+      transform: none;
+      border: none;
+      padding-bottom: 0;
+      font-size: 24px;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+  
+    .bannerHeadingRotate::after {
+      content: "\25BC";
+      font-size: 16px;
+      margin-left: 10px;
+      transition: transform 0.3s;
+    }
+  
+    .bannerHeadingRotateParent.active .bannerHeadingRotate::after {
+      transform: rotate(180deg);
+    }
+  
+    .bannerHeadingRotatePara {
+      margin-left: 0;
+      display: none;
+      background-color: #f7f7f7;
+      padding: 10px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding-top: 25px 0px;
+    }
+  
+    .bannerHeadingRotateParent.active .bannerHeadingRotatePara {
+      display: block;
+    }
+  
+    .bannerHeadingRotatePara p {
+      font-size: 18px;
+      padding: 10px 0;
+      color: #00273f;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e8c47c;
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+
+.intro p{
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.criteria {
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.criteria p{
+  margin-bottom: 20px;
+}
+
+.criteria h3{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* .criteria ul {
+    margin-left: 20px;
+} */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.table th, .table td {
+    border: 1px solid #00273f;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f4f4f4;
+    color: #00273f;
+}
+
+.contact {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.nocSection button {
+    background-color: #00273f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+}
+.book_button{
+  background-color: #00273f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 30px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+.book_button:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+
+.header h1{
+  color: #e8c47c;
+}
+
+.container h2{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.section {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.nocButton{
+  display: block;
+  margin: auto;
+  background-color: #00273f;
+  color: white;
+  padding: 15px;
+  border-radius: 3px;
+  margin-top: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s all ease-in-out;
+}
+.nocButton:hover{
+  opacity: 0.9;
+  text-decoration: none;
+}
+.nocSectionButtons{
+  display: flex;
+  margin-top: 30px;
+  justify-content: flex-start;
+}
+
+.fourthPoint li ul{
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+@media all and (max-width: 790px){
+  .nocSection button{
+    margin-right: auto;
+  }
+  .nocSectionButtons{
+    display: block;
+    text-align: left;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .container h2{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-size: 24px;
+  }
+}

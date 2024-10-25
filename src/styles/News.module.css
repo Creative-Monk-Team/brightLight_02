@@ -1,0 +1,517 @@
+.blogsTopSection {
+    width: 1440px;
+    margin: auto;
+    padding: 200px 0px 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .blogsTopSection img {
+    width: 250px;
+  }
+  
+  .blogsTopSection h3 {
+    color: #132f46;
+    width: 75%;
+    line-height: 1.5;
+  }
+  
+  .searchSection {
+    width: 1440px;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+  
+  .searchInputSection {
+    height: 60px;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 40px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .searchInputSection input {
+    border: none;
+    background-color: transparent;
+    width: 80%;
+    padding: 20px 30px;
+    font-size: 20px;
+  }
+  
+  .searchInputSection input:focus {
+    outline: none;
+  }
+  
+  .searchRightSection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+  }
+  
+  .searchRightSection p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 0;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .searchRightSection div {
+    padding: 20px 50px;
+    background: linear-gradient(to right, #3272a7, #132f46);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    cursor: pointer;
+    height: 100%;
+  }
+  
+  .searchBottomNavigationSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    margin-top: 20px;
+  }
+  
+  .searchBottomNavigationSection p {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  
+  .searchBottomNavigationSection button {
+    transition: 0.3s all ease-in-out;
+    border: 1px solid white;
+  }
+  
+  .searchBottomNavigationSection button:hover {
+    background-color: white;
+    color: #132f46;
+    border: 1px solid #132f46;
+  }
+  
+  .searchBottomNavigationSection button {
+    font-size: 14px;
+    margin-left: 8px;
+    padding: 10px 15px;
+  }
+  
+  .firstBlog {
+    width: 1440px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #132f46;
+  }
+  
+  .firstBlog div {
+    width: 48%;
+  }
+  
+  .firstBlog div img {
+    width: 100%;
+    border-radius: 0px 10px 10px 0px;
+    margin-bottom: -4px;
+  }
+  
+  .firstBlogContentSection {
+    padding: 30px;
+  }
+  
+  .firstBlogContentSection h4 {
+    color: rgb(190, 190, 190);
+    margin-bottom: 20px;
+    margin-top: 0 !important;
+    font-size: 14px;
+  }
+  
+  .firstBlogContentSection h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: white;
+  }
+  
+  .firstBlogContentSection a {
+    color: white;
+    padding: 10px 25px;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: 0.3 ease-in-out;
+  }
+  
+  .firstBlogContentSection a:hover {
+    text-decoration: none;
+    transition: 0.3 ease-in-out;
+    color: #132f46;
+    background-color: white;
+    border: 1px solid #132f46;
+  }
+  
+  .blogsResultSection {
+    width: 1440px;
+    margin: auto;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .blogsGridSection {
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    align-items: stretch;
+    justify-content: space-between;
+    row-gap: 50px;
+  }
+  
+  .rightSection {
+    width: 32%;
+  }
+  
+  .blog {
+    width: 100%;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .blog:hover {
+    text-decoration: none;
+    transform: translateY(-8px); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blog img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  .sortButtonHover{
+    cursor: pointer;
+  }
+  
+  .blog div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: -5px;
+  }
+  
+  .blog div h4 {
+    color: gray;
+    font-size: 14px;
+    margin: 0 !important;
+  }
+  
+  .blog h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .blog p {
+    font-size: 16px;
+  }
+  
+  .subscribeSection {
+    width: 100%;
+    padding: 50px 30px;
+    text-align: center;
+    background-color: #fafafc;
+    border-radius: 10px;
+  }
+  
+  .subscribeSection .plane {
+    width: 70px;
+    margin-bottom: 20px;
+  }
+  
+  .subscribeSection h3 {
+    color: #132f46;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .subscribe {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .quickLinksSection {
+    margin-top: 40px;
+  }
+  
+  .quickLinksSection h3 {
+    color: rgb(83, 83, 83);
+    padding-bottom: 10px;
+    border-bottom: 3px solid gray;
+    margin-bottom: 20px;
+  }
+  
+  .quickLinksSection div {
+    margin-bottom: 30px;
+  }
+  
+  .quickLinksSection div h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .quickLinksSection div p {
+    color: gray;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .quickLinksSection div a {
+    color: dodgerblue;
+    font-size: 17px;
+    text-decoration: underline;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .pagination button {
+    background: #ffffff;
+    border: 1px solid #132f46;
+    color: #132f46;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+  }
+  
+  .pagination button:hover {
+    background-color: white;
+    border: 1px solid #132f46;
+    color: #132f46;
+  }
+  
+  .pagination button.active {
+    background: #132f46;
+    color: white;
+    border: 1px solid #132f46;
+  }
+  
+  @media all and (max-width: 1450px) {
+    .blogsTopSection {
+      width: 95%;
+    }
+    .searchSection {
+      width: 95%;
+    }
+    .firstBlog {
+      width: 95%;
+    }
+    .blogsResultSection {
+      width: 95%;
+    }
+  }
+  
+  @media all and (max-width: 1205px) {
+    .firstBlog {
+      flex-direction: column-reverse;
+    }
+    .firstBlog div {
+      width: 100%;
+    }
+    .firstBlogContentSection h1 {
+      text-align: left;
+      align-items: flex-start;
+    }
+    .blogsTopSection {
+      flex-direction: column;
+    }
+    .blogsTopSection h3 {
+      width: 100%;
+    }
+  }
+  @media all and (max-width: 1100px) {
+    .searchRightSection {
+      gap: 15px;
+    }
+  
+    .searchRightSection p {
+      width: 60px;
+    }
+  
+    .searchRightSection div {
+      padding: 20px 30px;
+    }
+  }
+  
+  @media all and (max-width: 1000px) {
+    .blog h1 {
+      font-size: 16px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .blog p {
+      font-size: 14px;
+    }
+    .subscribeSection .plane {
+      width: 65px;
+    }
+    .subscribeSection h3 {
+      font-size: 24px;
+    }
+    .quickLinksSection div h2 {
+      font-size: 14px;
+    }
+    .quickLinksSection div p {
+      font-size: 11px;
+    }
+    .quickLinksSection div a {
+      font-size: 14px;
+    }
+    .blogsGridSection {
+      width: 70%;
+    }
+    .rightSection {
+      width: 27%;
+    }
+  }
+  
+  @media all and (max-width: 767px) {
+    .searchBottomNavigationSection {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 10px;
+      margin-top: 20px;
+    }
+  }
+  
+  @media all and (max-width: 670px) {
+    .subscribeSection {
+      padding: 0px;
+    }
+    .quickLinksSection {
+      margin-top: 20px;
+    }
+    .subscribeSection h3 {
+      font-size: 20px;
+    }
+    .subscribeSection .plane {
+      width: 55px;
+    }
+    .firstBlogContentSection h1 {
+      font-size: 26px;
+    }
+  }
+  
+  @media all and (max-width: 500px) {
+    .pagination button {
+      padding: 5px 10px;
+    }
+    .blogsTopSection h3 {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    .blogsTopSection img {
+      width: 200px;
+    }
+    .firstBlogContentSection h1 {
+      font-size: 22px;
+    }
+    .blog h1 {
+      font-size: 13px;
+    }
+    .blog h4 {
+      font-size: 11px;
+    }
+    .blog p {
+      font-size: 11px;
+    }
+    .subscribeSection h3 {
+      font-size: 12px;
+    }
+    .subscribeSection .plane {
+      width: 42px;
+    }
+    .quickLinksSection div h2 {
+      font-size: 10px;
+    }
+    .quickLinksSection div p {
+      font-size: 9px;
+    }
+    .quickLinksSection div a {
+      font-size: 11px;
+    }
+    .quickLinksSection h3 {
+      font-size: 12px;
+    }
+  }
+  
+  @media all and (max-width: 400px) {
+    .blogsTopSection h3 {
+      font-size: 14px;
+    }
+    .blogsTopSection img {
+      width: 150px;
+    }
+    .firstBlogContentSection h1 {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    .firstBlogContentSection a {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+    .blog{
+      width: 90%;
+    }
+    .blog h1 {
+      font-size: 11px;
+    }
+    .blog h4 {
+      font-size: 9px;
+    }
+    .blog p {
+      font-size: 10px;
+    }
+    .subscribeSection h3 {
+      font-size: 11px;
+    }
+    .subscribeSection .plane {
+      width: 38px;
+    }
+    .quickLinksSection div h2 {
+      font-size: 9px;
+    }
+    .quickLinksSection div p {
+      font-size: 8px;
+    }
+    .quickLinksSection div a {
+      font-size: 10px;
+    }
+    .quickLinksSection h3 {
+      font-size: 11px;
+    }
+    .blogsGridSection {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog div h4 {
+      font-size: 10px;
+  }
+}

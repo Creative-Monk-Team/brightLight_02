@@ -1,0 +1,266 @@
+.blogs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px 20px;
+  background-image: url("../assets/aboutLeaf.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.blogsParent {
+  width: 1440px;
+}
+
+.blogsTopSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blogsTopSection img {
+  width: 200px;
+}
+
+.blogsTopSection div {
+  width: 80%;
+  text-align: left;
+  color: #132f46;
+}
+
+.blogsTopSection div p {
+  margin-top: 10px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.blogsTopSection div h1 {
+  font-size: 50px;
+}
+
+.blog {
+  width: 300px !important;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  background: linear-gradient(to bottom, transparent, #ececec);
+  transition: 0.3s all ease-in-out;
+}
+
+.blog:hover {
+  text-decoration: none;
+  transform: translateY(-8px); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sortButtonHover{
+  cursor: pointer;
+}
+
+.sliderSection {
+  margin-top: 50px;
+}
+
+.blog img {
+  width: 100%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.blog h5 {
+  margin: 15px 0px;
+  font-weight: 600;
+  color: rgb(155, 155, 155);
+}
+
+.blog h2 {
+  color: #3f3c3d;
+  margin: 15px 0px;
+  font-size: 20px;
+}
+
+.blog h6 {
+  font-weight: 800;
+  color: rgb(155, 155, 155);
+  margin-bottom: 20px;
+}
+
+.blog p {
+  font-size: 18px;
+  color: #95908f;
+}
+
+/* Base button styles */
+.blog button {
+  background-color: transparent;
+  color: #132f46;
+  padding: 10px 30px;
+  border-radius: 40px;
+  border: 2px solid #132f46;
+  cursor: pointer;
+  margin: 25px 0px 15px;
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Hover effects */
+.blog button:hover {
+  background-color: #132f46; /* Background color on hover */
+  color: #ffffff; /* Text color on hover */
+  border-color: #ffffff; /* Border color on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  transform: scale(1.05); /* Slightly scale up the button */
+}
+
+
+
+/* Keyframes for subtle fade effect */
+@keyframes fadeEffect {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/* Base button styles */
+.knowMoreAnchor {
+  width: 150px;
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+  left: -10px;
+  padding: 15px 20px;
+  border-radius: 40px;
+  border: 3px solid #132f46;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #132f46;
+  background-color: transparent;
+  transition: all 0.3s ease; /* Smooth transition for color changes */
+  animation: pulseAnimation 2s infinite; /* Default pulse animation */
+}
+
+/* Hover effects */
+.knowMoreAnchor:hover {
+  text-decoration: none;
+  color: #ffffff; /* Text color on hover */
+  background-color: #132f46; /* Background color on hover */
+  border-color: #ffffff; /* Border color on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  animation: bounceAnimation 0.6s ease; /* Bounce animation on hover */
+}
+
+/* Keyframes for pulsing effect */
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for bouncing effect */
+@keyframes bounceAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.blog:hover {
+  transform: translateY(-10px); /* Adjust this value as needed */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+@media all and (max-width: 1470px) {
+  .blogsParent {
+    width: 95%;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  .blog img {
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    height: auto;
+  }
+
+  .blog h2 {
+    font-size: 16px;
+  }
+
+  .blog p {
+    font-size: 10px;
+  }
+  .blog {
+    /* width: 250px !important; */
+    padding: 10px;
+  }
+}
+
+@media all and (max-width: 1080px) {
+  .sliderSection {
+    overflow: hidden;
+  }
+  .blogsTopSection {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .blogsTopSection h1 {
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .blogsTopSection div h1 {
+    font-size: 25px;
+  }
+
+  .blogsHeading{
+    width:100%;
+    margin: auto;
+    align-items: center;
+  }
+  
+  .blogsTopSection p {
+    font-size: 10px;
+  }
+  .blogsTopSection div {
+    width: 100%;
+  }
+  .blogsTopSection img {
+    width: 160px;
+  }
+  .knowMoreAnchor {
+   left: 0px;
+  }
+  
+}

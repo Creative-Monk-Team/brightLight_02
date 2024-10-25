@@ -1,0 +1,175 @@
+.secondNavbar {
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-radius: 10px;
+  background-color: white;
+  z-index: 3;
+  padding: 30px 0px;
+}
+
+.logo {
+  padding-right: 20px;
+  border-right: 1px solid #132f46;
+  margin-right: 20px;
+}
+
+.contactNumber {
+  margin-right: auto;
+  color: #132f46;
+  font-weight: 500;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+.mainNavbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+  letter-spacing: 1px;
+}
+
+.mainNavbar svg {
+  cursor: pointer;
+}
+
+.mainNavbar a {
+  color: #132f46;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.bookButton {
+  background-color: #6e120b;
+  padding: 15px 20px;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.searchInput {
+  border: none;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  background-color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  position: relative;
+  right: -80px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s all ease-in-out;
+}
+
+.searchInput:focus {
+  border: none;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  outline: none;
+}
+
+.showSearchInput {
+  right: 0px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.relativeDiv {
+  position: relative;
+}
+
+.aboutDropdown {
+  position: absolute;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  top: 50px;
+  transition: 0.2s all ease-in-out;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 15px;
+  background-color: white;
+}
+
+.aboutDropdown a {
+  display: block;
+  margin-top: 10px;
+}
+
+.aboutDropdown a:first-child {
+  margin-top: 0;
+}
+
+.showAboutDropdown {
+  top: 30px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.servicesDropdown {
+  position: absolute;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  top: 50px;
+  transition: 0.2s all ease-in-out;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 15px;
+  background-color: white;
+}
+
+.servicesDropdown a {
+  display: block;
+  margin-top: 10px;
+}
+
+.servicesDropdown a:first-child {
+  margin-top: 0;
+}
+
+.showServicesDropdown {
+  top: 30px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.calculatorsDropdown{
+  position: absolute;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  top: 50px;
+  transition: 0.2s all ease-in-out;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 15px;
+  background-color: white;
+}
+
+.calculatorsDropdown a {
+  display: block;
+  margin-top: 10px;
+}
+
+.calculatorsDropdown a:first-child {
+  margin-top: 0;
+}
+
+.showCalculatorsDropdown {
+  top: 30px;
+  opacity: 1;
+  visibility: visible;
+}

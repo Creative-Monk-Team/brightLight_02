@@ -1,0 +1,1286 @@
+.bannerParent {
+  background-image: url("../assets/canadaBlue.jpeg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0px;
+  padding-top: 230px;
+}
+.banner {
+  width: 1440px;
+  margin: auto;
+  text-align: center;
+}
+
+.previous_draw_history {
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.previous_draw_history button {
+  background-color: #00273f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.bannerHeading h1 {
+  color: #e8c47c;
+  font-size: 50px;
+}
+
+.bannerHeading p {
+  color: #ffffff;
+  width: 74%;
+  margin: auto;
+  font-size: 25px;
+  line-height: 1.8;
+  padding-top: 60px;
+}
+
+.bannerHeadingRotateParent {
+  width: 700px;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* gap: 10px; */
+  align-items: center;
+  color: white;
+  margin-top: 50px;
+}
+
+.bannerHeadingRotate {
+  transform: rotate(-90deg);
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+.bannerHeadingRotatePara p {
+  text-align: left;
+  padding-bottom: 24px;
+  font-size: 30px;
+}
+
+.bannerHeadingRotatePara {
+  margin-left: -50px;
+}
+
+.canadianParent {
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  text-align: left;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.canadianContent {
+  width: 46%;
+  color: #78797b;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.canadianContent p {
+  margin-bottom: 35px;
+}
+
+.canadianImg {
+  width: 46%;
+}
+
+.canadianImg img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+/* // */
+
+.eligibleParent {
+  width: 1440px;
+  margin: auto;
+  text-align: left;
+  padding: 100px 0px;
+}
+
+.eligibleParent h1 {
+  font-size: 60px;
+  color: #132f46;
+  padding-bottom: 30px;
+}
+
+.eligibleParent p {
+  font-size: 30px;
+  color: #78797b;
+}
+
+.eligibleCardParent {
+  display: flex;
+  margin: auto;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+
+.eligibleCard {
+  /* height: 180px; */
+  padding: 60px 20px;
+  width: 350px;
+  background-color: #153b58;
+  color: white;
+  border-radius: 15px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  line-height: 1.8;
+  cursor: pointer;
+}
+
+.eligibleCard:hover {
+  opacity: 0.9;
+}
+/* // */
+
+.additionGrandParent {
+  background-color: #132f46;
+}
+
+.additionParent {
+  width: 1440px;
+  margin: auto;
+  text-align: left;
+  padding: 50px 0px;
+}
+
+.additionParent {
+  color: #efce8e;
+}
+
+.additionCardParent {
+  width: 1440px;
+  margin: auto;
+  text-align: left;
+  padding: 50px 0px;
+}
+
+.additionCardParent h1 {
+  font-size: 60px;
+  color: #efce8e;
+  padding-bottom: 30px;
+}
+
+.additionCardParent {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.additionCard {
+  height: 180px;
+  padding: 70px 0px;
+  width: 340px;
+  background-color: white;
+  color: #132f46;
+  border-radius: 15px;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  /* display: flex; */
+  /* line-height: 1.8; */
+  cursor: pointer;
+}
+
+.additionCard:hover {
+  opacity: 0.9;
+}
+.additionCard h2 {
+  font-size: 24px;
+}
+.advantagesParent {
+  width: 100%;
+  /* padding: 100px 0px; */
+  padding-bottom: 20px;
+  padding-top: 100px;
+}
+
+.advantages {
+  width: 1440px;
+  margin: auto;
+}
+
+.benefits {
+  width: 1440px;
+  margin: auto;
+}
+
+.advantagesHeading h1 {
+  font-size: 50px;
+  color: #153b58;
+  margin-bottom: 50px;
+}
+
+.benefits h1 {
+  font-size: 50px;
+  color: #153b58;
+  margin-bottom: 50px;
+}
+
+.benefits ul li {
+  color: #78797b;
+  font-size: 25px;
+  margin-bottom: 30px;
+  align-items: left;
+  line-height: 1.8;
+}
+
+.button {
+  display: inline-block;
+  background-color: #00273f;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.button:hover {
+ opacity: 0.9;
+ text-decoration: none;
+}
+
+.advantagesPara p {
+  color: #78797b;
+  font-size: 25px;
+  margin-bottom: 30px;
+  align-items: left;
+  line-height: 1.8;
+}
+
+.advantagesPara ul {
+  width: 90%;
+  margin-left: 50px;
+}
+
+.advantagesPara li {
+  color: #78797b;
+  font-size: 25px;
+}
+
+.forgetParent {
+  width: 100%;
+  background-color: #132f46;
+  padding: 100px 0px;
+}
+
+.forgetMain {
+  width: 1440px;
+  margin: auto;
+}
+
+.forgetHeading h1 {
+  color: #ecca86;
+  text-align: left;
+  font-size: 50px;
+}
+
+.forgetList {
+  color: white;
+  width: 1340px;
+  text-align: left;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.forgetListMain {
+  padding-top: 40px;
+}
+
+.theButtonAncorParentTwo {
+  padding: 100px 0px;
+}
+
+/* .theButtonAncorTwo{
+  padding-left: 10px;
+
+} */
+
+.theButtonAncorTwo {
+  width: 1440px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.theButtonAncorTwo a {
+  background-color: #ffffff;
+  border: 2px solid #132f46;
+  color: #132f46;
+  padding: 15px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 33px;
+}
+
+.incaseParent {
+  width: 100%;
+  padding: 50px 0px;
+}
+
+.incaseMain {
+  width: 1440px;
+  margin: auto;
+  text-align: left;
+}
+
+.incaseContent h1 {
+  color: #132f46;
+  font-size: 70px;
+  padding-bottom: 40px;
+}
+
+.incaseContent p {
+  color: #000000;
+  line-height: 1.9;
+  font-size: 27px;
+}
+
+.theButton {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 33px;
+  border-style: none;
+  border: 2px solid #285a83;
+  box-sizing: border-box;
+  color: #132f46;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: 0.25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 30px 50px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform, opacity;
+  z-index: 0;
+  margin-top: 60px;
+}
+
+.theButton:hover {
+  background: #f6f9fe;
+  color: #174ea6;
+}
+
+.bestChoiceParent {
+  background-image: url("../assets/blue-map.png");
+  width: 100%;
+  /* height: 1200px; */
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0px;
+}
+
+.bestChoice {
+  width: 1440px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.bestChoiceHeading h2 {
+  color: #d2ae6d;
+  font-size: 50px;
+  width: 65%;
+  text-align: right;
+}
+
+.bestChoiceHeading {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.faqSection {
+  display: flex;
+  padding: 20px;
+  border-radius: 8px;
+  width: 1440px;
+  max-width: 100%;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00324e;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.questionMark {
+  margin: 0;
+}
+
+.faqContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.faqItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.question {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  margin-right: 20px;
+  white-space: nowrap; /* Ensure the question stays on one line */
+}
+
+.answer {
+  color: #333;
+  font-size: 16px;
+  flex: 1; /* Allow answer to take up the remaining space */
+}
+
+.questions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.questions li {
+  margin: 10px 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.testimonialParent {
+  background-image: url("../assets/fag-bg.png");
+  width: 100%;
+}
+
+.testimonialMain {
+  width: 1440px;
+  margin: auto;
+  text-align: center;
+  padding: 100px 0px;
+}
+
+.testimonialMain h1 {
+  color: white;
+  margin-bottom: 40px;
+}
+
+.testimonialGoogleParent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.testimonialGoogleImg img {
+  width: 250px;
+  padding-right: 10px;
+  border-right: 1px solid white;
+}
+
+.testimonialRating p {
+  font-size: 70px;
+  color: white;
+}
+.bannerHeadingRotatePara p {
+  cursor: pointer;
+}
+
+.whyChooseUs{
+  width: 1440px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.whyChooseUs h2{
+  font-size: 44px;
+}
+.whyChooseUs ul{
+  margin-top: 30px;
+}
+.whyChooseUs li{
+font-size: 20px;
+}
+@media (max-width: 1460px) {
+  .whyChooseUs{
+    width: 95%;
+
+  }
+}
+
+@media (max-width: 1080px) {
+  .bannerHeadingRotateParent {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+  }
+
+  .bannerHeadingRotate {
+    transform: none;
+    border: none;
+    padding-bottom: 0;
+    font-size: 24px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .bannerHeadingRotate::after {
+    content: "\25BC";
+    font-size: 16px;
+    margin-left: 10px;
+    transition: transform 0.3s;
+  }
+
+  .bannerHeadingRotateParent.active .bannerHeadingRotate::after {
+    transform: rotate(180deg);
+  }
+
+  .bannerHeadingRotatePara {
+    margin-left: 0;
+    display: none;
+    background-color: #f7f7f7;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 25px 0px;
+  }
+
+  .bannerHeadingRotateParent.active .bannerHeadingRotatePara {
+    display: block;
+  }
+
+  .bannerHeadingRotatePara p {
+    font-size: 18px;
+    padding: 10px 0;
+    color: #00273f;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 1450px) {
+  .banner {
+    width: 1340px;
+  }
+
+  .canadianParent {
+    width: 1340px;
+  }
+
+  .eligibleParent {
+    width: 1340px;
+  }
+  .additionParent {
+    width: 1340px;
+  }
+
+  .additionCardParent {
+    width: 1340px;
+  }
+  .advantages {
+    width: 1340px;
+  }
+  .benefits {
+    width: 1340px;
+  }
+  .forgetMain {
+    width: 1340px;
+  }
+  .theButtonAncorTwo {
+    width: 1340px;
+  }
+
+  .incaseMain {
+    width: 1340px;
+  }
+
+  .bestChoice {
+    width: 1340px;
+  }
+
+  .faqSection {
+    width: 1340px;
+  }
+
+  .testimonialMain {
+    width: 1340px;
+  }
+}
+
+@media all and (max-width: 1360px) {
+  .banner {
+    width: 1240px;
+  }
+
+  .canadianParent {
+    width: 1240px;
+  }
+
+  .eligibleParent {
+    width: 1240px;
+  }
+  .additionParent {
+    width: 1240px;
+  }
+
+  .additionCardParent {
+    width: 1240px;
+  }
+  .advantages {
+    width: 1240px;
+  }
+  .benefits {
+    width: 1240px;
+  }
+  .forgetMain {
+    width: 1240px;
+  }
+
+  .forgetListMain li {
+    width: 1240px;
+  }
+  .theButtonAncorTwo {
+    width: 1240px;
+  }
+
+  .incaseMain {
+    width: 1240px;
+  }
+
+  .bestChoice {
+    width: 1240px;
+  }
+
+  .faqSection {
+    width: 1240px;
+  }
+
+  .testimonialMain {
+    width: 1240px;
+  }
+}
+
+@media all and (max-width: 1260px) {
+  .banner {
+    width: 1140px;
+  }
+
+  .canadianParent {
+    width: 1140px;
+  }
+
+  .eligibleParent {
+    width: 1140px;
+  }
+  .additionParent {
+    width: 1140px;
+  }
+
+  .additionCardParent {
+    width: 1140px;
+  }
+  .advantages {
+    width: 1140px;
+  }
+  .benefits {
+    width: 1140px;
+  }
+  .forgetMain {
+    width: 1140px;
+  }
+
+  .forgetListMain li {
+    width: 1140px;
+  }
+  .theButtonAncorTwo {
+    width: 1140px;
+  }
+
+  .incaseMain {
+    width: 1140px;
+  }
+
+  .bestChoice {
+    width: 1140px;
+  }
+
+  .faqSection {
+    width: 1140px;
+  }
+
+  .testimonialMain {
+    width: 1140px;
+  }
+}
+
+@media all and (max-width: 1190px) {
+  .banner {
+    width: 1040px;
+  }
+
+  .canadianParent {
+    width: 1040px;
+  }
+
+  .eligibleParent {
+    width: 1040px;
+  }
+
+  .eligibleCard {
+    width: 260px;
+    padding: 60px 0;
+  }
+
+  .additionParent {
+    width: 1040px;
+  }
+
+  .additionCardParent {
+    width: 1040px;
+  }
+  .additionCard {
+    width: 280px;
+    /* padding: 60px 0; */
+  }
+
+  .advantages {
+    width: 1040px;
+  }
+  .benefits {
+    width: 1040px;
+  }
+  .forgetMain {
+    width: 1040px;
+  }
+
+  .forgetListMain li {
+    width: 1040px;
+  }
+  .theButtonAncorTwo {
+    width: 1040px;
+  }
+
+  .incaseMain {
+    width: 1040px;
+  }
+
+  .bestChoice {
+    width: 1040px;
+  }
+
+  .faqSection {
+    width: 1040px;
+  }
+
+  .testimonialMain {
+    width: 1040px;
+  }
+}
+
+@media all and (max-width: 1090px) {
+  .banner {
+    width: 940px;
+  }
+
+  .canadianParent {
+    width: 940px;
+  }
+
+  .eligibleParent {
+    width: 940px;
+  }
+
+  .eligibleCard {
+    width: 260px;
+    padding: 60px 0;
+  }
+
+  .eligibleCard h2 {
+    font-size: 18px;
+  }
+
+  .additionParent {
+    width: 940px;
+  }
+
+  .additionCardParent {
+    width: 940px;
+  }
+  .additionCard {
+    width: 250px;
+    height: 150px;
+    font-size: 14px;
+    padding: 60px 0px;
+  }
+
+  .advantages {
+    width: 940px;
+  }
+  .benefits {
+    width: 940px;
+  }
+  .forgetMain {
+    width: 940px;
+  }
+
+  .forgetListMain li {
+    width: 940px;
+  }
+  .theButtonAncorTwo {
+    width: 940px;
+  }
+
+  .incaseMain {
+    width: 940px;
+  }
+
+  .bestChoice {
+    width: 940px;
+  }
+
+  .faqSection {
+    width: 940px;
+  }
+
+  .testimonialMain {
+    width: 940px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .banner {
+    width: 800px;
+  }
+
+  .bannerHeading p {
+    width: 100%;
+  }
+
+  .canadianParent {
+    width: 800px;
+    flex-direction: column-reverse;
+  }
+
+  .canadianImg {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .canadianContent {
+    width: 100%;
+    text-align: center;
+  }
+
+  .eligibleParent {
+    width: 800px;
+    text-align: center;
+    padding: 10px;
+  }
+  .eligibleParent h1 {
+    font-size: 50px;
+  }
+
+  .eligibleParent p {
+    font-size: 26px;
+  }
+
+  .eligibleCardParent {
+    flex-direction: column;
+  }
+
+  .eligibleCardParent h1 {
+    font-size: 20px;
+  }
+
+  .eligibleCard {
+    width: 300px;
+    height: 180px;
+    padding: 60px 10px;
+    margin-bottom: 40px;
+  }
+
+  .eligibleCard h2 {
+    font-size: 18px;
+  }
+
+  .additionParent {
+    width: 800px;
+  }
+
+  .additionParent h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .additionCardParent {
+    flex-direction: column;
+    width: 800px;
+  }
+  .additionCard {
+    width: 300px;
+    height: 180px;
+    font-size: 14px;
+    padding: 80px 0px;
+    margin-bottom: 40px;
+  }
+
+  .advantages {
+    width: 800px;
+  }
+
+  .benefits {
+    width: 800px;
+  }
+
+  .advantages {
+    text-align: center;
+  }
+
+  .forgetMain {
+    width: 800px;
+    /* text-align: center; */
+  }
+  .forgetHeading h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .forgetListMain li {
+    width: 800px;
+    font-size: 26px;
+    text-align: center;
+  }
+  .theButtonAncorTwo {
+    width: 800px;
+  }
+
+  .incaseMain {
+    width: 800px;
+    text-align: center;
+  }
+
+  .incaseMain p {
+    font-size: 20px;
+  }
+
+  .bestChoice {
+    width: 800px;
+  }
+
+  .faqSection {
+    width: 800px;
+  }
+
+  .testimonialMain {
+    width: 800px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .banner {
+    width: 95%;
+  }
+
+  .canadianParent {
+    width: 95%;
+  }
+
+  .canadianImg {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .canadianContent {
+    width: 100%;
+  }
+
+  .eligibleParent {
+    width: 95%;
+  }
+  .eligibleParent h1 {
+    font-size: 50px;
+  }
+
+  .eligibleParent p {
+    font-size: 26px;
+  }
+
+  .eligibleCardParent {
+    flex-direction: column;
+  }
+
+  .eligibleCardParent h1 {
+    font-size: 20px;
+  }
+
+  .eligibleCard {
+    width: 300px;
+    height: 180px;
+    padding: 60px 10px;
+    margin-bottom: 40px;
+  }
+
+  .eligibleCard h2 {
+    font-size: 18px;
+  }
+
+  .additionParent {
+    width: 95%;
+  }
+
+  .additionParent h1 {
+    font-size: 36px;
+  }
+
+  .additionCardParent {
+    width: 95%;
+  }
+  .additionCard {
+    width: 300px;
+    height: 180px;
+    font-size: 14px;
+    padding: 80px 0px;
+    margin-bottom: 40px;
+  }
+
+  .advantages {
+    width: 95%;
+  }
+
+  .benefits {
+    width: 95%;
+  }
+
+  /* .advantages{
+    text-align: center;
+  } */
+
+  .forgetMain {
+    width: 95%;
+  }
+
+  .forgetHeading h1 {
+    font-size: 40px;
+  }
+  .forgetListMain li {
+    width: 95%;
+    font-size: 26px;
+  }
+  .theButtonAncorTwo {
+    width: 95%;
+  }
+
+  .incaseMain {
+    width: 95%;
+  }
+
+  .incaseMain p {
+    font-size: 20px;
+  }
+
+  .bestChoice {
+    width: 95%;
+  }
+
+  .faqSection {
+    width: 95%;
+  }
+
+  .testimonialMain {
+    width: 95%;
+  }
+}
+
+@media all and (max-width: 730px) {
+  .bannerHeadingRotate h3 {
+    font-size: 20px;
+  }
+
+  .additionParent h1 {
+    font-size: 28px;
+  }
+
+  .additionCard {
+    width: 285px;
+    height: 158px;
+    font-size: 12px;
+    padding: 65px 0px;
+    margin-bottom: 40px;
+  }
+
+  .previous_draw_history button {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 580px) {
+  .eligibleParent h1 {
+    font-size: 40px;
+  }
+  .eligibleParent p {
+    font-size: 18px;
+  }
+
+  .additionParent h1 {
+    font-size: 30px;
+  }
+
+  .advantagesHeading h1 {
+    font-size: 40px;
+  }
+
+  .benefits h1 {
+    font-size: 40px;
+  }
+
+  .benefits ul li {
+    font-size: 18px;
+  }
+
+  .advantagesPara p {
+    font-size: 18px;
+  }
+
+  .forgetHeading h1 {
+    font-size: 30px;
+  }
+
+  .forgetMain li {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 580px) {
+  .eligibleParent h1 {
+    font-size: 34px;
+  }
+  .eligibleParent p {
+    font-size: 18px;
+  }
+
+  .additionParent h1 {
+    font-size: 26px;
+  }
+
+  .advantagesHeading h1 {
+    font-size: 34px;
+  }
+
+  .benefits h1 {
+    font-size: 34px;
+  }
+
+  .advantagesPara p {
+    font-size: 18px;
+  }
+
+  .benefits ul li {
+    font-size: 18px;
+  }
+
+  .forgetHeading h1 {
+    font-size: 26px;
+  }
+
+  .forgetMain li {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1460px) {
+  .whyChooseUs{
+    width: 95%;
+  }
+  .whyChooseUs h2{
+    font-size: 34px;
+  }
+
+  .whyChooseUs li{
+  font-size: 16px;
+  }
+}
+
+@media all and (max-width: 490px) {
+  .bannerHeadingRotate h3 {
+    font-size: 18px;
+  }
+  .additionCard {
+    width: 220px;
+    height: 140px;
+    font-size: 12px;
+    padding: 65px 10px;
+  }
+  .additionCard h2 {
+    font-size: 14px;
+  }
+}
+
+.eligibleCard h2 {
+  color: white;
+}

@@ -1,0 +1,1287 @@
+.bannerParent {
+  background-image: url("../assets/canadaBlue.jpeg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0px;
+  padding-top: 230px;
+}
+.banner {
+  width: 1440px;
+  margin: auto;
+  text-align: center;
+}
+
+.bannerHeading h1 {
+  color: #ffffff;
+  font-size: 50px;
+}
+
+.bannerHeading p {
+  color: #ffffff;
+  width: 85%;
+  margin: auto;
+  font-size: 25px;
+  line-height: 1.8;
+  padding-top: 60px;
+}
+
+.bannerParent {
+  background-image: url("../assets/canadaBlue.jpeg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0px;
+  padding-top: 150px;
+}
+.banner {
+  width: 1440px;
+  margin: auto;
+  text-align: center;
+}
+
+.bannerHeading h1 {
+  color: #e8c47c;
+  font-size: 50px;
+}
+
+.bannerHeading p {
+  color: #ffffff;
+  width: 74%;
+  margin: auto;
+  font-size: 25px;
+  line-height: 1.8;
+  padding-top: 60px;
+}
+
+.bannerHeadingRotateParent {
+  width: 700px;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* gap: 10px; */
+  align-items: center;
+  color: white;
+  /* margin-top: 150px; */
+}
+
+.bannerHeadingRotate {
+  transform: rotate(-90deg);
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+
+.bannerHeadingRotatePara p {
+  text-align: left;
+  padding-bottom: 8px;
+  font-size: 28px;
+}
+
+.bannerHeadingRotatePara p {
+  cursor: pointer;
+}
+
+@media (max-width: 1450px) {
+  .banner {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .bannerHeadingRotateParent {
+    flex-direction: column;
+    text-align: center;
+    /* margin-top: 50px; */
+    position: relative;
+    width: 100%;
+  }
+
+  .bannerHeadingRotate {
+    transform: none;
+    border: none;
+    padding-bottom: 0;
+    font-size: 24px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .bannerHeadingRotate::after {
+    content: "\25BC";
+    font-size: 16px;
+    margin-left: 10px;
+    transition: transform 0.3s;
+  }
+
+  .bannerHeadingRotateParent.active .bannerHeadingRotate::after {
+    transform: rotate(180deg);
+  }
+
+  .bannerHeadingRotatePara {
+    margin-left: 0;
+    display: none;
+    background-color: #f7f7f7;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 25px 0px;
+  }
+
+  .bannerHeadingRotateParent.active .bannerHeadingRotatePara {
+    display: block;
+  }
+
+  .bannerHeadingRotatePara p {
+    font-size: 18px;
+    padding: 10px 0;
+    color: #00273f;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+.canadianParent {
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  text-align: left;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+.canadianContent {
+  width: 46%;
+  color: #78797b;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.canadianContent h1 {
+  color: #153b58;
+  font-size: 50px;
+  padding-bottom: 30px;
+}
+
+.canadianContent p {
+  margin-bottom: 35px;
+  line-height: 35px;
+}
+
+.canadianImg {
+  width: 46%;
+}
+
+.canadianImg img {
+  border-radius: 20px;
+  width: 60%;
+}
+
+/* // */
+
+.eligibleParent {
+  width: 1440px;
+  margin: auto;
+  text-align: left;
+  padding: 100px 0px;
+}
+
+.eligibleParent h1 {
+  font-size: 60px;
+  color: #132f46;
+  width: 55%;
+  padding-bottom: 60px;
+}
+
+.eligibleParent p {
+  font-size: 30px;
+  color: #78797b;
+}
+
+.eligibleCardParent {
+  display: flex;
+  margin: auto;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+
+.eligibleCard {
+  /* height: 180px; */
+  padding: 60px 20px;
+  width: 350px;
+  background-color: #153b58;
+  color: white;
+  border-radius: 15px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  line-height: 1.8;
+}
+
+/* // */
+
+.container {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.column {
+  list-style-type: none;
+}
+
+.column ul {
+  padding: 0;
+  margin: 0;
+}
+
+.column li {
+  margin-bottom: 16px;
+  font-size: 32px;
+  color: #00273f;
+  line-height: 40px;
+  padding-bottom: 50px;
+}
+
+.categoryBasedParent {
+  background-color: #132f46;
+  width: 100%;
+  padding: 100px 0px;
+}
+
+.categoryBasedMain {
+  width: 1440px;
+  margin: auto;
+  align-items: center;
+}
+
+.categoryBasedMain h1 {
+  font-size: 60px;
+  color: #eece8d;
+}
+
+.categoryBasedContentParent {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 60px;
+  align-items: center;
+  margin: auto;
+}
+
+.categoryBasedContent p {
+  color: white;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.categoryBasedContent {
+  width: 55%;
+}
+
+.categoryBasedImg {
+  width: 42%;
+  text-align: center;
+}
+
+.categoryBasedImg img {
+  width: 100%;
+  /* border: 1px solid white; */
+}
+
+.eligibilityParent {
+  width: 1440px;
+  margin: auto;
+  align-items: center;
+  padding: 100px 0px;
+  /* border: 1px solid red; */
+}
+
+.eligibilityMain h1 {
+  font-size: 70px;
+  color: #132f46;
+}
+
+.eligibilityMain h3 {
+  font-size: 30px;
+  color: #132f46;
+  padding-top: 20px;
+}
+
+.eligibilityPara {
+  font-size: 30px;
+  line-height: 45px;
+  padding-top: 50px;
+  color: #1a1a1a;
+}
+
+.cardWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  padding-top: 100px;
+}
+
+.card {
+  border: 2px solid #00273f; /* Border color */
+  border-radius: 10px;
+  padding: 38px;
+  text-align: center;
+  width: 22%; /* Adjust width as needed */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Optional for a subtle shadow */
+}
+
+.card p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 34px;
+  font-weight: 600;
+  color: #00273f; /* Text color */
+}
+
+.benifitParent {
+  width: 1440px;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+.refusalParent ul{
+  margin-left: 20px !important;
+}
+
+.benifitMain h1 {
+  font-size: 60px;
+  color: #132f46;
+}
+
+.benifitlistParent {
+  width: 1380px;
+  color: #00273f;
+  font-size: 25px;
+  padding-top: 50px;
+  line-height: 50px;
+  margin: auto;
+}
+
+.benifitlistParent li {
+  padding-top: 20px;
+}
+
+.howApplyParent {
+  /* width: 1440px; */
+  margin: auto;
+  background-color: #00273f;
+  padding: 100px 0px;
+}
+
+.howApplyMain {
+  width: 1440px;
+  margin: auto;
+}
+
+.howApplyMain h1 {
+  color: #e8c47c;
+  font-size: 60px;
+  padding-top: 30px;
+}
+
+.howApplyMain h4 {
+  color: #ffffff;
+  font-size: 28px;
+  padding-top: 30px;
+  font-weight: 500;
+}
+
+.stepsGrid {
+  margin: auto;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 49%;
+  gap: 20px;
+  padding: 20px;
+  background-color: #00273f;
+}
+
+.step {
+  display: flex;
+  flex-direction: column; /* Stack numbering and content vertically */
+  align-items: flex-start;
+  padding: 10px;
+  color: white; /* Text color */
+}
+
+.stepNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: #00273f;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  margin-bottom: 10px; /* Space between number and content */
+}
+
+.stepContent {
+  flex-grow: 1;
+}
+
+.stepContent p {
+  margin: 0;
+  font-size: 27px;
+  line-height: 35px;
+}
+
+.stepContent a {
+  color: #f2c94c; /* Link color */
+  text-decoration: none;
+}
+
+.stepContent a:hover {
+  text-decoration: underline;
+}
+
+/* // */
+.refusalParent {
+  width: 1440px;
+  margin: auto;
+  padding: 100px 0px;
+}
+
+.refusalMain h1 {
+  font-size: 60px;
+  color: #132f46;
+}
+
+.refusalMain h3 {
+  font-size: 30px;
+  color: #132f46;
+  padding-top: 40px;
+  width: 90%;
+}
+
+.refusalListParent {
+  width: 1380px;
+  color: #00273f;
+  font-size: 25px;
+  padding-top: 50px;
+  line-height: 50px;
+  margin: auto;
+}
+
+.refusalListParent li {
+  padding-top: 20px;
+}
+
+/* // */
+
+.appointementParent {
+  width: 1440px;
+  margin: auto;
+  /* padding: 100px 0px; */
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.appointementMain h1 {
+  font-size: 60px;
+  color: #132f46;
+}
+
+.appointementMain h5 {
+  font-size: 35px;
+  color: #132f46;
+  padding-top: 20px;
+}
+
+.appointementMain p {
+  font-size: 30px;
+  color: #132f46;
+  padding-top: 30px;
+  line-height: 50px;
+}
+
+.theButtonAncor {
+  width: 1440px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.theButtonAncor button {
+  background-color: #132f46;
+  color: white;
+  padding: 20px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+/* .theButtonAncorParent {
+  padding: 100px 0px;
+} */
+
+.theButtonAncor button {
+  padding-left: 10px;
+}
+
+.theButtonSpan img {
+  width: 2%;
+}
+
+.bannerHeadingRotateParent {
+  width: 700px;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* gap: 10px; */
+  align-items: center;
+  color: white;
+  margin-top: 50px;
+}
+
+.bannerHeadingRotate {
+  transform: rotate(-90deg);
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+.bannerHeadingRotatePara p {
+  text-align: left;
+  padding-bottom: 8px;
+  font-size: 30px;
+}
+
+.bannerHeadingRotatePara {
+  margin-left: -50px;
+}
+
+.headerLineParent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerLineParent h3 {
+  width: 100%;
+}
+
+.headerLineParent p {
+  height: 1.1px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.headerLineParent h3 {
+  color: #ffffff;
+  font-weight: 500;
+}
+.headerLineParent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.headerLineParent p {
+  height: 1.1px;
+  width: 570px;
+  background-color: #ffffff;
+}
+.headingNumbers {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  color: #132f46;
+  border-radius: 50%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+}
+
+.bannerHeadingRotatePara{
+  cursor: pointer;
+}
+
+.button02 {
+  display: block;
+  margin: auto;
+  background-color: #00273f;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+.button02:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+.whyChooseUs{
+  width: 1440px;
+  margin: auto;
+padding-top: 80px;
+padding-bottom: 30px;
+}
+.whyChooseUs h2{
+  font-size: 48px;
+}
+.whyChooseUs ul{
+  margin-top: 30px;
+}
+.whyChooseUs li{
+font-size: 20px;
+}
+@media (max-width: 1460px) {
+  .whyChooseUs{
+    width: 95%;
+
+  }
+}
+
+@media (max-width: 1080px) {
+  .bannerHeadingRotateParent {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+  }
+
+  .bannerHeadingRotate {
+    transform: none;
+    border: none;
+    padding-bottom: 0;
+    font-size: 24px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .bannerHeadingRotate::after {
+    content: "\25BC";
+    font-size: 16px;
+    margin-left: 10px;
+    transition: transform 0.3s;
+  }
+
+  .bannerHeadingRotateParent.active .bannerHeadingRotate::after {
+    transform: rotate(180deg);
+  }
+
+  .bannerHeadingRotatePara {
+    margin-left: 0;
+    display: none;
+    background-color: #f7f7f7;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 25px 0px;
+  }
+
+  .bannerHeadingRotateParent.active .bannerHeadingRotatePara {
+    display: block;
+  }
+
+  .bannerHeadingRotatePara p {
+    font-size: 18px;
+    padding: 10px 0;
+    color: #00273f;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1480px) {
+  .banner {
+    width: 95%;
+  }
+  .canadianParent {
+    width: 95%;
+  }
+  .eligibleParent {
+    width: 95%;
+  }
+  .eligibleParent {
+    width: 95%;
+  }
+  .categoryBasedMain {
+    width: 95%;
+  }
+  .benifitParent {
+    width: 95%;
+  }
+  .howApplyMain {
+    width: 95%;
+  }
+  .refusalParent {
+    width: 95%;
+  }
+  .appointementParent {
+    width: 95%;
+  }
+  .theButtonAncor {
+    width: 95%;
+  }
+  .cardWrapper {
+    display: flex;
+    padding: 20px 0px;
+    padding-top: 100px;
+    width: 95%;
+    margin: auto;
+  }
+  .eligibilityParent {
+    width: 95%;
+  }
+  .eligibilityPara {
+    width: 95%;
+    margin: auto;
+  }
+  .benifitParent {
+    width: 95%;
+  }
+  .benifitMain {
+    width: 95%;
+  }
+  .benifitlistParent {
+    width: 95%;
+  }
+  .refusalListParent {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1360px) {
+  .stepsGrid {
+    width: 95%;
+    gap: 1px;
+    padding: 0px;
+  }
+  .howApplyMain {
+    width: 95%;
+  }
+  .step {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1290px) {
+  .stepContent {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .step {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .stepsGrid {
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+
+  .headerLineParent p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1180px) {
+  .cardWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 35%);
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .card {
+    width: 70%;
+    height: 170px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card p {
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .canadianParent {
+    flex-direction: column-reverse;
+  }
+  .canadianImg {
+    width: 100%;
+  }
+  .canadianImg img {
+    width: 100%;
+  }
+  .canadianContent {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .eligibleParent h1 {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .categoryBasedContentParent {
+    flex-direction: column-reverse;
+  }
+  .categoryBasedMain {
+    align-items: center;
+    text-align: center;
+  }
+  .categoryBasedContent {
+    width: 100%;
+    padding-top: 50px;
+  }
+  .categoryBasedImg {
+    width: 100%;
+  }
+  .benifitMain {
+    align-items: center;
+    text-align: center;
+  }
+  .howApplyMain h4,
+  h1 {
+    align-items: center;
+    text-align: center;
+  }
+  .refusalMain {
+    align-items: center;
+    text-align: center;
+  }
+  .appointementMain {
+    align-items: center;
+    text-align: center;
+  }
+  .eligibilityMain {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1050px) {
+  .cardWrapper {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (max-width: 870px) {
+  .bannerHeading p {
+    font-size: 23px;
+  }
+  .bannerHeadingRotate h3 {
+    font-size: 22px;
+  }
+  .container li {
+    font-size: 23px;
+  }
+  .categoryBasedMain h1 {
+    font-size: 42px;
+  }
+  .categoryBasedContent p {
+    font-size: 26px;
+  }
+  .eligibilityMain h1 {
+    font-size: 49px;
+  }
+  .eligibilityMain h3 {
+    font-size: 24px;
+  }
+  .eligibilityMain p {
+    font-size: 20px;
+  }
+  .card {
+    width: 76%;
+  }
+  .benifitMain h1 {
+    font-size: 44px;
+  }
+  .benifitlistParent li {
+    font-size: 22px;
+  }
+  .refusalMain h3 {
+    font-size: 24px;
+  }
+  .refusalListParent li {
+    font-size: 22px;
+  }
+  .appointementMain p {
+    font-size: 24px;
+  }
+  .stepContent p {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 766px) {
+  .cardWrapper {
+    grid-template-columns: repeat(2, 50%);
+  }
+  .card {
+    height: 175px;
+    padding: 54px 5px;
+  }
+}
+
+@media (max-width: 766px) {
+  .card {
+    height: 160px;
+    padding: 45px 5px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 690px) {
+  .stepsGrid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 644px) {
+  .bannerHeading p {
+    font-size: 22px;
+  }
+  .bannerHeadingRotate h3 {
+    font-size: 22px;
+  }
+  .container li {
+    font-size: 21px;
+  }
+  .categoryBasedMain h1 {
+    font-size: 38px;
+  }
+  .categoryBasedContent p {
+    font-size: 22px;
+  }
+  .eligibilityParent h1 {
+    font-size: 40px;
+  }
+  .eligibilityMain h1 {
+    font-size: 45px;
+  }
+  .eligibilityMain h3 {
+    font-size: 21px;
+  }
+  .eligibilityMain p {
+    font-size: 20px;
+  }
+  .eligibilityPara {
+    font-size: 20px;
+  }
+  .howApplyMain h4 {
+    font-size: 20px;
+  }
+  .card {
+    width: 76%;
+  }
+  .benifitMain h1 {
+    font-size: 40px;
+  }
+  .benifitlistParent li {
+    font-size: 20px;
+  }
+  .refusalMain h3 {
+    font-size: 20px;
+  }
+  .refusalListParent li {
+    font-size: 20px;
+  }
+  .appointementMain p {
+    font-size: 20px;
+  }
+  .stepContent p {
+    font-size: 20px;
+  }
+  .eligibleParent h1 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 590px) {
+  .cardWrapper {
+    grid-template-columns: repeat(2, 49%);
+  }
+
+  .card {
+    height: 166px;
+    padding: 30px 5px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 490px) {
+  .bannerHeading h1 {
+    font-size: 32px;
+  }
+  .bannerHeading p {
+    font-size: 20px;
+  }
+  .bannerHeadingRotate h3 {
+    font-size: 20px;
+  }
+  .container li {
+    font-size: 20px;
+  }
+
+  .canadianContent h1 {
+    font-size: 34px;
+  }
+  .categoryBasedMain h1 {
+    font-size: 36px;
+  }
+  .categoryBasedContent p {
+    font-size: 18px;
+  }
+  .eligibilityParent h1 {
+    font-size: 28px;
+  }
+  .eligibilityMain h1 {
+    font-size: 36px;
+  }
+  .eligibilityMain h3 {
+    font-size: 18px;
+  }
+  .eligibilityMain p {
+    font-size: 18px;
+  }
+  .eligibilityPara {
+    font-size: 18px;
+  }
+  .howApplyMain h4 {
+    font-size: 18px;
+  }
+  .card {
+    width: 76%;
+  }
+  .benifitMain h1 {
+    font-size: 30px;
+  }
+  .benifitlistParent li {
+    font-size: 18px;
+  }
+  .refusalMain h1 {
+    font-size: 36px;
+  }
+  .refusalMain h3 {
+    font-size: 15px;
+  }
+  .refusalListParent li {
+    font-size: 18px;
+  }
+  .appointementMain p {
+    font-size: 18px;
+  }
+  .stepContent p {
+    font-size: 18px;
+  }
+  .eligibleParent h1 {
+    font-size: 28px;
+    padding-bottom: 5px;
+  }
+  .column li {
+    padding-bottom: 0px;
+  }
+  .howApplyMain h1 {
+    font-size: 38px;
+  }
+  .howApplyMain h4 {
+    font-size: 15px;
+  }
+  .appointementMain h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 460px) {
+  .whyChooseUs{
+    width: 95%;
+  }
+  .whyChooseUs h2{
+    font-size: 34px;
+  }
+
+  .whyChooseUs li{
+  font-size: 16px;
+  }
+}
+@media (max-width: 484px) {
+  .theButtonAncorParent{
+    padding: 10px 0px ;
+  }
+  .cardWrapper {
+    grid-template-columns: repeat(2, 49%);
+    gap: 14px;
+  }
+
+  .card {
+    width: 90%;
+    height: 166px;
+    padding: 30px 0px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+  .theButtonAncor button {
+    padding: 10px 10px;
+    font-size: 20px;
+  }
+  .benifitParent{
+    padding-bottom: 30px;
+  }
+  .eligibleParent{
+    padding: 20px 0px;
+  }
+  .benifitParent{
+    margin-top: 50px;
+  }
+  .canadianParent{
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 394px) {
+  .cardWrapper {
+    grid-template-columns: repeat(2, 49%);
+    gap: 11px;
+  }
+
+  .card {
+    width: 100%;
+    height: 166px;
+    padding: 30px 0px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+  .bannerHeading p {
+    width: 100%;
+    font-size: 15px;
+  }
+  .canadianContent h1 {
+    font-size: 30px;
+  }
+  .canadianContent p {
+    margin-bottom: 20px;
+    line-height: 30px;
+    font-size: 19px;
+  }
+
+  .eligibilityParent h1 {
+    font-size: 25px;
+  }
+
+  .container li {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+  .eligibilityParent {
+    padding: 20px 0px;
+  }
+  .categoryBasedParent {
+    padding: 50px 0px;
+  }
+  .categoryBasedMain h1 {
+    font-size: 30px;
+  }
+  .categoryBasedContent p {
+    line-height: 35px;
+  }
+  .eligibilityMain h3 {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  .eligibilityMain p {
+    font-size: 16px;
+  }
+  .eligibilityPara {
+    line-height: 28px;
+  }
+  .card {
+    display: flex;
+    align-items: center;
+  }
+  .benifitMain h1{
+    font-size: 24px;
+  }
+  .benifitlistParent{
+    line-height: 34px;
+    padding-top: 25px;
+  }
+  .howApplyParent{
+    padding: 40px 0px;
+  }
+
+  .refusalParent{
+    padding: 50px 0px;
+  }
+  .refusalMain h3{
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .refusalListParent{
+    padding-top: 20px;
+    line-height: 35px;
+  }
+  .refusalListParent ul{
+    margin-left: 10px;
+  }
+  .theButtonAncorParent{
+    padding: 10px 0px ;
+  }
+  .appointementMain h1{
+    font-size: 30px;
+  }
+  .appointementMain h5{
+    font-size: 26px;
+  }
+
+  .appointementMain p{
+    line-height: 35px;
+    font-size: 16px;
+  }
+  .appointementParent{
+    padding: 50px 0px;
+  }
+}

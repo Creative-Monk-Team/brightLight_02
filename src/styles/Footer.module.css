@@ -1,0 +1,148 @@
+.footer {
+  background-color: #132f46;
+  color: white;
+  padding: 100px 0px;
+}
+
+.footer p a {
+  color: rgb(211, 211, 211);
+  text-decoration: none;
+}
+
+.footer p {
+  color: rgb(211, 211, 211);
+}
+
+.innerFooter {
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.leftFooter {
+  width: 30%;
+  text-align: left;
+}
+
+.leftFooter div:not(:first-child) {
+  margin-top: 40px;
+}
+
+.leftFooter p {
+  margin-top: 5px;
+}
+
+.iconHeading p {
+  margin-top: 0;
+}
+
+.rightFooter {
+  width: 30%;
+  text-align: right;
+}
+
+.centerFooter {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialMediaFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.socialMediaFooter div {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerHeading {
+  font-weight: 600;
+  color: white !important;
+}
+
+.socialIcon {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.iconHeading {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footerLogo1 {
+  height: auto;
+  width: 48%;
+  padding-right: 30px;
+  border-right: 1px solid white;
+}
+
+.footerLogo2 {
+  width: 40%;
+}
+
+.footerAncor a {
+  color: rgb(211, 211, 211);
+  text-decoration: none;
+}
+
+.footerAncor {
+  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.footerAncor:nth-child(2) {
+  margin-top: 20px;
+}
+
+.footerAncor span {
+  position: relative;
+  top: -14px;
+  font-size: 40px;
+  right: -5px;
+}
+
+.privacyPolicy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.privacyPolicy a {
+  color: white;
+  text-decoration: none;
+}
+
+.rightsReserved {
+  margin-top: 80px;
+}
+
+.copyrightHeading {
+  text-align: center;
+  margin-top: 50px;
+}

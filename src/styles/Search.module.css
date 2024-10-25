@@ -1,0 +1,198 @@
+.searchPage {
+    width: 1440px;
+    margin: auto;
+    margin-top: 200px;
+  }
+  
+  .topHeading {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .boldText {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  
+  .servicesSection {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .servicesGridSection {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+    align-items: flex-start;
+    row-gap: 40px;
+    margin-top: 30px;
+  }
+  
+  .servicesGridSection div {
+    width: 100%;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+      rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    transform: translateY(0);
+  }
+  
+  .servicesGridSection div:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }
+  
+  .servicesGridSection div h3 {
+    font-size: 24px;
+    color: #132f46;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dec18f;
+  }
+  
+  .servicesGridSection div p {
+    font-size: 14px;
+  }
+  
+  .servicesSection h2:first-of-type {
+    text-align: center;
+  }
+  
+  .blogsSection {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+  
+  .blogsGridSection {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-content: space-between;
+    align-items: flex-start;
+    row-gap: 10px;
+    margin-top: 30px;
+  }
+  
+  .blogsGridSection a {
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+  }
+  
+  .blogsGridSection a:hover {
+    text-decoration: none;
+  }
+  
+  .blogsGridSection a h3 {
+    font-size: 20px;
+    color: #132f46;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #132f46;
+  }
+  
+  .blogsGridSection a img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .blogsGridSection a p {
+    font-size: 14px;
+  }
+  
+  .sectionHeading {
+    text-align: center;
+  }
+  
+  .newsSection {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+  
+  .newsGridSection {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-content: space-between;
+    align-items: flex-start;
+    row-gap: 10px;
+    margin-top: 30px;
+  }
+  
+  .newsGridSection a {
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+  }
+  
+  .newsGridSection a:hover {
+    text-decoration: none;
+  }
+  
+  .newsGridSection a h3 {
+    font-size: 20px;
+    color: #132f46;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #132f46;
+  }
+  
+  .newsGridSection a img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .newsGridSection a p {
+    font-size: 14px;
+  }
+  
+  .noResults {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  
+  @media all and (max-width: 1500px) {
+    .searchPage {
+      width: 95%;
+    }
+  }
+  
+  @media all and (max-width: 1000px) {
+    .servicesGridSection {
+      grid-template-columns: repeat(2, 48%);
+    }
+  
+    .blogsGridSection {
+      grid-template-columns: repeat(2, 48%);
+    }
+  
+    .newsGridSection {
+      grid-template-columns: repeat(2, 48%);
+    }
+  }
+  
+  @media all and (max-width: 500px) {
+    .servicesGridSection {
+      grid-template-columns: repeat(1, 100%);
+    }
+  
+    .blogsGridSection {
+      grid-template-columns: repeat(1, 100%);
+    }
+  
+    .newsGridSection {
+      grid-template-columns: repeat(1, 100%);
+    }
+  }
+  

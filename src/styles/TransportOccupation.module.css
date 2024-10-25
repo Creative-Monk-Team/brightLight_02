@@ -1,0 +1,272 @@
+.bannerParent {
+  background-image: url("../assets//transport.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 0px;
+}
+
+.bannerMain {
+  width: 1440px;
+  margin: auto;
+  text-align: center;
+}
+
+.bannerMain h1 {
+  font-size: 60px;
+  color: white;
+  padding-top: 50px;
+}
+
+.bannerMain p {
+    width: 80%;
+  font-size: 25px;
+  margin: auto;
+  text-align: center;
+  color: white;
+  padding-top: 60px;
+  line-height: 50px;
+}
+
+.eligibleParent{
+    padding: 100px 0px;
+    width: 1440px;
+    margin: auto;
+}
+
+.eligibleMain h1{
+    font-size: 64px;
+    color:#132f46;
+}
+
+.eligibleMain h3{
+    font-size: 27px;
+    color:#132f46;
+    margin-top: 40px;
+}
+
+
+/* // */
+
+
+.stepsGrid {
+    margin: auto;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    color: #132f46;
+  }
+  
+  .stepNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #00273f;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    margin-bottom: 10px; 
+  }
+  
+  .stepContent {
+    flex-grow: 1;
+  }
+  
+  .stepContent p {
+    margin: 0;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .stepContent h2{
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+
+.stepContent h3{
+  font-size: 30px;
+  padding-top: 80px;
+}
+
+  .stepContentList{
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .stepContentList li{
+    font-size: 28px;
+    padding-top: 34px;
+    line-height: 44px;
+  }
+
+
+  .agricultureParent{
+    padding: 100px 0px;
+    background-color: #132f46;
+    width: 100%;
+  }
+
+  .agricultureMain{
+    width: 1440px;
+    margin: auto;
+  }
+
+  .agricultureMain h1{
+    color:#e8c57e;
+    font-size: 62px;
+  }
+
+  .agricultureMain h2{
+    color:#fbfbfb;
+    font-size: 34px;
+    padding-top: 50px;
+  }
+
+
+.agricultureList{
+  width: 1240px;
+  margin: auto;
+  font-size: 28px;
+  color: white;
+  padding-top: 80px;
+}
+
+.agricultureList li{
+  padding-bottom: 40px;
+}
+
+/* // */
+.theButtonAncorParent{
+  padding: 100px 0px;
+}
+
+.theButtonAncor{
+  padding-left: 10px;
+
+}
+
+.theButtonSpan img{
+  width: 1.5%;
+  margin-left: 20px;
+}
+
+.theButtonAncor{
+  width: 1440px;
+
+}
+
+.theButtonAncor a{
+  background-color: #ffffff;
+  color: #132f46;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 30px;
+
+}
+
+.occupationParent{
+  display: flex;
+  color: white;
+}
+
+.occupationParent h2{
+  font-size: 39px;
+}
+
+.occupationOne{
+  width: 60%;
+}
+
+.occupationTwo{
+  width: 20%;
+}
+
+.occupationThree{
+  width: 20%;
+}
+
+.occupationPara p{
+  padding-top: 50px;
+  font-size: 24px;
+  width: 80%;
+}
+
+.occupation{
+  padding-bottom: 28px;
+}
+
+
+
+
+.theButtonAncorParentTwo{
+  padding: 100px 0px;
+}
+
+.theButtonAncorTwo{
+  padding-left: 10px;
+
+}
+
+.theButtonSpanTwo img{
+  width: 1.7%;
+  margin-left: 20px;
+}
+
+.theButtonAncorTwo{
+  width: 1440px;
+  margin: auto;
+
+}
+
+.theButtonAncorTwo a{
+  background-color: #132f46;
+  color: #fcfeff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 30px;
+
+}
+
+
+.contactUpperParent{
+  width: 1440px;
+  margin: auto;
+}
+
+.contactUpperMain P{
+  color: #00273f;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.contactParent{
+  width: 1440px;
+  margin: auto;
+  align-items: center;
+  padding: 100px 0px;
+}
+
+.contactMain h1{
+  color: #00273f;
+  font-size: 60px;
+}
+
+.contactMain p{
+  color: #00273f;
+  font-size: 25px;
+  padding-top: 40px;
+  line-height: 50px;
+}
+

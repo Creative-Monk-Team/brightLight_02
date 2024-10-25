@@ -1,0 +1,172 @@
+.bannerParent {
+  background-image: url("../assets/immigration_tools01.png");
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0px;
+  padding-top: 230px;
+}
+
+.bannerMain {
+  width: 1440px;
+  margin: auto;
+  text-align: center;
+}
+
+.bannerHeading {
+  width: 600px;
+  text-align: left;
+  background-color: whitesmoke;
+  border-radius: 40px;
+  padding: 20px 30px;
+}
+
+.bannerHeading h3 {
+  color: #e8c47c;
+  font-size: 22px;
+}
+
+.bannerHeading h1 {
+  color: #00273f;
+  margin-top: 30px;
+}
+
+.bannerHeading p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.containerParent {
+  padding: 50px 0px;
+  width: 1440px;
+  margin: auto;
+}
+
+.cardParent {
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  justify-content: space-between;
+  align-items: stretch;
+  row-gap: 40px;
+}
+
+.cardParent div {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 16px;
+  border: 1px solid #073552;
+}
+
+.cardParent div img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.cardParent h2 {
+  font-size: 20px;
+}
+
+.cardParent p {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #999595;
+}
+
+.cardParent div:hover {
+  text-decoration: none;
+  transform: translateY(-8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #073552;
+  color: 2px solid white;
+}
+
+.cardParent div:hover h2 {
+  color: #e8c47c;
+}
+
+.cardParent div:hover p {
+  color: #ffffff;
+}
+
+.cardParent div:hover {
+  background-color: #073552;
+}
+
+@media all and (max-width: 1420px) {
+  .cardParent {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+    align-items: stretch;
+    row-gap: 30px;
+  }
+  .containerParent {
+    width: 95%;
+  }
+  .bannerMain {
+    width: 95%;
+  }
+  .bannerHeading {
+    width: 95%;
+  }
+  .bannerParent{
+    width: 99%;
+  }
+}
+
+@media all and (max-width: 720px) {
+  .cardParent {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: space-between;
+    align-items: stretch;
+    row-gap: 30px;
+  }
+  .bannerMain {
+    width: 100%;
+  }
+  .bannerHeading {
+    width: 100%;
+  }
+  .bannerParent{
+    height: 600px;
+  }
+  .bannerHeading{
+    width: 600px;
+  }
+  .bannerHeading h3{
+    font-size: 15px;
+  }
+  .bannerHeading h1{
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  .bannerHeading p{
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 560px) {
+  .cardParent {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    justify-content: space-between;
+    align-items: stretch;
+    row-gap: 30px;
+  }
+  .bannerMain {
+    width: 95%;
+  }
+  .bannerHeading {
+    width: 95%;
+    margin: auto;
+  }
+  .bannerParent{
+    height: 510px;
+    background-image: url("../assets/immigration_tools02.png");
+  }
+}

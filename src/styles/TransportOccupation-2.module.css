@@ -1,0 +1,655 @@
+.bannerParent {
+  background-image: url("../assets//transport.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0px;
+  padding-top: 230px;
+}
+
+.banner {
+  width: 1440px;
+  margin: auto;
+  text-align: center;
+}
+
+.bannerHeading h1 {
+  color: #e8c47c;
+  font-size: 50px;
+}
+
+.bannerHeading h3 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 30px;
+}
+
+.bannerHeading p {
+  color: #ffffff;
+  width: 74%;
+  margin: auto;
+  font-size: 25px;
+  line-height: 1.8;
+  padding-top: 60px;
+}
+
+.bannerHeadingRotateParent {
+  width: 700px;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* gap: 10px; */
+  align-items: center;
+  color: white;
+  margin-top: 150px;
+}
+
+.bannerHeadingRotate {
+  transform: rotate(-90deg);
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+.bannerHeadingRotatePara p {
+  text-align: left;
+  padding-bottom: 24px;
+  font-size: 30px;
+}
+
+.bannerHeadingRotatePara {
+  margin-left: -50px;
+}
+
+.eligibleParent {
+  padding: 100px 0px;
+  width: 1440px;
+  margin: auto;
+}
+
+.eligibleMain h1 {
+  font-size: 50px;
+  color: #132f46;
+}
+
+.eligibleMain h3 {
+  font-size: 22px;
+  color: #132f46;
+  margin-top: 40px;
+}
+
+/* // */
+
+.stepsGrid {
+  margin: auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  color: #132f46;
+}
+
+.stepNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #00273f;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.stepContent {
+  flex-grow: 1;
+}
+
+.stepContent p {
+  margin: 0;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.stepContent h2 {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.stepContent h3 {
+  font-size: 30px;
+  padding-top: 80px;
+  font-weight: 600;
+}
+
+.stepContentList {
+  width: 1440px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.stepContentList li {
+  font-size: 28px;
+  padding-top: 34px;
+  line-height: 44px;
+}
+
+/* CSS */
+.button17 {
+  margin-top: 10px;
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 28px;
+  border-style: none;
+  border: 2px solid #00273f;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-size: 16px;
+  font-weight: 500;
+  /* height: 48px; */
+  justify-content: center;
+  letter-spacing: 0.25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 16px 60px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform, opacity;
+  z-index: 0;
+}
+
+.button17:hover {
+  background: #f6f9fe;
+  color: #174ea6;
+}
+
+.button17:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
+    0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.button17:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.agricultureParent {
+  padding: 100px 0px;
+  background-color: #132f46;
+  width: 100%;
+}
+
+.agricultureMain {
+  width: 1440px;
+  margin: auto;
+}
+
+.agricultureMain h1 {
+  color: #e8c57e;
+  font-size: 40px;
+}
+
+.agricultureMain h2 {
+  color: #fbfbfb;
+  font-size: 26px;
+  padding-top: 60px;
+  font-weight: 600;
+}
+
+.agricultureList {
+  width: 1440px;
+  margin: auto;
+  font-size: 28px;
+  color: white;
+  padding-top: 80px;
+}
+
+.agricultureList li {
+  padding-bottom: 40px;
+}
+
+.theButtonAncorParentTwo {
+  padding: 100px 0px;
+}
+
+.theButtonAncorTwo button {
+  padding-left: 10px;
+  border: none;
+}
+
+.theButtonSpanTwo img {
+  width: 1.7%;
+  margin-left: 20px;
+}
+
+.theButtonAncorTwo {
+  width: 1440px;
+  margin: auto;
+  /* text-align: center; */
+}
+
+.theButtonAncorTwo button {
+  background-color: #132f46;
+  color: #fcfeff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.contactUpperParent {
+  width: 1440px;
+  margin: auto;
+}
+
+.contactUpperMain P {
+  color: #00273f;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.contactParent {
+  width: 1440px;
+  margin: auto;
+  align-items: center;
+  padding: 100px 0px;
+}
+
+.contactMain h1 {
+  color: #00273f;
+  font-size: 60px;
+}
+
+.contactMain p {
+  color: #00273f;
+  font-size: 25px;
+  padding-top: 40px;
+  line-height: 50px;
+}
+
+.bookButton17 {
+  margin-top: 40px;
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 28px;
+  border-style: none;
+  border: 2px solid #00273f;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-size: 16px;
+  font-weight: 500;
+  justify-content: center;
+  letter-spacing: 0.25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 18px 66px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+
+}
+
+.bookButton17:hover {
+  background: #f6f9fe;
+  color: #174ea6;
+}
+
+.bookButton17:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
+    0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.bookButton17:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.headerLineParent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.headerLineParent p {
+  height: 1.1px;
+  width: 3000px;
+  background-color: #132f46;
+}
+.headingNumbers {
+  width: 75px;
+  text-align: center;
+  background-color: #132f46;
+  color: white;
+  border-radius: 50%;
+}
+
+.bannerHeadingRotatePara p{
+  cursor: pointer;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1080px) {
+  .bannerHeadingRotateParent {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+  }
+
+  .bannerHeadingRotate {
+    transform: none;
+    border: none;
+    padding-bottom: 0;
+    font-size: 24px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .bannerHeadingRotate::after {
+    content: "\25BC";
+    font-size: 16px;
+    margin-left: 10px;
+    transition: transform 0.3s;
+  }
+
+  .bannerHeadingRotateParent.active .bannerHeadingRotate::after {
+    transform: rotate(180deg);
+  }
+
+  .bannerHeadingRotatePara {
+    margin-left: 0;
+    display: none;
+    background-color: #f7f7f7;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 25px 0px;
+  }
+
+  .bannerHeadingRotateParent.active .bannerHeadingRotatePara {
+    display: block;
+  }
+
+  .bannerHeadingRotatePara p {
+    font-size: 18px;
+    padding: 10px 0;
+    color: #00273f;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 1480px) {
+  .agricultureMain {
+    width: 95%;
+  }
+  .contactParent {
+    width: 95%;
+  }
+}
+@media all and (max-width: 1450px) {
+  .contactUpperParent {
+    width: 95%;
+  }
+}
+
+@media all and (max-width: 1440px) {
+  .banner {
+    width: 95%;
+  }
+  .bannerHeading p {
+    width: 95%;
+  }
+  .eligibleParent {
+    width: 95%;
+    /* text-align: center; */
+  }
+  .stepContent {
+    width: 95%;
+  }
+  .stepContentList {
+    width: 95%;
+  }
+  .agricultureList {
+    width: 95%;
+  }
+}
+
+@media all and (max-width: 1080px) {
+  .theButtonAncorTwo {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+  }
+  .contactUpperParent {
+    text-align: center;
+  }
+  .contactParent {
+    text-align: center;
+  }
+
+  .agricultureMain h1 {
+    text-align: center;
+  }
+
+  .agricultureMain h2 {
+    text-align: center;
+  }
+  /* .agricultureList{
+align-items: center;
+  } */
+}
+
+@media all and (max-width: 890px) {
+  .eligibleMain {
+    text-align: center;
+  }
+  .agricultureMain h1 {
+    font-size: 35px;
+  }
+  .agricultureMain h2 {
+    font-size: 24px;
+  }
+  .agricultureList li {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .contactUpperMain p {
+    font-size: 24px;
+  }
+  .contactMain p {
+    font-size: 24px;
+  }
+  /* .bookButton17{
+  width: 290px;
+} */
+}
+
+@media all and (max-width: 610px) {
+  .agricultureMain h1 {
+    font-size: 31px;
+  }
+  .agricultureMain h2 {
+    font-size: 16px;
+  }
+  .agricultureList li {
+    font-size: 16px;
+  }
+  .eligibleMain h1 {
+    font-size: 40px;
+  }
+  .eligibleMain h3 {
+    font-size: 21px;
+  }
+  .stepContent p {
+    font-size: 22px;
+  }
+  .bannerHeading h1 {
+    font-size: 40px;
+  }
+  .bannerHeading h3 {
+    font-size: 17px;
+  }
+  .bannerHeading p {
+    font-size: 15px;
+  }
+  .stepContentList li {
+    font-size: 25px;
+  }
+  .stepContentList h3 {
+    font-size: 21px;
+    text-align: center;
+  }
+}
+@media all and (max-width: 545px) {
+  .theButtonAncorTwo button {
+    padding: 10px 10px;
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 470px) {
+  .bannerHeading h1 {
+    font-size: 40px;
+  }
+  .stepContent h2 {
+    font-size: 22px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+  }
+  .stepContent p {
+    font-size: 18px;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .button17 {
+    padding: 12px 22px !important;
+    font-size: 14px;
+  }
+  .bookButton17 {
+    padding: 12px 22px !important;
+    font-size: 14px;
+  }
+  .stepContentList {
+    width: 100%;
+  }
+  .bannerHeadingRotate {
+    font-size: 18px;
+  }
+  
+
+  .agricultureMain h1 {
+    font-size: 24px;
+  }
+  .agricultureMain h2 {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .agricultureList li {
+    font-size: 11px;
+  }
+  .agricultureList{
+    padding-top: 40px;
+}
+  .eligibleMain h1 {
+    font-size: 28px;
+  }
+  .eligibleMain h3 {
+    font-size: 16px;
+  }
+  .bannerHeading h1 {
+    font-size: 32px;
+  }
+  .bannerHeading h3 {
+    font-size: 14px;
+  }
+  .headingNumbers {
+    width: 270px;
+  }
+  .stepsGrid {
+    padding: 0px;
+  }
+  .stepsGrid p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .stepContentList li {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .stepContent h3 {
+    font-size: 20px;
+  }
+  .headerLineParent {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .contactUpperMain p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .contactMain p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .theButtonSpanTwo img {
+    width: 3.2%;
+  }
+}

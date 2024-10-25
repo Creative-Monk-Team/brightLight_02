@@ -1,0 +1,438 @@
+.dashboard {
+  width: 1440px;
+  margin: auto;
+  padding: 30px 0px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.paginationButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.paginationButtons button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid #132f46;
+  color: #132f46;
+  font-size: 15px;
+  transition: 0.3s all ease-in-out;
+}
+
+.activePageButton {
+  background-color: #132f46 !important;
+  color: white !important;
+  border: 1px solid #132f46;
+}
+
+.blogContentTageSelectionArea {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  overflow-x: scroll;
+}
+
+.tagsArea {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 25px;
+  overflow-x: auto;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.tagsArea::-webkit-scrollbar {
+  display: block !important;
+  height: 6px !important;
+  background-color: #eeeeee !important;
+  border-radius: 10px;
+}
+
+.tagsArea::-webkit-scrollbar-thumb {
+  background-color: #132f46 !important;
+  border-radius: 10px;
+}
+
+.tag {
+  font-size: 14px;
+  flex-shrink: 0;
+  border: 1px solid black;
+  padding: 5px 25px;
+  border-radius: 5px;
+  color: white;
+  background-color: #132f46;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.tagsArea div:disabled {
+  opacity: 0.5;
+}
+
+.dashboard *:focus {
+  outline: none;
+}
+
+.shortCodeImage {
+  display: block;
+  width: 300px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.copyButton {
+  background-color: #132f46;
+  color: white;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.precautionLine {
+  color: #132f46;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  line-height: 1.5;
+}
+
+.copyButton:disabled {
+  opacity: 0.5;
+}
+
+.dashboard input:focus {
+  outline: none;
+}
+
+.topBar {
+  width: 1440px;
+  margin: auto;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 25px;
+}
+
+.grayBg {
+  background-color: rgb(241, 241, 241);
+  padding: 50px 0px;
+}
+
+.leftPanel {
+  width: 29%;
+  padding: 30px 20px;
+  background-color: white;
+  border-radius: 5px;
+  height: 75vh;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.leftPanel::-webkit-scrollbar {
+  display: block !important;
+  width: 8px;
+  background-color: white !important;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.leftPanel::-webkit-scrollbar-thumb {
+  background-color: #256497 !important;
+  border-radius: 2px;
+}
+
+.rightPanel {
+  width: 69%;
+  padding: 30px 20px;
+  background-color: white;
+  border-radius: 5px;
+  height: 75vh;
+  overflow-y: scroll;
+}
+
+.rightPanel::-webkit-scrollbar {
+  display: block !important;
+  width: 8px;
+  background-color: white !important;
+  border-radius: 2px;
+}
+
+.rightPanel::-webkit-scrollbar-thumb {
+  background-color: #256497 !important;
+  border-radius: 2px;
+}
+
+.logo {
+  width: 60px;
+}
+
+.topBarSearch {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  height: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.topBarSearch input {
+  width: 80%;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+}
+
+.topBarSearch input:focus {
+  outline: none;
+}
+
+.searchBtn {
+  width: 10%;
+  padding: 10px;
+  border-radius: 40px;
+  border: none;
+  background-image: linear-gradient(to right, #132f46, #5996c8);
+  cursor: pointer;
+  height: 40px;
+}
+
+.userDiv {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.userDiv img {
+  width: 50px;
+  cursor: pointer;
+}
+
+.userDropdown {
+  width: 100px;
+  position: absolute;
+  padding: 10px;
+  background-color: white;
+  top: 80px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all ease-in-out;
+}
+
+.userDropdown.active {
+  top: 60px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.userDropdown p {
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.leftPanel div {
+  width: 100%;
+  padding: 20px 10px;
+  border: 1px solid #132f46;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #132f46;
+  font-size: 15px;
+  transition: 0.3s all ease-in-out;
+  background-color: white;
+  cursor: pointer;
+}
+
+.leftPanel div.activePage {
+  background-color: #132f46;
+  border: 1px solid white;
+  color: white;
+}
+
+.sections {
+  width: 100%;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sections div {
+  padding: 10px 25px;
+  border: 1px solid #132f46;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #132f46;
+  font-size: 15px;
+  transition: 0.3s all ease-in-out;
+  background-color: white;
+  cursor: pointer;
+}
+
+.sections div.activeSection {
+  background-color: #132f46;
+  border: 1px solid white;
+  color: white;
+}
+
+.singleSectionData {
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+
+.singleSectionData input {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(232, 232, 232);
+}
+
+.singleSectionData textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(232, 232, 232);
+}
+
+.singleSectionData textarea:hover {
+  outline: none;
+}
+
+.blogItem {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.blogItem h4 {
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.blogItem .blogImage {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.editForm input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid rgb(236, 236, 236);
+  border-radius: 5px;
+}
+
+.noBlogsPara {
+  font-size: 14px;
+}
+
+.editForm textarea {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(236, 236, 236);
+}
+
+.editIcons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.editIcons img {
+  width: 17px;
+  cursor: pointer;
+}
+
+.existingImage {
+  width: 100%;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.existingImageSmall {
+  width: 150px;
+  margin: 20px 0px;
+}
+
+@media all and (max-width: 1500px) {
+  .dashboard {
+    width: 95%;
+  }
+
+  .topBar {
+    width: 95%;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .dashboard {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .leftPanel {
+    width: 100%;
+  }
+
+  .rightPanel {
+    width: 100%;
+  }
+}
+.leftPanel p {
+  text-align: center;
+}

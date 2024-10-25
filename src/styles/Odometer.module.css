@@ -1,0 +1,12 @@
+.odometer {
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    animation-duration: 3s;
+    margin-bottom: -10px;
+  }
+  @media all and (max-width: 1150px) {
+    .odometer {
+      font-size: 40px;
+  }
+}

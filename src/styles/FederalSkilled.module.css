@@ -1,0 +1,515 @@
+.bannerParent {
+  background-image: url("../assets//canadaBlue.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 100px 0px;
+  padding-top: 230px;
+}
+
+.bannerHeading {
+  width: 1440px;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.bannerHeading h1 {
+  font-size: 60px;
+  padding-bottom: 80px;
+  color: #dec18f;
+}
+
+.bannerHeading p {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 45px;
+}
+
+.container {
+  /* width: 1440px; */
+  margin: 50px auto;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #132f46;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  /* margin-bottom: 20px; */
+}
+
+.header h4 {
+  color: #4d4d4d;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.subHeader {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.headerLineParent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerLineParent h3 {
+  width: 100%;
+}
+
+.headerLineParent p {
+  height: 1.1px;
+  width: 100%;
+  background-color: #132f46;
+}
+
+.headerLineParent h3 {
+  color: #132f46;
+  font-weight: 500;
+}
+
+.radioGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.radioGroup3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+
+.radioGroup2 {
+  margin-bottom: 20px;
+}
+
+.radioItem {
+  color: #666666;
+  width: 20%;
+  margin-bottom: 10px;
+}
+
+.radioItem2 {
+  color: #666666;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.points {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.points input {
+  margin-left: 10px;
+  width: 50px;
+  text-align: center;
+}
+
+.dropdown {
+  width: 240px;
+  height: 45px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  background-color: #e6e6e6;
+  margin-bottom: 20px;
+  color: #4d4d4d;
+  cursor: pointer;
+}
+
+.radioItem label{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.radioItem2 label{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* // */
+
+.containerParent {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 1440px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.firstSection {
+  width: 66%;
+}
+
+.pointsSection {
+  margin: 50px auto;
+  width: 350px;
+  position: sticky;
+  top: 100px;
+  left: 20%;
+}
+
+.pointContainer {
+  /* height: 300px; */
+  /* width: 420px; */
+  margin: auto;
+  align-items: center;
+  padding: 20px 0px;
+  /* border: 1px solid #ddd; */
+  border-radius: 20px;
+  background-color: #132f46;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+
+.pointContainer h2 {
+  /* width: 420px; */
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+}
+
+.points h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.disclaimer{
+  margin-top: 20px;
+}
+.disclaimer p{
+  font-size: 11px;
+}
+.colorRedDis{
+  color: rgb(163, 13, 13);
+}
+
+.actionButton{
+  border: 2px solid #132f46;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px 10px;
+  cursor: pointer;
+}
+
+.actionButton h2{
+font-size: 22px;
+text-align: center;
+
+}
+
+.actionButton p{
+  font-size: 14px;
+  text-align: center;
+  margin-top: 5px;
+  }
+  .actionButton:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+
+@media all and (max-width: 1200px){
+  .pointsSection {
+    margin: 50px auto;
+    width: 300px;
+  }
+}
+
+@media all and (max-width: 1440px) {
+  .containerParent {
+    width: 95%;
+    margin: auto;
+  }
+  .bannerHeading{
+    width: 95%;
+  }
+}
+
+
+@media all and (max-width: 1400px) {
+  .bannerHeading h1{
+    font-size: 45px;
+  }
+  .bannerHeading p{
+    font-size: 25px;
+  }
+}
+
+
+@media all and (max-width: 1080px) {
+  .bannerHeading h1{
+    font-size: 42px;
+  }
+  .bannerHeading p{
+    font-size: 18px;
+    padding-bottom: 40px;
+  }
+  .containerParent {
+    flex-direction: column;
+  }
+  .firstSection {
+    width: 95%;
+    margin: auto;
+  }
+
+  .pointsSection {
+    width: 99%;
+    align-items: center;
+    margin: auto;
+  }
+
+  .pointContainer {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+  }
+
+  .pointContainer h2 {
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+
+  .pointContainer h1 {
+    font-size: 28px;
+  }
+
+  .header {
+    margin-bottom: 0px;
+  }
+
+  .headerLineParentPara p {
+    width: 40%;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .pointContainer {
+    padding: 20px 30px;
+  }
+
+  .pointContainer h2 {
+    font-size: 20px;
+  }
+
+  .pointContainer h1 {
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 860px) {
+  .bannerHeading h1{
+    font-size: 40px;
+    padding-bottom: 40px;
+  }
+  .bannerHeading p{
+    font-size: 18px;
+    padding-bottom: 20px;
+    line-height: 30px;
+  }
+}
+
+@media all and (max-width: 730px) {
+  .headerLineParent h3 {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 700px) {
+
+  .bannerHeading h1{
+    font-size: 32px;
+    padding-bottom: 40px;
+  }
+  .bannerHeading p{
+    font-size: 15px;
+    padding-bottom: 20px;
+    line-height: 30px;
+  }
+  .pointContainer {
+    padding: 15px 25px;
+  }
+
+  .pointContainer h2 {
+    font-size: 14px;
+  }
+
+  .pointContainer h1 {
+    font-size: 21px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .radioItem {
+    font-size: 12px;
+  }
+
+  .radioItem input {
+    width: 8px;
+  }
+  .radioItem2 input {
+    width: 8px;
+  }
+
+  .headerLineParentPara p {
+    width: 35%;
+  }
+}
+
+@media all and (max-width: 530px) {
+
+  .radioItem2{
+    font-size: 12px;
+  }
+
+  .pointContainer {
+    padding: 15px 25px;
+  }
+
+  .container h4{
+    font-size: 19px;
+  }
+
+  .pointContainer h2 {
+    font-size: 13px;
+  }
+
+  .pointContainer h1 {
+    font-size: 18px;
+  }
+
+  .headerLineParent h3 {
+    font-size: 16px;
+  }
+  .headerLineParentPara p{
+    width: 20%;
+  }
+  .headerLineParentPara {
+    width: 20%;
+  }
+  .radioItem{
+    width: 40%;
+  }
+}
+
+@media all and (max-width: 490px) {
+
+  .dropdown {
+    width: 180px;
+    font-size: 14px;
+  }
+  .dropdown:focus {
+    border: none;
+  }
+
+  .bannerHeading h1{
+    font-size: 30px;
+    padding-bottom: 40px;
+  }
+
+  .bannerHeading p{
+    font-size: 15px;
+    padding-bottom: 20px;
+    line-height: 30px;
+  }
+  .pointContainer {
+    padding: 15px 20px;
+  }
+
+  .pointContainer h2 {
+    font-size: 11px;
+  }
+
+  .pointContainer h1 {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 460px) {
+  .subHeader h4{
+    font-size: 15px;
+  }
+  .radioItem2{
+    font-size: 10px;
+  }
+  .radioItem{
+    font-size: 10px;
+  }
+
+  .radioItem input {
+    width: 6px;
+  }
+
+  .headerLineParentPara {
+    width: 40% !important;
+  }
+  .headerLineParentPara p{
+    width: 16% !important;
+  }
+
+  .headerLineParent h3{
+    font-size: 14px;
+  }
+  .headerLineParent{
+    margin-bottom: 30px;
+  }
+}
+
+
+@media all and (max-width: 405px) {
+  /* .headerLineParentpara p{
+    width: 25%;
+  } */
+
+  .headerLineParentPara {
+    width: 40% !important;
+  }
+
+  .headerLineParentPara p{
+    width: 16% !important;
+  }
+
+
+  .headerLineParent h3{
+    font-size: 12px;
+  }
+  .radioItem input {
+    width: 6px;
+  }
+
+}
+
+
+@media all and (max-width: 370px) {
+  .pointContainer {
+    padding: 15px 10px;
+    justify-content: space-evenly;
+  }
+
+  .pointContainer h2 {
+    font-size: 9.5px;
+  }
+
+  .pointContainer h1 {
+    font-size: 15px;
+  }
+}

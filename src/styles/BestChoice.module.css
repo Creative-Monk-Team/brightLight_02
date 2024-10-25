@@ -1,0 +1,113 @@
+.bestChoiceParent {
+  background-image: url("../assets/blue-map.png");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0px 100px 0px;
+  margin-bottom: -1px;
+}
+
+.bestChoice {
+  width: 1440px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.bestChoiceHeading h2 {
+  color: #d2ae6d;
+  font-size: 50px;
+  width: 65%;
+  text-align: right;
+}
+
+.bestChoiceHeading {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+
+.plane {
+  position: relative;
+  z-index: 3;
+  top: 150px;
+  left: 5px;
+  transition: 0.1s top ease;
+}
+@media (max-width: 1360px) {
+  .bestChoice {
+    width: 95%;
+  }
+  .bestChoiceHeading h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .bestChoiceHeading h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .trackImage {
+    width: 60%;
+  }
+  .plane {
+    width: 12%;
+  }
+}
+
+@media (max-width: 865px) {
+  .bestChoiceHeading {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .bestChoiceHeading {
+    width: 60%;
+  }
+
+  .bestChoiceHeading h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .bestChoiceHeading {
+    width: 60%;
+    top: 20px;
+  }
+
+  .bestChoiceHeading h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .bestChoiceHeading {
+    width: 60%;
+    top: 40px;
+  }
+
+  .bestChoiceHeading h2 {
+    font-size: 17px;
+  }
+}
+@media (max-width: 337px) {
+  .bestChoiceHeading {
+    width: 60%;
+    top: 30px;
+  }
+
+  .bestChoiceHeading h2 {
+    font-size: 15px;
+  }
+}

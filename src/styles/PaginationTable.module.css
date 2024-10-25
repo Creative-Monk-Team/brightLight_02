@@ -1,0 +1,142 @@
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background-color: #0a3a5b;
+  color: white;
+}
+
+.paginationBorder button{
+  border: none;
+  background-color: transparent;
+}
+
+.pageNumberPagination{
+  color: white;
+}
+.table th,
+.table td {
+  padding: 12px;
+  /* border: 1px solid #ffffff; */
+  border-bottom: 1px solid #ffffff;
+  position: relative;
+}
+
+.table th {
+  background-color: #e6e6e6;
+  color: #092d47;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownArrow {
+  margin-left: 8px;
+  font-size: 10px;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #0a3a5b;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: max-content;
+}
+
+.dropdownContent button {
+  color: white;
+  padding: 8px 16px;
+  text-align: left;
+  border: none;
+  background: none;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+
+.dropdownContent button:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.filterContainer p{
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #092d47;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+
+.filterContainer {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.filterContainer input {
+  border: 1px solid rgb(202, 202, 202);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.filterContainer input:focus {
+  outline: none;
+}
+
+.filterSelect {
+  border: 1px solid rgb(202, 202, 202);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.filterSelect:focus {
+  outline: none;
+}
+
+.dataAll a{
+  color: white;
+}
+.table tr:hover{
+  background-color: #092d47;
+  color: wheat;
+}

@@ -1,0 +1,292 @@
+.bannerParent {
+  background-image: url("../assets/canadaBlue.jpeg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0px;
+  padding-top: 150px;
+}
+.banner {
+  width: 1440px;
+  margin: auto;
+  text-align: center;
+}
+
+.bannerHeading h1 {
+  color: #e8c47c;
+  font-size: 50px;
+}
+
+.bannerHeading p {
+  color: #ffffff;
+  width: 74%;
+  margin: auto;
+  font-size: 25px;
+  line-height: 1.8;
+  padding-top: 60px;
+}
+
+.bannerHeadingRotateParent {
+  width: 700px;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* gap: 10px; */
+  align-items: center;
+  color: white;
+  /* margin-top: 150px; */
+}
+
+.bannerHeadingRotate {
+  transform: rotate(-90deg);
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+
+.bannerHeadingRotatePara p {
+  text-align: left;
+  padding-bottom: 8px;
+  font-size: 28px;
+}
+
+
+.bannerHeadingRotatePara p {
+  cursor: pointer;
+}
+  
+  @media (max-width: 1450px) {
+    .banner {
+      width: 95%;
+    }
+  }
+  
+  @media (max-width: 1080px) {
+    .bannerHeadingRotateParent {
+      flex-direction: column;
+      text-align: center;
+      /* margin-top: 50px; */
+      position: relative;
+      width: 100%;
+    }
+  
+    .bannerHeadingRotate {
+      transform: none;
+      border: none;
+      padding-bottom: 0;
+      font-size: 24px;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+  
+    .bannerHeadingRotate::after {
+      content: "\25BC";
+      font-size: 16px;
+      margin-left: 10px;
+      transition: transform 0.3s;
+    }
+  
+    .bannerHeadingRotateParent.active .bannerHeadingRotate::after {
+      transform: rotate(180deg);
+    }
+  
+    .bannerHeadingRotatePara {
+      margin-left: 0;
+      display: none;
+      background-color: #f7f7f7;
+      padding: 10px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding-top: 25px 0px;
+    }
+  
+    .bannerHeadingRotateParent.active .bannerHeadingRotatePara {
+      display: block;
+    }
+  
+    .bannerHeadingRotatePara p {
+      font-size: 18px;
+      padding: 10px 0;
+      color: #00273f;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .title {
+    font-size: 2.1em;
+    margin-bottom: 20px;
+    color: #e8c47c;
+    text-align: center;
+  }
+  
+  .description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    font-size: 1.8em;
+    margin-bottom: 20px !important;
+    margin-top: 50px !important;
+  }
+
+  .section{
+    margin-bottom: 20px;
+  }
+  
+  .subheading {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .criteria {
+    /* margin-top: 20px; */
+    margin-top: 30px;
+  }
+  
+  .list {
+    list-style-type: disc;
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+  
+  .listItem {
+    margin-bottom: 10px;
+  }
+  .listItem h3{
+color: #333;
+  }
+  
+  .nestedList {
+    list-style-type: circle;
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  
+  .nestedListItem {
+    margin-bottom: 5px;
+  }
+  
+  .occupations {
+    margin-top: 20px;
+  }
+  
+  .occupationTitle {
+    font-size: 1.25em;
+    margin-top: 15px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.125em;
+    color: white;
+    background-color: #00273f;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    opacity: 0.9;
+    text-decoration: none;
+  }
+  
+  .title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 34px;
+  }
+
+  .container h2{
+    margin-top: 30px;
+    margin-bottom: 18px;
+    font-size: 28px;
+    text-align: left;
+    color: #00273f;
+  }
+  .occupations {
+    margin: 20px;
+  }
+  
+  .occupationTitle {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+  
+  .tableHeader {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    background-color: #f4f4f4;
+  }
+  
+  .tableCell {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+    
+  }
+
+  .occupationPara{
+    margin-top: 20px;
+  }
+  
+  .section {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .section.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  @media (max-width: 400px) {
+
+    .container h2{
+      font-size: 18px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .title{
+
+      font-size: 24px;
+    }
+  }

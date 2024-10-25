@@ -1,0 +1,649 @@
+.contactTopSection {
+  width: 1440px;
+  margin: auto;
+  text-align: center;
+  color: #132f46;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 200px;
+}
+
+.contactTopSection h1 {
+  margin-bottom: 80px;
+  font-size: 50px;
+}
+
+.contactTopSection h3 {
+  margin-bottom: 5px;
+}
+
+.contactTopSection p {
+  font-size: 16px;
+  width: 67%;
+  margin: auto;
+  text-align: center;
+  color: #132f46;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  line-height: 1.5;
+}
+
+.contactMapSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../assets/contactMap.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  object-fit: cover;
+  padding: 80px 0px;
+}
+
+.contactMap {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.contactForm {
+  width: 1000px;
+}
+
+.inputBarFlexSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.inputBarFlexSection .inputBar {
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 49%;
+}
+
+.inputBar input {
+  border: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  width: 100%;
+  height: 60px;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.inputBar:hover {
+  transform: translateY(-5px); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contactMessageBox:hover{
+  transform: translateY(-5px); 
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.inputBar input:focus {
+  border: none;
+  outline: none;
+}
+
+.inputBar span {
+  margin-top: -40px;
+  font-size: 20px;
+}
+
+.formCategory {
+  width: 100%;
+  border: 3px solid #132f46;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.formCategory div {
+  width: 49%;
+  border: 1px solid #132f46;
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+
+.formCategory div.active {
+  border: 1px solid #132f46;
+  color: white;
+  background-color: #132f46;
+}
+
+.formCategory div.notActive {
+  border: 1px solid transparent;
+  color: rgb(200, 200, 200);
+  background-color: transparent;
+}
+
+.contactMessageBox {
+  width: 100%;
+  border: 2px solid gray;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+.contactMessageBox textarea {
+  border: none;
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+
+.contactMessageBox textarea:focus {
+  outline: none;
+}
+
+.contactMessageBox span {
+  margin-top: -5px;
+  font-size: 20px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.sendMessageButton {
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #2983cc, #132f46);
+  background-size: 200% 100%; 
+  animation: gradientAnimation 14s linear infinite; 
+  color: white;
+  border: 2px solid transparent; 
+  padding: 15px 25px;
+  font-size: 17px;
+  border-radius: 50px;
+  position: relative; 
+  transition: transform 0.3s ease, border-color 0.3s ease; 
+  cursor: pointer;
+}
+
+.sendMessageButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid white; 
+  border-radius: 50px;
+  box-sizing: border-box; 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sendMessageButton:hover::before {
+  opacity: 1; 
+}
+
+.sendMessageButton:hover {
+  transform: translateY(-5px);
+}
+
+
+.agreeMessageDiv {
+  text-align: center;
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.agreeMessageDiv span {
+  font-size: 13px;
+}
+
+.agreeMessageDiv a {
+  color: black;
+  text-decoration: underline;
+  font-size: 13px;
+}
+
+.officeDetailsSection {
+  width: 1440px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.officeDetailsSection iframe {
+  width: 47%;
+  height: 400px;
+  border-radius: 10px;
+  border: none;
+}
+
+.officeSection {
+  width: 47%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.boldtext {
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.officeSection div h5 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.officeInfoSection {
+  width: 49%;
+}
+
+.officeInfoSection div {
+  margin-bottom: 40px;
+}
+
+
+/* Contact.module.css */
+
+/* Keyframes for animations */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animation class */
+.slideInFromTop {
+  animation: slideInFromTop 0.8s ease-out forwards;
+}
+.slideInFromLeft {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+}
+
+/* Hidden class for initial state */
+.hidden {
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+}
+
+/* Ensure elements are relatively positioned for transitions */
+.section {
+  position: relative;
+}
+
+
+select {
+  width: 100%;
+  padding: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  border: none;
+}
+
+option {
+  background-color: #fff;
+  border: none;
+  color: #333;
+  padding: 10px;
+  font-size: 16px;
+}
+
+option:hover {
+  background-color: #f0f0f0; 
+}
+
+option:checked {
+  background-color: #e0e0e0; 
+}
+
+
+@media all and (max-width: 1450px) {
+  .contactTopSection {
+    width: 1200px;
+  }
+
+  .officeDetailsSection{
+    width: 1200px;
+  }
+
+}
+
+@media all and (max-width: 1240px) {
+  .officeDetailsSection{
+    width: 1000px;
+  }
+}
+
+@media all and (max-width: 1190px) {
+  .contactTopSection {
+    width: 850px;
+  }
+
+}
+
+@media all and (max-width: 1080px) {
+  .contactTopSection {
+    width: 850px;
+  }
+  .contactForm {
+    width: 600px;
+  }
+  .officeDetailsSection{
+    flex-direction: column;
+    /* width: 100%; */
+  }
+
+  .officeDetailsSection iframe {
+    width: 850px;
+  }
+  .officeSection{
+    /* width: 100%; */
+    margin-top: 60px;
+  }
+
+}
+
+@media all and (max-width: 960px) {
+  .officeDetailsSection{
+    width: 100%;
+  }
+
+  .officeDetailsSection iframe {
+    width: 600px;
+  }
+}
+
+@media all and (max-width: 880px) {
+  .contactTopSection {
+    width: 650px;
+  }
+  .contactForm {
+    width: 600px;
+  }
+  .inputBarFlexSection{
+    flex-direction: column;
+  }
+  .contactTopSection p{
+    width: 100%;
+  }
+  .inputBarFlexSection .inputBar {
+    width: 100%;
+  }
+  .officeSection{
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 690px) {
+  .contactTopSection {
+    width: 600px;
+  }
+  .contactForm {
+    width: 500px;
+  }
+  .officeSection{
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 690px){
+
+  .officeDetailsSection iframe {
+    width: 500px;
+  }
+
+  .officeSection{
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .contactTopSection {
+    width: 400px;
+  }
+  .contactForm {
+    width: 400px;
+  }
+
+  .formCategory div.active {
+    font-size: 17px;
+  }
+
+  .formCategory div.notActive{
+    font-size: 17px;
+  }
+
+  .contactMessageBox textarea {
+    height: 200px;
+  }
+
+  .officeDetailsSection iframe {
+    width: 450px;
+  }
+
+  .officeSection{
+    width: 74%;
+  }
+  .officeSection div h5 {
+    font-size: 14px;
+  }
+  .officeSection div p {
+    font-size: 13px;
+  }
+
+}
+
+@media all and (max-width: 490px) {
+  .contactTopSection h1{
+    font-size: 40px;
+  }
+  .contactTopSection h3{
+    font-size: 15px;
+  }
+  .contactMessageBox textarea {
+    height: 160px;
+  }
+
+  .officeDetailsSection iframe {
+    width: 420px;
+  }
+
+  .officeSection{
+    width: 77%;
+  }
+  .officeSection div h5 {
+    font-size: 14px;
+  }
+  .officeSection div p {
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 460px) {
+  .contactTopSection {
+    width: 340px;
+  }
+  .contactForm {
+    width: 340px;
+  }
+  .formCategory div.active {
+    font-size: 14px;
+  }
+
+  .formCategory div.notActive{
+    font-size: 14px;
+  }
+
+  .officeDetailsSection iframe {
+    width: 390px;
+    height: 190px;
+  }
+
+  .officeSection{
+    width: 79%;
+  }
+  .officeSection div h5 {
+    font-size: 14px;
+  }
+  .officeSection div p {
+    font-size: 13px;
+  }
+
+}
+@media all and (max-width: 420px){
+  .officeDetailsSection iframe {
+    width: 320px;
+    height: 190px;
+  }
+
+  .officeSection{
+    width: 82%;
+  }
+  .officeSection div h5 {
+    font-size: 14px;
+  }
+  .officeSection div p {
+    font-size: 13px;
+  }
+  .officeInfoSection {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .contactTopSection {
+    width: 300px;
+  }
+  .contactTopSection h1{
+    margin-bottom: 40px;
+  }
+  .contactForm {
+    width: 300px;
+  }
+  .formCategory div.active {
+    font-size: 11px;
+  }
+
+  .formCategory div.notActive{
+    font-size: 11px;
+  }
+  .contactMessageBox textarea {
+    height: 150px;
+  }
+
+  .officeDetailsSection iframe {
+    width: 300px;
+    height: 190px;
+  }
+
+  .officeSection{
+    width: 82%;
+  }
+  .officeSection div h5 {
+    font-size: 11px;
+  }
+  .officeSection div p {
+    font-size: 11px;
+  }
+  .officeInfoSection {
+    width: 51%;
+  }
+  
+}
+
+@media all and (max-width: 330px) {
+  .contactTopSection {
+    width: 270px;
+  }
+  .contactForm {
+    width: 270px;
+  }
+  .formCategory div.active {
+    font-size: 11px;
+    height: 60px;
+  }
+
+  .formCategory div.notActive{
+    font-size: 11px;
+    height: 60px;
+  }
+  .contactMessageBox textarea {
+    height: 150px;
+  }
+
+  .officeDetailsSection iframe {
+    width: 270px;
+    height: 190px;
+  }
+
+  .officeSection{
+    width: 81%;
+    margin: auto;
+    margin-top: 40px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .officeSection div h5 {
+    font-size: 13px;
+  }
+  .officeSection div p {
+    font-size: 11px;
+  }
+  /* .officeInfoSection {
+    width: 52%;
+ 
+  } */
+
+}
