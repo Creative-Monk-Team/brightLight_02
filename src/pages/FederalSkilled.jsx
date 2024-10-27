@@ -282,6 +282,14 @@ const FederalSkilled = () => {
     experiencePoints +
     adaptabilityPoints;
 
+  const displayResult = isNaN(totalPoints) ? "Not Eligible To Apply" : totalPoints;
+
+  let resultClass = isNaN(totalPoints) ? "notEligible" : "eligible";
+
+  useEffect(() => {
+    resultClass = isNaN(totalPoints) ? "notEligible" : "eligible";
+  },[displayResult, resultClass])
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.innerWidth > 1080) {
@@ -991,7 +999,7 @@ const FederalSkilled = () => {
                       <h2>Total Points</h2>
                     </div>
                     <div className={styles.points}>
-                      <h1>{totalPoints}</h1>
+                      <h1 className={styles.resultClass} style={resultClass == "notEligible" ? {fontSize: "20px"} : {}}>{displayResult}</h1>
                     </div>
                   </div>
                   {!isFooterVisible && (
@@ -1046,7 +1054,7 @@ const FederalSkilled = () => {
                   <h2>Total Points</h2>
                 </div>
                 <div className={styles.points}>
-                  <h1>{totalPoints}</h1>
+                  <h1 style={resultClass == "notEligible" ? {fontSize: "20px"} : {}}>{displayResult}</h1>
                 </div>
               </div>
               {!isFooterVisible && (
