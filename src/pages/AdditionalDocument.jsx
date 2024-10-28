@@ -77,6 +77,33 @@ const AdditionalDocument = () => {
     };
   }, []);
 
+  const extractStrongText = (htmlString) => {
+    if (typeof htmlString !== "string") return "";
+    const strongMatch = htmlString.match(/<strong>(.*?)<\/strong>/);
+    return strongMatch ? strongMatch[1] : "";
+  };
+
+  const extractRemainingText = (htmlString) => {
+    if (typeof htmlString !== "string") return "";
+    return htmlString.replace(/<strong>.*?<\/strong>/, "").trim();
+  };
+
+  const fetchedValue91 = pData?.wcu1;
+  const strongText91 = extractStrongText(fetchedValue91);
+  const remainingText91 = extractRemainingText(fetchedValue91);
+  
+  const fetchedValue92 = pData?.wcu2;
+  const strongText92 = extractStrongText(fetchedValue92);
+  const remainingText92 = extractRemainingText(fetchedValue92);
+  
+  const fetchedValue93 = pData?.wcu3;
+  const strongText93 = extractStrongText(fetchedValue93);
+  const remainingText93 = extractRemainingText(fetchedValue93);
+  
+  const fetchedValue94 = pData?.wcu4;
+  const strongText94 = extractStrongText(fetchedValue94);
+  const remainingText94 = extractRemainingText(fetchedValue94);
+
   return (
     <>
       <Helmet>
@@ -235,25 +262,21 @@ const AdditionalDocument = () => {
             id="why-choose-us"
             ref={(el) => (sectionsRef.current[9] = el)}
           >
-            <h2>Why Choose Us?</h2>
-            <ul style={{marginLeft: "40px"}}>
-              <li>
-                <strong>Experienced Team:</strong> Over a decade of experience
-                in handling Immigration applications with a high success rate.
-              </li>
-              <li>
-                <strong>Tailored Approach:</strong> Personalized services and
-                strategies based on your specific case.
-              </li>
-              <li>
-                <strong>High Success Rate:</strong> Proven track record using
-                case law and precedents for positive results.
-              </li>
-              <li>
-                <strong>Comprehensive Support:</strong> Assistance from the
-                start of the application process to obtaining your PR.
-              </li>
-            </ul>
+         <h2>  {pData?.WhyChooseUsHeading01 }</h2>
+          <ul style={{marginLeft: "40px"}}>
+            <li>
+              <strong>{strongText91}</strong>{" "} {remainingText91}
+            </li>
+            <li>
+            <strong>{strongText92}</strong>{" "} {remainingText92}
+            </li>
+            <li>
+            <strong>{strongText93}</strong>{" "} {remainingText93}
+            </li>
+            <li>
+            <strong>{strongText94}</strong>{" "} {remainingText94}
+            </li>
+          </ul>
           </section>
         </main>
       </div>
