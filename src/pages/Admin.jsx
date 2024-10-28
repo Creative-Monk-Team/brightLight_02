@@ -111,6 +111,22 @@ import GlobalStreamLMIAContent from "../admin_sections/GlobalStreamLMIA";
 import GlobalStreamLMIAMeta from "../admin_sections/GlobalStreamLMIAMeta";
 import HealthcareTargetedDrawContent from "../admin_sections/HealthcareTargetedDraw";
 import HealthcareTargetedDrawMeta from "../admin_sections/HealthcareTargetedDrawMeta";
+import HumanContent from "../admin_sections/HumanitarianCompassionateMeta";
+import HumanPageContent from "../admin_sections/HumanitarianCompassionate";
+import InCaregiverContent from "../admin_sections/InCaregiver";
+import InCaregiverMeta from "../admin_sections/InCaregiverMeta";
+import InsideCanadaContent from "../admin_sections/InsideCanada";
+import InsideCanadaMeta from "../admin_sections/InsideCanadaMeta";
+import InternationalGraduateContent from "../admin_sections/InternationalGraduate";
+import InternationalGraduateMeta from "../admin_sections/InternationalGraduateMeta";
+import InternationalPostGraduateContent from "../admin_sections/InternationalPostGraduate";
+import InternationalPostGraduateMeta from "../admin_sections/InternationalPostGraduateMeta";
+import LMIAReviewedContent from "../admin_sections/LMIAReviewed";
+import LMIAReviewedMeta from "../admin_sections/LMIAReviewedMeta";
+import LonelyCanadianContent from "../admin_sections/LonelyCanadian";
+import LonelyCanadianMeta from "../admin_sections/LonelyCanadianMeta";
+import LowWageLMIAContent from "../admin_sections/LowWageLMIA";
+import LowWageLMIAMeta from "../admin_sections/LowWageLMIAMeta";
 
 let Admin = () => {
   let { logout } = useAuth();
@@ -1410,6 +1426,92 @@ let Admin = () => {
                     <p>Healthcare Tageted Draws Page</p>
                   </div>
 
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "humanitarian_compassionate"
+                        ? styles.activePage
+                        : ""
+                    }`}
+                    onClick={() =>
+                      handlePageClick("humanitarian_compassionate")
+                    }
+                  >
+                    <p>Humanitarian Compassionate Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "in_home_caregiver"
+                        ? styles.activePage
+                        : ""
+                    }`}
+                    onClick={() => handlePageClick("in_home_caregiver")}
+                  >
+                    <p>In Home Caregiver Program Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "inside_canada_caregiver"
+                        ? styles.activePage
+                        : ""
+                    }`}
+                    onClick={() => handlePageClick("inside_canada_caregiver")}
+                  >
+                    <p>Inside Canada Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "international_graduate"
+                        ? styles.activePage
+                        : ""
+                    }`}
+                    onClick={() => handlePageClick("international_graduate")}
+                  >
+                    <p>International Graduate Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "international_post_graduate"
+                        ? styles.activePage
+                        : ""
+                    }`}
+                    onClick={() =>
+                      handlePageClick("international_post_graduate")
+                    }
+                  >
+                    <p>International Post Graduate Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "lmia_reviewed" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("lmia_reviewed")}
+                  >
+                    <p>LMIA Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "lonely_canadian" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("lonely_canadian")}
+                  >
+                    <p>Lonely Canadian Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "low_wage_lmia" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("low_wage_lmia")}
+                  >
+                    <p>Low Wage LMIA Page</p>
+                  </div>
+
                   <div className={styles.paginationButtons}>
                     <button
                       className={`${styles.paginationButton} ${
@@ -2447,6 +2549,242 @@ let Admin = () => {
                   </div>
                 )}
 
+                {activePage === "humanitarian_compassionate" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "humanitarian_compassionate_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("humanitarian_compassionate_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "humanitarian_compassionate_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("humanitarian_compassionate_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "in_home_caregiver" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "in_home_caregiver_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("in_home_caregiver_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "in_home_caregiver_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("in_home_caregiver_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "inside_canada_caregiver" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "inside_canada_caregiver_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("inside_canada_caregiver_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "inside_canada_caregiver_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("inside_canada_caregiver_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "international_graduate" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "international_graduate_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("international_graduate_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "international_graduate_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("international_graduate_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "international_post_graduate" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "international_post_graduate_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick(
+                          "international_post_graduate_content"
+                        )
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "international_post_graduate_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("international_post_graduate_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "lmia_reviewed" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "lmia_reviewed_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("lmia_reviewed_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "lmia_reviewed_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("lmia_reviewed_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "lonely_canadian" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "lonely_canadian_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("lonely_canadian_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "lonely_canadian_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("lonely_canadian_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "low_wage_lmia" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "low_wage_lmia_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("low_wage_lmia_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "low_wage_lmia_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("low_wage_lmia_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
                 <div className={styles.roshiSection}>
                   {activePage === "bcpnp_page" &&
                     activeSection === "bcpnp_page_content" && (
@@ -2705,6 +3043,78 @@ let Admin = () => {
                   {activePage === "healthcare_targated_draw" &&
                     activeSection === "healthcare_targated_draw_meta" && (
                       <HealthcareTargetedDrawMeta />
+                    )}
+
+                  {activePage === "humanitarian_compassionate" &&
+                    activeSection === "humanitarian_compassionate_content" && (
+                      <HumanPageContent />
+                    )}
+                  {activePage === "humanitarian_compassionate" &&
+                    activeSection === "humanitarian_compassionate_meta" && (
+                      <HumanContent />
+                    )}
+
+                  {activePage === "in_home_caregiver" &&
+                    activeSection === "in_home_caregiver_content" && (
+                      <InCaregiverContent />
+                    )}
+                  {activePage === "in_home_caregiver" &&
+                    activeSection === "in_home_caregiver_meta" && (
+                      <InCaregiverMeta />
+                    )}
+
+                  {activePage === "inside_canada_caregiver" &&
+                    activeSection === "inside_canada_caregiver_content" && (
+                      <InsideCanadaContent />
+                    )}
+                  {activePage === "inside_canada_caregiver" &&
+                    activeSection === "inside_canada_caregiver_meta" && (
+                      <InsideCanadaMeta />
+                    )}
+
+                  {activePage === "international_graduate" &&
+                    activeSection === "international_graduate_content" && (
+                      <InternationalGraduateContent />
+                    )}
+                  {activePage === "international_graduate" &&
+                    activeSection === "international_graduate_meta" && (
+                      <InternationalGraduateMeta />
+                    )}
+
+                  {activePage === "international_post_graduate" &&
+                    activeSection === "international_post_graduate_content" && (
+                      <InternationalPostGraduateContent />
+                    )}
+                  {activePage === "international_post_graduate" &&
+                    activeSection === "international_post_graduate_meta" && (
+                      <InternationalPostGraduateMeta />
+                    )}
+
+                  {activePage === "lmia_reviewed" &&
+                    activeSection === "lmia_reviewed_content" && (
+                      <LMIAReviewedContent />
+                    )}
+                  {activePage === "lmia_reviewed" &&
+                    activeSection === "lmia_reviewed_meta" && (
+                      <LMIAReviewedMeta />
+                    )}
+
+                  {activePage === "lonely_canadian" &&
+                    activeSection === "lonely_canadian_content" && (
+                      <LonelyCanadianContent />
+                    )}
+                  {activePage === "lonely_canadian" &&
+                    activeSection === "lonely_canadian_meta" && (
+                      <LonelyCanadianMeta />
+                    )}
+
+                  {activePage === "low_wage_lmia" &&
+                    activeSection === "low_wage_lmia_content" && (
+                      <LowWageLMIAContent />
+                    )}
+                  {activePage === "low_wage_lmia" &&
+                    activeSection === "low_wage_lmia_meta" && (
+                      <LowWageLMIAMeta />
                     )}
                 </div>
               </div>
