@@ -41,6 +41,22 @@ const ExpressEntry = () => {
       });
   }, []);
 
+  
+  useEffect(() => {
+    fetch("https://brightlight-node.onrender.com/express-entry")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        if (data) {
+          setData(data[0]);
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
