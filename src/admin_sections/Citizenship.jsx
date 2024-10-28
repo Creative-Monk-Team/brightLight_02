@@ -80,6 +80,12 @@ const CitizenshipContent = () => {
     StillNotHeading: "",
     s1: "",
     s2: "",
+
+    WhyChooseUsHeading01: "",
+    wcu1: "",
+    wcu2: "",
+    wcu3: "",
+    wcu4: "",
   });
 
   const [editMode, setEditMode] = useState(false);
@@ -290,6 +296,43 @@ const CitizenshipContent = () => {
           disabled={!editMode}
         />
       ))}
+
+<input
+        placeholder="Why Choose Us Heading"
+        name="WhyChooseUsHeading01"
+        value={sectionDataSingle.WhyChooseUsHeading01 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Why Choose Us Point 1"
+        name="wcu1"
+        value={sectionDataSingle.wcu1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Why Choose Us Point 2"
+        name="wcu2"
+        value={sectionDataSingle.wcu2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <textarea
+        placeholder="Why Choose Us Point 3"
+        name="wcu3"
+        value={sectionDataSingle.wcu3 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Why Choose Us Point 4"
+        name="wcu4"
+        value={sectionDataSingle.wcu4 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
 
       <div className={styles.editIcons}>
         {editMode ? (

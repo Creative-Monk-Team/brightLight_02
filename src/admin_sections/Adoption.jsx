@@ -87,6 +87,11 @@ let Adoption = () => {
     StillNotHeading: "",
     s1: "",
     s2: "",
+    WhyChooseUsHeading01: "",
+    wcu1: "",
+    wcu2: "",
+    wcu3: "",
+    wcu4: "",
   });
 
   let [editMode, setEditMode] = useState(false);
@@ -108,13 +113,16 @@ let Adoption = () => {
       return;
     }
 
-    fetch(`https://brightlight-node.onrender.com/adoption/${sectionDataSingle._id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(sectionDataSingle),
-    })
+    fetch(
+      `https://brightlight-node.onrender.com/adoption/${sectionDataSingle._id}`,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(sectionDataSingle),
+      }
+    )
       .then((response) => {
         if (response.status === 413) {
           notifySize();
@@ -326,6 +334,43 @@ let Adoption = () => {
         placeholder="Still Not Sure Text 2"
         name="s2"
         value={sectionDataSingle.s2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="Why Choose Us Heading"
+        name="WhyChooseUsHeading01"
+        value={sectionDataSingle.WhyChooseUsHeading01 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Why Choose Us Point 1"
+        name="wcu1"
+        value={sectionDataSingle.wcu1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Why Choose Us Point 2"
+        name="wcu2"
+        value={sectionDataSingle.wcu2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <textarea
+        placeholder="Why Choose Us Point 3"
+        name="wcu3"
+        value={sectionDataSingle.wcu3 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Why Choose Us Point 4"
+        name="wcu4"
+        value={sectionDataSingle.wcu4 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
