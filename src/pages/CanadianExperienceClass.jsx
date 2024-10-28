@@ -77,6 +77,17 @@ const CanadianExperienceClass = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const extractStrongText = (htmlString) => {
+    if (typeof htmlString !== "string") return "";
+    const strongMatch = htmlString.match(/<strong>(.*?)<\/strong>/);
+    return strongMatch ? strongMatch[1] : "";
+  };
+
+  const extractRemainingText = (htmlString) => {
+    if (typeof htmlString !== "string") return "";
+    return htmlString.replace(/<strong>.*?<\/strong>/, "").trim();
+  };
+
 
   const fetchedValue91 = pData?.wcu1;
   const strongText91 = extractStrongText(fetchedValue91);

@@ -21,7 +21,7 @@ const ExpressEntry = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data && data.length > 0) {
-          setPData(data[0]);
+          setPData(data[2]);
         }
       })
       .catch((error) => {
@@ -49,7 +49,7 @@ const ExpressEntry = () => {
       })
       .then((data) => {
         if (data) {
-          setData(data[0]);
+          setData(data[2]);
         }
       })
       .catch((error) => {
@@ -313,8 +313,6 @@ const remainingText94 = extractRemainingText(fetchedValue94);
               {data?.a1 && <li>{data.a1}</li>}
               {data?.a2 && <li>{data.a2}</li>}
               {data?.a3 && <li>{data.a3}</li>}
-              {data?.a4 && <li>{data.a4}</li>}
-              {data?.a5 && <li>{data.a5}</li>}
             </ul>
           </div>
         </div>

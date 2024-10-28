@@ -30,6 +30,9 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+.previous_draw_history button:hover {
+opacity: 0.9;
+}
 
 .bannerHeading h1 {
   color: #e8c47c;
