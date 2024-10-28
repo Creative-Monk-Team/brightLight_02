@@ -1,4 +1,4 @@
-import React, { useEffect, useState,useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "../styles/ExpressEntry.module.css";
 import ServiceImg from "../assets/service-data-image.webp";
 import BestChoice from "../sections/BestChoice";
@@ -9,19 +9,21 @@ import Navbar1 from "../components/Navbar1";
 import Footer1 from "../components/Footer1";
 import ogImage from "../assets/ogImage.png";
 import { Helmet } from "react-helmet-async";
+import FAQ_White_Internal from "../sections/FAQ_White_Internal";
 
 const ExpressEntry = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [data, setData] = useState({});
   let [metaData, setMetaData] = useState([]);
-  let [pData,setPData]=useState([])
+  let [pData, setPData] = useState([]);
+  let [faqData, setFaqData] = useState([]);
 
   useEffect(() => {
     fetch("https://brightlight-node.onrender.com/express-entry")
       .then((res) => res.json())
       .then((data) => {
         if (data && data.length > 0) {
-          setPData(data[2]);
+          setPData(data[0]);
         }
       })
       .catch((error) => {
@@ -41,7 +43,6 @@ const ExpressEntry = () => {
       });
   }, []);
 
-  
   useEffect(() => {
     fetch("https://brightlight-node.onrender.com/express-entry")
       .then((res) => {
@@ -49,12 +50,43 @@ const ExpressEntry = () => {
       })
       .then((data) => {
         if (data) {
-          setData(data[2]);
+          setData(data[0]);
         }
       })
       .catch((error) => {
         console.log(error);
       });
+  }, []);
+
+  useEffect(() => {
+    // setFaqHeading(data.faq_heading);
+    let arrayData = [];
+    if (data.q1 && data.qa1) {
+      arrayData.push({ question: data.q1, answer: data.qa1 });
+    }
+    if (data.q2 && data.qa2) {
+      arrayData.push({ question: data.q2, answer: data.qa2 });
+    }
+    if (data.q3 && data.qa3) {
+      arrayData.push({ question: data.q3, answer: data.qa3 });
+    }
+    if (data.q4 && data.qa4) {
+      arrayData.push({ question: data.q4, answer: data.qa4 });
+    }
+    if (data.q5 && data.qa5) {
+      arrayData.push({ question: data.q5, answer: data.qa5 });
+    }
+    if (data.q6 && data.qa6) {
+      arrayData.push({ question: data.q6, answer: data.qa6 });
+    }
+    if (data.q7 && data.qa7) {
+      arrayData.push({ question: data.q7, answer: data.qa7 });
+    }
+    if (data.q8 && data.qa8) {
+      arrayData.push({ question: data.q8, answer: data.qa8 });
+    }
+    console.log("arrayData", data.q1);
+    setFaqData(arrayData);
   }, []);
 
   const toggleDropdown = () => {
@@ -67,33 +99,33 @@ const ExpressEntry = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
-let sectionRef=useRef(null)
-const extractStrongText = (htmlString) => {
-  if (typeof htmlString !== "string") return "";
-  const strongMatch = htmlString.match(/<strong>(.*?)<\/strong>/);
-  return strongMatch ? strongMatch[1] : "";
-};
+  let sectionRef = useRef(null);
+  const extractStrongText = (htmlString) => {
+    if (typeof htmlString !== "string") return "";
+    const strongMatch = htmlString.match(/<strong>(.*?)<\/strong>/);
+    return strongMatch ? strongMatch[1] : "";
+  };
 
-const extractRemainingText = (htmlString) => {
-  if (typeof htmlString !== "string") return "";
-  return htmlString.replace(/<strong>.*?<\/strong>/, "").trim();
-};
+  const extractRemainingText = (htmlString) => {
+    if (typeof htmlString !== "string") return "";
+    return htmlString.replace(/<strong>.*?<\/strong>/, "").trim();
+  };
 
-const fetchedValue91 = pData?.wcu1;
-const strongText91 = extractStrongText(fetchedValue91);
-const remainingText91 = extractRemainingText(fetchedValue91);
+  const fetchedValue91 = pData?.wcu1;
+  const strongText91 = extractStrongText(fetchedValue91);
+  const remainingText91 = extractRemainingText(fetchedValue91);
 
-const fetchedValue92 = pData?.wcu2;
-const strongText92 = extractStrongText(fetchedValue92);
-const remainingText92 = extractRemainingText(fetchedValue92);
+  const fetchedValue92 = pData?.wcu2;
+  const strongText92 = extractStrongText(fetchedValue92);
+  const remainingText92 = extractRemainingText(fetchedValue92);
 
-const fetchedValue93 = pData?.wcu3;
-const strongText93 = extractStrongText(fetchedValue93);
-const remainingText93 = extractRemainingText(fetchedValue93);
+  const fetchedValue93 = pData?.wcu3;
+  const strongText93 = extractStrongText(fetchedValue93);
+  const remainingText93 = extractRemainingText(fetchedValue93);
 
-const fetchedValue94 = pData?.wcu4;
-const strongText94 = extractStrongText(fetchedValue94);
-const remainingText94 = extractRemainingText(fetchedValue94);
+  const fetchedValue94 = pData?.wcu4;
+  const strongText94 = extractStrongText(fetchedValue94);
+  const remainingText94 = extractRemainingText(fetchedValue94);
   return (
     <>
       <Helmet>
@@ -185,6 +217,10 @@ const remainingText94 = extractRemainingText(fetchedValue94);
         </div>
       </div>
 
+      {/* <div id="faqs">{pData ? <FAQ_White_Internal data={pData} /> : null}</div> */}
+
+
+
       <div id="about-program" className={styles.canadianParent}>
         <div className={styles.canadianContent}>
           <p>{data?.aboutDescription}</p>
@@ -195,18 +231,12 @@ const remainingText94 = extractRemainingText(fetchedValue94);
       </div>
 
       <div className={styles.benefits}>
-        <h1>{pData?.BenifitsHeading }</h1>
-        <ul style={{marginLeft: "40px"}}>
-          <li>
-          {pData?.b1 }
-          </li>
-          <li> {pData?.b2 }</li>
-          <li>
-          {pData?.b3 }
-          </li>
-          <li>
-          {pData?.b4 }
-          </li>
+        <h1>{pData?.BenifitsHeading}</h1>
+        <ul style={{ marginLeft: "40px" }}>
+          <li>{pData?.b1}</li>
+          <li> {pData?.b2}</li>
+          <li>{pData?.b3}</li>
+          <li>{pData?.b4}</li>
         </ul>
       </div>
 
@@ -332,7 +362,10 @@ const remainingText94 = extractRemainingText(fetchedValue94);
             <h1>{data?.refusalHeading}</h1>
           </div>
           <div className={styles.forgetListParent}>
-            <ul style={{marginLeft: "40px"}} className={styles.forgetListMain}>
+            <ul
+              style={{ marginLeft: "40px" }}
+              className={styles.forgetListMain}
+            >
               {data?.r1 && <li className={styles.forgetList}>{data.r1}</li>}
               {data?.r2 && <li className={styles.forgetList}>{data.r2}</li>}
               {data?.r3 && <li className={styles.forgetList}>{data.r3}</li>}
@@ -344,29 +377,28 @@ const remainingText94 = extractRemainingText(fetchedValue94);
           </div>
         </div>
       </div>
-      
+
       <div
-      style={{marginTop: "100px"}}
-          className={styles.whyChooseUs} 
-          id="why-choose-us"
-        
-        >
-        <h2>  {pData?.WhyChooseUsHeading01 }</h2>
-          <ul style={{marginLeft: "40px"}}>
-            <li>
-              <strong>{strongText91}</strong>{" "} {remainingText91}
-            </li>
-            <li>
-            <strong>{strongText92}</strong>{" "} {remainingText92}
-            </li>
-            <li>
-            <strong>{strongText93}</strong>{" "} {remainingText93}
-            </li>
-            <li>
-            <strong>{strongText94}</strong>{" "} {remainingText94}
-            </li>
-          </ul>
-        </div>
+        style={{ marginTop: "100px" }}
+        className={styles.whyChooseUs}
+        id="why-choose-us"
+      >
+        <h2> {pData?.WhyChooseUsHeading01}</h2>
+        <ul style={{ marginLeft: "40px" }}>
+          <li>
+            <strong>{strongText91}</strong> {remainingText91}
+          </li>
+          <li>
+            <strong>{strongText92}</strong> {remainingText92}
+          </li>
+          <li>
+            <strong>{strongText93}</strong> {remainingText93}
+          </li>
+          <li>
+            <strong>{strongText94}</strong> {remainingText94}
+          </li>
+        </ul>
+      </div>
 
       <div id="appointment" className={styles.incaseParent}>
         <div className={styles.incaseMain}>
@@ -386,18 +418,16 @@ const remainingText94 = extractRemainingText(fetchedValue94);
         </div>
       </div>
 
-
-
-      <div >
+      <div>
         <BestChoice />
+      </div>
+
+      <div id="faqs">
+      <FAQ_White_Internal data={pData} />
       </div>
 
       <div id="testimonials">
         <Testimonials />
-      </div>
-
-      <div id="faqs">
-        <FAQ />
       </div>
 
       <div id="blogs">

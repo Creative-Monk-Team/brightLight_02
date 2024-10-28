@@ -2,9 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "../styles/PilotPrograms.module.css";
 import Navbar1 from "../components/Navbar1";
 import Footer1 from "../components/Footer1";
-import Testimonials from "../sections/Testimonials";
 import RecentBlogs from "../sections/RecentBlogs";
-import FAQ from "../sections/FAQ";
 import ogImage from "../assets/ogImage.png";
 import { Helmet } from "react-helmet-async";
 
@@ -173,8 +171,8 @@ const PilotPrograms = () => {
               <p onClick={() => scrollToSection("testimonials")}>
                 Testimonials
               </p>
-              <p onClick={() => scrollToSection("faqs")}>FAQs</p>
-              <p onClick={() => scrollToSection("blogs")}>Blogs</p>
+              {/* <p onClick={() => scrollToSection("faqs")}>FAQs</p>
+              <p onClick={() => scrollToSection("blogs")}>Blogs</p> */}
             </div>
           </div>
         </div>
@@ -276,12 +274,6 @@ const PilotPrograms = () => {
         </section>
       </div>
 
-      <div id="faqs">
-        <FAQ />
-      </div>
-      <div id="testimonials">
-        <Testimonials />
-      </div>
       <div id="blogs">
         <RecentBlogs />
       </div>
