@@ -97,18 +97,16 @@ const Footer1 = () => {
             <div className={styles.footerLogo}>
               <img src={FooterLogo} className={styles.footerLogo1} />
               <div className={styles.footerLogo2Para}>
-
-              <img
-                onClick={() =>
-                  (window.location.href =
-                    "https://register.college-ic.ca/Public-Register-EN/RCIC_Search.aspx")
-                }
-                src={FooterLogo2}
-                className={styles.footerLogo2}
-              />
-              <p>RCIC License # R522969</p>
+                <img
+                  onClick={() =>
+                    (window.location.href =
+                      "https://register.college-ic.ca/Public-Register-EN/RCIC_Search.aspx")
+                  }
+                  src={FooterLogo2}
+                  className={styles.footerLogo2}
+                />
+                <p>RCIC License # R522969</p>
               </div>
-             
             </div>
             {/* <img src={FooterLogo} />  // this  */}
             <div className={styles.socialMediaFooter}>

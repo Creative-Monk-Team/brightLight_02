@@ -9,9 +9,20 @@
   display: none;
 }
 
-*::selection{
+*::selection {
   background-color: #23557e;
   color: #ffffff;
+}
+#faqs li {
+  margin-bottom: 10px;
+}
+#faqs ul {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#faqs ol {
+  margin-top: 20px;
+  margin-left: 20px;
 }
 html,
 body {
@@ -253,7 +264,8 @@ img {
   justify-content: center !important;
 }
 
-.swiper-button-prev:after, .swiper-button-next:after{
+.swiper-button-prev:after,
+.swiper-button-next:after {
   font-size: 20px !important;
   font-weight: 1000 !important;
 }
