@@ -127,6 +127,18 @@ import LonelyCanadianContent from "../admin_sections/LonelyCanadian";
 import LonelyCanadianMeta from "../admin_sections/LonelyCanadianMeta";
 import LowWageLMIAContent from "../admin_sections/LowWageLMIA";
 import LowWageLMIAMeta from "../admin_sections/LowWageLMIAMeta";
+import NonSdsContent from "../admin_sections/NonSds";
+import NonSdsMeta from "../admin_sections/NonSdsMeta";
+import OpenWorkCanadaMeta from "../admin_sections/OpenWorkCanadaMeta";
+import OpenWorkCanadaContent from "../admin_sections/OpenWorkCanada";
+import OpenWorkPermitContent from "../admin_sections/OpenWorkPermit";
+import OpenWorkPermitMeta from "../admin_sections/OpenWorkPermitMeta";
+import OpenWorkForSpousalInlandContent from "../admin_sections/OpenWorkForSpousalInland";
+import OpenWorkForSpousalInlandMeta from "../admin_sections/OpenWorkForSpousalInlandMeta";
+import OpenWorkVulnerableContent from "../admin_sections/OpenWorkVulnerable";
+import OpenWorkVulnerableMeta from "../admin_sections/OpenWorkVulnerableMeta";
+import OrphanContent from "../admin_sections/Orphan";
+import OrphanMeta from "../admin_sections/OrphanMeta";
 
 let Admin = () => {
   let { logout } = useAuth();
@@ -1512,6 +1524,48 @@ let Admin = () => {
                     <p>Low Wage LMIA Page</p>
                   </div>
 
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "non_sds" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("non_sds")}
+                  >
+                    <p>Non Sds Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "open_work_dependent"
+                        ? styles.activePage
+                        : ""
+                    }`}
+                    onClick={() => handlePageClick("open_work_dependent")}
+                  >
+                    <p>Open Work Dependent Children Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "open_work_permit" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("open_work_permit")}
+                  >
+                    <p>Open Work Permit Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "open_work_permit_for_spousal"
+                        ? styles.activePage
+                        : ""
+                    }`}
+                    onClick={() =>
+                      handlePageClick("open_work_permit_for_spousal")
+                    }
+                  >
+                    <p>Open Work Permit For Spousal Inland Page</p>
+                  </div>
+
                   <div className={styles.paginationButtons}>
                     <button
                       className={`${styles.paginationButton} ${
@@ -1553,13 +1607,24 @@ let Admin = () => {
                 <div className={styles.leftPanel}>
                   <div
                     className={`${styles.page} ${
-                      activePage === "additional_documents"
+                      activePage === "open_work_permit_vulnerable"
                         ? styles.activePage
                         : ""
                     }`}
-                    onClick={() => handlePageClick("additional_documents")}
+                    onClick={() =>
+                      handlePageClick("open_work_permit_vulnerable")
+                    }
                   >
-                    <p>Page Tab on 3rd Page</p>
+                    <p>Open Work Permit Vulnerable Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "orphan" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("orphan")}
+                  >
+                    <p>Orphan Page</p>
                   </div>
 
                   <div className={styles.paginationButtons}>
@@ -2785,6 +2850,182 @@ let Admin = () => {
                   </div>
                 )}
 
+                {activePage === "non_sds" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "non_sds_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("non_sds_content")}
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "non_sds_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("non_sds_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "open_work_dependent" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "open_work_dependent_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("open_work_dependent_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "open_work_dependent_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("open_work_dependent_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "open_work_permit" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "open_work_permit_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("open_work_permit_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "open_work_permit_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("open_work_permit_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "open_work_permit_for_spousal" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "open_work_permit_for_spousal_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick(
+                          "open_work_permit_for_spousal_content"
+                        )
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "open_work_permit_for_spousal_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("open_work_permit_for_spousal_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "open_work_permit_vulnerable" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "open_work_permit_vulnerable_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick(
+                          "open_work_permit_vulnerable_content"
+                        )
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "open_work_permit_vulnerable_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("open_work_permit_vulnerable_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "orphan" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "orphan_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("orphan_content")}
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "orphan_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("orphan_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
                 <div className={styles.roshiSection}>
                   {activePage === "bcpnp_page" &&
                     activeSection === "bcpnp_page_content" && (
@@ -3116,6 +3357,53 @@ let Admin = () => {
                     activeSection === "low_wage_lmia_meta" && (
                       <LowWageLMIAMeta />
                     )}
+
+                  {activePage === "non_sds" &&
+                    activeSection === "non_sds_content" && <NonSdsContent />}
+                  {activePage === "non_sds" &&
+                    activeSection === "non_sds_meta" && <NonSdsMeta />}
+
+                  {activePage === "open_work_dependent" &&
+                    activeSection === "open_work_dependent_content" && (
+                      <OpenWorkCanadaContent />
+                    )}
+                  {activePage === "open_work_dependent" &&
+                    activeSection === "open_work_dependent_meta" && (
+                      <OpenWorkCanadaMeta />
+                    )}
+
+                  {activePage === "open_work_permit" &&
+                    activeSection === "open_work_permit_content" && (
+                      <OpenWorkPermitContent />
+                    )}
+                  {activePage === "open_work_permit" &&
+                    activeSection === "open_work_permit_meta" && (
+                      <OpenWorkPermitMeta />
+                    )}
+
+                  {activePage === "open_work_permit_for_spousal" &&
+                    activeSection ===
+                      "open_work_permit_for_spousal_content" && (
+                      <OpenWorkForSpousalInlandContent />
+                    )}
+                  {activePage === "open_work_permit_for_spousal" &&
+                    activeSection === "open_work_permit_for_spousal_meta" && (
+                      <OpenWorkForSpousalInlandMeta />
+                    )}
+
+                  {activePage === "open_work_permit_vulnerable" &&
+                    activeSection === "open_work_permit_vulnerable_content" && (
+                      <OpenWorkVulnerableContent />
+                    )}
+                  {activePage === "open_work_permit_vulnerable" &&
+                    activeSection === "open_work_permit_vulnerable_meta" && (
+                      <OpenWorkVulnerableMeta />
+                    )}
+
+                  {activePage === "orphan" &&
+                    activeSection === "orphan_content" && <OrphanContent />}
+                  {activePage === "orphan" &&
+                    activeSection === "orphan_meta" && <OrphanMeta />}
                 </div>
               </div>
             </div>

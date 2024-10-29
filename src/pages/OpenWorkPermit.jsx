@@ -172,10 +172,10 @@ const OpenWorkPermit = () => {
               <p onClick={() => scrollToSection("how-to-apply")}>
                 How to Apply?
               </p>
-              <p onClick={() => scrollToSection("testimonials")}>
+              {/* <p onClick={() => scrollToSection("testimonials")}>
                 Testimonials
               </p>
-              <p onClick={() => scrollToSection("faqs")}>FAQs</p>
+              <p onClick={() => scrollToSection("faqs")}>FAQs</p> */}
               <p onClick={() => scrollToSection("blogs")}>Blogs</p>
             </div>
           </div>
@@ -291,13 +291,13 @@ const OpenWorkPermit = () => {
       </div>
       <OurProcess />
 
-      <div id="faqs">
+      {/* <div id="faqs">
         <FAQ />
       </div>
 
       <div id="testimonials">
         <Testimonials />
-      </div>
+      </div> */}
 
       <div id="blogs">
         <RecentBlogs />
