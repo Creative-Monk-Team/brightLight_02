@@ -1287,7 +1287,7 @@ const BCPNPCalculator = () => {
                       <input
                         type="radio"
                         name="languageProficiencyRegion"
-                        value={applicableLastSection == true ? "0" : "1"}
+                        value={applicableLastSection == true ? "1" : "0"}
                         // value="1"
                         disabled={!applicableLastSection}
                         onChange={handleLanguageProficiencyRegionChange}
@@ -1303,7 +1303,7 @@ const BCPNPCalculator = () => {
                       <input
                         type="radio"
                         name="languageProficiencyRegion"
-                        value={applicableLastSection == true ? "0" : "2"}
+                        value={applicableLastSection == true ? "2" : "0"}
                         // value="2"
                         disabled={!applicableLastSection}
                         onChange={handleLanguageProficiencyRegionChange}
@@ -1318,7 +1318,7 @@ const BCPNPCalculator = () => {
                       <input
                         type="radio"
                         name="languageProficiencyRegion"
-                        value={applicableLastSection == true ? "0" : "3"}
+                        value={applicableLastSection == true ? "3" : "0"}
                         // value="3"
                         disabled={!applicableLastSection}
                         onChange={handleLanguageProficiencyRegionChange}

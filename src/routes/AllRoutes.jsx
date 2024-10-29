@@ -121,7 +121,7 @@ let AllRoutes = () => {
       <Route path="/clb-ilets-calculator" element={<CLBILETSCalculator />} />
       <Route path="/previous-draw-history" element={<PreviousDrawHistory />} />
       <Route
-        path="/users/admin/dashboard"
+        path="/dash/panel/overwrite"
         element={<PrivateRoute element={Admin} />}
       />
       <Route path="/more-services" element={<MoreServices />} />
@@ -300,7 +300,7 @@ let AllRoutes = () => {
       <Route path="/same-sex" element={<SameSex />} />
       <Route path="/immigration-tools" element={<Immigration />} />
       <Route path="/search" element={<Search />} />
-      <Route path="/auth/dashboard/login/admin" element={<Login />} />
+      <Route path="/auth/panel/dash/bright" element={<Login />} />
     </Routes>
   );
 };

@@ -212,7 +212,7 @@ let Admin = () => {
   };
   let handleLogout = () => {
     logout();
-    window.location.href = "/auth/dashboard/login/admin";
+    window.location.href = "/auth/panel/dash/bright";
   };
   return (
     <>

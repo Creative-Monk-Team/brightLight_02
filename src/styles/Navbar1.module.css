@@ -338,6 +338,7 @@
 .calculatorsDropdown a {
   display: block;
   margin-top: 10px;
+  font-size: 14px;
 }
 
 .calculatorsDropdown a:first-child {

@@ -12,7 +12,7 @@ let FAQ_White_Internal = ({ data }) => {
       setFaqHeading(data.faq_heading);
       const arrayData = [];
 
-      for (let i = 1; i <= 8; i++) {
+      for (let i = 1; i <= 15; i++) {
         if (data[`q${i}`] && data[`qa${i}`]) {
           arrayData.push({ question: data[`q${i}`], answer: data[`qa${i}`] });
         }
@@ -27,7 +27,7 @@ let FAQ_White_Internal = ({ data }) => {
   };
 
   if (!faqData.length) {
-    return <div>Loading FAQs...</div>; // Show a loading message or spinner
+    return <div>Loading FAQs...</div>;
   }
 
   return (

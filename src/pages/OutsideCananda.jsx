@@ -171,7 +171,7 @@ const OutsideCananda = () => {
               <p onClick={() => scrollToSection("testimonials")}>
                 Testimonials
               </p>
-              <p onClick={() => scrollToSection("faqs")}>FAQs</p>
+              {/* <p onClick={() => scrollToSection("faqs")}>FAQs</p> */}
               <p onClick={() => scrollToSection("blogs")}>Blogs</p>
             </div>
           </div>
@@ -240,9 +240,9 @@ const OutsideCananda = () => {
         </section>
       </div>
 
-      <div id="faqs">
+      {/* <div id="faqs">
         <FAQ />
-      </div>
+      </div> */}
 
       <div id="testimonials">
         <Testimonials />

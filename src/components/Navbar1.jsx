@@ -727,7 +727,7 @@ const Navbar3 = (props) => {
                           onMouseEnter={() => setDoubleNested1(true)}
                           onMouseLeave={() => setDoubleNested1(false)}
                         >
-                          LMIA Work Permit
+                          LMIA
                         </a>
                         <div
                           className={`${styles.doubleNested} ${
@@ -814,7 +814,7 @@ const Navbar3 = (props) => {
                       </a>
                     </div>
                   </div>
-                  <a href="/lmia-reviewed">LMIA Work Permit</a>
+                  <a href="/lmia-reviewed">LMIA</a>
                   <a href="/francophone-mobility-program">
                     Francophone Mobility Program
                   </a>
@@ -1293,7 +1293,7 @@ const Navbar3 = (props) => {
                             href="#"
                             onClick={toggleFederalSkilledProgramEight}
                           >
-                            LMIA Work Permit
+                            LMIA
                             <span className={styles.arrow}>▼</span>
                           </a>
                           {isFederalSkilledProgramOpenEight && (
@@ -1369,7 +1369,7 @@ const Navbar3 = (props) => {
                       </div>
                     )}
                   </div>
-                  <a href="/lmia-reviewed">LMIA Work Permit</a>
+                  <a href="/lmia-reviewed">LMIA</a>
                   <a href="/francophone-mobility-program">
                     Francophone Mobility Program
                   </a>

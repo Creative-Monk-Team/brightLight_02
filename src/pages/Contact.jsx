@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import styles from "../styles/Contact.module.css";
 import Navbar1 from "../components/Navbar1";
 import Footer1 from "../components/Footer1";
@@ -7,6 +8,8 @@ import { Helmet } from "react-helmet-async";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 
 const Contact = () => {
+  let onChange = () => {};
+
   let [metaData, setMetaData] = useState([]);
 
   const notifySuccess = () => {
@@ -333,6 +336,10 @@ const Contact = () => {
               />
               <span>*</span>
             </div>
+            <div className={styles.contactCaptchaSection}>
+              <ReCAPTCHA sitekey="6LeuLG8qAAAAAMDNuH2bai-us1Li9FEXQBV_pPDV" onChange={onChange} />
+            </div>
+
             <button type="submit" className={styles.sendMessageButton}>
               Send Your Message
             </button>
@@ -351,7 +358,7 @@ const Contact = () => {
       >
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2611.079363084726!2d-122.8000042230304!3d49.12312788203902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d9bc1ae6becd%3A0xaf29d4bfe0aceaae!2sBrightlight%20Immigration!5e0!3m2!1sen!2sin!4v1724923112723!5m2!1sen!2sin"
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
         ></iframe>
         <div className={styles.officeSection}>

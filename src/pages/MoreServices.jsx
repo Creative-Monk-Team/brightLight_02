@@ -217,7 +217,7 @@ const MoreServices = () => {
     {
       img: RestorationImg,
       hoverImg: RestorationHover,
-      title: "Restoration Status Draft",
+      title: "Restoration Status",
       description: "Are you a temporary resident in Canada who has lost status? Don't despair! There is a way to regain your legal standing......",
       link: "/restoration-status-draft"
     },
@@ -304,13 +304,13 @@ const MoreServices = () => {
     //   description: "Canada’s family sponsorship program prioritizes family reunification. If you wish to sponsor other family members who may be lonely.....",
     //   link: "/lonely-canadian"
     // },
-    {
-      img: WorkPermitImg,
-      hoverImg: WorkPermitHover,
-      title: "Work Permit",
-      description: "The Canadian Work Permit is your key to accessing these exciting professional opportunities ...",
-      link: "/work-permit"
-    },
+    // {
+    //   img: WorkPermitImg,
+    //   hoverImg: WorkPermitHover,
+    //   title: "Work Permit",
+    //   description: "The Canadian Work Permit is your key to accessing these exciting professional opportunities ...",
+    //   link: "/work-permit"
+    // },
     {
       img: CaregiverImg,
       hoverImg: CaregiverHover,
@@ -328,7 +328,7 @@ const MoreServices = () => {
     {
       img: RestorationStatusDraftImg,
       hoverImg: RestorationStatusDraftHover,
-      title: "Restoration Status Draft",
+      title: "Restoration Status",
       description: "Are you a temporary resident in Canada who has lost status? Don't despair! There is a way to regain your legal standing in Canada.....",
       link: "/restoration-status-draft"
     },

@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 import styles from "../styles/Login.module.css";
 import { useAuth } from "../context/AuthContext";
 import { ToastContainer, toast, Bounce } from "react-toastify";
-let predefinedUsername = "brightlight_immigration_user";
-let predefinedPassword = "ephgstsyvbwnuxeb";
+let predefinedUsername = "brightlightImmigrationBCV3S2A1";
+let predefinedPassword = "7mz2a,H_4B)J";
 
 let Login = () => {
   let [username, setUsername] = useState("");
@@ -46,7 +46,7 @@ let Login = () => {
       localStorage.setItem("isLoggedIn", "true");
       login();
       setTimeout(() => {
-        navigate("/users/admin/dashboard");
+        navigate("/dash/panel/overwrite");
       }, 3000);
     } else {
       notifyError();
