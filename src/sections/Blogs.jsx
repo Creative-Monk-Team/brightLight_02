@@ -16,7 +16,7 @@ let NextArrow = () => {
 
 let PrevArrow = () => {
   return (
-    <button  className={styles.nextBlogButton}>
+    <button className={styles.nextBlogButton}>
       <Prevarrow />
     </button>
   );
@@ -24,6 +24,7 @@ let PrevArrow = () => {
 
 let Blogs = () => {
   let [blogs, setBlogs] = useState([]);
+  let [data, setData] = useState([]);
   useEffect(() => {
     fetch("https://brightlight-node.onrender.com/adding-blog")
       .then((res) => {
@@ -32,6 +33,19 @@ let Blogs = () => {
       .then((data) => {
         if (data) {
           setBlogs(data);
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+
+    fetch("https://brightlight-node.onrender.com/blog-section")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        if (data) {
+          setData(data[0]);
         }
       })
       .catch((error) => {
@@ -51,12 +65,8 @@ let Blogs = () => {
         <div className={styles.blogsTopSection}>
           <img src={brightBlogs} />
           <div className={styles.blogsHeading}>
-            <h1>Our Thougtful Narratives</h1>
-            <p>
-              Navigating the Complex Landscape of Immigration: Essential
-              Insights and Resources for Clients Seeking a Smooth Transition to
-              New Opportunities
-            </p>
+            <h1>{data?.heading}</h1>
+            <p>{data?.description}</p>
           </div>
         </div>
         <div className={styles.sliderSection}>
