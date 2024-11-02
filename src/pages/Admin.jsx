@@ -139,6 +139,69 @@ import OpenWorkVulnerableContent from "../admin_sections/OpenWorkVulnerable";
 import OpenWorkVulnerableMeta from "../admin_sections/OpenWorkVulnerableMeta";
 import OrphanContent from "../admin_sections/Orphan";
 import OrphanMeta from "../admin_sections/OrphanMeta";
+import OutsideCanadaMeta from "../admin_sections/OutsideCanadaMeta";
+import OutsideCanadaContent from "../admin_sections/OutsideCanada";
+import ParentsGrandparentsContent from "../admin_sections/ParentsGrandparents";
+import ParentsGrandparentsMeta from "../admin_sections/ParentsGrandparentsMeta";
+import PathwaysForCaregiverContent from "../admin_sections/PathwaysForCaregiver";
+import PathwaysForCaregiverMeta from "../admin_sections/PathwaysForCaregiverMeta";
+import PRPathwayCaregiverContent from "../admin_sections/PermanentResidencyPathwayCaregiver";
+import PRPathwayCaregiverMeta from "../admin_sections/PermanentResidencyPathwayCaregiverMeta";
+import PGWP from "../admin_sections/PGWP";
+import PGWPMeta from "../admin_sections/PGWPMeta";
+import PilotProgramContent from "../admin_sections/PilotPrograms";
+import PilotProgramMeta from "../admin_sections/PilotProgramsMeta";
+import PnpContent from "../admin_sections/Pnp";
+import PnpMeta from "../admin_sections/PnpMeta";
+import PreviousDrawHistoryMeta from "../admin_sections/PreviousDrawHistory";
+import PrioritiesProgramContent from "../admin_sections/PrioritiesProgram";
+import PrioritiesProgramMeta from "../admin_sections/PrioritiesProgramMeta";
+import PrRenewalMeta from "../admin_sections/PrRenewalMeta";
+import PrRenewalContent from "../admin_sections/PrRenewal";
+import RestorationContent from "../admin_sections/RestorationStatus";
+import RestorationMeta from "../admin_sections/RestorationStatusMeta";
+import ReconsiderationContent from "../admin_sections/Reconsideration";
+import ReconsiderationMeta from "../admin_sections/ReconsiderationMeta";
+import ReplyToPFLContent from "../admin_sections/ReplyToPFL";
+import ReplyToPFLMeta from "../admin_sections/ReplyToPFLMeta";
+import RnipContent from "../admin_sections/Rnip";
+import RnipMeta from "../admin_sections/RnipMeta";
+import SamesexContent from "../admin_sections/Samesex";
+import SamesexMeta from "../admin_sections/SamesexMeta";
+import SdsContent from "../admin_sections/Sds";
+import SdsMeta from "../admin_sections/SdsMeta";
+import SkilledWorkerStreamContent from "../admin_sections/SkilledWorkerStream";
+import SkilledWorkerStreamMeta from "../admin_sections/SkilledWorkerStreamMeta";
+import SpousalOpenWorkPermitContent from "../admin_sections/SpousalOpenWorkPermit";
+import SpousalOpenWorkPermitMeta from "../admin_sections/SpousalOpenWorkPermitMeta";
+import SpousalCommonLawSponContent from "../admin_sections/SpousalCommonLawSpon";
+import SpousalCommonLawSponMeta from "../admin_sections/SpousalCommonLawSponMeta";
+import SpouseInlandContent from "../admin_sections/SpouseInland";
+import SpouseInlandMeta from "../admin_sections/SpouseInlandMeta";
+import SpouseOutlandContent from "../admin_sections/SpouseOutland";
+import SpouseOutlandMeta from "../admin_sections/SpouseOutlandMeta";
+import StemTargetedDrawContent from "../admin_sections/StemTargetedDraw";
+import StemTargetedDrawMeta from "../admin_sections/StemTargetedDrawMeta";
+import StudentVisaContent from "../admin_sections/StudentVisa";
+import StudentVisaMeta from "../admin_sections/StudentVisaMeta";
+import StudyPermitMinorsContent from "../admin_sections/StudyPermitMinors";
+import StudyPermitMinorsMeta from "../admin_sections/StudyPermitMinorsMeta";
+import SuperVisaContent from "../admin_sections/SuperVisa";
+import SuperVisaMeta from "../admin_sections/SuperVisaMeta";
+import TemporaryResidencyContent from "../admin_sections/TemporartResidency";
+import TemporaryResidencyMeta from "../admin_sections/TemporartResidencyMeta";
+import TemporaryResidencyPermitContent from "../admin_sections/TemporaryResidentPermit";
+import TemporaryResidencyPermitMeta from "../admin_sections/TemporaryResidentPermitMeta";
+import TradeOccupationContent from "../admin_sections/TradeOccupationTargeted";
+import TradeOccupationMeta from "../admin_sections/TradeOccupationTargetedMeta";
+import TransportOccupationTarContent from "../admin_sections/TransportOccupationTargetedDraw";
+import TransportOccupationTarMeta from "../admin_sections/TransportOccupationTargetedDrawMeta";
+import VisitorToStudentContent from "../admin_sections/VisitoToStudent";
+import VisitorToStudentMeta from "../admin_sections/VisitoToStudentMeta";
+import VisitorVisaContent from "../admin_sections/VisitorVisa";
+import VisitorVisaMeta from "../admin_sections/VisitorVisaMeta";
+import WorkPermitContent from "../admin_sections/Workpermit";
+import WorkPermitMeta from "../admin_sections/WorkpermitMeta";
 
 let Admin = () => {
   let { logout } = useAuth();
@@ -1627,6 +1690,184 @@ let Admin = () => {
                     <p>Orphan Page</p>
                   </div>
 
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "outside_canada" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("outside_canada")}
+                  >
+                    <p>Outside Canada Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "parents_grandparents"
+                        ? styles.activePage
+                        : ""
+                    }`}
+                    onClick={() => handlePageClick("parents_grandparents")}
+                  >
+                    <p>Parents Grandparents Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "pathways_for_caregiver"
+                        ? styles.activePage
+                        : ""
+                    }`}
+                    onClick={() => handlePageClick("pathways_for_caregiver")}
+                  >
+                    <p>Pathways For Caregiver Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "pr_pathways_for_caregiver"
+                        ? styles.activePage
+                        : ""
+                    }`}
+                    onClick={() => handlePageClick("pr_pathways_for_caregiver")}
+                  >
+                    <p>PR Pathways For Caregiver Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "pgwp" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("pgwp")}
+                  >
+                    <p>PGWP Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "pilot_programs" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("pilot_programs")}
+                  >
+                    <p>Pilot Programs Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "pnp_page" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("pnp_page")}
+                  >
+                    <p>PNP Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "previous_draw_history"
+                        ? styles.activePage
+                        : ""
+                    }`}
+                    onClick={() => handlePageClick("previous_draw_history")}
+                  >
+                    <p>Previous Draw History Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "priorities_program"
+                        ? styles.activePage
+                        : ""
+                    }`}
+                    onClick={() => handlePageClick("priorities_program")}
+                  >
+                    <p>Priorities Program Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "pr_renewal" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("pr_renewal")}
+                  >
+                    <p>Pr Renewal Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "restoration_status"
+                        ? styles.activePage
+                        : ""
+                    }`}
+                    onClick={() => handlePageClick("restoration_status")}
+                  >
+                    <p>Restoration Status Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "reconsideration" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("reconsideration")}
+                  >
+                    <p>Reconsideration Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "reply_to_pfl" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("reply_to_pfl")}
+                  >
+                    <p>Reply To PFL Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "rnip" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("rnip")}
+                  >
+                    <p>RNIP Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "same_sex" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("same_sex")}
+                  >
+                    <p>Same Sex Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "sds" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("sds")}
+                  >
+                    <p>Sds Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "skilled_worker_stream"
+                        ? styles.activePage
+                        : ""
+                    }`}
+                    onClick={() => handlePageClick("skilled_worker_stream")}
+                  >
+                    <p>Skilled Worker Stream Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "spousal_open_work_permit"
+                        ? styles.activePage
+                        : ""
+                    }`}
+                    onClick={() => handlePageClick("spousal_open_work_permit")}
+                  >
+                    <p>Spousal Open Work Permit Page</p>
+                  </div>
+
                   <div className={styles.paginationButtons}>
                     <button
                       className={`${styles.paginationButton} ${
@@ -1668,13 +1909,132 @@ let Admin = () => {
                 <div className={styles.leftPanel}>
                   <div
                     className={`${styles.page} ${
-                      activePage === "additional_documents"
+                      activePage === "spose_common_law_spon"
                         ? styles.activePage
                         : ""
                     }`}
-                    onClick={() => handlePageClick("additional_documents")}
+                    onClick={() => handlePageClick("spose_common_law_spon")}
                   >
-                    <p>Page Tab on 4th Page</p>
+                    <p>Spouse Common Law Sponsorship Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "spousal_inland" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("spousal_inland")}
+                  >
+                    <p>Spousal Inland Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "spousal_outland" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("spousal_outland")}
+                  >
+                    <p>Spousal Outland Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "stem_target" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("stem_target")}
+                  >
+                    <p>Stem Targeted Draw Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "student_visa" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("student_visa")}
+                  >
+                    <p>Student Visa Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "study_permit_minors"
+                        ? styles.activePage
+                        : ""
+                    }`}
+                    onClick={() => handlePageClick("study_permit_minors")}
+                  >
+                    <p>Study Permit Minors Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "super_visa" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("super_visa")}
+                  >
+                    <p>Super Visa Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "temp" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("temp")}
+                  >
+                    <p>Temporary Residency Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "temp_per" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("temp_per")}
+                  >
+                    <p>Temporary Residenct Permit Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "trade_occu" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("trade_occu")}
+                  >
+                    <p>Trade Occupation Targeted Draw Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "trans_occu" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("trans_occu")}
+                  >
+                    <p>Transport Occupation Targeted Draw Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "visi_stu" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("visi_stu")}
+                  >
+                    <p>Visitor To Student Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "visi_visa" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("visi_visa")}
+                  >
+                    <p>Visitor Visa Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "work_per" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("work_per")}
+                  >
+                    <p>Work Permit Page</p>
                   </div>
 
                   <div className={styles.paginationButtons}>
@@ -3026,6 +3386,873 @@ let Admin = () => {
                   </div>
                 )}
 
+                {activePage === "outside_canada" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "outside_canada_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("outside_canada_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "outside_canada_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("outside_canada_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "parents_grandparents" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "parents_grandparents_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("parents_grandparents_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "parents_grandparents_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("parents_grandparents_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "pathways_for_caregiver" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "pathways_for_caregiver_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("pathways_for_caregiver_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "pathways_for_caregiver_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("pathways_for_caregiver_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "pr_pathways_for_caregiver" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "pr_pathways_for_caregiver_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("pr_pathways_for_caregiver_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "pr_pathways_for_caregiver_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("pr_pathways_for_caregiver_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "pgwp" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "pgwp_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("pgwp_content")}
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "pgwp_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("pgwp_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "pilot_programs" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "pilot_programs_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("pilot_programs_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "pilot_programs_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("pilot_programs_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "pnp_page" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "pnp_page_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("pnp_page_content")}
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "pnp_page_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("pnp_page_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "previous_draw_history" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "previous_draw_history_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("previous_draw_history_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "priorities_program" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "priorities_program_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("priorities_program_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "priorities_program_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("priorities_program_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "pr_renewal" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "pr_renewal_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("pr_renewal_content")}
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "pr_renewal_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("pr_renewal_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "restoration_status" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "restoration_status_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("restoration_status_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "restoration_status_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("restoration_status_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "reconsideration" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "reconsideration_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("reconsideration_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "reconsideration_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("reconsideration_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "reply_to_pfl" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "reply_to_pfl_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("reply_to_pfl_content")}
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "reply_to_pfl_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("reply_to_pfl_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "rnip" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "rnip_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("rnip_content")}
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "rnip_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("rnip_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "same_sex" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "same_sex_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("same_sex_content")}
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "same_sex_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("same_sex_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "sds" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "sds_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("sds_content")}
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "sds_meta" ? styles.activeSection : ""
+                      }`}
+                      onClick={() => handleSectionClick("sds_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "skilled_worker_stream" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "skilled_worker_stream_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("skilled_worker_stream_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "skilled_worker_stream_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("skilled_worker_stream_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "spousal_open_work_permit" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "spousal_open_work_permit_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("spousal_open_work_permit_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "spousal_open_work_permit_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("spousal_open_work_permit_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "spose_common_law_spon" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "spose_common_law_spon_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("spose_common_law_spon_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "spose_common_law_spon_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("spose_common_law_spon_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "spousal_inland" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "spousal_inland_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("spousal_inland_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "spousal_inland_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("spousal_inland_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "spousal_outland" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "spousal_outland_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("spousal_outland_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "spousal_outland_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("spousal_outland_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "stem_target" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "stem_target_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("stem_target_content")}
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "stem_target_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("stem_target_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "student_visa" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "student_visa_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("student_visa_content")}
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "student_visa_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("student_visa_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "study_permit_minors" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "study_permit_minors_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("study_permit_minors_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "study_permit_minors_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("study_permit_minors_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "super_visa" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "super_visa_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("super_visa_content")}
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "super_visa_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("super_visa_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "temp" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "temp_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("temp_content")}
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "temp_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("temp_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "temp_per" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "temp_per_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("temp_per_content")}
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "temp_per_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("temp_per_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "trade_occu" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "trade_occu_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("trade_occu_content")}
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "trade_occu_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("trade_occu_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "trans_occu" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "trans_occu_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("trans_occu_content")}
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "trans_occu_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("trans_occu_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "visi_stu" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "visi_stu_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("visi_stu_content")}
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "visi_stu_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("visi_stu_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "visi_visa" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "visi_visa_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("visi_visa_content")}
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "visi_visa_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("visi_visa_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "work_per" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "work_per_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("work_per_content")}
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "work_per_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("work_per_meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
                 <div className={styles.roshiSection}>
                   {activePage === "bcpnp_page" &&
                     activeSection === "bcpnp_page_content" && (
@@ -3404,6 +4631,263 @@ let Admin = () => {
                     activeSection === "orphan_content" && <OrphanContent />}
                   {activePage === "orphan" &&
                     activeSection === "orphan_meta" && <OrphanMeta />}
+
+                  {activePage === "outside_canada" &&
+                    activeSection === "outside_canada_content" && (
+                      <OutsideCanadaContent />
+                    )}
+                  {activePage === "outside_canada" &&
+                    activeSection === "outside_canada_meta" && (
+                      <OutsideCanadaMeta />
+                    )}
+
+                  {activePage === "parents_grandparents" &&
+                    activeSection === "parents_grandparents_content" && (
+                      <ParentsGrandparentsContent />
+                    )}
+                  {activePage === "parents_grandparents" &&
+                    activeSection === "parents_grandparents_meta" && (
+                      <ParentsGrandparentsMeta />
+                    )}
+
+                  {activePage === "pathways_for_caregiver" &&
+                    activeSection === "pathways_for_caregiver_content" && (
+                      <PathwaysForCaregiverContent />
+                    )}
+                  {activePage === "pathways_for_caregiver" &&
+                    activeSection === "pathways_for_caregiver_meta" && (
+                      <PathwaysForCaregiverMeta />
+                    )}
+
+                  {activePage === "pr_pathways_for_caregiver" &&
+                    activeSection === "pr_pathways_for_caregiver_content" && (
+                      <PRPathwayCaregiverContent />
+                    )}
+                  {activePage === "pr_pathways_for_caregiver" &&
+                    activeSection === "pr_pathways_for_caregiver_meta" && (
+                      <PRPathwayCaregiverMeta />
+                    )}
+
+                  {activePage === "pgwp" &&
+                    activeSection === "pgwp_content" && <PGWP />}
+                  {activePage === "pgwp" && activeSection === "pgwp_meta" && (
+                    <PGWPMeta />
+                  )}
+
+                  {activePage === "pilot_programs" &&
+                    activeSection === "pilot_programs_content" && (
+                      <PilotProgramContent />
+                    )}
+                  {activePage === "pilot_programs" &&
+                    activeSection === "pilot_programs_meta" && (
+                      <PilotProgramMeta />
+                    )}
+
+                  {activePage === "pnp_page" &&
+                    activeSection === "pnp_page_content" && <PnpContent />}
+                  {activePage === "pnp_page" &&
+                    activeSection === "pnp_page_meta" && <PnpMeta />}
+
+                  {activePage === "previous_draw_history" &&
+                    activeSection === "previous_draw_history_meta" && (
+                      <PreviousDrawHistoryMeta />
+                    )}
+
+                  {activePage === "priorities_program" &&
+                    activeSection === "priorities_program_content" && (
+                      <PrioritiesProgramContent />
+                    )}
+                  {activePage === "priorities_program" &&
+                    activeSection === "priorities_program_meta" && (
+                      <PrioritiesProgramMeta />
+                    )}
+
+                  {activePage === "pr_renewal" &&
+                    activeSection === "pr_renewal_content" && (
+                      <PrRenewalContent />
+                    )}
+                  {activePage === "pr_renewal" &&
+                    activeSection === "pr_renewal_meta" && <PrRenewalMeta />}
+
+                  {activePage === "restoration_status" &&
+                    activeSection === "restoration_status_content" && (
+                      <RestorationContent />
+                    )}
+                  {activePage === "restoration_status" &&
+                    activeSection === "restoration_status_meta" && (
+                      <RestorationMeta />
+                    )}
+
+                  {activePage === "reconsideration" &&
+                    activeSection === "reconsideration_content" && (
+                      <ReconsiderationContent />
+                    )}
+                  {activePage === "reconsideration" &&
+                    activeSection === "reconsideration_meta" && (
+                      <ReconsiderationMeta />
+                    )}
+
+                  {activePage === "reply_to_pfl" &&
+                    activeSection === "reply_to_pfl_content" && (
+                      <ReplyToPFLContent />
+                    )}
+                  {activePage === "reply_to_pfl" &&
+                    activeSection === "reply_to_pfl_meta" && <ReplyToPFLMeta />}
+
+                  {activePage === "rnip" &&
+                    activeSection === "rnip_content" && <RnipContent />}
+                  {activePage === "rnip" && activeSection === "rnip_meta" && (
+                    <RnipMeta />
+                  )}
+
+                  {activePage === "same_sex" &&
+                    activeSection === "same_sex_content" && <SamesexContent />}
+                  {activePage === "same_sex" &&
+                    activeSection === "same_sex_meta" && <SamesexMeta />}
+
+                  {activePage === "sds" && activeSection === "sds_content" && (
+                    <SdsContent />
+                  )}
+                  {activePage === "sds" && activeSection === "sds_meta" && (
+                    <SdsMeta />
+                  )}
+
+                  {activePage === "skilled_worker_stream" &&
+                    activeSection === "skilled_worker_stream_content" && (
+                      <SkilledWorkerStreamContent />
+                    )}
+                  {activePage === "skilled_worker_stream" &&
+                    activeSection === "skilled_worker_stream_meta" && (
+                      <SkilledWorkerStreamMeta />
+                    )}
+
+                  {activePage === "spousal_open_work_permit" &&
+                    activeSection === "spousal_open_work_permit_content" && (
+                      <SpousalOpenWorkPermitContent />
+                    )}
+                  {activePage === "spousal_open_work_permit" &&
+                    activeSection === "spousal_open_work_permit_meta" && (
+                      <SpousalOpenWorkPermitMeta />
+                    )}
+
+                  {activePage === "spose_common_law_spon" &&
+                    activeSection === "spose_common_law_spon_content" && (
+                      <SpousalCommonLawSponContent />
+                    )}
+                  {activePage === "spose_common_law_spon" &&
+                    activeSection === "spose_common_law_spon_meta" && (
+                      <SpousalCommonLawSponMeta />
+                    )}
+
+                  {activePage === "spousal_inland" &&
+                    activeSection === "spousal_inland_content" && (
+                      <SpouseInlandContent />
+                    )}
+                  {activePage === "spousal_inland" &&
+                    activeSection === "spousal_inland_meta" && (
+                      <SpouseInlandMeta />
+                    )}
+
+                  {activePage === "spousal_outland" &&
+                    activeSection === "spousal_outland_content" && (
+                      <SpouseOutlandContent />
+                    )}
+                  {activePage === "spousal_outland" &&
+                    activeSection === "spousal_outland_meta" && (
+                      <SpouseOutlandMeta />
+                    )}
+
+                  {activePage === "stem_target" &&
+                    activeSection === "stem_target_content" && (
+                      <StemTargetedDrawContent />
+                    )}
+                  {activePage === "stem_target" &&
+                    activeSection === "stem_target_meta" && (
+                      <StemTargetedDrawMeta />
+                    )}
+
+                  {activePage === "student_visa" &&
+                    activeSection === "student_visa_content" && (
+                      <StudentVisaContent />
+                    )}
+                  {activePage === "student_visa" &&
+                    activeSection === "student_visa_meta" && (
+                      <StudentVisaMeta />
+                    )}
+
+                  {activePage === "study_permit_minors" &&
+                    activeSection === "study_permit_minors_content" && (
+                      <StudyPermitMinorsContent />
+                    )}
+                  {activePage === "study_permit_minors" &&
+                    activeSection === "study_permit_minors_meta" && (
+                      <StudyPermitMinorsMeta />
+                    )}
+
+                  {activePage === "super_visa" &&
+                    activeSection === "super_visa_content" && (
+                      <SuperVisaContent />
+                    )}
+                  {activePage === "super_visa" &&
+                    activeSection === "super_visa_meta" && <SuperVisaMeta />}
+
+                  {activePage === "temp" &&
+                    activeSection === "temp_content" && (
+                      <TemporaryResidencyContent />
+                    )}
+                  {activePage === "temp" && activeSection === "temp_meta" && (
+                    <TemporaryResidencyMeta />
+                  )}
+
+                  {activePage === "temp_per" &&
+                    activeSection === "temp_per_content" && (
+                      <TemporaryResidencyPermitContent />
+                    )}
+                  {activePage === "temp_per" &&
+                    activeSection === "temp_per_meta" && (
+                      <TemporaryResidencyPermitMeta />
+                    )}
+
+                  {activePage === "trade_occu" &&
+                    activeSection === "trade_occu_content" && (
+                      <TradeOccupationContent />
+                    )}
+                  {activePage === "trade_occu" &&
+                    activeSection === "trade_occu_meta" && (
+                      <TradeOccupationMeta />
+                    )}
+
+                  {activePage === "trans_occu" &&
+                    activeSection === "trans_occu_content" && (
+                      <TransportOccupationTarContent />
+                    )}
+                  {activePage === "trans_occu" &&
+                    activeSection === "trans_occu_meta" && (
+                      <TransportOccupationTarMeta />
+                    )}
+
+                  {activePage === "visi_stu" &&
+                    activeSection === "visi_stu_content" && (
+                      <VisitorToStudentContent />
+                    )}
+                  {activePage === "visi_stu" &&
+                    activeSection === "visi_stu_meta" && (
+                      <VisitorToStudentMeta />
+                    )}
+
+                  {activePage === "visi_visa" &&
+                    activeSection === "visi_visa_content" && (
+                      <VisitorVisaContent />
+                    )}
+                  {activePage === "visi_visa" &&
+                    activeSection === "visi_visa_meta" && <VisitorVisaMeta />}
+
+                  {activePage === "work_per" &&
+                    activeSection === "work_per_content" && (
+                      <WorkPermitContent />
+                    )}
+                  {activePage === "work_per" &&
+                    activeSection === "work_per_meta" && <WorkPermitMeta />}
                 </div>
               </div>
             </div>
