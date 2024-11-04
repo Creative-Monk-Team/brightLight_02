@@ -106,7 +106,7 @@ const PermanentResidencyContent = () => {
     }
 
     fetch(
-      `https://brightlight-node.onrender.com/outsideCanada/${sectionDataSingle._id}`,
+      `https://brightlight-node.onrender.com/permanent-residency/${sectionDataSingle._id}`,
       {
         method: "PUT",
         headers: {
@@ -136,7 +136,7 @@ const PermanentResidencyContent = () => {
   };
 
   useEffect(() => {
-    fetch("https://brightlight-node.onrender.com/outsideCanada")
+    fetch("https://brightlight-node.onrender.com/permanent-residency")
       .then((res) => res.json())
       .then((data) => {
         if (data && data.length > 0) {

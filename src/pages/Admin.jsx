@@ -1773,7 +1773,7 @@ let Admin = () => {
                     }`}
                     onClick={() => handlePageClick("permanent_residency")}
                   >
-                    <p>Pr Renewal Page</p>
+                    <p>Permanent Residency Page</p>
                   </div>
 
                   <div
