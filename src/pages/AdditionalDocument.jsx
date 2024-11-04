@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet-async";
 const AdditionalDocument = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   let [metaData, setMetaData] = useState([]);
-  let [pData,setPData]=useState([])
+  let [pData, setPData] = useState([]);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -54,7 +54,6 @@ const AdditionalDocument = () => {
       });
   }, []);
 
-
   const sectionsRef = useRef([]);
 
   const handleScroll = () => {
@@ -91,15 +90,15 @@ const AdditionalDocument = () => {
   const fetchedValue91 = pData?.wcu1;
   const strongText91 = extractStrongText(fetchedValue91);
   const remainingText91 = extractRemainingText(fetchedValue91);
-  
+
   const fetchedValue92 = pData?.wcu2;
   const strongText92 = extractStrongText(fetchedValue92);
   const remainingText92 = extractRemainingText(fetchedValue92);
-  
+
   const fetchedValue93 = pData?.wcu3;
   const strongText93 = extractStrongText(fetchedValue93);
   const remainingText93 = extractRemainingText(fetchedValue93);
-  
+
   const fetchedValue94 = pData?.wcu4;
   const strongText94 = extractStrongText(fetchedValue94);
   const remainingText94 = extractRemainingText(fetchedValue94);
@@ -191,19 +190,11 @@ const AdditionalDocument = () => {
             ref={(el) => (sectionsRef.current[0] = el)}
           >
             <h2>{pData?.DonotWorryHeading}</h2>
-            <ul style={{marginLeft: "40px"}}>
-              <li>
-              {pData?.DonotWorryPara1}
-              </li>
-              <li>
-              {pData?.DonotWorryPara2}
-              </li>
-              <li>
-              {pData?.DonotWorryPara3}
-              </li>
-              <li>
-              {pData?.DonotWorryPara4}
-              </li>
+            <ul style={{ marginLeft: "40px" }}>
+              <li>{pData?.DonotWorryPara1}</li>
+              <li>{pData?.DonotWorryPara2}</li>
+              <li>{pData?.DonotWorryPara3}</li>
+              <li>{pData?.DonotWorryPara4}</li>
             </ul>
           </section>
 
@@ -213,18 +204,12 @@ const AdditionalDocument = () => {
             ref={(el) => (sectionsRef.current[1] = el)}
           >
             <h2>{pData?.KeyPointsHeading}</h2>
-            <ul style={{marginLeft: "40px"}}>
+            <ul style={{ marginLeft: "40px" }}>
+              <li>{pData?.k1}</li>
+              <li>{pData?.k2}</li>
+              <li>{pData?.k3}</li>
               <li>
-              {pData?.k1}
-              </li>
-              <li>
-              {pData?.k2}
-              </li>
-              <li>
-              {pData?.k3}
-              </li>
-              <li>
-              {pData?.k4}
+                {pData?.k4}
                 <a
                   id="book-appointment"
                   href="https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj"
@@ -241,12 +226,8 @@ const AdditionalDocument = () => {
             ref={(el) => (sectionsRef.current[2] = el)}
           >
             <h2>{pData?.StillNotHeading}</h2>
-            <p>
-            {pData?.s1}
-            </p>
-            <p>
-            {pData?.s2}
-            </p>
+            <p>{pData?.s1}</p>
+            <p>{pData?.s2}</p>
             <button
               onClick={() =>
                 (window.location.href =
@@ -262,30 +243,33 @@ const AdditionalDocument = () => {
             id="why-choose-us"
             ref={(el) => (sectionsRef.current[9] = el)}
           >
-         <h2>  {pData?.WhyChooseUsHeading01 }</h2>
-          <ul style={{marginLeft: "40px"}}>
-            <li>
-              <strong>{strongText91}</strong>{" "} {remainingText91}
-            </li>
-            <li>
-            <strong>{strongText92}</strong>{" "} {remainingText92}
-            </li>
-            <li>
-            <strong>{strongText93}</strong>{" "} {remainingText93}
-            </li>
-            <li>
-            <strong>{strongText94}</strong>{" "} {remainingText94}
-            </li>
-          </ul>
+            <h2> {pData?.WhyChooseUsHeading01}</h2>
+            <ul style={{ marginLeft: "40px" }}>
+              <li>
+                <strong>{strongText91}</strong> {remainingText91}
+              </li>
+              <li>
+                <strong>{strongText92}</strong> {remainingText92}
+              </li>
+              <li>
+                <strong>{strongText93}</strong> {remainingText93}
+              </li>
+              <li>
+                <strong>{strongText94}</strong> {remainingText94}
+              </li>
+            </ul>
           </section>
         </main>
       </div>
       <div id="faqs">
         <FAQ />
       </div>
-      <div id="testimonials">
-        <Testimonials />
-      </div>
+      {pData?.show_testimonials == "Y" && (
+        <div id="testimonials">
+          <Testimonials />
+        </div>
+      )}
+
       <div id="blogs">
         <RecentBlogs />
       </div>
