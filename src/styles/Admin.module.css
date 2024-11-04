@@ -7,12 +7,30 @@
   justify-content: space-between;
 }
 
-.faqStartsHeading{
+.faqStartsHeading {
   margin: 40px 0px 20px 5px;
   font-size: 25px;
 }
 
-.faqEndHeading{
+.testimonialsVisibility {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.testimonialsDisclamier {
+  color: #132f46;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.testimonialsVisibility p {
+  font-size: 13px;
+}
+
+.faqEndHeading {
   margin: 20px 0px 40px 5px;
   font-size: 25px;
 }
@@ -337,7 +355,7 @@
   padding: 15px 20px;
 }
 
-.roshiSection{
+.roshiSection {
   position: relative;
 }
 

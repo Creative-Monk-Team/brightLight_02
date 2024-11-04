@@ -141,6 +141,8 @@ const InCaregiverContent = () => {
     qa9: "",
     q10: "",
     qa10: "",
+
+    show_testimonials: "",
   });
 
   const [editMode, setEditMode] = useState(false);
@@ -906,6 +908,27 @@ const InCaregiverContent = () => {
 
       <h1 className={styles.faqEndHeading}>FAQ's Ends here</h1>
 
+      <h1 className={styles.faqStartsHeading}>
+        Testimonials Visibility Control
+      </h1>
+
+      <div className={styles.testimonialsVisibility}>
+        <p>Want to display Testimonials Section</p>
+        <input
+          placeholder="Show Testimonials"
+          name="show_testimonials"
+          value={sectionDataSingle.show_testimonials || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
+      <p className={styles.testimonialsDisclamier}>
+        Note: Testimonials Visibility On the Selected Page is totally dependent
+        on the input value above. If you want to display the section , just
+        write "Y" without quotes , anything else will be considered as "N" even
+        "y". If not want to display then just write "N" without qoutes.
+      </p>
+      
       <div className={styles.editIcons}>
         {editMode ? (
           <img
