@@ -452,9 +452,11 @@ const FrancophoneMobilityProgram = () => {
       <div id="faqs">
       <FAQ_White_Internal data={pData} />
       </div>
-      <div id="testimonials">
-        <Testimonials />
-      </div>
+      {pData?.show_testimonials == "Y" && (
+        <div id="testimonials">
+          <Testimonials />
+        </div>
+      )}
       <div id="blogs">
         <RecentBlogs />
       </div>

@@ -501,10 +501,11 @@ let CategoryBased = () => {
         <BestChoice />
       </div>
 
-      <div id="testimonials">
-        {" "}
-        <Testimonials />
-      </div>
+      {data?.show_testimonials == "Y" && (
+        <div id="testimonials">
+          <Testimonials />
+        </div>
+      )}
 
       <div id="faqs">
         {" "}

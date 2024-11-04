@@ -396,9 +396,11 @@ const ExpressEntry = () => {
       <FAQ_White_Internal data={data} />
       </div>
 
-      <div id="testimonials">
-        <Testimonials />
-      </div>
+      {data?.show_testimonials == "Y" && (
+        <div id="testimonials">
+          <Testimonials />
+        </div>
+      )}
 
       <div id="blogs">
         <RecentBlogs />
