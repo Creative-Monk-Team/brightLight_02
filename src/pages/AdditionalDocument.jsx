@@ -274,6 +274,7 @@ const AdditionalDocument = () => {
       <div id="blogs">
         <RecentBlogs />
       </div>
+      
       <Footer1 />
     </>
   );
