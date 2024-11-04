@@ -130,7 +130,7 @@ const WorkPermitContent = () => {
     <div className={styles.singleSectionData}>
       <ToastContainer />
 
-      <textarea
+      <input
         placeholder="Work Permit Heading"
         name="WorkPerHeading"
         value={sectionDataSingle.WorkPerHeading || ""}
@@ -139,7 +139,7 @@ const WorkPermitContent = () => {
       />
 
       {/* Considering Section */}
-      <textarea
+      <input
         placeholder="Considering Heading"
         name="ConsideringHeading"
         value={sectionDataSingle.ConsideringHeading || ""}
@@ -147,7 +147,7 @@ const WorkPermitContent = () => {
         disabled={!editMode}
       />
 
-      <textarea
+      <input
         placeholder="Considering Subheading"
         name="ConsideringSubHeading"
         value={sectionDataSingle.ConsideringSubHeading || ""}
@@ -156,7 +156,7 @@ const WorkPermitContent = () => {
       />
 
       {/* Pathways Section */}
-      <textarea
+      <input
         placeholder="Pathways Heading"
         name="PathwaysHeading"
         value={sectionDataSingle.PathwaysHeading || ""}
@@ -181,7 +181,7 @@ const WorkPermitContent = () => {
       />
 
       {/* How We Help Section */}
-      <textarea
+      <input
         placeholder="How We Help Heading"
         name="HowWeHelpHeading"
         value={sectionDataSingle.HowWeHelpHeading || ""}
@@ -189,7 +189,7 @@ const WorkPermitContent = () => {
         disabled={!editMode}
       />
 
-      <textarea
+      <input
         placeholder="How We Help Subheading"
         name="HowWeHelpSubHeading"
         value={sectionDataSingle.HowWeHelpSubHeading || ""}

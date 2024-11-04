@@ -59,7 +59,6 @@ const ExpressEntry = () => {
     er2: "",
     er3: "",
     drawHeading: "",
-    drawDescription: "",
     draw1: "",
     draw2: "",
     draw3: "",
@@ -68,21 +67,24 @@ const ExpressEntry = () => {
     a1: "",
     a2: "",
     a3: "",
-    a4: "",
-    a5: "",
-    a6: "",
     refusalHeading: "",
     r1: "",
     r2: "",
     r3: "",
     r4: "",
-    r5: "",
-    r6: "",
-    r7: "",
-    r8: "",
     appointmentHeading: "",
     appointmentDescription: "",
-    appointmentLink: "",
+    BenifitsHeading: "",
+    b1: "",
+    b2: "",
+    b3: "",
+    b4: "",
+
+    WhyChooseUsHeading01: "",
+    wcu1: "",
+    wcu2: "",
+    wcu3: "",
+    wcu4: "",
   });
 
   const [editMode, setEditMode] = useState(false);
@@ -238,15 +240,6 @@ const ExpressEntry = () => {
         disabled={!editMode}
       />
 
-      {/* Draw Description */}
-      <textarea
-        placeholder="Draw Description"
-        name="drawDescription"
-        value={sectionData.drawDescription || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-
       {/* Draw Reasons */}
       <input
         placeholder="Draw Reason 1"
@@ -310,27 +303,6 @@ const ExpressEntry = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="Advantage 4"
-        name="a4"
-        value={sectionData.a4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="Advantage 5"
-        name="a5"
-        value={sectionData.a5 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="Advantage 6"
-        name="a6"
-        value={sectionData.a6 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
 
       {/* Refusal Heading */}
       <input
@@ -377,27 +349,6 @@ const ExpressEntry = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="Refusal Reason 6"
-        name="r6"
-        value={sectionData.r6 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="Refusal Reason 7"
-        name="r7"
-        value={sectionData.r7 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="Refusal Reason 8"
-        name="r8"
-        value={sectionData.r8 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
 
       {/* Appointment Heading */}
       <input
@@ -417,11 +368,76 @@ const ExpressEntry = () => {
         disabled={!editMode}
       />
 
-      {/* Appointment Link */}
       <input
-        placeholder="Appointment Link"
-        name="appointmentLink"
-        value={sectionData.appointmentLink || ""}
+        placeholder="Benefits Heading"
+        name="BenifitsHeading"
+        value={sectionData.BenifitsHeading || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Benefit 1"
+        name="b1"
+        value={sectionData.b1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Benefit 2"
+        name="b2"
+        value={sectionData.b2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <textarea
+        placeholder="Benefit 3"
+        name="b3"
+        value={sectionData.b3 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Benefit 4"
+        name="b4"
+        value={sectionData.b4 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="Why Choose Us Heading"
+        name="WhyChooseUsHeading01"
+        value={sectionData.WhyChooseUsHeading01 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Why Choose Us Point 1"
+        name="wcu1"
+        value={sectionData.wcu1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Why Choose Us Point 2"
+        name="wcu2"
+        value={sectionData.wcu2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <textarea
+        placeholder="Why Choose Us Point 3"
+        name="wcu3"
+        value={sectionData.wcu3 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Why Choose Us Point 4"
+        name="wcu4"
+        value={sectionData.wcu4 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />

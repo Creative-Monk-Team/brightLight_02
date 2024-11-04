@@ -131,6 +131,28 @@ const LonelyCanadianContent = () => {
     wcu2: "",
     wcu3: "",
     wcu4: "",
+
+    faq_heading: "",
+    q1: "",
+    qa1: "",
+    q2: "",
+    qa2: "",
+    q3: "",
+    qa3: "",
+    q4: "",
+    qa4: "",
+    q5: "",
+    qa5: "",
+    q6: "",
+    qa6: "",
+    q7: "",
+    qa7: "",
+    q8: "",
+    qa8: "",
+    q9: "",
+    qa9: "",
+    q10: "",
+    qa10: "",
   });
 
   const [editMode, setEditMode] = useState(false);
@@ -798,6 +820,158 @@ const LonelyCanadianContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+
+      <h1 className={styles.faqStartsHeading}>FAQ's Starts Below</h1>
+
+      <input
+        placeholder="FAQ's Made Simple"
+        name="faq_heading"
+        value={sectionDataSingle.faq_heading || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Question 1"
+        name="q1"
+        value={sectionDataSingle.q1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Answer 1"
+        name="qa1"
+        value={sectionDataSingle.qa1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Question 2"
+        name="q2"
+        value={sectionDataSingle.q2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Answer 2"
+        name="qa2"
+        value={sectionDataSingle.qa2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Question 3"
+        name="q3"
+        value={sectionDataSingle.q3 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Answer 3"
+        name="qa3"
+        value={sectionDataSingle.qa3 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Question 4"
+        name="q4"
+        value={sectionDataSingle.q4 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Answer 4"
+        name="qa4"
+        value={sectionDataSingle.qa4 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Question 5"
+        name="q5"
+        value={sectionDataSingle.q5 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Answer 5"
+        name="qa5"
+        value={sectionDataSingle.qa5 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Question 6"
+        name="q6"
+        value={sectionDataSingle.q6 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Answer 6"
+        name="qa6"
+        value={sectionDataSingle.qa6 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Question 7"
+        name="q7"
+        value={sectionDataSingle.q7 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Answer 7"
+        name="qa7"
+        value={sectionDataSingle.qa7 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Question 8"
+        name="q8"
+        value={sectionDataSingle.q8 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Answer 8"
+        name="qa8"
+        value={sectionDataSingle.qa8 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Question 9"
+        name="q9"
+        value={sectionDataSingle.q9 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Answer 9"
+        name="qa9"
+        value={sectionDataSingle.qa9 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Question 10"
+        name="q10"
+        value={sectionDataSingle.q10 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Answer 10"
+        name="qa10"
+        value={sectionDataSingle.qa10 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <h1 className={styles.faqEndHeading}>FAQ's Ends here</h1>
 
       <div className={styles.editIcons}>
         {editMode ? (

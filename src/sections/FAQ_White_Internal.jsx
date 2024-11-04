@@ -31,34 +31,40 @@ let FAQ_White_Internal = ({ data }) => {
   }
 
   return (
-    <div className={styles.faqSection}>
-      <div className={styles.faqParentSection}>
-        <div className={styles.faqQuestionSection}>
-          <div className={styles.questionMarkSection}>
-            <p>?</p>
-          </div>
-          <div className={styles.faqQuestionsParentSection}>
-            <h1>{faqHeading}</h1>
-            <div className={styles.questions}>
-              {faqData.map((item, index) => (
-                <div
-                  onClick={() => handleQuestionClick(index)}
-                  key={index}
-                  className={`${styles.questionSection} ${activeIndex === index ? styles.active : ""}`}
-                >
-                  <p>{item.question}</p>
-                  <RightArrow width={30} height={30} />
+    <>
+      {faqData.length ? (
+        <div className={styles.faqSection}>
+          <div className={styles.faqParentSection}>
+            <div className={styles.faqQuestionSection}>
+              <div className={styles.questionMarkSection}>
+                <p>?</p>
+              </div>
+              <div className={styles.faqQuestionsParentSection}>
+                <h1>{faqHeading}</h1>
+                <div className={styles.questions}>
+                  {faqData.map((item, index) => (
+                    <div
+                      onClick={() => handleQuestionClick(index)}
+                      key={index}
+                      className={`${styles.questionSection} ${
+                        activeIndex === index ? styles.active : ""
+                      }`}
+                    >
+                      <p>{item.question}</p>
+                      <RightArrow width={30} height={30} />
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
             </div>
+            <div
+              className={styles.faqAnswersSection}
+              dangerouslySetInnerHTML={{ __html: faqData[activeIndex]?.answer }}
+            />
           </div>
         </div>
-        <div
-          className={styles.faqAnswersSection}
-          dangerouslySetInnerHTML={{ __html: faqData[activeIndex]?.answer }}
-        />
-      </div>
-    </div>
+      ) : null}
+    </>
   );
 };
 

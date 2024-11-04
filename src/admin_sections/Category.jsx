@@ -38,7 +38,6 @@ const CategoryBased = () => {
     description: "",
     aboutHeading: "",
     aboutDescription: "",
-    aboutImage: "",
     drawsHeading: "",
     draws: ["", "", "", "", "", "", "", ""],
     workHeading: "",
@@ -256,13 +255,6 @@ const CategoryBased = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="About Image"
-        name="aboutImage"
-        value={sectionData.aboutImage || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
 
       {/* Draws Section */}
       <input
@@ -446,24 +438,24 @@ const CategoryBased = () => {
         disabled={!editMode}
       />
 
-<input
+      <input
         placeholder="Why Choose Us Heading"
         name="WhyChooseUsHeading01"
-        value={sectionDataSingle.WhyChooseUsHeading01 || ""}
+        value={sectionData.WhyChooseUsHeading01 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Why Choose Us Point 1"
         name="wcu1"
-        value={sectionDataSingle.wcu1 || ""}
+        value={sectionData.wcu1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Why Choose Us Point 2"
         name="wcu2"
-        value={sectionDataSingle.wcu2 || ""}
+        value={sectionData.wcu2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -471,14 +463,14 @@ const CategoryBased = () => {
       <textarea
         placeholder="Why Choose Us Point 3"
         name="wcu3"
-        value={sectionDataSingle.wcu3 || ""}
+        value={sectionData.wcu3 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Why Choose Us Point 4"
         name="wcu4"
-        value={sectionDataSingle.wcu4 || ""}
+        value={sectionData.wcu4 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />

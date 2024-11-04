@@ -350,6 +350,14 @@ let Admin = () => {
               </div>
               <div
                 className={`${styles.page} ${
+                  activePage === "transport" ? styles.activePage : ""
+                }`}
+                onClick={() => handlePageClick("transport")}
+              >
+                <p>Testimonials</p>
+              </div>
+              <div
+                className={`${styles.page} ${
                   activePage === "blogs" ? styles.activePage : ""
                 }`}
                 onClick={() => handlePageClick("blogs")}
@@ -373,15 +381,6 @@ let Admin = () => {
                 onClick={() => handlePageClick("federal")}
               >
                 <p>Federal Skilled</p>
-              </div>
-
-              <div
-                className={`${styles.page} ${
-                  activePage === "transport" ? styles.activePage : ""
-                }`}
-                onClick={() => handlePageClick("transport")}
-              >
-                <p>Transport Occupation</p>
               </div>
 
               <div
@@ -492,24 +491,6 @@ let Admin = () => {
 
                   <div
                     className={`${styles.section} ${
-                      activeSection === "section8" ? styles.activeSection : ""
-                    }`}
-                    onClick={() => handleSectionClick("section8")}
-                  >
-                    Testimonials
-                  </div>
-
-                  <div
-                    className={`${styles.section} ${
-                      activeSection === "section9" ? styles.activeSection : ""
-                    }`}
-                    onClick={() => handleSectionClick("section9")}
-                  >
-                    Testimonials Videos
-                  </div>
-
-                  <div
-                    className={`${styles.section} ${
                       activeSection === "section10" ? styles.activeSection : ""
                     }`}
                     onClick={() => handleSectionClick("section10")}
@@ -562,14 +543,6 @@ let Admin = () => {
 
               {activePage === "home" && activeSection === "section7" && (
                 <Achievements />
-              )}
-
-              {activePage === "home" && activeSection === "section8" && (
-                <Testimonials />
-              )}
-
-              {activePage === "home" && activeSection === "section9" && (
-                <TestimonialsVideo />
               )}
 
               {activePage === "home" && activeSection === "section10" && (
@@ -988,21 +961,20 @@ let Admin = () => {
                 <div className={styles.sections}>
                   <div
                     className={`${styles.section} ${
-                      activeSection === "Transport" ? styles.activeSection : ""
+                      activeSection === "section8" ? styles.activeSection : ""
                     }`}
-                    onClick={() => handleSectionClick("Transport")}
+                    onClick={() => handleSectionClick("section8")}
                   >
-                    Page Content
+                    Testimonials
                   </div>
+
                   <div
                     className={`${styles.section} ${
-                      activeSection === "transport-meta"
-                        ? styles.activeSection
-                        : ""
+                      activeSection === "section9" ? styles.activeSection : ""
                     }`}
-                    onClick={() => handleSectionClick("transport-meta")}
+                    onClick={() => handleSectionClick("section9")}
                   >
-                    Transport Occupation Meta
+                    Testimonials Videos
                   </div>
                 </div>
               )}
@@ -1065,12 +1037,13 @@ let Admin = () => {
               {activePage === "category" &&
                 activeSection === "category-meta" && <CategoryMeta />}
 
-              {activePage === "transport" && activeSection === "Transport" && (
-                <TransportOccupation />
+              {activePage === "transport" && activeSection === "section8" && (
+                <Testimonials />
               )}
 
-              {activePage === "transport" &&
-                activeSection === "transport-meta" && <TransportMeta />}
+              {activePage === "transport" && activeSection === "section9" && (
+                <TestimonialsVideo />
+              )}
 
               {activePage === "contact" && activeSection === "page-meta" && (
                 <ContactMeta />

@@ -213,7 +213,7 @@ const VisitorToStudentContent = () => {
     <div className={styles.singleSectionData}>
       <ToastContainer />
 
-      <textarea
+      <input
         placeholder="Visitor to Student Heading"
         name="visitorToStudentHeading"
         value={sectionDataSingle.visitorToStudentHeading || ""}
@@ -230,7 +230,7 @@ const VisitorToStudentContent = () => {
       />
 
       {/* Benefits Section */}
-      <textarea
+      <input
         placeholder="Benefits Heading"
         name="BenifitsHeading"
         value={sectionDataSingle.BenifitsHeading || ""}
@@ -238,7 +238,7 @@ const VisitorToStudentContent = () => {
         disabled={!editMode}
       />
 
-      <textarea
+      <input
         placeholder="Benefits Subheading"
         name="BenifitsSubHead"
         value={sectionDataSingle.BenifitsSubHead || ""}
@@ -304,7 +304,7 @@ const VisitorToStudentContent = () => {
       />
 
       {/* Eligibility Section */}
-      <textarea
+      <input
         placeholder="Eligibility Heading"
         name="EligibilityHeading"
         value={sectionDataSingle.EligibilityHeading || ""}
@@ -370,7 +370,7 @@ const VisitorToStudentContent = () => {
       />
 
       {/* Ukrainian Specifics Section */}
-      <textarea
+      <input
         placeholder="Ukrain Heading"
         name="UkrainHeading"
         value={sectionDataSingle.UkrainHeading || ""}
@@ -443,7 +443,7 @@ const VisitorToStudentContent = () => {
       />
 
       {/* Spouse and Dependent Children Section */}
-      <textarea
+      <input
         placeholder="Spouse and Dependent Children Heading"
         name="SpouseDepenChildHeading"
         value={sectionDataSingle.SpouseDepenChildHeading || ""}
@@ -500,7 +500,7 @@ const VisitorToStudentContent = () => {
       />
 
       {/* How to Apply Section */}
-      <textarea
+      <input
         placeholder="How to Apply Heading"
         name="HowtoApplyHeading"
         value={sectionDataSingle.HowtoApplyHeading || ""}
@@ -508,7 +508,7 @@ const VisitorToStudentContent = () => {
         disabled={!editMode}
       />
 
-      <textarea
+      <input
         placeholder="How to Apply Subheading"
         name="HowtoApplySubHead"
         value={sectionDataSingle.HowtoApplySubHead || ""}
@@ -557,7 +557,7 @@ const VisitorToStudentContent = () => {
       />
 
       {/* Refusal Section */}
-      <textarea
+      <input
         placeholder="Refusal Heading"
         name="RefusalHeading"
         value={sectionDataSingle.RefusalHeading || ""}
@@ -565,7 +565,7 @@ const VisitorToStudentContent = () => {
         disabled={!editMode}
       />
 
-      <textarea
+      <input
         placeholder="Refusal Subheading"
         name="RefusalSubHead"
         value={sectionDataSingle.RefusalSubHead || ""}
@@ -638,7 +638,7 @@ const VisitorToStudentContent = () => {
         disabled={!editMode}
       />
 
-      <textarea
+      <input
         placeholder="Still Not Heading"
         name="StillNotHeading"
         value={sectionDataSingle.StillNotHeading || ""}
@@ -663,7 +663,7 @@ const VisitorToStudentContent = () => {
       />
 
       {/* If You Submit Section */}
-      <textarea
+      <input
         placeholder="If You Submit Heading"
         name="IfYouSubmitHeading"
         value={sectionDataSingle.IfYouSubmitHeading || ""}
@@ -671,7 +671,7 @@ const VisitorToStudentContent = () => {
         disabled={!editMode}
       />
 
-      <textarea
+      <input
         placeholder="If You Submit Subheading"
         name="IfYouSubmitSubHead"
         value={sectionDataSingle.IfYouSubmitSubHead || ""}
@@ -688,7 +688,7 @@ const VisitorToStudentContent = () => {
       />
 
       {/* If You Graduated Section */}
-      <textarea
+      <input
         placeholder="If You Graduated Heading"
         name="IfYouGraduatedHeading"
         value={sectionDataSingle.IfYouGraduatedHeading || ""}
@@ -713,7 +713,7 @@ const VisitorToStudentContent = () => {
       />
 
       {/* If You Graduated Another Section */}
-      <textarea
+      <input
         placeholder="If You Graduated Another Heading"
         name="IfYouGraduatedAnotherHeading"
         value={sectionDataSingle.IfYouGraduatedAnotherHeading || ""}
@@ -738,7 +738,7 @@ const VisitorToStudentContent = () => {
       />
 
       {/* If You Graduated College Section */}
-      <textarea
+      <input
         placeholder="If You Graduated College Heading"
         name="IfYouGraduatedCollegeHeading"
         value={sectionDataSingle.IfYouGraduatedCollegeHeading || ""}
@@ -763,7 +763,7 @@ const VisitorToStudentContent = () => {
       />
 
       {/* Field of Study Requirements Section */}
-      <textarea
+      <input
         placeholder="Field of Study Requirements Heading"
         name="FieldStudyRequHeading"
         value={sectionDataSingle.FieldStudyRequHeading || ""}
@@ -821,7 +821,7 @@ const VisitorToStudentContent = () => {
       />
 
       {/* Important Points Note Section */}
-      <textarea
+      <input
         placeholder="Important Point Note Heading"
         name="ImportantPointNoteHeading"
         value={sectionDataSingle.ImportantPointNoteHeading || ""}
