@@ -29,7 +29,7 @@ let CategoryBased = () => {
       })
       .then((data) => {
         if (data && data[0]) {
-          setData(data[1]);
+          setData(data[0]);
         }
       })
       .catch((error) => {
