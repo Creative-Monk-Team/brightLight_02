@@ -6,6 +6,7 @@ import { Sticky, StickyContainer } from "react-sticky";
 import ogImage from "../assets/ogImage.png";
 import { Helmet } from "react-helmet-async";
 
+
 const FederalSkilled = () => {
   let [metaData, setMetaData] = useState([]);
   const [isFooterVisible, setIsFooterVisible] = useState(false);

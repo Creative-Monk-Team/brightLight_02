@@ -3,8 +3,10 @@ import styles from "../styles/PilotPrograms.module.css";
 import Navbar1 from "../components/Navbar1";
 import Footer1 from "../components/Footer1";
 import RecentBlogs from "../sections/RecentBlogs";
+import Testimonials from "../sections/Testimonials";
 import ogImage from "../assets/ogImage.png";
 import { Helmet } from "react-helmet-async";
+import FAQ_White_Internal from "../sections/FAQ_White_Internal";
 
 const PilotPrograms = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -272,6 +274,14 @@ const PilotPrograms = () => {
             Contact
           </button>
         </section>
+      </div>
+
+      <div id="faq">
+      <FAQ_White_Internal data={pData} />
+      </div>
+
+      <div id="testimonials">
+        <Testimonials />
       </div>
 
       <div id="blogs">

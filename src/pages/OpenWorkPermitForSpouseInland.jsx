@@ -9,6 +9,7 @@ import FAQ from "../sections/FAQ";
 import OurProcess from "../sections/OurProcess";
 import ogImage from "../assets/ogImage.png";
 import { Helmet } from "react-helmet-async";
+import FAQ_White_Internal from "../sections/FAQ_White_Internal";
 
 const OpenWorkPermitForSpouseInland = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -353,7 +354,7 @@ const OpenWorkPermitForSpouseInland = () => {
       <OurProcess />
 
       <div id="faqs">
-        <FAQ />
+      <FAQ_White_Internal data={pData} />
       </div>
 
       <div id="testimonials">

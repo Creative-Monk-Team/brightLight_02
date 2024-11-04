@@ -13,12 +13,16 @@ let FAQ_White_Internal = ({ data }) => {
       const arrayData = [];
 
       for (let i = 1; i <= 15; i++) {
-        if (data[`q${i}`] && data[`qa${i}`]) {
-          arrayData.push({ question: data[`q${i}`], answer: data[`qa${i}`] });
+        const question = data[`q${i}`]?.trim();
+        const answer = data[`qa${i}`]?.trim();
+  
+        if (question && answer) {
+          arrayData.push({ question, answer });
         }
       }
 
       setFaqData(arrayData);
+      console.log(arrayData);
     }
   }, [data]);
 
@@ -27,7 +31,7 @@ let FAQ_White_Internal = ({ data }) => {
   };
 
   if (!faqData.length) {
-    return <div>Loading FAQs...</div>;
+    return <div></div>;
   }
 
   return (

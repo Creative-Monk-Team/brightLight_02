@@ -8,6 +8,7 @@ import RecentBlogs from "../sections/RecentBlogs";
 import FAQ from "../sections/FAQ";
 import ogImage from "../assets/ogImage.png";
 import { Helmet } from "react-helmet-async";
+import FAQ_White_Internal from "../sections/FAQ_White_Internal";
 
 const VisitorVisa = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -375,7 +376,7 @@ const VisitorVisa = () => {
       </div>
 
       <div id="faqs">
-        <FAQ />
+      <FAQ_White_Internal data={pData} />
       </div>
       <div id="testimonials">
         <Testimonials />

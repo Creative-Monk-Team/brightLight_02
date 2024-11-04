@@ -10,6 +10,7 @@ import Navbar1 from "../components/Navbar1";
 import Footer1 from "../components/Footer1";
 import ogImage from "../assets/ogImage.png";
 import { Helmet } from "react-helmet-async";
+import FAQ_White_Internal from "../sections/FAQ_White_Internal";
 
 let CategoryBased = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -172,31 +173,6 @@ let CategoryBased = () => {
             <p>{data?.description}</p>
           </div>
 
-          {/* <div
-            className={`${styles.bannerHeadingRotateParent} ${
-              isDropdownOpen ? styles.active : ""}`}>
-            <div
-              className={styles.bannerHeadingRotate}
-              onClick={toggleDropdown}
-            >
-              <h3>QUICK ACCESS</h3>
-            </div>
-            <div className={styles.bannerHeadingRotatePara}>
-              <p>About the program</p>
-              <p>Benefits</p>
-              <p>Categories</p>
-              <p>How it Works</p>
-              <p>Eligibility</p>
-              <p>Draw History</p>
-              <p>How to Apply</p>
-              <p>Refusal Reasons</p>
-              <p>Book Appointment</p>
-              <p>Why Choose Us</p>
-              <p>Testimonials</p>
-              <p>FAQs</p>
-              <p>Blogs</p>
-            </div>
-          </div> */}
         </div>
         <div
           className={`${styles.bannerHeadingRotateParent} ${
@@ -360,7 +336,6 @@ let CategoryBased = () => {
               {data?.b1 ? <li>{data?.b1}</li> : null}
               {data?.b2 ? <li>{data?.b2}</li> : null}
               {data?.b3 ? <li>{data?.b3}</li> : null}
-              {data?.b4 ? <li>{data?.b4}</li> : null}
             </ul>
           </div>
         </div>
@@ -385,7 +360,7 @@ let CategoryBased = () => {
                       data?.a1l ? (window.location.href = data?.a1l) : null
                     }
                     style={{
-                      cursor: data?.a1l ? "pointer" : "none",
+                      cursor: data?.a1l ? "pointer" : "pointer",
                     }}
                   >
                     <p>{data?.a1}</p>
@@ -406,7 +381,7 @@ let CategoryBased = () => {
                       data?.a2l ? (window.location.href = data?.a2l) : null
                     }
                     style={{
-                      cursor: data?.a2l ? "pointer" : "none",
+                      cursor: data?.a2l ? "pointer" : "pointer",
                     }}
                   >
                     <p>{data?.a2}</p>
@@ -427,7 +402,7 @@ let CategoryBased = () => {
                       data?.a3l ? (window.location.href = data?.a3l) : null
                     }
                     style={{
-                      cursor: data?.a3l ? "pointer" : "none",
+                      cursor: data?.a3l ? "pointer" : "pointer",
                     }}
                   >
                     <p>{data?.a3}</p>
@@ -448,7 +423,7 @@ let CategoryBased = () => {
                       data?.a4l ? (window.location.href = data?.a4l) : null
                     }
                     style={{
-                      cursor: data?.a4l ? "pointer" : "none",
+                      cursor: data?.a4l ? "pointer" : "pointer",
                     }}
                   >
                     <p>{data?.a4}</p>
@@ -469,7 +444,7 @@ let CategoryBased = () => {
                       data?.a5l ? (window.location.href = data?.a5l) : null
                     }
                     style={{
-                      cursor: data?.a5l ? "pointer" : "none",
+                      cursor: data?.a5l ? "pointer" : "pointer",
                     }}
                   >
                     <p>{data?.a5}</p>
@@ -490,7 +465,7 @@ let CategoryBased = () => {
                       data?.a6l ? (window.location.href = data?.a6l) : null
                     }
                     style={{
-                      cursor: data?.a6l ? "pointer" : "none",
+                      cursor: data?.a6l ? "pointer" : "pointer",
                     }}
                   >
                     <p>{data?.a6}</p>
@@ -573,14 +548,14 @@ let CategoryBased = () => {
         </button>
       </div>
 
-      <div id="whyChooseUs"></div>
-      <BestChoice />
-      <div id="testimonials"></div>
-      <Testimonials />
-      <div id="faqs"></div>
-      <FAQ />
-      <div id="blogs"></div>
-      <Blogs />
+      <div id="whyChooseUs"><BestChoice /></div>
+      
+      <div id="testimonials">  <Testimonials /></div>
+    
+      <div id="faqs">    <FAQ_White_Internal data={data} /></div>
+
+      <div id="blogs"> <Blogs /></div>
+     
 
       <Footer1 />
     </>

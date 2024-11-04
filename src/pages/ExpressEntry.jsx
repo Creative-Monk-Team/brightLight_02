@@ -16,7 +16,6 @@ const ExpressEntry = () => {
   const [data, setData] = useState({});
   let [metaData, setMetaData] = useState([]);
   let [pData, setPData] = useState([]);
-  let [faqData, setFaqData] = useState([]);
 
   useEffect(() => {
     fetch("https://brightlight-node.onrender.com/express-entry")
@@ -58,36 +57,7 @@ const ExpressEntry = () => {
       });
   }, []);
 
-  useEffect(() => {
-    // setFaqHeading(data.faq_heading);
-    let arrayData = [];
-    if (data.q1 && data.qa1) {
-      arrayData.push({ question: data.q1, answer: data.qa1 });
-    }
-    if (data.q2 && data.qa2) {
-      arrayData.push({ question: data.q2, answer: data.qa2 });
-    }
-    if (data.q3 && data.qa3) {
-      arrayData.push({ question: data.q3, answer: data.qa3 });
-    }
-    if (data.q4 && data.qa4) {
-      arrayData.push({ question: data.q4, answer: data.qa4 });
-    }
-    if (data.q5 && data.qa5) {
-      arrayData.push({ question: data.q5, answer: data.qa5 });
-    }
-    if (data.q6 && data.qa6) {
-      arrayData.push({ question: data.q6, answer: data.qa6 });
-    }
-    if (data.q7 && data.qa7) {
-      arrayData.push({ question: data.q7, answer: data.qa7 });
-    }
-    if (data.q8 && data.qa8) {
-      arrayData.push({ question: data.q8, answer: data.qa8 });
-    }
-    console.log("arrayData", data.q1);
-    setFaqData(arrayData);
-  }, []);
+
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -423,7 +393,7 @@ const ExpressEntry = () => {
       </div>
 
       <div id="faqs">
-      <FAQ_White_Internal data={pData} />
+      <FAQ_White_Internal data={data} />
       </div>
 
       <div id="testimonials">
