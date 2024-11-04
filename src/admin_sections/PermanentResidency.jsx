@@ -4,7 +4,7 @@ import editIcon from "../assets/edit.png";
 import update from "../assets/update.png";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 
-const OutsideCanadaContent = () => {
+const PermanentResidencyContent = () => {
   const notifySuccess = () => {
     toast.success("Success", {
       position: "top-center",
@@ -48,18 +48,18 @@ const OutsideCanadaContent = () => {
   };
 
   const [sectionDataSingle, setSectionDataSingle] = useState({
-    outsideCanadaHeading: "",
-    outsideCanadatPara1: "",
-    outsideCanadatPara2: "",
+    heading: "",
+    description: "",
+    description2: "",
 
-    outsideCanadatPara3: "",
-    TwoMainHeading: "",
+    aboutDescription: "",
+    aboutDescription2: "",
 
-    WhyChooseUsHeading01: "",
-    wcu1: "",
-    wcu2: "",
-    wcu3: "",
-    wcu4: "",
+    pathHeading: "",
+    p1Heading: "",
+    p2Heading: "",
+    p3Heading: "",
+    p4Heading: "",
 
     faq_heading: "",
     q1: "",
@@ -153,78 +153,81 @@ const OutsideCanadaContent = () => {
       <ToastContainer />
 
       <input
-        placeholder="Outside Canada Heading"
-        name="outsideCanadaHeading"
-        value={sectionDataSingle.outsideCanadaHeading || ""}
+        placeholder="Heading"
+        name="heading"
+        value={sectionDataSingle.heading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <textarea
-        placeholder="Outside Canada Para 1"
-        name="outsideCanadatPara1"
-        value={sectionDataSingle.outsideCanadatPara1 || ""}
+        placeholder="Description"
+        name="description"
+        value={sectionDataSingle.description || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <textarea
-        placeholder="Outside Canada Para 2"
-        name="outsideCanadatPara2"
-        value={sectionDataSingle.outsideCanadatPara2 || ""}
+        placeholder="Description 2"
+        name="description2"
+        value={sectionDataSingle.description2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <textarea
-        placeholder="Outside Canada Para 3"
-        name="outsideCanadatPara3"
-        value={sectionDataSingle.outsideCanadatPara3 || ""}
+        placeholder="About Description"
+        name="aboutDescription"
+        value={sectionDataSingle.aboutDescription || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <textarea
+        placeholder="About Description 2"
+        name="aboutDescription2"
+        value={sectionDataSingle.aboutDescription2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <input
-        placeholder="Two Main Heading"
-        name="TwoMainHeading"
-        value={sectionDataSingle.TwoMainHeading || ""}
+        placeholder="Path Heading"
+        name="pathHeading"
+        value={sectionDataSingle.pathHeading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <input
-        placeholder="Why Choose Us Heading"
-        name="WhyChooseUsHeading01"
-        value={sectionDataSingle.WhyChooseUsHeading01 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Why Choose Us Point 1"
-        name="wcu1"
-        value={sectionDataSingle.wcu1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Why Choose Us Point 2"
-        name="wcu2"
-        value={sectionDataSingle.wcu2 || ""}
+        placeholder="P1 Heading"
+        name="p1Heading"
+        value={sectionDataSingle.p1Heading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
-      <textarea
-        placeholder="Why Choose Us Point 3"
-        name="wcu3"
-        value={sectionDataSingle.wcu3 || ""}
+      <input
+        placeholder="P2 Heading"
+        name="p2Heading"
+        value={sectionDataSingle.p2Heading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="Why Choose Us Point 4"
-        name="wcu4"
-        value={sectionDataSingle.wcu4 || ""}
+
+      <input
+        placeholder="P3 Heading"
+        name="p3Heading"
+        value={sectionDataSingle.p3Heading || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="P4 Heading"
+        name="p4Heading"
+        value={sectionDataSingle.p4Heading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -423,4 +426,4 @@ const OutsideCanadaContent = () => {
   );
 };
 
-export default OutsideCanadaContent;
+export default PermanentResidencyContent;

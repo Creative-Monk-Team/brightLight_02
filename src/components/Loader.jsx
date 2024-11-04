@@ -53,7 +53,7 @@ const Loader = () => {
       .then(() => {
         setTimeout(() => {
           setIsLoaded(true);
-        }, 3000);
+        }, 2500);
       })
       .catch((error) => {
         console.log(error);
@@ -61,7 +61,7 @@ const Loader = () => {
 
     const loadTimeout = setTimeout(() => {
       setIsLoaded(true);
-    }, 3000);
+    }, 2500);
 
     return () => clearTimeout(loadTimeout); // Cleanup on unmount
   }, []);

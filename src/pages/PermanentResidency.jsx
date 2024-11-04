@@ -9,17 +9,16 @@ import RecentBlogs from "../sections/RecentBlogs";
 import Testimonials from "../sections/Testimonials";
 import ogImage from "../assets/ogImage.png";
 import { Helmet } from "react-helmet-async";
+import FAQ_White_Internal from "../sections/FAQ_White_Internal";
 
 const PermanentResidency = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   let [metaData, setMetaData] = useState([]);
-  let [pData,setPData]=useState([]);
+  let [pData, setPData] = useState([]);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
-
-
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -57,7 +56,6 @@ const PermanentResidency = () => {
       });
   }, []);
 
-
   const sectionsRef = useRef([]);
 
   const handleScroll = () => {
@@ -82,7 +80,7 @@ const PermanentResidency = () => {
 
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>
           {metaData?.metaTitle
             ? metaData?.metaTitle
@@ -129,10 +127,8 @@ const PermanentResidency = () => {
         <div className={styles.banner}>
           <div className={styles.bannerHeading}>
             <h1>{pData?.heading}</h1>
-            <p> {pData?.description2 }</p>
-            <p>
-            {pData?.description}
-            </p>
+            <p>{pData?.description}</p>
+            <p> {pData?.description2}</p>
           </div>
 
           <div
@@ -165,13 +161,9 @@ const PermanentResidency = () => {
 
       <div id="about-program" className={styles.canadianParent}>
         <div className={styles.canadianContent}>
-          <p>
-          {pData?.aboutDescription}
-          </p>
+          <p>{pData?.aboutDescription}</p>
 
-          <p>
-          {pData?.aboutDescription2}
-          </p>
+          <p>{pData?.aboutDescription2}</p>
         </div>
 
         <div className={styles.canadianImg}>
@@ -186,19 +178,31 @@ const PermanentResidency = () => {
           </div>
 
           <div className={styles.pathwayCardsParent}>
-            <div className={styles.pathwayCards} onClick={() =>(window.location.href ="/express-entry")}>
+            <div
+              className={styles.pathwayCards}
+              onClick={() => (window.location.href = "/express-entry")}
+            >
               <img src={studyVisaImg} alt="Express Entry" />
               <h2>{pData?.p1Heading}</h2>
             </div>
-            <div className={styles.pathwayCards} onClick={() =>(window.location.href ="/pilot-programs")}>
+            <div
+              className={styles.pathwayCards}
+              onClick={() => (window.location.href = "/pilot-programs")}
+            >
               <img src={studyVisaImg} alt="Pilot Program" />
               <h2>{pData?.p2Heading}</h2>
             </div>
-            <div className={styles.pathwayCards} onClick={() =>(window.location.href ="/pnp")}>
+            <div
+              className={styles.pathwayCards}
+              onClick={() => (window.location.href = "/pnp")}
+            >
               <img src={studyVisaImg} alt="PNP" />
               <h2>{pData?.p3Heading}</h2>
             </div>
-            <div className={styles.pathwayCards} onClick={() =>(window.location.href ="/rnip")}>
+            <div
+              className={styles.pathwayCards}
+              onClick={() => (window.location.href = "/rnip")}
+            >
               <img src={studyVisaImg} alt="RNIP" />
               <h2>{pData?.p4Heading}</h2>
             </div>
@@ -208,6 +212,10 @@ const PermanentResidency = () => {
 
       <div id="Our-process">
         <OurProcess />
+      </div>
+
+      <div id="faq">
+        <FAQ_White_Internal data={pData} />
       </div>
 
       <div id="testimonials">

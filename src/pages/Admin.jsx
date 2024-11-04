@@ -202,6 +202,8 @@ import VisitorVisaContent from "../admin_sections/VisitorVisa";
 import VisitorVisaMeta from "../admin_sections/VisitorVisaMeta";
 import WorkPermitContent from "../admin_sections/Workpermit";
 import WorkPermitMeta from "../admin_sections/WorkpermitMeta";
+import PermanentResidencyContent from "../admin_sections/PermanentResidency";
+import PermanentResidencyMeta from "../admin_sections/PermanentResidencyMeta";
 
 let Admin = () => {
   let { logout } = useAuth();
@@ -1765,6 +1767,17 @@ let Admin = () => {
 
                   <div
                     className={`${styles.page} ${
+                      activePage === "permanent_residency"
+                        ? styles.activePage
+                        : ""
+                    }`}
+                    onClick={() => handlePageClick("permanent_residency")}
+                  >
+                    <p>Pr Renewal Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
                       activePage === "restoration_status"
                         ? styles.activePage
                         : ""
@@ -2850,6 +2863,36 @@ let Admin = () => {
                       }`}
                       onClick={() =>
                         handleSectionClick("french_tageted_draw_meta")
+                      }
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
+                {activePage === "permanent_residency" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "permanent_residency_content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("permanent_residency_content")
+                      }
+                    >
+                      Page Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "permanent_residency_meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() =>
+                        handleSectionClick("permanent_residency_meta")
                       }
                     >
                       Page Meta
@@ -4861,6 +4904,15 @@ let Admin = () => {
                     )}
                   {activePage === "work_per" &&
                     activeSection === "work_per_meta" && <WorkPermitMeta />}
+
+                  {activePage === "permanent_residency" &&
+                    activeSection === "permanent_residency_content" && (
+                      <PermanentResidencyContent />
+                    )}
+                  {activePage === "permanent_residency" &&
+                    activeSection === "permanent_residency_meta" && (
+                      <PermanentResidencyMeta />
+                    )}
                 </div>
               </div>
             </div>
