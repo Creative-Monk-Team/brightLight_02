@@ -413,14 +413,6 @@ let Admin = () => {
               </div>
 
               <div
-                className={`${styles.page} ${
-                  activePage === "express" ? styles.activePage : ""
-                }`}
-                onClick={() => handlePageClick("express")}
-              >
-                <p>Express Entry</p>
-              </div>
-              <div
                 className={styles.page}
                 onClick={() => {
                   setInternalPages();
@@ -1312,6 +1304,15 @@ let Admin = () => {
                     onClick={() => handlePageClick("dual_intent_visa_page")}
                   >
                     <p>Dual Intent Visa Page</p>
+                  </div>
+
+                  <div
+                    className={`${styles.page} ${
+                      activePage === "express" ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick("express")}
+                  >
+                    <p>Express Entry</p>
                   </div>
 
                   <div
