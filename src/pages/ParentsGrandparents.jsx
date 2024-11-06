@@ -363,7 +363,7 @@ const ParentsGrandparents = () => {
           <button
             onClick={() =>
               (window.location.href =
-                "https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj")
+                "/booking")
             }
             className={styles.button}
           >

@@ -264,7 +264,7 @@ const AllImmigrationToolsCard = () => {
                   <option value="#"># (For Non Route / Coming Soon)</option>
                   <option value="booking">
                     Free Assesement
-                    (https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj)
+                    (/booking)
                   </option>
                   <option value="federal-skilled">FSWP Calc</option>
                   <option value="bcpnp-calculator">BCPNP Calc</option>
@@ -278,9 +278,12 @@ const AllImmigrationToolsCard = () => {
                     CLB Calc for TEF (French)
                   </option>
                   <option value="category-based">Category Based Draws</option>
-                  <option value="link8">link 8</option>
-                  <option value="link9">link 9</option>
-                  <option value="link10">link 10</option>
+                  <option value="skilled-worker-stream">Skilled Worker Stream</option>
+                  <option value="about-us">About Us</option>
+                  <option value="bcpnp-calculator">Bcpnp Calculator</option>
+                  <option value=" "> </option>
+                  <option value=" "> </option>
+                  <option value=" "> </option>
                 </select>
                 <p className={styles.shortLabel}>Blue Image Below</p>
                 <input

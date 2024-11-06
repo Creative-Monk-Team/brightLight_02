@@ -147,7 +147,7 @@ let AddImmigrationToolsCard = () => {
         <option value="#"># (For Non Route / Coming Soon)</option>
         <option value="booking">
           Free Assesement
-          (https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj)
+          (/booking)
         </option>
         <option value="federal-skilled">FSWP Calc</option>
         <option value="bcpnp-calculator">BCPNP Calc</option>

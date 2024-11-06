@@ -391,7 +391,7 @@ const LmiaReviewed = () => {
             {pData?.s2}
             </p>
             <a
-              href="https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj"
+              href="/booking"
               className={styles.bookAppointment}
             >
               Book an Appointment

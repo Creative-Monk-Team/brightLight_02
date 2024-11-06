@@ -165,7 +165,7 @@ let BlogDetails = () => {
           <div className={styles.freeAssesmentSection}>
             <h4>Start You Process Today With Us!</h4>
             <p>Book A Free Assement With Us Right Now.</p>
-            <a href="https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj">
+            <a href="/booking">
               Free Assesment
             </a>
           </div>
@@ -212,7 +212,7 @@ let BlogDetails = () => {
         <div className={styles.freeAssesmentSection}>
           <h4>Start You Process Today With Us!</h4>
           <p>Book A Free Assement With Us Right Now.</p>
-          <a href="https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj">
+          <a href="/booking">
             Free Assesment
           </a>
         </div>

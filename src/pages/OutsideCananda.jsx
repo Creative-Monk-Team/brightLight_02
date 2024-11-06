@@ -233,7 +233,7 @@ const OutsideCananda = () => {
           </ul>
 
           <a
-            href="https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj"
+            href="/booking"
             className={styles.buttonBook}
           >
             Book Appointment

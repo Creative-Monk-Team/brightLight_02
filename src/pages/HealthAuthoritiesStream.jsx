@@ -460,13 +460,13 @@ const HealthAuthorityStream = () => {
           className={styles.button}
           onClick={() =>
             (window.location.href =
-              "https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj")
+              "/booking")
           }
         >
           Book Appointment
         </button>
 
-        {/* <Link to="https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj" className={styles.button}>Book Appointment</Link> */}
+        {/* <Link to="/booking" className={styles.button}>Book Appointment</Link> */}
 
         {/* <a href="" className={styles.button}></a> */}
         <section

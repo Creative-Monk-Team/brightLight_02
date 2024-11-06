@@ -491,7 +491,7 @@ const VisitorToStudent = () => {
           </p>
           <a
             id="book-appointment"
-            href="https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj"
+            href="/booking"
             className={styles.button}
           >
             Book Appointment

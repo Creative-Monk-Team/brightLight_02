@@ -270,7 +270,7 @@ const Citizenship = () => {
               </li>
               <li>
               {pData?.ha4}
-                <a href="https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj">
+                <a href="/booking">
                   Click here
                 </a>
               </li>
@@ -324,7 +324,7 @@ const Citizenship = () => {
             <button
               onClick={() =>
                 (window.location.href =
-                  "https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj")
+                  "/booking")
               }
             >
               Book Appointment

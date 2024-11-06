@@ -344,7 +344,7 @@ const CategoryBasedExpress = () => {
               </li>
               <li>
               {pData?.ha4}
-                <a href="https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj">
+                <a href="/booking">
                   Click here
                 </a>
               </li>
@@ -399,7 +399,7 @@ const CategoryBasedExpress = () => {
             <button
               onClick={() =>
                 (window.location.href =
-                  "https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj")
+                  "/booking")
               }
             >
               Book Appointment

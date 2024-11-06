@@ -631,7 +631,7 @@ const AgriFoodPilotProgram = () => {
           >
             {pData?.StillNotSurePara}
           </p>
-          <a href="https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj">
+          <a href="/booking">
             <button className={styles.book_button} id="book-appointment">
               Book Appointment
             </button>
@@ -661,7 +661,7 @@ const AgriFoodPilotProgram = () => {
           <button className={styles.book_button} id="book-appointment"
             onClick={() =>
               (window.location.href =
-                "https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj")
+                "/booking")
             }
           >
             Book Appointment

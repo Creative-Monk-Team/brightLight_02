@@ -98,6 +98,7 @@ import SameSex from "../pages/SameSex";
 import CategoryBasedExpress from "../pages/CategoryBasedExpress";
 import AgricultureandAgriFoodOccu from "../pages/AgricultureandAgriFoodOccu";
 import OpenWorkPermitForSpouseInland from "../pages/OpenWorkPermitForSpouseInland";
+import Booking from "../pages/Booking";
 
 let AllRoutes = () => {
   return (
@@ -295,6 +296,7 @@ let AllRoutes = () => {
         path="/permanent-residence-pathways-caregivers-lp"
         element={<PermanentResidencePathwaysCaregiversLP />}
       />
+      <Route path="/booking" element={<Booking />} />
       <Route path="/spouse-inland" element={<SpouseInland />} />
       <Route path="/spouse-outland" element={<SpouseOutland />} />
       <Route path="/same-sex" element={<SameSex />} />

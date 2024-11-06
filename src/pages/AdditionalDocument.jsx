@@ -213,7 +213,7 @@ const AdditionalDocument = () => {
                 {pData?.k4}
                 <a
                   id="book-appointment"
-                  href="https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj"
+                  href="/booking"
                 >
                   Click here
                 </a>
@@ -232,7 +232,7 @@ const AdditionalDocument = () => {
             <button
               onClick={() =>
                 (window.location.href =
-                  "https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj")
+                  "/booking")
               }
             >
               Book Appointment

@@ -361,7 +361,7 @@ const InsideCanada = () => {
             className={styles.button}
             onClick={() =>
               (window.location.href =
-                "https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj")
+                "/booking")
             }
           >
             Start your process now
