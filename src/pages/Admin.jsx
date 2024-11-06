@@ -204,6 +204,12 @@ import WorkPermitContent from "../admin_sections/Workpermit";
 import WorkPermitMeta from "../admin_sections/WorkpermitMeta";
 import PermanentResidencyContent from "../admin_sections/PermanentResidency";
 import PermanentResidencyMeta from "../admin_sections/PermanentResidencyMeta";
+import ImmigrationToolsContent from "../admin_sections/ImmigrationTools";
+import ImmigrationToolsMeta from "../admin_sections/ImmigrationToolsMeta";
+import MoreServicesContent from "../admin_sections/MoreServices";
+import MoreServicesMeta from "../admin_sections/MoreServicesMeta";
+import AddImmigrationToolsCard from "../admin_sections/AddingImmigrationCard";
+import AllImmigrationToolsCard from "../admin_sections/AllImmigrationCard";
 
 let Admin = () => {
   let { logout } = useAuth();
@@ -410,6 +416,24 @@ let Admin = () => {
                 onClick={() => handlePageClick("bcpnp")}
               >
                 <p>BCPNP Calculator</p>
+              </div>
+
+              <div
+                className={`${styles.page} ${
+                  activePage === "immigration_tools" ? styles.activePage : ""
+                }`}
+                onClick={() => handlePageClick("immigration_tools")}
+              >
+                <p>Immigration Tools</p>
+              </div>
+
+              <div
+                className={`${styles.page} ${
+                  activePage === "more_services" ? styles.activePage : ""
+                }`}
+                onClick={() => handlePageClick("more_services")}
+              >
+                <p>More Services</p>
               </div>
 
               <div
@@ -840,6 +864,60 @@ let Admin = () => {
                 </div>
               )}
 
+              {activePage === "immigration_tools" && (
+                <div className={styles.sections}>
+                  <div
+                    className={`${styles.section} ${
+                      activeSection === "immigration_tools_content"
+                        ? styles.activeSection
+                        : ""
+                    }`}
+                    onClick={() =>
+                      handleSectionClick("immigration_tools_content")
+                    }
+                  >
+                    Page Content
+                  </div>
+
+                  <div
+                    className={`${styles.section} ${
+                      activeSection === "immigration_tools_meta"
+                        ? styles.activeSection
+                        : ""
+                    }`}
+                    onClick={() => handleSectionClick("immigration_tools_meta")}
+                  >
+                    Page Meta
+                  </div>
+
+                  <div
+                    className={`${styles.section} ${
+                      activeSection === "immigration_tools_all_tools"
+                        ? styles.activeSection
+                        : ""
+                    }`}
+                    onClick={() =>
+                      handleSectionClick("immigration_tools_all_tools")
+                    }
+                  >
+                    All Added Tools
+                  </div>
+
+                  <div
+                    className={`${styles.section} ${
+                      activeSection === "immigration_tools_add_tool"
+                        ? styles.activeSection
+                        : ""
+                    }`}
+                    onClick={() =>
+                      handleSectionClick("immigration_tools_add_tool")
+                    }
+                  >
+                    Add Immigration Tool
+                  </div>
+                </div>
+              )}
+
               {activePage === "blogs" && (
                 <div className={styles.sections}>
                   <div
@@ -1078,6 +1156,84 @@ let Admin = () => {
               {activePage === "privacy-policy" && <Privacy />}
 
               {activePage === "terms-and-conditions" && <Terms />}
+
+              {activePage === "immigration_tools" &&
+                activeSection === "immigration_tools_content" && (
+                  <ImmigrationToolsContent />
+                )}
+              {activePage === "immigration_tools" &&
+                activeSection === "immigration_tools_meta" && (
+                  <ImmigrationToolsMeta />
+                )}
+
+              {activePage === "immigration_tools" &&
+                activeSection === "immigration_tools_all_tools" && (
+                  <AllImmigrationToolsCard />
+                )}
+
+              {activePage === "immigration_tools" &&
+                activeSection === "immigration_tools_add_tool" && (
+                  <AddImmigrationToolsCard />
+                )}
+
+              {activePage === "more_services" && (
+                <div className={styles.sections}>
+                  <div
+                    className={`${styles.section} ${
+                      activeSection === "more_services_content"
+                        ? styles.activeSection
+                        : ""
+                    }`}
+                    onClick={() => handleSectionClick("more_services_content")}
+                  >
+                    Page Content
+                  </div>
+
+                  <div
+                    className={`${styles.section} ${
+                      activeSection === "more_services_meta"
+                        ? styles.activeSection
+                        : ""
+                    }`}
+                    onClick={() => handleSectionClick("more_services_meta")}
+                  >
+                    Page Meta
+                  </div>
+
+                  <div
+                    className={`${styles.section} ${
+                      activeSection === "more_services_all_services"
+                        ? styles.activeSection
+                        : ""
+                    }`}
+                    onClick={() =>
+                      handleSectionClick("more_services_all_services")
+                    }
+                  >
+                    All Added Services
+                  </div>
+
+                  <div
+                    className={`${styles.section} ${
+                      activeSection === "more_services_add_services"
+                        ? styles.activeSection
+                        : ""
+                    }`}
+                    onClick={() =>
+                      handleSectionClick("more_services_add_services")
+                    }
+                  >
+                    Add Service Card
+                  </div>
+                </div>
+              )}
+
+              {activePage === "more_services" &&
+                activeSection === "more_services_content" && (
+                  <MoreServicesContent />
+                )}
+              {activePage === "more_services" &&
+                activeSection === "more_services_meta" && <MoreServicesMeta />}
             </div>
           </div>
         ) : (
@@ -4925,3 +5081,4 @@ let Admin = () => {
 };
 
 export default Admin;
+ 

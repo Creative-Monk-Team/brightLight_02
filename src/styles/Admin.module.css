@@ -290,8 +290,14 @@
   visibility: visible;
 }
 
+.shortLabel {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
 .userDropdown p {
-  font-size: 18px;
+  font-size: 15px;
   text-align: center;
   cursor: pointer;
 }
@@ -396,6 +402,11 @@
   border-radius: 10px;
 }
 
+.blogItem .blogImage2 {
+  width: 50px;
+  border-radius: 10px;
+}
+
 .editForm input {
   width: 100%;
   margin-bottom: 10px;
@@ -439,6 +450,17 @@
 .existingImageSmall {
   width: 150px;
   margin: 20px 0px;
+}
+
+.existingImageSmall2 {
+  width: 50px;
+  margin: 20px 0px;
+  display: block;
+}
+
+.blueImage {
+  padding: 10px;
+  background-color: #132f46;
 }
 
 @media all and (max-width: 1500px) {

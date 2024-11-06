@@ -193,7 +193,7 @@ const AllBlogs = () => {
     <div className={styles.blogList}>
       <ToastContainer />
       {blogs.length === 0 ? (
-        <p className={styles.noBlogsPara}>No blogs available</p>
+        <p className={styles.noBlogsPara}>Loading Blogs</p>
       ) : (
         blogs.map((blog) => (
           <div key={blog._id} className={styles.blogItem}>

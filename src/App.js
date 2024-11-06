@@ -90,7 +90,7 @@ function App() {
 
   useEffect(() => {
     let handleBackgroundColor = () => {
-      if (window.location.pathname === '/users/admin/dashboard') {
+      if (window.location.pathname === '/dash/panel/overwrite') {
         document.body.style.backgroundColor = 'rgb(241, 241, 241)'; 
       } else {
         document.body.style.backgroundColor = 'white';

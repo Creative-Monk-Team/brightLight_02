@@ -3,10 +3,9 @@ import { useState, useEffect } from "react";
 import editIcon from "../assets/edit.png";
 import deleteIcon from "../assets/delete.png";
 import update from "../assets/update.png";
-
 import { ToastContainer, toast, Bounce } from "react-toastify";
 
-const AllNews = () => {
+const AllImmigrationToolsCard = () => {
   let notifySuccess = () => {
     toast.success("Success", {
       position: "top-center",
@@ -65,19 +64,16 @@ const AllNews = () => {
   const [blogs, setBlogs] = useState([]);
   const [editBlogId, setEditBlogId] = useState(null);
   const [newBlogData, setNewBlogData] = useState({
-    news_heading: "",
-    image: "",
-    tag_1: "",
-    tag_2: "",
-    tag_3: "",
-    news_content: "",
-    metaTitle: "",
-    metaDescription: "",
+    blue_stroke_img: "",
+    white_stroke_img: "",
+    tool_name: "",
+    tool_desc: "",
+    tool_link: "",
   });
 
   // Fetch all blogs
   useEffect(() => {
-    fetch("https://brightlight-node.onrender.com/news")
+    fetch("https://brightlight-node.onrender.com/adding-immigration-tools")
       .then((res) => res.json())
       .then((data) => {
         setBlogs(data);
@@ -127,10 +123,13 @@ const AllNews = () => {
       }
     }
 
-    fetch(`https://brightlight-node.onrender.com/news/${editBlogId}`, {
-      method: "PATCH",
-      body: formData,
-    })
+    fetch(
+      `https://brightlight-node.onrender.com/adding-immigration-tools/${editBlogId}`,
+      {
+        method: "PATCH",
+        body: formData,
+      }
+    )
       .then((response) => {
         if (response.status === 413) {
           notifySize();
@@ -145,17 +144,14 @@ const AllNews = () => {
         notifySuccess();
         setEditBlogId(null);
         setNewBlogData({
-          news_heading: "",
-          image: "",
-          tag_1: "",
-          tag_2: "",
-          tag_3: "",
-          news_content: "",
-          metaTitle: "",
-          metaDescription: "",
+          blue_stroke_img: "",
+          white_stroke_img: "",
+          tool_name: "",
+          tool_desc: "",
+          tool_link: "",
         });
         // Refetch blogs
-        fetch("https://brightlight-node.onrender.com/news")
+        fetch("https://brightlight-node.onrender.com/adding-immigration-tools")
           .then((res) => res.json())
           .then((data) => {
             setBlogs(data);
@@ -163,17 +159,23 @@ const AllNews = () => {
           .catch((error) => {
             console.log("Error fetching data:", error);
           });
+      })
+      .catch((error) => {
+        notifyError();
       });
   };
 
   // Handle delete click
   const handleDeleteClick = (blogId) => {
-    fetch(`https://brightlight-node.onrender.com/news/${blogId}`, {
-      method: "DELETE",
-    })
+    fetch(
+      `https://brightlight-node.onrender.com/adding-immigration-tools/${blogId}`,
+      {
+        method: "DELETE",
+      }
+    )
       .then(() => {
         notifyDelete();
-        fetch("https://brightlight-node.onrender.com/news")
+        fetch("https://brightlight-node.onrender.com/adding-immigration-tools")
           .then((res) => res.json())
           .then((data) => {
             setBlogs(data);
@@ -191,13 +193,17 @@ const AllNews = () => {
     <div className={styles.blogList}>
       <ToastContainer />
       {blogs.length === 0 ? (
-        <p className={styles.noBlogsPara}>Loading News</p>
+        <p className={styles.noBlogsPara}>Loading Tools</p>
       ) : (
         blogs.map((blog) => (
           <div key={blog._id} className={styles.blogItem}>
             <div className={styles.blogContent}>
-              <h4>{blog.news_heading}</h4>
-              <img src={blog.image} alt="Blog" className={styles.blogImage} />
+              <h4>{blog.tool_name}</h4>
+              <img
+                src={blog.blue_stroke_img}
+                alt="Immigration Tool"
+                className={styles.blogImage2}
+              />
               <div className={styles.editIcons}>
                 {editBlogId === blog._id ? (
                   <>
@@ -226,7 +232,7 @@ const AllNews = () => {
                       src={deleteIcon}
                       className={styles.deleteIcon}
                       onClick={() => handleDeleteClick(blog._id)}
-                      alt="Dlt"
+                      alt="Delete"
                     />
                   </>
                 )}
@@ -235,60 +241,75 @@ const AllNews = () => {
             {editBlogId === blog._id && (
               <div className={styles.editForm}>
                 <input
-                  placeholder="News Heading"
-                  name="news_heading"
-                  value={newBlogData.news_heading}
-                  onChange={handleInputChange}
-                />
-                <input
-                  type="file"
-                  accept="image/*"
-                  onChange={handleInputChange}
-                  name="image"
-                />
-                {newBlogData.image && (
-                  <img
-                    src={newBlogData.image}
-                    alt="New Blog"
-                    className={styles.blogImage}
-                  />
-                )}
-                <input
-                  placeholder="Tag 1"
-                  name="tag_1"
-                  value={newBlogData.tag_1}
-                  onChange={handleInputChange}
-                />
-                <input
-                  placeholder="Tag 2"
-                  name="tag_2"
-                  value={newBlogData.tag_2}
-                  onChange={handleInputChange}
-                />
-                <input
-                  placeholder="Tag 3"
-                  name="tag_3"
-                  value={newBlogData.tag_3}
+                  placeholder="Tool Name"
+                  name="tool_name"
+                  value={newBlogData.tool_name || ""}
                   onChange={handleInputChange}
                 />
                 <textarea
-                  placeholder="News Content"
-                  name="news_content"
-                  value={newBlogData.news_content}
+                  placeholder="Tool Description"
+                  name="tool_desc"
+                  value={newBlogData.tool_desc || ""}
                   onChange={handleInputChange}
                 />
+                <p className={styles.shortLabel}>
+                  Choose Tool Link Below (Without /)
+                </p>
+                <select
+                  placeholder="Tool Link"
+                  name="tool_link"
+                  value={newBlogData.tool_link || ""}
+                  onChange={handleInputChange}
+                >
+                  <option value="#"># (For Non Route / Coming Soon)</option>
+                  <option value="booking">
+                    Free Assesement
+                    (https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj)
+                  </option>
+                  <option value="federal-skilled">FSWP Calc</option>
+                  <option value="bcpnp-calculator">BCPNP Calc</option>
+                  <option value="clb-ilets-calculator?selected=type1">
+                    CLB Calc for IELTS
+                  </option>
+                  <option value="clb-ilets-calculator?selected=type3">
+                    CLB Calc for CELPIP
+                  </option>
+                  <option value="clb-ilets-calculator?selected=type2">
+                    CLB Calc for TEF (French)
+                  </option>
+                  <option value="category-based">Category Based Draws</option>
+                  <option value="link8">link 8</option>
+                  <option value="link9">link 9</option>
+                  <option value="link10">link 10</option>
+                </select>
+                <p className={styles.shortLabel}>Blue Image Below</p>
                 <input
-                  placeholder="Meta Title"
-                  name="metaTitle"
-                  value={newBlogData.metaTitle}
+                  type="file"
+                  name="blue_stroke_img"
                   onChange={handleInputChange}
                 />
+
+                <p className={styles.shortLabel}>White Image Below</p>
                 <input
-                  placeholder="Meta Description"
-                  name="metaDescription"
-                  value={newBlogData.metaDescription}
+                  type="file"
+                  name="white_stroke_img"
                   onChange={handleInputChange}
                 />
+                {newBlogData.blue_stroke_img && (
+                  <img
+                    className={styles.existingImageSmall2}
+                    src={newBlogData.blue_stroke_img}
+                    alt="Preview"
+                  />
+                )}
+
+                {newBlogData.white_stroke_img && (
+                  <img
+                    className={`${styles.existingImageSmall2} ${styles.blueImage}`}
+                    src={newBlogData.white_stroke_img}
+                    alt="Preview"
+                  />
+                )}
               </div>
             )}
           </div>
@@ -298,4 +319,4 @@ const AllNews = () => {
   );
 };
 
-export default AllNews;
+export default AllImmigrationToolsCard;
