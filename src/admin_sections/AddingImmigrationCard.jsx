@@ -233,6 +233,7 @@ let AddImmigrationToolsCard = () => {
           Open Work Permit for Spouse Inland
         </option>
         <option value="flagpoling">Flagpoling</option>
+        <option value="previous-draw-history">Previous Draw History</option>
         <option value="extensions-draft">Extensions Draft</option>
         <option value="study-permit-minors">Study Permit Minors</option>
         <option value="sds">Sds</option>
@@ -292,7 +293,7 @@ let AddImmigrationToolsCard = () => {
         <option value="same-sex">Same Sex</option>
         <option value="immigration-tools">Immigration Tools</option>
       </select>
-      <p className={styles.shortLabel}>Blue Image Below</p>
+      <p className={styles.shortLabel}>Black Image Below</p>
       <input
         type="file"
         name="blue_stroke_img"

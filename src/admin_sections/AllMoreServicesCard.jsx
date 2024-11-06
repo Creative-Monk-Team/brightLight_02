@@ -363,6 +363,7 @@ const AllMoreServicesCard = () => {
                   <option value="open-work-permit-for-spouse-inland">
                     Open Work Permit for Spouse Inland
                   </option>
+                  <option value="previous-draw-history">Previous Draw History</option>
                   <option value="flagpoling">Flagpoling</option>
                   <option value="extensions-draft">Extensions Draft</option>
                   <option value="study-permit-minors">

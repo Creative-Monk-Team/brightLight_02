@@ -233,6 +233,7 @@ let AddMoreServicesCard = () => {
           Open Work Permit for Spouse Inland
         </option>
         <option value="flagpoling">Flagpoling</option>
+        <option value="previous-draw-history">Previous Draw History</option>
         <option value="extensions-draft">Extensions Draft</option>
         <option value="study-permit-minors">Study Permit Minors</option>
         <option value="sds">Sds</option>
@@ -307,21 +308,6 @@ let AddMoreServicesCard = () => {
         disabled={!editMode}
         onChange={handleInputChange}
       />
-      {sectionDataSingle.blue_stroke_img && (
-        <img
-          className={styles.existingImageSmall}
-          src={sectionDataSingle.blue_stroke_img}
-          alt="Preview"
-        />
-      )}
-
-      {sectionDataSingle.white_stroke_img && (
-        <img
-          className={styles.existingImageSmall}
-          src={sectionDataSingle.white_stroke_img}
-          alt="Preview"
-        />
-      )}
 
       <div className={styles.editIcons}>
         {editMode ? (
