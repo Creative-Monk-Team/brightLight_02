@@ -12,6 +12,14 @@
   font-size: 25px;
 }
 
+.singleSectionData option{
+  font-size: 13px;
+}
+
+.singleSectionData select{
+  font-size: 13px;
+}
+
 .testimonialsVisibility {
   display: flex;
   align-items: center;

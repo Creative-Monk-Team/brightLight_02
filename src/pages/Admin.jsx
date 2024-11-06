@@ -210,6 +210,8 @@ import MoreServicesContent from "../admin_sections/MoreServices";
 import MoreServicesMeta from "../admin_sections/MoreServicesMeta";
 import AddImmigrationToolsCard from "../admin_sections/AddingImmigrationCard";
 import AllImmigrationToolsCard from "../admin_sections/AllImmigrationCard";
+import AllMoreServicesCard from "../admin_sections/AllMoreServicesCard";
+import AddMoreServicesCard from "../admin_sections/AddMoreServicesCard";
 
 let Admin = () => {
   let { logout } = useAuth();
@@ -1234,6 +1236,15 @@ let Admin = () => {
                 )}
               {activePage === "more_services" &&
                 activeSection === "more_services_meta" && <MoreServicesMeta />}
+
+              {activePage === "more_services" &&
+                activeSection === "more_services_all_services" && (
+                  <AllMoreServicesCard />
+                )}
+              {activePage === "more_services" &&
+                activeSection === "more_services_add_services" && (
+                  <AddMoreServicesCard />
+                )}
             </div>
           </div>
         ) : (
@@ -5081,4 +5092,3 @@ let Admin = () => {
 };
 
 export default Admin;
- 
