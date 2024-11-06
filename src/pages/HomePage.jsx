@@ -543,6 +543,7 @@ let HomePage = () => {
                           src={card.img}
                           alt={card.title}
                           className={styles.icon}
+                          loading="lazy"
                         />
                         <div className={styles.title}>
                           <h2>{card.title}</h2>
@@ -564,11 +565,11 @@ let HomePage = () => {
       </div>
 
       <div className={styles.bannerParent2}>
-        <img src={loveneetBgImage?.image} />
+        <img src={loveneetBgImage?.image} loading="lazy"/>
         <div className={styles.bannerParent2ButtonDiv}>
           <a href={linkedinLink}>
             <button>
-              <img src={LinkedinLogo} />
+              <img src={LinkedinLogo} loading="lazy"/>
             </button>
           </a>
 
@@ -596,7 +597,7 @@ let HomePage = () => {
             >
               <p>{memberData?.heading1}</p>
               <div className={styles.memberCardImg}>
-                <img src={memberData?.heading1Img} />
+                <img src={memberData?.heading1Img} loading="lazy"/>
               </div>
             </div>
 
@@ -607,7 +608,7 @@ let HomePage = () => {
             >
               <p>{memberData?.heading2}</p>
               <div className={styles.memberCardImg}>
-                <img src={memberData?.heading2Img} />
+                <img src={memberData?.heading2Img} loading="lazy"/>
               </div>
             </div>
 
@@ -618,7 +619,7 @@ let HomePage = () => {
             >
               <p>{memberData?.heading3}</p>
               <div className={styles.memberCardImg}>
-                <img src={memberData?.heading3Img} />
+                <img src={memberData?.heading3Img} loading="lazy"/>
               </div>
             </div>
           </div>
@@ -648,6 +649,7 @@ let HomePage = () => {
                       <img
                         src={featuresData[`feature${num}SVG`]}
                         alt={`Feature ${num} Image`}
+                        loading="lazy"
                       />
                     </div>
                     <div className={styles.simplifyingContent}>
@@ -740,7 +742,7 @@ let HomePage = () => {
               className={`${styles.aspectsCard} ${styles.fadeFromLeft}`}
               ref={(el) => (aspectsCardRefs.current[0] = el)}
             >
-              <img src={achiementsData?.achievement1SVG} />
+              <img src={achiementsData?.achievement1SVG} loading="lazy"/>
               <h1>
                 <Odometer value={achiementsData?.achievement1Numbers} />+
               </h1>
@@ -750,7 +752,7 @@ let HomePage = () => {
               className={`${styles.aspectsCard} ${styles.fadeFromBottom}`}
               ref={(el) => (aspectsCardRefs.current[1] = el)}
             >
-              <img src={achiementsData?.achievement2SVG} />
+              <img src={achiementsData?.achievement2SVG} loading="lazy"/>
               <h1>
                 <Odometer value={achiementsData?.achievement2Numbers} />+
               </h1>
@@ -760,7 +762,7 @@ let HomePage = () => {
               className={`${styles.aspectsCard} ${styles.fadeFromRight}`}
               ref={(el) => (aspectsCardRefs.current[2] = el)}
             >
-              <img src={achiementsData?.achievement3SVG} />
+              <img src={achiementsData?.achievement3SVG} loading="lazy"/>
               <h1>
                 <Odometer value={achiementsData?.achievement3Numbers} />+
               </h1>
@@ -775,7 +777,7 @@ let HomePage = () => {
         <div className={styles.sourceMain}>
           <div className={styles.sourceHeadingParent}>
             <div className={styles.sourceHeadingParentFirstDiv}>
-              <img src={WhiteLogo} />
+              <img src={WhiteLogo} loading="lazy"/>
             </div>
             <div>
               {newsSectionData && <h1>{newsSectionData.heading}</h1>}

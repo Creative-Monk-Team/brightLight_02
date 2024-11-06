@@ -296,3 +296,7 @@ img {
     right: 30% !important;
   }
 }
+
+.container *:empty {
+  display: none;
+}
