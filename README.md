@@ -1,4 +1,4 @@
-# Bright Light Immigration
+# Bright Light Immigration 
 
 Developed by **Creative-Monk**, Bright Light Immigration is a dynamic web application built with the MERN stack (MongoDB, Express, React, Node.js) and hosted on Render for scalable backend services. This platform allows seamless immigration data management, where all backend changes are instantly reflected on the frontend.
 
