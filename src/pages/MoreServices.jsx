@@ -90,7 +90,6 @@ const MoreServices = () => {
       })
       .then((data) => {
         if (data) {
-          console.log(data);
           setCardsData(data);
         }
       })
@@ -195,7 +194,7 @@ const MoreServices = () => {
                 />
                 <h2>{section.tool_name}</h2>
                 <p>{section.tool_desc}</p>
-                <h4>Read More</h4>
+                <h4>{pData?.read_more}</h4>
               </div>
             ))}
           </div>
