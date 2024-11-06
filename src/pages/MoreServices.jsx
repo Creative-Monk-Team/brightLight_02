@@ -69,6 +69,7 @@ import Footer1 from "../components/Footer1";
 const MoreServices = () => {
   const [selectedHeading, setSelectedHeading] = useState("Permanent Residency");
   let [metaData, setMetaData] = useState([]);
+  let [pData,setPData]=useState([])
   useEffect(() => {
     fetch("https://brightlight-node.onrender.com/moreServicesMeta")
       .then((res) => {
@@ -77,6 +78,21 @@ const MoreServices = () => {
       .then((data) => {
         if (data) {
           setMetaData(data[0]);
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
+  useEffect(() => {
+    fetch("https://brightlight-node.onrender.com/moreServicesPage")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        if (data) {
+          setPData(data[0]);
         }
       })
       .catch((error) => {
@@ -217,7 +233,7 @@ const MoreServices = () => {
     {
       img: RestorationImg,
       hoverImg: RestorationHover,
-      title: "Restoration Status",
+      title: "Restoration Status Draft",
       description: "Are you a temporary resident in Canada who has lost status? Don't despair! There is a way to regain your legal standing......",
       link: "/restoration-status-draft"
     },
@@ -304,13 +320,13 @@ const MoreServices = () => {
     //   description: "Canada’s family sponsorship program prioritizes family reunification. If you wish to sponsor other family members who may be lonely.....",
     //   link: "/lonely-canadian"
     // },
-    // {
-    //   img: WorkPermitImg,
-    //   hoverImg: WorkPermitHover,
-    //   title: "Work Permit",
-    //   description: "The Canadian Work Permit is your key to accessing these exciting professional opportunities ...",
-    //   link: "/work-permit"
-    // },
+    {
+      img: WorkPermitImg,
+      hoverImg: WorkPermitHover,
+      title: "Work Permit",
+      description: "The Canadian Work Permit is your key to accessing these exciting professional opportunities ...",
+      link: "/work-permit"
+    },
     {
       img: CaregiverImg,
       hoverImg: CaregiverHover,
@@ -328,7 +344,7 @@ const MoreServices = () => {
     {
       img: RestorationStatusDraftImg,
       hoverImg: RestorationStatusDraftHover,
-      title: "Restoration Status",
+      title: "Restoration Status Draft",
       description: "Are you a temporary resident in Canada who has lost status? Don't despair! There is a way to regain your legal standing in Canada.....",
       link: "/restoration-status-draft"
     },
@@ -341,7 +357,7 @@ const MoreServices = () => {
 
   return (
     <>
-              <Helmet>
+        <Helmet>
         <title>
           {metaData?.metaTitle
             ? metaData?.metaTitle
@@ -387,10 +403,9 @@ const MoreServices = () => {
       <div className={styles.bannerParent}>
         <div className={styles.bannerMain}>
           <div className={styles.bannerHeading}>
-            <h1>What we Do</h1>
+            <h1> {pData?.heading}</h1>
             <p>
-              Bright Light Immigration Inc. is a trusted immigration consulting
-              firm based in Vancouver, serving globally...
+            {pData?.description}
             </p>
           </div>
         </div>
