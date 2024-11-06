@@ -143,6 +143,16 @@ const MoreServicesContent = () => {
         disabled={!editMode}
       />
 
+      <p className={styles.shortLabel}>Text for all cards (Read More)</p>
+
+      <input
+        placeholder="Read More Text"
+        name="read_more"
+        value={sectionDataSingle.read_more || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
       <div className={styles.editIcons}>
         {editMode ? (
           <img
