@@ -95,14 +95,14 @@ const Footer1 = () => {
 
           <div className={styles.centerFooter}>
             <div className={styles.footerLogo}>
-              <img src={FooterLogo} className={styles.footerLogo1} />
+              <img src={FooterLogo} alt="" loading="lazy" className={styles.footerLogo1} />
               <div className={styles.footerLogo2Para}>
                 <img
                   onClick={() =>
                     (window.location.href =
                       "https://register.college-ic.ca/Public-Register-EN/RCIC_Search.aspx")
                   }
-                  src={FooterLogo2}
+                  src={FooterLogo2} alt="" loading="lazy"
                   className={styles.footerLogo2}
                 />
                 <p>RCIC License # R522969</p>
@@ -195,7 +195,7 @@ const Footer1 = () => {
             <div className={styles.leftFooter}>
               <div className={styles.leftDiv}>
                 <div className={styles.iconHeading}>
-                  <img
+                  <img loading="lazy"
                     src={HoursIcon}
                     alt="Hours Icon"
                     className={styles.socialIcon}
@@ -210,6 +210,7 @@ const Footer1 = () => {
               <div className={styles.leftDiv}>
                 <div className={styles.iconHeading}>
                   <img
+                    loading="lazy"
                     src={Address}
                     alt="Address Icon"
                     className={styles.socialIcon}

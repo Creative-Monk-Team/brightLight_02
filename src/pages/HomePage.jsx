@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState ,useMemo } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import styles from "../styles/HomePage.module.css";
 import WhiteLogo from "../assets/bright-source.webp";
@@ -20,6 +20,7 @@ import { Helmet } from "react-helmet-async";
 import Odometer from "../components/Odometer";
 
 let HomePage = () => {
+  
   const swiperRef = useRef(null);
 
   let [newsSectionData, setNewsSectionData] = useState([]);
@@ -420,6 +421,46 @@ let HomePage = () => {
         return "#";
     }
   };
+  const linkLookup = useMemo(() => ({
+    "Permanent Residency": "/permanent-residency",
+    BCPNP: "/bc-pnp",
+    "Visitor Visa": "/visitor-visa",
+    "Study Visa": "/student-visa",
+    "Family Sponsorship": "/family-reunification-sponsorship",
+    "Work Permit": "/work-permit",
+    PFL: "/reply-to-pfl-page",
+  }), []);
+
+  const handleCardClick = (title) => {
+    const link = linkLookup[title]; // Lookup the link using the title
+    if (link) {
+      window.location.href = link; // Navigate to the URL
+    }
+  };
+  const rcicAppointmentUrl = "https://api.leadconnectorhq.com/widget/booking/BVqmhNlxRMadz10ir6aM";
+
+  const memberInfo = [
+    { heading: memberData?.heading1, img: memberData?.heading1Img },
+    { heading: memberData?.heading2, img: memberData?.heading2Img },
+    { heading: memberData?.heading3, img: memberData?.heading3Img },
+  ];
+
+  const preloadImages = (imageUrls) => {
+    imageUrls.forEach((url) => {
+      const img = new Image();
+      img.src = url;
+    });
+  };
+
+  useEffect(() => {
+    // Preload service images
+    const serviceImages = services.map((service) => service.img);
+    preloadImages(serviceImages);
+
+    setLoaded(true); // Assuming data is fetched and set here
+  }, [services]); // Run when services data is available
+
+
 
   return (
     <>
@@ -467,164 +508,153 @@ let HomePage = () => {
       </Helmet>
 
       <Navbar1 showBlue={true} />
-      <div className={styles.bannerParent}>
-        <div className={styles.bannerMain}>
-          <TransitionGroup>
-            {loaded && (
-              <CSSTransition
-                timeout={1000}
-                classNames={{
-                  enter: styles.fadeIn,
-                  enterActive: styles.fadeIn,
-                  exit: styles.fadeIn,
-                  exitActive: styles.fadeIn,
-                }}
-              >
-                <div className={styles.bannerHeading}>
-                  <h1 className={styles.slideInFromLeft}>
-                    {headline1Rest}{" "}
-                    <span className={styles.bannerBlueHeading}>
-                      {headline1Last}
-                    </span>
-                  </h1>
-                  <h1 className={styles.slideInFromRight}>
-                    {headline2Rest}{" "}
-                    <span className={styles.bannerBlueHeading}>
-                      {headline2Last}
-                    </span>
-                  </h1>
-                  <h2 className={styles.slideInFromBottom}>
-                    {topSection?.SmallHeadline1}
-                  </h2>
-                </div>
-              </CSSTransition>
-            )}
-          </TransitionGroup>
+      <div className={styles.bannerParent}>  
+      <div className={styles.bannerMain}> 
+      <TransitionGroup>
+        {loaded && (
+          <CSSTransition
+            classNames={{
+              enter: styles.fadeIn,
+              enterActive: styles.fadeInActive,
+              exit: styles.fadeOut,
+              exitActive: styles.fadeOutActive,
+            }}
+            timeout={1000}
+          >
+            <div className={styles.bannerHeading}>
+              <h1 className={`${styles.slideInFromLeft} ${styles.fadeIn}`}>
+                {headline1Rest}{" "}
+                <span className={styles.bannerBlueHeading}>
+                  {headline1Last}
+                </span>
+              </h1>
+              <h1 className={`${styles.slideInFromRight} ${styles.fadeIn}`}>
+                {headline2Rest}{" "}
+                <span className={styles.bannerBlueHeading}>
+                  {headline2Last}
+                </span>
+              </h1>
+              <h2 className={`${styles.slideInFromBottom} ${styles.fadeIn}`}>
+                {topSection?.SmallHeadline1}
+              </h2>
+            </div>
+          </CSSTransition>
+        )}
+      </TransitionGroup>
 
-          <TransitionGroup>
-            {loaded && (
-              <CSSTransition
-                timeout={1000}
-                classNames={{
-                  enter: styles.fadeIn,
-                  enterActive: styles.fadeIn,
-                  exit: styles.fadeIn,
-                  exitActive: styles.fadeIn,
-                }}
-              >
-                <div className={styles.cardContainer}>
-                  {services.map((card, index) => {
-                    let link = (title) => {
-                      if (title == "Permanent Residency") {
-                        return "/permanent-residency";
-                      } else if (title == "BCPNP") {
-                        return "/bc-pnp";
-                      } else if (title == "Visitor Visa") {
-                        return "/visitor-visa";
-                      } else if (title == "Study Visa") {
-                        return "/student-visa";
-                      } else if (title == "Family Sponsorship") {
-                        return "/family-reunification-sponsorship";
-                      } else if (title == "Work Permit") {
-                        return "/work-permit";
-                      } else if (title == "PFL") {
-                        return "/reply-to-pfl-page";
-                      }
-                    };
-                    return (
-                      <div
-                        key={index}
-                        className={styles.card}
-                        onClick={() =>
-                          (window.location.href = link(card.title))
-                        }
-                      >
-                        <img
-                          src={card.img}
-                          alt={card.title}
-                          className={styles.icon}
-                          loading="lazy"
-                        />
-                        <div className={styles.title}>
-                          <h2>{card.title}</h2>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </CSSTransition>
-            )}
-          </TransitionGroup>
+      <TransitionGroup>
+        {loaded && (
+          <CSSTransition
+            classNames={{
+              enter: styles.fadeIn,
+              enterActive: styles.fadeInActive,
+              exit: styles.fadeOut,
+              exitActive: styles.fadeOutActive,
+            }}
+            timeout={1000}
+          >
+            <div className={styles.cardContainer}>
+              {services.map((card, index) => (
+                <div
+                  key={index}
+                  className={styles.card}
+                  onClick={() => handleCardClick(card.title)}
+                >
+                  <CSSTransition
+                    classNames={{
+                      enter: styles.fadeIn,
+                      enterActive: styles.fadeInActive,
+                      exit: styles.fadeOut,
+                      exitActive: styles.fadeOutActive,
+                    }}
+                    timeout={500}
+                  >
+                    <img
+                      src={card.img}
+                      alt={card.title}
+                      className={`${styles.icon} ${styles.fadeIn}`}
+                      loading="lazy"
+                    />
+                  </CSSTransition>
 
-          <a href="/more-services">
-            <button className={styles.bookButton17} role="button">
-              More Services
+                  <div className={styles.title}>
+                    <h2>{card.title}</h2>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </CSSTransition>
+        )}
+      </TransitionGroup>
+
+        <a href="/more-services">
+          <button className={styles.bookButton17} role="button">
+            More Services
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div className={styles.bannerParent2}>
+      {/* Check if loveneetBgImage exists before using it */}
+      {loveneetBgImage?.image && (
+        <img 
+          src={loveneetBgImage.image} 
+          alt="Background Image" 
+          loading="lazy" 
+          className={styles.backgroundImage} 
+          width="100%"   // Ensure the width stays 100% of the parent container
+          height="auto"  // Maintain the aspect ratio
+        />
+      )}
+
+      <div className={styles.bannerParent2ButtonDiv}>
+        {/* LinkedIn button */}
+        {linkedinLink && (
+          <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
+            <button className={styles.linkedInButton}>
+              <img src={LinkedinLogo} alt="LinkedIn" loading="lazy" />
+            </button>
+          </a>
+        )}
+
+        <div className={styles.bannerParent2HaveQuestions}>
+          <h5>Have Questions ?</h5>
+          <a href={rcicAppointmentUrl} target="_blank" rel="noopener noreferrer">
+            <button className={styles.rcicButton}>
+              <b>RCIC</b>
+              <p>APPOINTEMENT</p>
             </button>
           </a>
         </div>
       </div>
 
-      <div className={styles.bannerParent2}>
-        <img src={loveneetBgImage?.image} loading="lazy"/>
-        <div className={styles.bannerParent2ButtonDiv}>
-          <a href={linkedinLink}>
-            <button>
-              <img src={LinkedinLogo} loading="lazy"/>
-            </button>
-          </a>
+      <div className={styles.bannerMain2}></div>
+    </div>
 
-          <div className={styles.bannerParent2HaveQuestions}>
-            <h5>Have Questions ?</h5>
-            <a href="https://api.leadconnectorhq.com/widget/booking/BVqmhNlxRMadz10ir6aM">
-              <button>
-                <b>RCIC</b>
-                <p>APPOINTEMENT</p>
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.bannerMain2}></div>
-      </div>
-
-      <div className={styles.memberParent} ref={sectionRef}>
-        <div className={styles.memberMain}>
-          <div className={styles.memberCardParent}>
+    <div className={styles.memberParent} ref={sectionRef}>
+      <div className={styles.memberMain}>
+        <div className={styles.memberCardParent}>
+          {memberInfo.map((member, index) => (
             <div
+              key={index}
               className={`${styles.memberCard} ${
                 isVisible ? styles.showMemberCard : ""
               }`}
             >
-              <p>{memberData?.heading1}</p>
+              <p>{member?.heading}</p>
               <div className={styles.memberCardImg}>
-                <img src={memberData?.heading1Img} loading="lazy"/>
+                <img 
+                  src={member?.img} 
+                  alt={member?.heading || 'Member image'} // Accessibility improvement
+                  loading="lazy" 
+                />
               </div>
             </div>
-
-            <div
-              className={`${styles.memberCard} ${
-                isVisible ? styles.showMemberCard : ""
-              }`}
-            >
-              <p>{memberData?.heading2}</p>
-              <div className={styles.memberCardImg}>
-                <img src={memberData?.heading2Img} loading="lazy"/>
-              </div>
-            </div>
-
-            <div
-              className={`${styles.memberCard} ${
-                isVisible ? styles.showMemberCard : ""
-              }`}
-            >
-              <p>{memberData?.heading3}</p>
-              <div className={styles.memberCardImg}>
-                <img src={memberData?.heading3Img} loading="lazy"/>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
+    </div>
 
       <div
         className={`${styles.simplifyingParent} ${
