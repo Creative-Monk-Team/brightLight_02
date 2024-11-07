@@ -19,21 +19,29 @@ Developed by **Creative-Monk**, Bright Light Immigration is a dynamic web applic
 - **Database**: MongoDB
 - **Other Libraries**: React Acync Helmet, Mongoose (for MongoDB)
 
-## Getting Started Guide
-
-To get started with the Bright Light Immigration application, follow these steps:
-
-1. **Admin Access**: Use the admin login page to access the backend GUI. Credentials can be configured through environment variables or initial setup.
-2. **Dashboard Overview**: Once logged in, navigate the admin dashboard to view and manage all available data entries. Use the intuitive interface to add, edit, or delete records as needed.
-3. **Frontend Interaction**: The frontend is designed to be entirely user-driven. Any updates made in the backend are automatically reflected, ensuring that users are always presented with the latest information.
 
 ## Getting Started Guide
 
 To get started with Bright Light Immigration, follow these steps:
 
+
+(Admin Access) ![image](https://github.com/user-attachments/assets/5d0ddba0-8a59-4b0c-b1ed-f34aad10b189)
+
 1. **Admin Access**: Use the admin login page to access the backend GUI. Credentials can be configured through environment variables or initial setup.
+
+
+(Dashboard Overview) ![image](https://github.com/user-attachments/assets/31d9f5fa-8fd3-4d66-b1c0-d6864432cfc8)
+
 2. **Dashboard Overview**: Once logged in, navigate through the admin dashboard to access the following:
+
+
+(Meta Tags) ![image](https://github.com/user-attachments/assets/147325f4-49af-444d-9ff9-86713a78f7b5)
+
    - **Meta Tags**: Update page meta tags, including title, description, and keywords, directly through the dashboard to improve SEO dynamically.
+
+(Blog and News Management)![image](https://github.com/user-attachments/assets/c4faa0a2-4b10-4164-b821-ed9a500b3ab0)
+
+
    - **Blog and News Management**: Create, edit, or remove blog posts and news articles, making it easy to maintain an up-to-date content stream.
 3. **Frontend Interaction**: Any updates made in the backend are automatically reflected on the frontend, providing users with the latest content and information.
 
