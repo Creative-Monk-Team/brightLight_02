@@ -61,7 +61,7 @@ let Login = () => {
           <form onSubmit={handleSubmit}>
             <label>Username:</label>
             <input
-              type="text"
+              type="password"
               placeholder="Enter Username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
