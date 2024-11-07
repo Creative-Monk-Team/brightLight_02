@@ -818,32 +818,6 @@ let Admin = () => {
                 </div>
               )}
 
-              {activePage === "express" && (
-                <div className={styles.sections}>
-                  <div
-                    className={`${styles.section} ${
-                      activeSection === "express-content"
-                        ? styles.activeSection
-                        : ""
-                    }`}
-                    onClick={() => handleSectionClick("express-content")}
-                  >
-                    Express Entry Content
-                  </div>
-
-                  <div
-                    className={`${styles.section} ${
-                      activeSection === "express-meta"
-                        ? styles.activeSection
-                        : ""
-                    }`}
-                    onClick={() => handleSectionClick("express-meta")}
-                  >
-                    Page Meta
-                  </div>
-                </div>
-              )}
-
               {activePage === "bcpnp" && (
                 <div className={styles.sections}>
                   <div
@@ -1088,13 +1062,6 @@ let Admin = () => {
 
               {activePage === "federal" && activeSection === "federal-meta" && (
                 <FederalMeta />
-              )}
-
-              {activePage === "express" &&
-                activeSection === "express-content" && <ExpressEntry />}
-
-              {activePage === "express" && activeSection === "express-meta" && (
-                <ExpressMeta />
               )}
 
               {activePage === "bcpnp" && activeSection === "content" && (
@@ -2229,6 +2196,32 @@ let Admin = () => {
               )}
 
               <div className={styles.rightPanel}>
+                {activePage === "express" && (
+                  <div className={styles.sections}>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "express-content"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("express-content")}
+                    >
+                      Express Entry Content
+                    </div>
+
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "express-meta"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("express-meta")}
+                    >
+                      Page Meta
+                    </div>
+                  </div>
+                )}
+
                 {activePage === "bcpnp_page" && (
                   <div className={styles.sections}>
                     <div
@@ -4438,6 +4431,12 @@ let Admin = () => {
                 )}
 
                 <div className={styles.roshiSection}>
+                  {activePage === "express" &&
+                    activeSection === "express-content" && <ExpressEntry />}
+
+                  {activePage === "express" &&
+                    activeSection === "express-meta" && <ExpressMeta />}
+
                   {activePage === "bcpnp_page" &&
                     activeSection === "bcpnp_page_content" && (
                       <BcpnpPageContent />
