@@ -64,7 +64,7 @@
 
 .inputBarFlexSection {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 50px;
   margin-bottom: 50px;
@@ -419,6 +419,9 @@ option:checked {
   }
   .inputBarFlexSection{
     flex-direction: column;
+  }
+  .inputBar select{
+    height: 64px;
   }
   .contactTopSection p{
     width: 100%;

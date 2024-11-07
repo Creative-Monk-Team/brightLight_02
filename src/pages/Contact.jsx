@@ -358,7 +358,7 @@ const Contact = () => {
       >
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2611.079363084726!2d-122.8000042230304!3d49.12312788203902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d9bc1ae6becd%3A0xaf29d4bfe0aceaae!2sBrightlight%20Immigration!5e0!3m2!1sen!2sin!4v1724923112723!5m2!1sen!2sin"
-          allowFullScreen=""
+           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           loading="lazy"
         ></iframe>
         <div className={styles.officeSection}>

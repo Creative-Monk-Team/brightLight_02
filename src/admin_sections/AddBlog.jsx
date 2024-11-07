@@ -63,12 +63,13 @@ let AddBlog = () => {
 
     const videoId = extractYtVideoId(link);
     if (videoId) {
-      const iframeCode = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+      const iframeCode = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}"  frameborder="0" loading="lazy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
       setYtShortcode(iframeCode);
       setYtIframe(
         <iframe
           width="560"
           height="315"
+          loading="lazy"
           src={`https://www.youtube.com/embed/${videoId}`}
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

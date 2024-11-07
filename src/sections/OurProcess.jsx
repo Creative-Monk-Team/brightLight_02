@@ -41,7 +41,7 @@ let OurProcess = () => {
                   onMouseEnter={() => setPlanePosition(270)}
                 >
                   <div className={styles.pointerImageSection}>
-                    <img src={BluePointer} alt="err" />
+                    <img src={BluePointer} alt="err" loading="lazy" />
                     <p>1</p>
                   </div>
                   <h3>{ourProcessData?.step1heading}</h3>
@@ -68,7 +68,7 @@ let OurProcess = () => {
                   onMouseEnter={() => setPlanePosition(480)}
                 >
                   <div className={styles.pointerImageSection}>
-                    <img src={GoldenPointer} alt="err" />
+                    <img src={GoldenPointer} alt="err" loading="lazy" />
                     <p>2</p>
                   </div>
                   <h3>{ourProcessData?.step2heading}</h3>
@@ -95,7 +95,7 @@ let OurProcess = () => {
                   onMouseEnter={() => setPlanePosition(690)}
                 >
                   <div className={styles.pointerImageSection}>
-                    <img src={BluePointer} alt="err" />
+                    <img src={BluePointer} alt="err" loading="lazy" />
                     <p>3</p>
                   </div>
                   <h3>{ourProcessData?.step3heading}</h3>
@@ -122,7 +122,7 @@ let OurProcess = () => {
                   onMouseEnter={() => setPlanePosition(890)}
                 >
                   <div className={styles.pointerImageSection}>
-                    <img src={GoldenPointer} alt="err" />
+                    <img src={GoldenPointer} alt="err" loading="lazy" />
                     <p>4</p>
                   </div>
                   <h3>{ourProcessData?.step4heading}</h3>

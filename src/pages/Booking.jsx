@@ -16,6 +16,8 @@ const Booking = () => {
         src="https://api.leadconnectorhq.com/widget/booking/Tg8EPG2CVEMkQ1J0F3yj"
         title="Booking Iframe"
         width="100%"
+        loading="lazy"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         height="100%"
         style={{ border: 'none' }}
         allowFullScreen    />

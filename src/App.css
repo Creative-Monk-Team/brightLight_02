@@ -1,13 +1,14 @@
 
                                                                /* //CreativeMonk 2024// */
 
-* {
+.App * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 *::-webkit-scrollbar {
   display: none;
 }
@@ -37,7 +38,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-img {
+.App img {
   background-size: cover;
   object-fit: cover;
 }
@@ -134,26 +135,6 @@ ol{
 
 .slick-track {
   display: flex;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  overflow-x: hidden;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
-img {
-  background-size: cover;
-  object-fit: cover;
 }
 
 @font-face {
