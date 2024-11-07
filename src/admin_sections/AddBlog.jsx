@@ -469,6 +469,7 @@ let AddBlog = () => {
         type="text"
         placeholder="YouTube Video Share Link"
         disabled={!editMode}
+        loading="lazy"
         value={ytLink}
         onChange={handleYtLinkChange}
       />

@@ -149,6 +149,7 @@ let SocialMedia = () => {
       />
       <input
         placeholder="YouTube Link"
+         loading="lazy"
         name="youtubeLink"
         value={sectionDataSingle.youtubeLink || ""}
         onChange={handleInputChange}
