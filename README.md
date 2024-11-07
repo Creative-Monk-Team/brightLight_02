@@ -25,7 +25,8 @@ Developed by **Creative-Monk**, Bright Light Immigration is a dynamic web applic
 To get started with Bright Light Immigration, follow these steps:
 
 
-(Admin Access) ![image](https://github.com/user-attachments/assets/5d0ddba0-8a59-4b0c-b1ed-f34aad10b189)
+(Admin Access) ![image](https://github.com/user-attachments/assets/fd57c9c0-caaf-4344-8c34-56c26bd7291b)
+
 
 1. **Admin Access**: Use the admin login page to access the backend GUI. Credentials can be configured through environment variables or initial setup.
 
@@ -43,6 +44,8 @@ To get started with Bright Light Immigration, follow these steps:
 
 
    - **Blog and News Management**: Create, edit, or remove blog posts and news articles, making it easy to maintain an up-to-date content stream.
+
+
 3. **Frontend Interaction**: Any updates made in the backend are automatically reflected on the frontend, providing users with the latest content and information.
 
 
