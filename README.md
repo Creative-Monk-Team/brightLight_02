@@ -8,7 +8,6 @@ Developed by **Creative-Monk**, Bright Light Immigration is a dynamic web applic
 - **Admin Dashboard**: A robust GUI for backend management, allowing for easy content management without database-level access.
   - **Meta Tag Management**: Modify meta tags (such as title, description, and keywords) for SEO directly from the admin dashboard.
   - **Blog and News Management**: Easily add, update, or delete blog and news posts, ensuring your content remains fresh and relevant.
-- **Secure Authentication**: User authentication via JWT ensures only authorised access to the backend dashboard.
 - **Responsive Design**: Accessible across desktop, tablet, and mobile, delivering a seamless experience on all devices.
 - **MERN Stack**: Built with MongoDB, Express, React, and Node.js, ensuring a modern and efficient application.
 
@@ -18,7 +17,6 @@ Developed by **Creative-Monk**, Bright Light Immigration is a dynamic web applic
 - **Frontend**: React, HTML, CSS
 - **Backend**: Node.js, Express, Render
 - **Database**: MongoDB
-- **Authentication**: JSON Web Tokens (JWT)
 - **Other Libraries**: React Acync Helmet, Mongoose (for MongoDB)
 
 ## Getting Started Guide
@@ -44,9 +42,6 @@ To get started with Bright Light Immigration, follow these steps:
 
 The backend exposes several RESTful APIs that power the dynamic nature of the platform. Below is a high-level overview of key endpoints:
 
-- **User Authentication**
-  - `POST /api/auth/login`: Authenticate user and obtain JWT token.
-  
 - **Data Management**
   - `GET /api/data`: Retrieve all data entries for display on the frontend.
   - `POST /api/data`: Create a new data entry (admin access only).
