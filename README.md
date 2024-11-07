@@ -53,7 +53,7 @@ The backend exposes several RESTful APIs that power the dynamic nature of the pl
   - `PUT /api/data/:id`: Update an existing data entry (admin access only).
   - `DELETE /api/data/:id`: Delete a data entry (admin access only).
 
-These endpoints are protected, ensuring only authorised users can access them.
+These endpoints are protected, ensuring only authorised users can access them. _Please note, this is an example structure and does not represent real endpoints to maintain security measures._
 
 ## Credits
 
