@@ -349,7 +349,7 @@ const VisitorToStudent = () => {
             <li>{pData?.ha3}</li>
             <li>{pData?.ha4}</li>
             <li>{pData?.ha5}</li>
-            <li>{pData?.ha6}</li>
+            {/* <li>{pData?.ha6}</li> */}
           </ol>
         </section>
 
@@ -426,7 +426,7 @@ const VisitorToStudent = () => {
              <FieldOfStudyTable/>
 
           <h2>{pData?.ImportantPointNoteHeading}</h2>
-          <ul>
+          <ul className={styles.ImportantPointNoteUl}>
             <li>{pData?.ipn1}
             </li>
             <li>{pData?.ipn2}
@@ -489,13 +489,13 @@ const VisitorToStudent = () => {
           <p className={styles.callToActionText}>
           {pData?.s2}
           </p>
-          <a
+          <button
             id="book-appointment"
             href="/booking"
             className={styles.button}
           >
             Book Appointment
-          </a>
+          </button>
         </section>
 
         <section

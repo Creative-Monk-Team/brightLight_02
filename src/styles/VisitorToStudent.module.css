@@ -314,6 +314,14 @@
    opacity: 0.9;
    text-decoration: none;
   }
+
+  .refusalList li{
+    margin-top: 12px;
+  }
+  .ImportantPointNoteUl li{
+    margin-top: 12px;
+  }
+
   @media (max-width: 400px) {
     .container h2 {
       font-size: 20px;
