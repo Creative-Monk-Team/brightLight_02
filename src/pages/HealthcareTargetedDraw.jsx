@@ -106,7 +106,7 @@ const HealthcareTargetedDraw = () => {
 
   return (
     <>
-              <Helmet>
+       <Helmet>
         <title>
           {metaData?.metaTitle
             ? metaData?.metaTitle

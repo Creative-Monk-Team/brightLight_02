@@ -364,8 +364,9 @@ const LowWageLMIAContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-
-      <input
+  <div className={styles.twoColumnsTable}>
+    <div>
+    <input
         placeholder="Province/Territory Table Heading"
         name="ProvTeriTableHeading"
         value={sectionDataSingle.ProvTeriTableHeading || ""}
@@ -383,8 +384,10 @@ const LowWageLMIAContent = () => {
           disabled={!editMode}
         />
       ))}
+    </div>
+    <div>
 
-      <input
+    <input
         placeholder="Median Hourly Table Heading"
         name="MediHouTableHeading"
         value={sectionDataSingle.MediHouTableHeading || ""}
@@ -402,6 +405,10 @@ const LowWageLMIAContent = () => {
           disabled={!editMode}
         />
       ))}
+
+    </div>
+  </div>
+     
 
       <textarea
         placeholder="Provincial Paragraph 2"
@@ -566,7 +573,9 @@ const LowWageLMIAContent = () => {
         disabled={!editMode}
       />
 
-      <input
+<div className={styles.threeColumnsTable}>
+  <div>
+  <input
         placeholder="Difference Table Inner Head 1"
         name="DiffTableInnerHead1"
         value={sectionDataSingle.DiffTableInnerHead1 || ""}
@@ -584,8 +593,9 @@ const LowWageLMIAContent = () => {
           disabled={!editMode}
         />
       ))}
-
-      <input
+  </div>
+  <div>
+  <input
         placeholder="Difference Table Inner Head 2"
         name="DiffTableInnerHead2"
         value={sectionDataSingle.DiffTableInnerHead2 || ""}
@@ -603,8 +613,9 @@ const LowWageLMIAContent = () => {
           disabled={!editMode}
         />
       ))}
-
-      <input
+  </div>
+  <div>
+  <input
         placeholder="Difference Table Inner Head 3"
         name="DiffTableInnerHead3"
         value={sectionDataSingle.DiffTableInnerHead3 || ""}
@@ -622,6 +633,14 @@ const LowWageLMIAContent = () => {
           disabled={!editMode}
         />
       ))}
+  </div>
+</div>
+
+     
+
+    
+
+    
 
       <input
         placeholder="Refusal Heading"

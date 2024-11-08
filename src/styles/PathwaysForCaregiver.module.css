@@ -203,6 +203,12 @@
   list-style-type: disc;
   margin-left: 20px;
 }
+.list li{
+  margin-top: 8px;
+}
+.whychooseusLi li{
+  margin-top: 8px
+}
 
 .pathways {
   display: flex;

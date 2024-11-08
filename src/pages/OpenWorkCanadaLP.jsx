@@ -210,7 +210,7 @@ const OpenWorkCanadaLP = () => {
           ref={(el) => (sectionsRef.current[1] = el)}
         >
           <h2>{pData?.BenifitsHeading}</h2>
-          <ul style={{marginLeft: "40px"}}>
+          <ul className={styles.BenifitsList} style={{marginLeft: "40px"}}>
             <li>
             {pData?.BenifitsList1}
             </li>
@@ -412,7 +412,7 @@ const OpenWorkCanadaLP = () => {
           ref={(el) => (sectionsRef.current[3] = el)}
         >
           <h2>{pData?.LegalMinTableHeading}</h2>
-          <table>
+          <table className={styles.LegalMinTable}>
             <thead>
               <tr>
                 <th>{pData?.LegalMinTableHead1}</th>

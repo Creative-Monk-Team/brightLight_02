@@ -418,23 +418,16 @@ const GlobalStreamLMIAContent = () => {
         disabled={!editMode}
       />
 
-      <textarea
+<div className={styles.twoColumnsTable}>
+  <div>
+  <textarea
         placeholder="Category B Inner Heading 1"
         name="GSTCategoryBInnerHeading1"
         value={sectionDataSingle.GSTCategoryBInnerHeading1}
         onChange={handleInputChange}
         disabled={!editMode}
       />
-
-      <textarea
-        placeholder="Category B Inner Heading 2"
-        name="GSTCategoryBInnerHeading2"
-        value={sectionDataSingle.GSTCategoryBInnerHeading2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-
-      {[...Array(22)].map((_, index) => {
+        {[...Array(22)].map((_, index) => {
         const nocField = `GSTCategoryBINoc${index + 1}`;
         return (
           <textarea
@@ -447,7 +440,15 @@ const GlobalStreamLMIAContent = () => {
           />
         );
       })}
-
+  </div>
+  <div>
+  <textarea
+        placeholder="Category B Inner Heading 2"
+        name="GSTCategoryBInnerHeading2"
+        value={sectionDataSingle.GSTCategoryBInnerHeading2}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
       {[...Array(22)].map((_, index) => {
         const jobField = `GSTCategoryBIJob${index + 1}`;
         return (
@@ -461,6 +462,16 @@ const GlobalStreamLMIAContent = () => {
           />
         );
       })}
+  </div>
+</div>
+
+     
+
+     
+
+    
+
+      
 
       <input
         placeholder="Labour Market Benefits Plan (LMBP) Heading"

@@ -427,8 +427,9 @@ const HeathcareTargetedDrawContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-
-      <input
+       <div className={styles.threeColumnsTable}>
+        <div>
+        <input
         placeholder="Eligible Occupation Table Head 1"
         name="EligibleOccupTableHead1"
         value={sectionDataSingle.EligibleOccupTableHead1}
@@ -716,7 +717,10 @@ const HeathcareTargetedDrawContent = () => {
         disabled={!editMode}
       />
 
-      <input
+        </div>
+
+        <div>
+        <input
         placeholder="Eligible Occupation Table Head 2"
         name="EligibleOccupTableHead2"
         value={sectionDataSingle.EligibleOccupTableHead2}
@@ -1004,7 +1008,10 @@ const HeathcareTargetedDrawContent = () => {
         disabled={!editMode}
       />
 
-      <input
+        </div>
+
+        <div>
+        <input
         placeholder="Eligible Occupation Table Head 3"
         name="EligibleOccupTableHead3"
         value={sectionDataSingle.EligibleOccupTableHead3}
@@ -1291,6 +1298,12 @@ const HeathcareTargetedDrawContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+        </div>
+       </div>
+
+     
+    
+    
 
       <input
         placeholder="Express Entry Healthcare Heading"

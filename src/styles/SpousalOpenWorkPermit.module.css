@@ -311,6 +311,35 @@ margin-top: 20px;
   text-decoration: none;
 }
 
+/* eligibilityChartTable.module.css */
+
+.eligibilityChartTable {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders between cells are collapsed */
+  border: 1px solid #00273f; /* Border color */
+  background-color: #ffffff; /* Table background color */
+}
+
+.eligibilityChartTable th,
+.eligibilityChartTable td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #00273f; /* Border color for cells */
+}
+
+.eligibilityChartTable th {
+  background-color: #f0f0f0; /* Slight background color for header */
+  font-weight: bold;
+}
+
+.eligibilityChartTable tr:nth-child(even) {
+  background-color: #f9f9f9; /* Zebra striping for rows */
+}
+
+.eligibilityChartTable tr:hover {
+  background-color: #e6f2ff; /* Light blue hover effect */
+}
+
 @media (max-width: 450px) {
   .container h2 {
     font-size: 20px;

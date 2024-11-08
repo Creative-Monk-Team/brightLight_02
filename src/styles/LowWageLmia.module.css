@@ -328,6 +328,69 @@ td {
   opacity: 0.9;
   text-decoration: none;
 }
+/* wageTable.module.css */
+
+.wageTable {
+  /* width: 100%; */
+  border-collapse: collapse; /* Ensures borders between cells are collapsed */
+  border: 1px solid #00273f; /* Border color */
+  background-color: #ffffff; /* Table background color */
+}
+
+.wageTable th,
+.wageTable td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #00273f; /* Border color for cells */
+}
+
+.wageTable th {
+  background-color: #f0f0f0; /* Slight background color for header */
+  font-weight: bold;
+}
+
+.wageTable tr:nth-child(even) {
+  background-color: #f9f9f9; /* Zebra striping for rows */
+}
+
+.wageTable tr:hover {
+  background-color: #e6f2ff; /* Light blue hover effect */
+}
+
+/* differencesTable.module.css */
+
+.differencesTable {
+  width: 100%;
+  border-collapse: collapse; /* Ensures borders between cells are collapsed */
+  border: 1px solid #00273f; /* Border color */
+  background-color: #ffffff; /* Table background color */
+}
+
+.differencesTable th,
+.differencesTable td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #00273f; /* Border color for cells */
+}
+
+.differencesTable th {
+  background-color: #f0f0f0; /* Slight background color for header */
+  font-weight: bold;
+}
+
+.differencesTable tr:nth-child(even) {
+  background-color: #f9f9f9; /* Zebra striping for rows */
+}
+
+.differencesTable tr:hover {
+  background-color: #e6f2ff; /* Light blue hover effect */
+}
+
+.differencesTable td br {
+  line-height: 1.5; /* Adds spacing between line breaks within a cell */
+}
+
+
 
 @media (max-width: 400px) {
   .container h2 {

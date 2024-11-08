@@ -224,7 +224,7 @@ const FederalSkilledTradesProgram = () => {
           <p>
           {pData?.EligPara}
           </p>
-          <ul>
+          <ul className={styles.eligibilityList01}  >
             <li>
             {pData?.e1}
             </li>
@@ -335,7 +335,7 @@ const FederalSkilledTradesProgram = () => {
           <h2 className={styles.subheading}>
           {pData?.RefusalHeading}
           </h2>
-          <ul style={{ marginLeft: "40px" }}>
+          <ul className={styles.refusalList01} style={{ marginLeft: "40px" }}>
             <li>
             {pData?.r1}
             </li>

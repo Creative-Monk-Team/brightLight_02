@@ -259,6 +259,9 @@
   opacity: 1;
   transform: translateX(0);
 }
+.whychooseusLi li{
+  margin-top: 8px;
+}
 
 @media (max-width: 1450px) {
   .banner {

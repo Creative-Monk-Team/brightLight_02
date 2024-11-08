@@ -54,6 +54,21 @@
 .bannerHeadingRotatePara p {
   cursor: pointer;
 }
+.exceptionsLi li{
+  margin-top: 8px;
+}
+.eligibilityLi li{
+  margin-top: 8px;
+}
+.howToApplyLi li{
+  margin-top: 8px;
+}
+.refusalHeadLi li{
+  margin-top: 8px;
+}
+.whyChooseusLi li{
+  margin-top: 8px;
+}
 
 @media (max-width: 1450px) {
   .banner {

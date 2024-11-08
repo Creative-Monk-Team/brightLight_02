@@ -163,6 +163,40 @@
     margin-bottom: 5px;
     margin-top: 20px;
   }
+  /* Targeting the table with class "occupationTable" */
+.occupationTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+/* Table header styling */
+.occupationTable thead {
+  background-color: #f4f4f4;
+}
+
+.occupationTable th {
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+  border: 1px solid #00273f;
+}
+
+/* Table body row styling */
+.occupationTable tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.occupationTable td {
+  padding: 8px;
+  border: 1px solid #00273f;
+}
+
+/* Hover effect for rows */
+.occupationTable tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
   
   .link {
     color: #007bff;

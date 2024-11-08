@@ -54,6 +54,9 @@
 .bannerHeadingRotatePara p {
   cursor: pointer;
 }
+.whychooseusLi li{
+  margin-top: 8px;
+}
 
 @media (max-width: 1450px) {
   .banner {

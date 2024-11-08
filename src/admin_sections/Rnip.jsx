@@ -754,31 +754,19 @@ const RnipContent = () => {
         disabled={!editMode}
       />
 
-      <textarea
+<div className={styles.twoColumnsTable}>
+  <div>
+  <textarea
         placeholder="Table 2 Header 1"
         name="t2h1"
         value={sectionDataSingle.t2h1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="Table 2 Header 2"
-        name="t2h2"
-        value={sectionDataSingle.t2h2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+       <textarea
         placeholder="Table 2 Row 1 Column 1"
         name="t2r1c1"
         value={sectionDataSingle.t2r1c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Table 2 Row 1 Column 2"
-        name="t2r1c2"
-        value={sectionDataSingle.t2r1c2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -789,6 +777,45 @@ const RnipContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+       <textarea
+        placeholder="Table 2 Row 3 Column 1"
+        name="t2r3c1"
+        value={sectionDataSingle.t2r3c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+       />
+         <textarea
+        placeholder="Table 2 Row 4 Column 1"
+        name="t2r4c1"
+        value={sectionDataSingle.t2r4c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+        />
+         <textarea
+        placeholder="Table 2 Row 5 Column 1"
+        name="t2r5c1"
+        value={sectionDataSingle.t2r5c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+         />
+  </div>
+  <div>
+  <textarea
+        placeholder="Table 2 Header 2"
+        name="t2h2"
+        value={sectionDataSingle.t2h2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+     
+      <textarea
+        placeholder="Table 2 Row 1 Column 2"
+        name="t2r1c2"
+        value={sectionDataSingle.t2r1c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+    
       <textarea
         placeholder="Table 2 Row 2 Column 2"
         name="t2r2c2"
@@ -796,13 +823,7 @@ const RnipContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="Table 2 Row 3 Column 1"
-        name="t2r3c1"
-        value={sectionDataSingle.t2r3c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      
       <textarea
         placeholder="Table 2 Row 3 Column 2"
         name="t2r3c2"
@@ -810,13 +831,7 @@ const RnipContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="Table 2 Row 4 Column 1"
-        name="t2r4c1"
-        value={sectionDataSingle.t2r4c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+    
       <textarea
         placeholder="Table 2 Row 4 Column 2"
         name="t2r4c2"
@@ -824,13 +839,7 @@ const RnipContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="Table 2 Row 5 Column 1"
-        name="t2r5c1"
-        value={sectionDataSingle.t2r5c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+     
       <textarea
         placeholder="Table 2 Row 5 Column 2"
         name="t2r5c2"
@@ -838,6 +847,11 @@ const RnipContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+  </div>
+</div>
+
+     
+     
 
       <input
         placeholder="International Students Heading"
@@ -1013,42 +1027,77 @@ const RnipContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-
-      <textarea
+      <div className={styles.threeColumnsTable}>
+        <div>
+        <textarea
         placeholder="Table 3 Header 1"
         name="t3h1"
         value={sectionDataSingle.t3h1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
-      />
-      <textarea
+        />
+          <textarea
+        placeholder="Table 3 Row 1 Column 1"
+        name="t3r1c1"
+        value={sectionDataSingle.t3r1c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+        />
+         <textarea
+        placeholder="Table 3 Row 2 Column 1"
+        name="t3r2c1"
+        value={sectionDataSingle.t3r2c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+        />
+          <textarea
+        placeholder="Table 3 Row 3 Column 1"
+        name="t3r3c1"
+        value={sectionDataSingle.t3r3c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+        />
+        </div>
+        <div>
+        <textarea
         placeholder="Table 3 Header 2"
         name="t3h2"
         value={sectionDataSingle.t3h2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
-      />
-      <textarea
+        />
+       <textarea
+        placeholder="Table 3 Row 1 Column 2"
+        name="t3r1c2"
+        value={sectionDataSingle.t3r1c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+       />
+        <textarea
+        placeholder="Table 3 Row 2 Column 2"
+        name="t3r2c2"
+        value={sectionDataSingle.t3r2c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+       />
+        <textarea
+        placeholder="Table 3 Row 3 Column 2"
+        name="t3r3c2"
+        value={sectionDataSingle.t3r3c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+       />
+        </div>
+        <div>
+        <textarea
         placeholder="Table 3 Header 3"
         name="t3h3"
         value={sectionDataSingle.t3h3 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="Table 3 Row 1 Column 1"
-        name="t3r1c1"
-        value={sectionDataSingle.t3r1c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Table 3 Row 1 Column 2"
-        name="t3r1c2"
-        value={sectionDataSingle.t3r1c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+    
+     
       <textarea
         placeholder="Table 3 Row 1 Column 3"
         name="t3r1c3"
@@ -1056,20 +1105,8 @@ const RnipContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="Table 3 Row 2 Column 1"
-        name="t3r2c1"
-        value={sectionDataSingle.t3r2c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Table 3 Row 2 Column 2"
-        name="t3r2c2"
-        value={sectionDataSingle.t3r2c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+     
+     
       <textarea
         placeholder="Table 3 Row 2 Column 3"
         name="t3r2c3"
@@ -1077,20 +1114,8 @@ const RnipContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="Table 3 Row 3 Column 1"
-        name="t3r3c1"
-        value={sectionDataSingle.t3r3c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Table 3 Row 3 Column 2"
-        name="t3r3c2"
-        value={sectionDataSingle.t3r3c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+    
+     
       <textarea
         placeholder="Table 3 Row 3 Column 3"
         name="t3r3c3"
@@ -1098,6 +1123,11 @@ const RnipContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+        </div>
+      </div>
+
+     
+  
 
       <input
         placeholder="Educational Requirements Heading"

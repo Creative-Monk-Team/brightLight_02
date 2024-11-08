@@ -240,6 +240,39 @@
     list-style-type: circle;
     margin-left: 30px;
   }
+  .BenifitsList li{
+    margin-top: 8px;
+  }
+  /* LegalMinTable.module.css */
+
+
+.LegalMinTable {
+  width: 100%;
+  border-collapse: collapse; 
+  border: 1px solid #00273f;  
+  background-color: #ffffff;  
+}
+
+.LegalMinTable th,
+.LegalMinTable td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #00273f;  
+}
+
+.LegalMinTable th {
+  background-color: #f0f0f0;  
+  font-weight: bold;
+}
+
+.LegalMinTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.LegalMinTable tr:hover {
+  background-color: #e6f2ff;  
+}
+
 
   @media (max-width: 400px) {
     .container h2 {

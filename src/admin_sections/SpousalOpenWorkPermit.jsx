@@ -377,21 +377,23 @@ const SpousalOpenWorkPermitContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
+       <div className={styles.fourColumnsTable}>
+        <div>
+        <input
         placeholder="Eligibility Chart Heading 1"
         name="EligChartHead1"
         value={sectionDataSingle.EligChartHead1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
+       <textarea
         placeholder="Eligibility Chart Point 1"
         name="ec1P1"
         value={sectionDataSingle.ec1P1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
-      />
-      <textarea
+       />
+       <textarea
         placeholder="Eligibility Chart Point 2"
         name="ec1P2"
         value={sectionDataSingle.ec1P2 || ""}
@@ -427,7 +429,9 @@ const SpousalOpenWorkPermitContent = () => {
         disabled={!editMode}
       />
 
-      <input
+        </div>
+        <div>
+        <input
         placeholder="Eligibility Chart Heading 2"
         name="EligChartHead2"
         value={sectionDataSingle.EligChartHead2 || ""}
@@ -476,8 +480,9 @@ const SpousalOpenWorkPermitContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-
-      <input
+        </div>
+        <div>
+        <input
         placeholder="Eligibility Chart Heading 3"
         name="EligChartHead3"
         value={sectionDataSingle.EligChartHead3 || ""}
@@ -527,6 +532,14 @@ const SpousalOpenWorkPermitContent = () => {
         disabled={!editMode}
       />
 
+        </div>
+       </div>
+     
+     
+      
+   
+
+      
       <input
         placeholder="How to Apply Heading"
         name="HowApplyHeading"

@@ -237,6 +237,12 @@
   opacity: 1;
   transform: translateX(0);
 }
+.eligibilityList01 li{
+  margin-top: 8px;
+}
+.refusalList01 li{
+  margin-top: 8px;
+}
 
 @media (max-width: 400px) {
   .container h2 {

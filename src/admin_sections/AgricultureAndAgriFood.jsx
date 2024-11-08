@@ -72,6 +72,7 @@ const AgricultureAndAgriFoodPageContent = () => {
     HeT2Po1: "",
     HeT2Po2: "",
     HeT2Po3: "",
+    HereEligTableHead3: "",
     HeT3Po1: "",
     HeT3Po2: "",
     HeT3Po3: "",
@@ -286,7 +287,9 @@ const AgricultureAndAgriFoodPageContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
+        <div className={styles.threeColumnsTable}>
+          <div>
+          <input
         placeholder="Here Eligible Table Head 1"
         name="HereEligTableHead1"
         value={sectionDataSingle.HereEligTableHead1 || ""}
@@ -314,7 +317,9 @@ const AgricultureAndAgriFoodPageContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
+          </div>
+          <div>
+          <input
         placeholder="Here Eligible Table Head 2"
         name="HereEligTableHead2"
         value={sectionDataSingle.HereEligTableHead2 || ""}
@@ -342,7 +347,16 @@ const AgricultureAndAgriFoodPageContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
+            </div>
+            <div>
+            <input
+        placeholder="Here Eligible Table Head 3"
+        name="HereEligTableHead3"
+        value={sectionDataSingle.HereEligTableHead3 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+            <textarea
         placeholder="NOC Code 1 for Table 3"
         name="HeT3Po1"
         value={sectionDataSingle.HeT3Po1 || ""}
@@ -363,6 +377,11 @@ const AgricultureAndAgriFoodPageContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+            </div>
+        </div>
+     
+    
+     
       <input
         placeholder="Still Not Eligible Heading"
         name="StillNotHeading"

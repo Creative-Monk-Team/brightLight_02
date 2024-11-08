@@ -273,7 +273,7 @@ const SpousalOpenWorkPermit = () => {
           </ol>
           <div className={styles.eligibilityChart}>
             <h3 className={styles.chartHeading}> {pData?.EligChart}</h3>
-            <table>
+            <table className={styles.eligibilityChartTable}>
               <thead>
                 <tr>
                   <th> {pData?.EligChartHead1}</th>

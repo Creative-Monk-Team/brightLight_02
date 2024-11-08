@@ -12,6 +12,7 @@
   grid-template-columns: repeat(3, 33%);
   align-items: flex-start;
   justify-content: space-between;
+  margin: 50px 0px;
 }
 
 .twoColumnsTable{
@@ -19,6 +20,18 @@
   grid-template-columns: repeat(2, 49%);
   align-items: flex-start;
   justify-content: space-between;
+  margin: 50px 0px;
+}
+.fourColumnsTable{
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 50px 0px;
+}
+.fourColumnsTable textarea{
+  height: 50px !important;
+  width: 100% !important;
 }
 
 .threeColumnsTable textarea{

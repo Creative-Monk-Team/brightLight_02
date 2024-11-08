@@ -367,7 +367,7 @@ const PrioritiesProgram = () => {
                 </tr>
                 <tr>
                   <td>{pData?.t2r10c1}</td>
-                  <td>{pData?.t2r210c2}</td>
+                  <td>{pData?.t2r10c2}</td>
                 </tr>
                 <tr>
                   <td>{pData?.t2r11c1}</td>
@@ -810,7 +810,7 @@ const PrioritiesProgram = () => {
           ref={(el) => (sectionsRef.current[9] = el)}
         >
         <h2>  {pData?.WhyChooseUsHeading01 }</h2>
-          <ul style={{marginLeft: "40px"}}>
+          <ul className={styles.whychooseusLi} style={{marginLeft: "40px"}}>
             <li>
               <strong>{strongText91}</strong>{" "} {remainingText91}
             </li>

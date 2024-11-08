@@ -268,6 +268,39 @@ tr:hover {
 .section li{
   margin-top: 12px;
 }
+/* Globaltable.module.css */
+
+.Globaltable {
+  /* width: 100%; */
+  border-collapse: collapse; /* Ensures borders between cells are collapsed */
+  border: 1px solid #00273f; /* Border color */
+  background-color: #ffffff; /* Table background color */
+}
+
+.Globaltable th,
+.Globaltable td {
+  padding: 6px;
+  text-align: left;
+  border: 1px solid #00273f; /* Border color for cells */
+}
+
+.Globaltable th {
+  background-color: #f0f0f0; /* Slight background color for header */
+  font-weight: bold;
+}
+
+.Globaltable tr:nth-child(even) {
+  background-color: #f9f9f9; /* Zebra striping for rows */
+}
+
+.Globaltable tr:hover {
+  background-color: #e6f2ff; /* Light blue hover effect */
+}
+
+.Globaltable td br {
+  line-height: 1.5; /* Adds spacing between line breaks within a cell */
+}
+
 
 @media (max-width: 400px) {
   .container h2 {

@@ -787,7 +787,9 @@ const SdsContent = () => {
         disabled={!editMode}
       />
 
-      <input
+<div className={styles.twoColumnsTable}>
+  <div>
+  <input
         placeholder="Proof of Funds Table 1 Heading 1"
         name="ProofFundTable1Head1"
         value={sectionDataSingle.ProofFundTable1Head1 || ""}
@@ -822,8 +824,9 @@ const SdsContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-
-      <input
+  </div>
+  <div>
+    <input
         placeholder="Proof of Funds Table 1 Heading 2"
         name="ProofFundTable1Head2"
         value={sectionDataSingle.ProofFundTable1Head2 || ""}
@@ -858,8 +861,14 @@ const SdsContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+  </div>
+</div>
+     
 
-      <input
+    
+<div className={styles.twoColumnsTable}>
+  <div>
+  <input
         placeholder="Proof of Funds Table 2 Heading 1"
         name="ProofFundTable2Head1"
         value={sectionDataSingle.ProofFundTable2Head1 || ""}
@@ -895,7 +904,9 @@ const SdsContent = () => {
         disabled={!editMode}
       />
 
-      <input
+  </div>
+  <div>
+  <input
         placeholder="Proof of Funds Table 2 Heading 2"
         name="ProofFundTable2Head2"
         value={sectionDataSingle.ProofFundTable2Head2 || ""}
@@ -930,8 +941,12 @@ const SdsContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-
-      <input
+  </div>
+</div>
+     
+<div className={styles.twoColumnsTable}>
+  <div>
+  <input
         placeholder="Proof of Funds Table 3 Heading 1"
         name="ProofFundTable3Head1"
         value={sectionDataSingle.ProofFundTable3Head1 || ""}
@@ -967,7 +982,9 @@ const SdsContent = () => {
         disabled={!editMode}
       />
 
-      <input
+  </div>
+  <div>
+  <input
         placeholder="Proof of Funds Table 3 Heading 2"
         name="ProofFundTable3Head2"
         value={sectionDataSingle.ProofFundTable3Head2 || ""}
@@ -1003,6 +1020,11 @@ const SdsContent = () => {
         disabled={!editMode}
       />
 
+  </div>
+</div>
+
+    
+   
       <input
         placeholder="How to Apply Application Process Step 4"
         name="HowtoApplyAppProcStep4"
@@ -1097,7 +1119,10 @@ const SdsContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
+      
+      <div className={styles.twoColumnsTable}>
+        <div>
+        <input
         placeholder="How to Apply Application Process 2 Tab Head 1"
         name="HowtoApplyAppProc2TabHead1"
         value={sectionDataSingle.HowtoApplyAppProc2TabHead1 || ""}
@@ -1155,7 +1180,9 @@ const SdsContent = () => {
         disabled={!editMode}
       />
 
-      <input
+        </div>
+        <div>
+        <input
         placeholder="How to Apply Application Process 2 Tab Head 2"
         name="HowtoApplyAppProc2TabHead2"
         value={sectionDataSingle.HowtoApplyAppProc2TabHead2 || ""}
@@ -1212,6 +1239,10 @@ const SdsContent = () => {
         disabled={!editMode}
       />
 
+        </div>
+      </div>
+     
+    
       <input
         placeholder="Bringing Spouse Heading"
         name="BringingSpouHeading"

@@ -212,7 +212,7 @@ const StudyPermitMinors = () => {
           <p>
           {pData?.StudyPerMinLiHead}
           </p>
-          <ul>
+          <ul className={styles.exceptionsLi}>
             <li>
             {pData?.StudyPerMinLi1}
             </li>
@@ -231,7 +231,7 @@ const StudyPermitMinors = () => {
           ref={(el) => (sectionsRef.current[2] = el)}
         >
           <h2 className={styles.subheading}> {pData?.EligibilityHeading}</h2>
-          <ul style={{marginLeft: "40px"}}>
+          <ul className={styles.exceptionsLi} style={{marginLeft: "40px"}}>
             <li> {pData?.e1}</li>
             <li>
             {pData?.e2}
@@ -256,7 +256,7 @@ const StudyPermitMinors = () => {
           {pData?.AppProcSubHead}{" "}
             <Link to="/student-visa">student visa page</Link>.
           </p>
-          <ul >
+          <ul className={styles.howToApplyLi}>
             <li>
             {pData?.ap1}
             </li>
@@ -280,9 +280,9 @@ const StudyPermitMinors = () => {
           ref={(el) => (sectionsRef.current[4] = el)}
         >
           <h2 className={styles.subheading}>  {pData?.RefusalHeading}</h2>
-          <ul style={{marginLeft: "40px"}}>
-            <li>  {pData?.r1}</li>
-            <li> {pData?.r2}</li>
+          <ul className={styles.refusalHeadLi} style={{marginLeft: "40px"}}>
+            <li>{pData?.r1}</li>
+            <li>{pData?.r2}</li>
             <li>{pData?.r3}</li>
             <li>{pData?.r4}</li>
             <li>{pData?.r5}</li>
@@ -318,7 +318,7 @@ const StudyPermitMinors = () => {
         >
        
           <h2>{pData?.WhyChooseUsHeading01 }</h2>
-          <ul style={{marginLeft: "40px"}}>
+          <ul className={styles.whyChooseusLi} style={{marginLeft: "40px"}}>
             <li>
               <strong>{strongText91}</strong>{" "} {remainingText91}
             </li>

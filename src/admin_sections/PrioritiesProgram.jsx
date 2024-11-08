@@ -735,17 +735,12 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
+      <div className={styles.twoColumnsTable}>
+        <div>
+        <input
         placeholder="T1 Heading 1"
         name="t1h1"
         value={sectionDataSingle.t1h1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="T1 Heading 2"
-        name="t1h2"
-        value={sectionDataSingle.t1h2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -756,6 +751,16 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+        </div>
+        <div>
+        <input
+        placeholder="T1 Heading 2"
+        name="t1h2"
+        value={sectionDataSingle.t1h2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      
       <textarea
         placeholder="T1 Row 1 Column 2"
         name="t1r1c2"
@@ -763,6 +768,8 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+        </div>
+      </div>
 
       <input
         placeholder="Table 2 Heading"
@@ -771,59 +778,35 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
+
+      <div className={styles.twoColumnsTable}>
+
+        <div>
+        <input
         placeholder="T2 Heading 1"
         name="t2h1"
         value={sectionDataSingle.t2h1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="T2 Heading 2"
-        name="t2h2"
-        value={sectionDataSingle.t2h2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+       <textarea
         placeholder="T2 Row 1 Column 1"
         name="t2r1c1"
         value={sectionDataSingle.t2r1c1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="T2 Row 1 Column 2"
-        name="t2r1c2"
-        value={sectionDataSingle.t2r1c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+       <textarea
         placeholder="T2 Row 2 Column 1"
         name="t2r2c1"
         value={sectionDataSingle.t2r2c1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="T2 Row 2 Column 2"
-        name="t2r2c2"
-        value={sectionDataSingle.t2r2c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+       <textarea
         placeholder="T2 Row 3 Column 1"
         name="t2r3c1"
         value={sectionDataSingle.t2r3c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="T2 Row 3 Column 2"
-        name="t2r3c2"
-        value={sectionDataSingle.t2r3c2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -835,23 +818,9 @@ const PrioritiesProgramContent = () => {
         disabled={!editMode}
       />
       <textarea
-        placeholder="T2 Row 4 Column 2"
-        name="t2r4c2"
-        value={sectionDataSingle.t2r4c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
         placeholder="T2 Row 5 Column 1"
         name="t2r5c1"
         value={sectionDataSingle.t2r5c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="T2 Row 5 Column 2"
-        name="t2r5c2"
-        value={sectionDataSingle.t2r5c2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -861,25 +830,11 @@ const PrioritiesProgramContent = () => {
         value={sectionDataSingle.t2r6c1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
-      />
-      <textarea
-        placeholder="T2 Row 6 Column 2"
-        name="t2r6c2"
-        value={sectionDataSingle.t2r6c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+       />
+       <textarea
         placeholder="T2 Row 7 Column 1"
         name="t2r7c1"
         value={sectionDataSingle.t2r7c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="T2 Row 7 Column 2"
-        name="t2r7c2"
-        value={sectionDataSingle.t2r7c2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -889,39 +844,18 @@ const PrioritiesProgramContent = () => {
         value={sectionDataSingle.t2r8c1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
-      />
-      <textarea
-        placeholder="T2 Row 8 Column 2"
-        name="t2r8c2"
-        value={sectionDataSingle.t2r8c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+       />
+         <textarea
         placeholder="T2 Row 9 Column 1"
         name="t2r9c1"
         value={sectionDataSingle.t2r9c1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="T2 Row 9 Column 2"
-        name="t2r9c2"
-        value={sectionDataSingle.t2r9c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+       <textarea
         placeholder="T2 Row 10 Column 1"
         name="t2r10c1"
         value={sectionDataSingle.t2r10c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="T2 Row 10 Column 2"
-        name="t2r10c2"
-        value={sectionDataSingle.t2r10c2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -932,24 +866,10 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="T2 Row 11 Column 2"
-        name="t2r11c2"
-        value={sectionDataSingle.t2r11c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+       <textarea
         placeholder="T2 Row 12 Column 1"
         name="t2r12c1"
         value={sectionDataSingle.t2r12c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="T2 Row 12 Column 2"
-        name="t2r12c2"
-        value={sectionDataSingle.t2r12c2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -961,19 +881,205 @@ const PrioritiesProgramContent = () => {
         disabled={!editMode}
       />
       <textarea
-        placeholder="T2 Row 13 Column 2"
-        name="t2r13c2"
-        value={sectionDataSingle.t2r13c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
         placeholder="T2 Row 14 Column 1"
         name="t2r14c1"
         value={sectionDataSingle.t2r14c1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
+       <textarea
+        placeholder="T2 Row 15 Column 1"
+        name="t2r15c1"
+        value={sectionDataSingle.t2r15c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+        <textarea
+        placeholder="T2 Row 16 Column 1"
+        name="t2r16c1"
+        value={sectionDataSingle.t2r16c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+       />
+        <textarea
+        placeholder="T2 Row 17 Column 1"
+        name="t2r17c1"
+        value={sectionDataSingle.t2r17c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+        />
+         <input
+        placeholder="Table 2 Row 18 Column 1"
+        name="t2r18c1"
+        value={sectionDataSingle.t2r18c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+        />
+          <input
+        placeholder="Table 2 Row 19 Column 1"
+        name="t2r19c1"
+        value={sectionDataSingle.t2r19c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+        />
+         <input
+        placeholder="Table 2 Row 20 Column 1"
+        name="t2r20c1"
+        value={sectionDataSingle.t2r20c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+       />
+       <input
+        placeholder="Table 2 Row 21 Column 1"
+        name="t2r21c1"
+        value={sectionDataSingle.t2r21c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+       <input
+        placeholder="Table 2 Row 22 Column 1"
+        name="t2r22c1"
+        value={sectionDataSingle.t2r22c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+       />
+        <input
+        placeholder="Table 2 Row 23 Column 1"
+        name="t2r23c1"
+        value={sectionDataSingle.t2r23c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+       />
+        <input
+        placeholder="Table 2 Row 24 Column 1"
+        name="t2r24c1"
+        value={sectionDataSingle.t2r24c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+       />
+       <input
+        placeholder="Table 2 Row 25 Column 1"
+        name="t2r25c1"
+        value={sectionDataSingle.t2r25c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+       />
+ 
+        </div>
+
+        <div>
+        <input
+        placeholder="T2 Heading 2"
+        name="t2h2"
+        value={sectionDataSingle.t2h2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+     
+      <textarea
+        placeholder="T2 Row 1 Column 2"
+        name="t2r1c2"
+        value={sectionDataSingle.t2r1c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+     
+      <textarea
+        placeholder="T2 Row 2 Column 2"
+        name="t2r2c2"
+        value={sectionDataSingle.t2r2c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+     
+      <textarea
+        placeholder="T2 Row 3 Column 2"
+        name="t2r3c2"
+        value={sectionDataSingle.t2r3c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+    
+      <textarea
+        placeholder="T2 Row 4 Column 2"
+        name="t2r4c2"
+        value={sectionDataSingle.t2r4c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      
+      <textarea
+        placeholder="T2 Row 5 Column 2"
+        name="t2r5c2"
+        value={sectionDataSingle.t2r5c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      
+      <textarea
+        placeholder="T2 Row 6 Column 2"
+        name="t2r6c2"
+        value={sectionDataSingle.t2r6c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      
+      <textarea
+        placeholder="T2 Row 7 Column 2"
+        name="t2r7c2"
+        value={sectionDataSingle.t2r7c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      
+      <textarea
+        placeholder="T2 Row 8 Column 2"
+        name="t2r8c2"
+        value={sectionDataSingle.t2r8c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+    
+      <textarea
+        placeholder="T2 Row 9 Column 2"
+        name="t2r9c2"
+        value={sectionDataSingle.t2r9c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+     
+      <textarea
+        placeholder="T2 Row 10 Column 2"
+        name="t2r10c2"
+        value={sectionDataSingle.t2r10c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+    
+      <textarea
+        placeholder="T2 Row 11 Column 2"
+        name="t2r11c2"
+        value={sectionDataSingle.t2r11c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+     
+      <textarea
+        placeholder="T2 Row 12 Column 2"
+        name="t2r12c2"
+        value={sectionDataSingle.t2r12c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      
+      <textarea
+        placeholder="T2 Row 13 Column 2"
+        name="t2r13c2"
+        value={sectionDataSingle.t2r13c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      
       <textarea
         placeholder="T2 Row 14 Column 2"
         name="t2r14c2"
@@ -981,13 +1087,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="T2 Row 15 Column 1"
-        name="t2r15c1"
-        value={sectionDataSingle.t2r15c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+     
       <textarea
         placeholder="T2 Row 15 Column 2"
         name="t2r15c2"
@@ -995,13 +1095,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="T2 Row 16 Column 1"
-        name="t2r16c1"
-        value={sectionDataSingle.t2r16c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+    
       <textarea
         placeholder="T2 Row 16 Column 2"
         name="t2r16c2"
@@ -1009,13 +1103,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="T2 Row 17 Column 1"
-        name="t2r17c1"
-        value={sectionDataSingle.t2r17c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+     
       <textarea
         placeholder="T2 Row 17 Column 2"
         name="t2r17c2"
@@ -1024,13 +1112,7 @@ const PrioritiesProgramContent = () => {
         disabled={!editMode}
       />
 
-      <input
-        placeholder="Table 2 Row 18 Column 1"
-        name="t2r18c1"
-        value={sectionDataSingle.t2r18c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+     
       <input
         placeholder="Table 2 Row 18 Column 2"
         name="t2r18c2"
@@ -1038,13 +1120,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="Table 2 Row 19 Column 1"
-        name="t2r19c1"
-        value={sectionDataSingle.t2r19c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+    
       <input
         placeholder="Table 2 Row 19 Column 2"
         name="t2r19c2"
@@ -1052,13 +1128,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="Table 2 Row 20 Column 1"
-        name="t2r20c1"
-        value={sectionDataSingle.t2r20c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+     
       <input
         placeholder="Table 2 Row 20 Column 2"
         name="t2r20c2"
@@ -1066,13 +1136,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="Table 2 Row 21 Column 1"
-        name="t2r21c1"
-        value={sectionDataSingle.t2r21c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      
       <input
         placeholder="Table 2 Row 21 Column 2"
         name="t2r21c2"
@@ -1080,13 +1144,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="Table 2 Row 22 Column 1"
-        name="t2r22c1"
-        value={sectionDataSingle.t2r22c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      
       <input
         placeholder="Table 2 Row 22 Column 2"
         name="t2r22c2"
@@ -1094,13 +1152,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="Table 2 Row 23 Column 1"
-        name="t2r23c1"
-        value={sectionDataSingle.t2r23c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+     
       <input
         placeholder="Table 2 Row 23 Column 2"
         name="t2r23c2"
@@ -1108,13 +1160,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="Table 2 Row 24 Column 1"
-        name="t2r24c1"
-        value={sectionDataSingle.t2r24c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+     
       <input
         placeholder="Table 2 Row 24 Column 2"
         name="t2r24c2"
@@ -1122,13 +1168,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="Table 2 Row 25 Column 1"
-        name="t2r25c1"
-        value={sectionDataSingle.t2r25c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      
       <input
         placeholder="Table 2 Row 25 Column 2"
         name="t2r25c2"
@@ -1136,6 +1176,9 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+        </div>
+
+      </div>
 
       <input
         placeholder="Table 3 Heading"
@@ -1144,17 +1187,13 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
+     
+      <div className={styles.twoColumnsTable}>
+        <div>
+        <input
         placeholder="Table 3 Heading 1"
         name="t3h1"
         value={sectionDataSingle.t3h1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="Table 3 Heading 2"
-        name="t3h2"
-        value={sectionDataSingle.t3h2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -1165,153 +1204,77 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="Table 3 Row 1 Column 2"
-        name="t3r1c2"
-        value={sectionDataSingle.t3r1c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+       <textarea
         placeholder="Table 3 Row 2 Column 1"
         name="t3r2c1"
         value={sectionDataSingle.t3r2c1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="Table 3 Row 2 Column 2"
-        name="t3r2c2"
-        value={sectionDataSingle.t3r2c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+         <textarea
         placeholder="Table 3 Row 3 Column 1"
         name="t3r3c1"
         value={sectionDataSingle.t3r3c1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
-      />
-      <textarea
-        placeholder="Table 3 Row 3 Column 2"
-        name="t3r3c2"
-        value={sectionDataSingle.t3r3c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+        />
+         <textarea
         placeholder="Table 3 Row 4 Column 1"
         name="t3r4c1"
         value={sectionDataSingle.t3r4c1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
-      />
-      <textarea
-        placeholder="Table 3 Row 4 Column 2"
-        name="t3r4c2"
-        value={sectionDataSingle.t3r4c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+       />
       <textarea
         placeholder="Table 3 Row 5 Column 1"
         name="t3r5c1"
         value={sectionDataSingle.t3r5c1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
-      />
-      <textarea
-        placeholder="Table 3 Row 5 Column 2"
-        name="t3r5c2"
-        value={sectionDataSingle.t3r5c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+       />
       <textarea
         placeholder="Table 3 Row 6 Column 1"
         name="t3r6c1"
         value={sectionDataSingle.t3r6c1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
-      />
-      <textarea
-        placeholder="Table 3 Row 6 Column 2"
-        name="t3r6c2"
-        value={sectionDataSingle.t3r6c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+       />
+       <textarea
         placeholder="Table 3 Row 7 Column 1"
         name="t3r7c1"
         value={sectionDataSingle.t3r7c1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
-      />
-      <textarea
-        placeholder="Table 3 Row 7 Column 2"
-        name="t3r7c2"
-        value={sectionDataSingle.t3r7c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+       />
+         <textarea
         placeholder="Table 3 Row 8 Column 1"
         name="t3r8c1"
         value={sectionDataSingle.t3r8c1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
-      />
-      <textarea
-        placeholder="Table 3 Row 8 Column 2"
-        name="t3r8c2"
-        value={sectionDataSingle.t3r8c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+        />
+         <textarea
         placeholder="Table 3 Row 9 Column 1"
         name="t3r9c1"
         value={sectionDataSingle.t3r9c1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
-      />
-      <textarea
-        placeholder="Table 3 Row 9 Column 2"
-        name="t3r9c2"
-        value={sectionDataSingle.t3r9c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+        />
+        <textarea
         placeholder="Table 3 Row 10 Column 1"
         name="t3r10c1"
         value={sectionDataSingle.t3r10c1 || ""}
         onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Table 3 Row 10 Column 2"
-        name="t3r10c2"
-        value={sectionDataSingle.t3r10c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+         disabled={!editMode}
+        />
+         <textarea
         placeholder="Table 3 Row 11 Column 1"
         name="t3r11c1"
         value={sectionDataSingle.t3r11c1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
-      />
-      <textarea
-        placeholder="Table 3 Row 11 Column 2"
-        name="t3r11c2"
-        value={sectionDataSingle.t3r11c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+        />
+
       <textarea
         placeholder="Table 3 Row 12 Column 1"
         name="t3r12c1"
@@ -1319,39 +1282,17 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="Table 3 Row 12 Column 2"
-        name="t3r12c2"
-        value={sectionDataSingle.t3r12c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+       <textarea
         placeholder="Table 3 Row 13 Column 1"
         name="t3r13c1"
         value={sectionDataSingle.t3r13c1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="Table 3 Row 13 Column 2"
-        name="t3r13c2"
-        value={sectionDataSingle.t3r13c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-
-      <input
+        <input
         placeholder="t3r14c1"
         name="t3r14c1"
         value={sectionDataSingle.t3r14c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="t3r14c2"
-        name="t3r14c2"
-        value={sectionDataSingle.t3r14c2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -1363,23 +1304,9 @@ const PrioritiesProgramContent = () => {
         disabled={!editMode}
       />
       <input
-        placeholder="t3r15c2"
-        name="t3r15c2"
-        value={sectionDataSingle.t3r15c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
         placeholder="t3r16c1"
         name="t3r16c1"
         value={sectionDataSingle.t3r16c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="t3r16c2"
-        name="t3r16c2"
-        value={sectionDataSingle.t3r16c2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -1391,23 +1318,9 @@ const PrioritiesProgramContent = () => {
         disabled={!editMode}
       />
       <input
-        placeholder="t3r17c2"
-        name="t3r17c2"
-        value={sectionDataSingle.t3r17c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
         placeholder="t3r18c1"
         name="t3r18c1"
         value={sectionDataSingle.t3r18c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="t3r18c2"
-        name="t3r18c2"
-        value={sectionDataSingle.t3r18c2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -1419,23 +1332,9 @@ const PrioritiesProgramContent = () => {
         disabled={!editMode}
       />
       <input
-        placeholder="t3r19c2"
-        name="t3r19c2"
-        value={sectionDataSingle.t3r19c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
         placeholder="t3r20c1"
         name="t3r20c1"
         value={sectionDataSingle.t3r20c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="t3r20c2"
-        name="t3r20c2"
-        value={sectionDataSingle.t3r20c2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -1447,23 +1346,9 @@ const PrioritiesProgramContent = () => {
         disabled={!editMode}
       />
       <input
-        placeholder="t3r21c2"
-        name="t3r21c2"
-        value={sectionDataSingle.t3r21c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
         placeholder="t3r22c1"
         name="t3r22c1"
         value={sectionDataSingle.t3r22c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="t3r22c2"
-        name="t3r22c2"
-        value={sectionDataSingle.t3r22c2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -1475,23 +1360,9 @@ const PrioritiesProgramContent = () => {
         disabled={!editMode}
       />
       <input
-        placeholder="t3r23c2"
-        name="t3r23c2"
-        value={sectionDataSingle.t3r23c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
         placeholder="t3r24c1"
         name="t3r24c1"
         value={sectionDataSingle.t3r24c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="t3r24c2"
-        name="t3r24c2"
-        value={sectionDataSingle.t3r24c2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -1503,23 +1374,9 @@ const PrioritiesProgramContent = () => {
         disabled={!editMode}
       />
       <input
-        placeholder="t3r25c2"
-        name="t3r25c2"
-        value={sectionDataSingle.t3r25c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
         placeholder="t3r26c1"
         name="t3r26c1"
         value={sectionDataSingle.t3r26c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="t3r26c2"
-        name="t3r26c2"
-        value={sectionDataSingle.t3r26c2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -1531,23 +1388,9 @@ const PrioritiesProgramContent = () => {
         disabled={!editMode}
       />
       <input
-        placeholder="t3r27c2"
-        name="t3r27c2"
-        value={sectionDataSingle.t3r27c2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
         placeholder="t3r28c1"
         name="t3r28c1"
         value={sectionDataSingle.t3r28c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="t3r28c2"
-        name="t3r28c2"
-        value={sectionDataSingle.t3r28c2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -1558,6 +1401,247 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+       <input
+        placeholder="t3r30c1"
+        name="t3r30c1"
+        value={sectionDataSingle.t3r30c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+        </div>
+
+        <div>
+        <input
+        placeholder="Table 3 Heading 2"
+        name="t3h2"
+        value={sectionDataSingle.t3h2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      
+      <textarea
+        placeholder="Table 3 Row 1 Column 2"
+        name="t3r1c2"
+        value={sectionDataSingle.t3r1c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+     
+      <textarea
+        placeholder="Table 3 Row 2 Column 2"
+        name="t3r2c2"
+        value={sectionDataSingle.t3r2c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <textarea
+        placeholder="Table 3 Row 3 Column 2"
+        name="t3r3c2"
+        value={sectionDataSingle.t3r3c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+     
+      <textarea
+        placeholder="Table 3 Row 4 Column 2"
+        name="t3r4c2"
+        value={sectionDataSingle.t3r4c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+    
+      <textarea
+        placeholder="Table 3 Row 5 Column 2"
+        name="t3r5c2"
+        value={sectionDataSingle.t3r5c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      
+      <textarea
+        placeholder="Table 3 Row 6 Column 2"
+        name="t3r6c2"
+        value={sectionDataSingle.t3r6c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+     
+      <textarea
+        placeholder="Table 3 Row 7 Column 2"
+        name="t3r7c2"
+        value={sectionDataSingle.t3r7c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+    
+      <textarea
+        placeholder="Table 3 Row 8 Column 2"
+        name="t3r8c2"
+        value={sectionDataSingle.t3r8c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+     
+      <textarea
+        placeholder="Table 3 Row 9 Column 2"
+        name="t3r9c2"
+        value={sectionDataSingle.t3r9c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      
+      <textarea
+        placeholder="Table 3 Row 10 Column 2"
+        name="t3r10c2"
+        value={sectionDataSingle.t3r10c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+     
+      <textarea
+        placeholder="Table 3 Row 11 Column 2"
+        name="t3r11c2"
+        value={sectionDataSingle.t3r11c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      
+      <textarea
+        placeholder="Table 3 Row 12 Column 2"
+        name="t3r12c2"
+        value={sectionDataSingle.t3r12c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+     
+      <textarea
+        placeholder="Table 3 Row 13 Column 2"
+        name="t3r13c2"
+        value={sectionDataSingle.t3r13c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+ <input
+        placeholder="t3r14c2"
+        name="t3r14c2"
+        value={sectionDataSingle.t3r14c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      
+      <input
+        placeholder="t3r15c2"
+        name="t3r15c2"
+        value={sectionDataSingle.t3r15c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+     
+      <input
+        placeholder="t3r16c2"
+        name="t3r16c2"
+        value={sectionDataSingle.t3r16c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+    
+      <input
+        placeholder="t3r17c2"
+        name="t3r17c2"
+        value={sectionDataSingle.t3r17c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+     
+      <input
+        placeholder="t3r18c2"
+        name="t3r18c2"
+        value={sectionDataSingle.t3r18c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      
+      <input
+        placeholder="t3r19c2"
+        name="t3r19c2"
+        value={sectionDataSingle.t3r19c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+       
+      <input
+        placeholder="t3r20c2"
+        name="t3r20c2"
+        value={sectionDataSingle.t3r20c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+     
+      <input
+        placeholder="t3r21c2"
+        name="t3r21c2"
+        value={sectionDataSingle.t3r21c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+    
+      <input
+        placeholder="t3r22c2"
+        name="t3r22c2"
+        value={sectionDataSingle.t3r22c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="t3r23c2"
+        name="t3r23c2"
+        value={sectionDataSingle.t3r23c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+    
+      <input
+        placeholder="t3r24c2"
+        name="t3r24c2"
+        value={sectionDataSingle.t3r24c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      
+      <input
+        placeholder="t3r25c2"
+        name="t3r25c2"
+        value={sectionDataSingle.t3r25c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      
+      <input
+        placeholder="t3r26c2"
+        name="t3r26c2"
+        value={sectionDataSingle.t3r26c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+    
+      <input
+        placeholder="t3r27c2"
+        name="t3r27c2"
+        value={sectionDataSingle.t3r27c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="t3r28c2"
+        name="t3r28c2"
+        value={sectionDataSingle.t3r28c2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
       <input
         placeholder="t3r29c2"
         name="t3r29c2"
@@ -1565,13 +1649,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="t3r30c1"
-        name="t3r30c1"
-        value={sectionDataSingle.t3r30c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+     
       <input
         placeholder="t3r30c2"
         name="t3r30c2"
@@ -1579,6 +1657,14 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+        </div>
+      </div>
+
+     
+     
+     
+    
+     
 
       <input
         placeholder="Table 4 Heading"
@@ -1587,27 +1673,125 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
+    
+      <div className={styles.twoColumnsTable}>
+        <div>
+        <input
         placeholder="t4h1"
         name="t4h1"
         value={sectionDataSingle.t4h1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
-      />
-      <input
+        />
+         <textarea
+        placeholder="t4r1c1"
+        name="t4r1c1"
+        value={sectionDataSingle.t4r1c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+        />
+        <textarea
+        placeholder="t4r2c1"
+        name="t4r2c1"
+        value={sectionDataSingle.t4r2c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+        />
+        <textarea
+        placeholder="t4r3c1"
+        name="t4r3c1"
+        value={sectionDataSingle.t4r3c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+       />
+       <textarea
+        placeholder="t4r4c1"
+        name="t4r4c1"
+        value={sectionDataSingle.t4r4c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+       />
+       <textarea
+        placeholder="t4r5c1"
+        name="t4r5c1"
+        value={sectionDataSingle.t4r5c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+       />
+        <textarea
+        placeholder="t4r6c1"
+        name="t4r6c1"
+        value={sectionDataSingle.t4r6c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+       />
+        <textarea
+        placeholder="t4r7c1"
+        name="t4r7c1"
+        value={sectionDataSingle.t4r7c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+       />
+       <textarea
+        placeholder="t4r8c1"
+        name="t4r8c1"
+        value={sectionDataSingle.t4r8c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+        />
+         <textarea
+        placeholder="t4r9c1"
+        name="t4r9c1"
+        value={sectionDataSingle.t4r9c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+       />
+        <textarea
+        placeholder="t4r10c1"
+        name="t4r10c1"
+        value={sectionDataSingle.t4r10c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+        />
+          <textarea
+        placeholder="t4r11c1"
+        name="t4r11c1"
+        value={sectionDataSingle.t4r11c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+        />
+         <textarea
+        placeholder="t4r12c1"
+        name="t4r12c1"
+        value={sectionDataSingle.t4r12c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+        />
+        <textarea
+        placeholder="t4r13c1"
+        name="t4r13c1"
+        value={sectionDataSingle.t4r13c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+        />
+       <textarea
+        placeholder="t4r14c1"
+        name="t4r14c1"
+        value={sectionDataSingle.t4r14c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+        />
+
+        </div>
+        <div>
+        <input
         placeholder="t4h2"
         name="t4h2"
         value={sectionDataSingle.t4h2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="t4r1c1"
-        name="t4r1c1"
-        value={sectionDataSingle.t4r1c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+     
       <textarea
         placeholder="t4r1c2"
         name="t4r1c2"
@@ -1615,13 +1799,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="t4r2c1"
-        name="t4r2c1"
-        value={sectionDataSingle.t4r2c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      
       <textarea
         placeholder="t4r2c2"
         name="t4r2c2"
@@ -1629,13 +1807,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="t4r3c1"
-        name="t4r3c1"
-        value={sectionDataSingle.t4r3c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      
       <textarea
         placeholder="t4r3c2"
         name="t4r3c2"
@@ -1643,13 +1815,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="t4r4c1"
-        name="t4r4c1"
-        value={sectionDataSingle.t4r4c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      
       <textarea
         placeholder="t4r4c2"
         name="t4r4c2"
@@ -1658,13 +1824,7 @@ const PrioritiesProgramContent = () => {
         disabled={!editMode}
       />
 
-      <textarea
-        placeholder="t4r5c1"
-        name="t4r5c1"
-        value={sectionDataSingle.t4r5c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      
       <textarea
         placeholder="t4r5c2"
         name="t4r5c2"
@@ -1672,13 +1832,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="t4r6c1"
-        name="t4r6c1"
-        value={sectionDataSingle.t4r6c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+     
       <textarea
         placeholder="t4r6c2"
         name="t4r6c2"
@@ -1686,13 +1840,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="t4r7c1"
-        name="t4r7c1"
-        value={sectionDataSingle.t4r7c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+     
       <textarea
         placeholder="t4r7c2"
         name="t4r7c2"
@@ -1700,13 +1848,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="t4r8c1"
-        name="t4r8c1"
-        value={sectionDataSingle.t4r8c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+     
       <textarea
         placeholder="t4r8c2"
         name="t4r8c2"
@@ -1714,13 +1856,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="t4r9c1"
-        name="t4r9c1"
-        value={sectionDataSingle.t4r9c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+     
       <textarea
         placeholder="t4r9c2"
         name="t4r9c2"
@@ -1728,13 +1864,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="t4r10c1"
-        name="t4r10c1"
-        value={sectionDataSingle.t4r10c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+     
       <textarea
         placeholder="t4r10c2"
         name="t4r10c2"
@@ -1742,13 +1872,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="t4r11c1"
-        name="t4r11c1"
-        value={sectionDataSingle.t4r11c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      
       <textarea
         placeholder="t4r11c2"
         name="t4r11c2"
@@ -1756,13 +1880,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="t4r12c1"
-        name="t4r12c1"
-        value={sectionDataSingle.t4r12c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+     
       <textarea
         placeholder="t4r12c2"
         name="t4r12c2"
@@ -1770,13 +1888,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="t4r13c1"
-        name="t4r13c1"
-        value={sectionDataSingle.t4r13c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+    
       <textarea
         placeholder="t4r13c2"
         name="t4r13c2"
@@ -1784,13 +1896,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="t4r14c1"
-        name="t4r14c1"
-        value={sectionDataSingle.t4r14c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      
       <textarea
         placeholder="t4r14c2"
         name="t4r14c2"
@@ -1798,7 +1904,11 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+        </div>
 
+
+      </div>
+      
       <input
         placeholder="Table 5 Heading"
         name="table5Heading"
@@ -1806,17 +1916,13 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
+//
+<div className={styles.twoColumnsTable}>
+  <div>
+       <input
         placeholder="t5h1"
         name="t5h1"
         value={sectionDataSingle.t5h1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="t5h2"
-        name="t5h2"
-        value={sectionDataSingle.t5h2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -1827,6 +1933,23 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+       <textarea
+        placeholder="t5r2c1"
+        name="t5r2c1"
+        value={sectionDataSingle.t5r2c1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+  </div>
+  <div>
+  <input
+        placeholder="t5h2"
+        name="t5h2"
+        value={sectionDataSingle.t5h2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      
       <textarea
         placeholder="t5r1c2"
         name="t5r1c2"
@@ -1834,13 +1957,7 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="t5r2c1"
-        name="t5r2c1"
-        value={sectionDataSingle.t5r2c1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+     
       <textarea
         placeholder="t5r2c2"
         name="t5r2c2"
@@ -1848,6 +1965,11 @@ const PrioritiesProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+  </div>
+</div>
+      
+     
+      
 
       <input
         placeholder="Still Not Heading"

@@ -278,7 +278,7 @@ const GlobalStreamLmia = () => {
             <p>
             {pData?.GTSCategoryBTableHeading}
             </p>
-            <table className={styles.table}>
+            <table className={styles.Globaltable}>
               <thead>
                 <tr>
                   <th>{pData?.GSTCategoryBInnerHeading1}</th>

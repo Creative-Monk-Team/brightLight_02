@@ -457,7 +457,8 @@ const ParentsGrandparentsContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-
+  <div className={styles.fourColumnsTable}>
+   <div>
       <input
         placeholder="Inc. Req. Tab Head 1"
         name="IncReqTabHead1"
@@ -465,29 +466,7 @@ const ParentsGrandparentsContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="Inc. Req. Tab Head 2"
-        name="IncReqTabHead2"
-        value={sectionDataSingle.IncReqTabHead2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="Inc. Req. Tab Head 3"
-        name="IncReqTabHead3"
-        value={sectionDataSingle.IncReqTabHead3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="Inc. Req. Tab Head 4"
-        name="IncReqTabHead4"
-        value={sectionDataSingle.IncReqTabHead4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-
-      <textarea
+       <textarea
         placeholder="Inc. Req. Tab 1 List Item 1"
         name="IncReqTab1Li1"
         value={sectionDataSingle.IncReqTab1Li1 || ""}
@@ -495,9 +474,116 @@ const ParentsGrandparentsContent = () => {
         disabled={!editMode}
       />
       <textarea
+        placeholder="Inc. Req. Tab 1 List Item 2"
+        name="IncReqTab1Li2"
+        value={sectionDataSingle.IncReqTab1Li2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Inc. Req. Tab 1 List Item 3"
+        name="IncReqTab1Li3"
+        value={sectionDataSingle.IncReqTab1Li3 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+       <textarea
+        placeholder="Inc. Req. Tab 1 List Item 4"
+        name="IncReqTab1Li4"
+        value={sectionDataSingle.IncReqTab1Li4 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+       <textarea
+        placeholder="Inc. Req. Tab 1 List Item 5"
+        name="IncReqTab1Li5"
+        value={sectionDataSingle.IncReqTab1Li5 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Inc. Req. Tab 1 List Item 6"
+        name="IncReqTab1Li6"
+        value={sectionDataSingle.IncReqTab1Li6 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+       <textarea
+        placeholder="Inc. Req. Tab 1 List Item 7"
+        name="IncReqTab1Li7"
+        value={sectionDataSingle.IncReqTab1Li7 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      </div> 
+
+      <div>
+      <input
+        placeholder="Inc. Req. Tab Head 2"
+        name="IncReqTabHead2"
+        value={sectionDataSingle.IncReqTabHead2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+       <textarea
         placeholder="Inc. Req. Tab 2 List Item 1"
         name="IncReqTab2Li1"
         value={sectionDataSingle.IncReqTab2Li1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Inc. Req. Tab 2 List Item 2"
+        name="IncReqTab2Li2"
+        value={sectionDataSingle.IncReqTab2Li2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+       <textarea
+        placeholder="Inc. Req. Tab 2 List Item 3"
+        name="IncReqTab2Li3"
+        value={sectionDataSingle.IncReqTab2Li3 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+       <textarea
+        placeholder="Inc. Req. Tab 2 List Item 4"
+        name="IncReqTab2Li4"
+        value={sectionDataSingle.IncReqTab2Li4 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+ 
+      <textarea
+        placeholder="Inc. Req. Tab 2 List Item 5"
+        name="IncReqTab2Li5"
+        value={sectionDataSingle.IncReqTab2Li5 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+        <textarea
+        placeholder="Inc. Req. Tab 2 List Item 6"
+        name="IncReqTab2Li6"
+        value={sectionDataSingle.IncReqTab2Li6 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+       <textarea
+        placeholder="Inc. Req. Tab 2 List Item 7"
+        name="IncReqTab2Li7"
+        value={sectionDataSingle.IncReqTab2Li7 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      </div>
+
+      <div>
+      <input
+        placeholder="Inc. Req. Tab Head 3"
+        name="IncReqTabHead3"
+        value={sectionDataSingle.IncReqTabHead3 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -509,56 +595,13 @@ const ParentsGrandparentsContent = () => {
         disabled={!editMode}
       />
       <textarea
-        placeholder="Inc. Req. Tab 4 List Item 1"
-        name="IncReqTab4Li1"
-        value={sectionDataSingle.IncReqTab4Li1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-
-      <textarea
-        placeholder="Inc. Req. Tab 1 List Item 2"
-        name="IncReqTab1Li2"
-        value={sectionDataSingle.IncReqTab1Li2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Inc. Req. Tab 2 List Item 2"
-        name="IncReqTab2Li2"
-        value={sectionDataSingle.IncReqTab2Li2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
         placeholder="Inc. Req. Tab 3 List Item 2"
         name="IncReqTab3Li2"
         value={sectionDataSingle.IncReqTab3Li2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="Inc. Req. Tab 4 List Item 2"
-        name="IncReqTab4Li2"
-        value={sectionDataSingle.IncReqTab4Li2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-
-      <textarea
-        placeholder="Inc. Req. Tab 1 List Item 3"
-        name="IncReqTab1Li3"
-        value={sectionDataSingle.IncReqTab1Li3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Inc. Req. Tab 2 List Item 3"
-        name="IncReqTab2Li3"
-        value={sectionDataSingle.IncReqTab2Li3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      
       <textarea
         placeholder="Inc. Req. Tab 3 List Item 3"
         name="IncReqTab3Li3"
@@ -566,112 +609,24 @@ const ParentsGrandparentsContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="Inc. Req. Tab 4 List Item 3"
-        name="IncReqTab4Li3"
-        value={sectionDataSingle.IncReqTab4Li3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-
-      <textarea
-        placeholder="Inc. Req. Tab 1 List Item 4"
-        name="IncReqTab1Li4"
-        value={sectionDataSingle.IncReqTab1Li4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Inc. Req. Tab 2 List Item 4"
-        name="IncReqTab2Li4"
-        value={sectionDataSingle.IncReqTab2Li4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+       <textarea
         placeholder="Inc. Req. Tab 3 List Item 4"
         name="IncReqTab3Li4"
         value={sectionDataSingle.IncReqTab3Li4 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="Inc. Req. Tab 4 List Item 4"
-        name="IncReqTab4Li4"
-        value={sectionDataSingle.IncReqTab4Li4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-
-      <textarea
-        placeholder="Inc. Req. Tab 1 List Item 5"
-        name="IncReqTab1Li5"
-        value={sectionDataSingle.IncReqTab1Li5 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Inc. Req. Tab 2 List Item 5"
-        name="IncReqTab2Li5"
-        value={sectionDataSingle.IncReqTab2Li5 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+       <textarea
         placeholder="Inc. Req. Tab 3 List Item 5"
         name="IncReqTab3Li5"
         value={sectionDataSingle.IncReqTab3Li5 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="Inc. Req. Tab 4 List Item 5"
-        name="IncReqTab4Li5"
-        value={sectionDataSingle.IncReqTab4Li5 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-
-      <textarea
-        placeholder="Inc. Req. Tab 1 List Item 6"
-        name="IncReqTab1Li6"
-        value={sectionDataSingle.IncReqTab1Li6 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Inc. Req. Tab 2 List Item 6"
-        name="IncReqTab2Li6"
-        value={sectionDataSingle.IncReqTab2Li6 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
+     <textarea
         placeholder="Inc. Req. Tab 3 List Item 6"
         name="IncReqTab3Li6"
         value={sectionDataSingle.IncReqTab3Li6 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Inc. Req. Tab 4 List Item 6"
-        name="IncReqTab4Li6"
-        value={sectionDataSingle.IncReqTab4Li6 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-
-      <textarea
-        placeholder="Inc. Req. Tab 1 List Item 7"
-        name="IncReqTab1Li7"
-        value={sectionDataSingle.IncReqTab1Li7 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Inc. Req. Tab 2 List Item 7"
-        name="IncReqTab2Li7"
-        value={sectionDataSingle.IncReqTab2Li7 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -682,6 +637,69 @@ const ParentsGrandparentsContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+      </div>
+
+      <div>
+      <input
+        placeholder="Inc. Req. Tab Head 4"
+        name="IncReqTabHead4"
+        value={sectionDataSingle.IncReqTabHead4 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+    
+      <textarea
+        placeholder="Inc. Req. Tab 4 List Item 1"
+        name="IncReqTab4Li1"
+        value={sectionDataSingle.IncReqTab4Li1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+          
+      <textarea
+        placeholder="Inc. Req. Tab 4 List Item 2"
+        name="IncReqTab4Li2"
+        value={sectionDataSingle.IncReqTab4Li2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+   
+     <textarea
+        placeholder="Inc. Req. Tab 4 List Item 3"
+        name="IncReqTab4Li3"
+        value={sectionDataSingle.IncReqTab4Li3 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+        
+      <textarea
+        placeholder="Inc. Req. Tab 4 List Item 4"
+        name="IncReqTab4Li4"
+        value={sectionDataSingle.IncReqTab4Li4 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+   
+      <textarea
+        placeholder="Inc. Req. Tab 4 List Item 5"
+        name="IncReqTab4Li5"
+        value={sectionDataSingle.IncReqTab4Li5 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+    
+      <textarea
+        placeholder="Inc. Req. Tab 4 List Item 6"
+        name="IncReqTab4Li6"
+        value={sectionDataSingle.IncReqTab4Li6 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
       <textarea
         placeholder="Inc. Req. Tab 4 List Item 7"
         name="IncReqTab4Li7"
@@ -690,6 +708,13 @@ const ParentsGrandparentsContent = () => {
         disabled={!editMode}
       />
 
+      </div>
+
+  </div>
+     
+      
+      
+      
       <input
         placeholder="Why Choose Us Heading"
         name="WhyChooseUsHeading01"

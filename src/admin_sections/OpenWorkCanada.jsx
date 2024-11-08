@@ -725,8 +725,9 @@ const OpenWorkCanadaContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-
-      <input
+      <div className={styles.threeColumnsTable}>
+        <div>
+        <input
         placeholder="Legal Minimum Table Head 1"
         name="LegalMinTableHead1"
         value={sectionDataSingle.LegalMinTableHead1 || ""}
@@ -826,15 +827,18 @@ const OpenWorkCanadaContent = () => {
         disabled={!editMode}
       />
 
-      <input
+     
+
+        </div>
+        <div>
+        <input
         placeholder="Legal Minimum Table Head 2"
         name="LegalMinTableHead2"
         value={sectionDataSingle.LegalMinTableHead2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
-
-      <input
+        <input
         placeholder="Legal Minimum Tab 2 Head 1"
         name="LegalMinTab2Head1"
         value={sectionDataSingle.LegalMinTab2Head1 || ""}
@@ -918,13 +922,17 @@ const OpenWorkCanadaContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
+                <input
         placeholder="Legal Minimum Tab 2 Head 13"
         name="LegalMinTab2Head13"
         value={sectionDataSingle.LegalMinTab2Head13 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
+        </div>
+
+          <div>
+
 
       <input
         placeholder="Legal Minimum Table Head 3"
@@ -1026,6 +1034,12 @@ const OpenWorkCanadaContent = () => {
         disabled={!editMode}
       />
 
+        </div>
+      </div>
+
+      
+    
+     
       <input
         placeholder="How to Apply Heading"
         name="HowApplyHeading"
