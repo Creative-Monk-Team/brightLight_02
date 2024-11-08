@@ -50,7 +50,7 @@ let CategoryBased = () => {
   }, []);
 
   useEffect(() => {
-    fetch("https://brightlight-node.onrender.com/additionalDocument")
+    fetch("https://brightlight-node.onrender.com/category-based")
       .then((res) => {
         return res.json();
       })
@@ -186,8 +186,8 @@ let CategoryBased = () => {
             <p onClick={() => scrollToSection("categories")}>Categories</p>
             <p onClick={() => scrollToSection("HowItWorks")}>How it Works</p>
             <p onClick={() => scrollToSection("eligibility")}>Eligibility</p>
-            <p onClick={() => scrollToSection("drawHistory")}>Draw History</p>
-            <p onClick={() => scrollToSection("how-to-apply")}>How to Apply?</p>
+            {/* <p onClick={() => scrollToSection("drawHistory")}>Draw History</p>
+            <p onClick={() => scrollToSection("how-to-apply")}>How to Apply?</p> */}
             <p onClick={() => scrollToSection("refusal-reasons")}>
               Refusal Reasons
             </p>
