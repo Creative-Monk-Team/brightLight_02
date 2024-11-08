@@ -443,120 +443,128 @@ const NonSdsContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="English Language Test Heading"
-        name="eligibTabEnglanTestHead1"
-        value={sectionDataSingle.eligibTabEnglanTestHead1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
 
-      <textarea
-        placeholder="Eligibility Tab 1 Value 1"
-        name="eligibTab1Value1"
-        value={sectionDataSingle.eligibTab1Value1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Eligibility Tab 1 Value 2"
-        name="eligibTab1Value2"
-        value={sectionDataSingle.eligibTab1Value2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Eligibility Tab 1 Value 3"
-        name="eligibTab1Value3"
-        value={sectionDataSingle.eligibTab1Value3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Eligibility Tab 1 Value 4"
-        name="eligibTab1Value4"
-        value={sectionDataSingle.eligibTab1Value4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Eligibility Tab 1 Value 5"
-        name="eligibTab1Value5"
-        value={sectionDataSingle.eligibTab1Value5 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Eligibility Tab 1 Value 6"
-        name="eligibTab1Value6"
-        value={sectionDataSingle.eligibTab1Value6 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Eligibility Tab 1 Value 7"
-        name="eligibTab1Value7"
-        value={sectionDataSingle.eligibTab1Value7 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="Minimum Score Requirement SDS Heading"
-        name="eligibTabMinScReqSDSHead2"
-        value={sectionDataSingle.eligibTabMinScReqSDSHead2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.twoColumnsTable}>
+        <div>
+          <input
+            placeholder="English Language Test Heading"
+            name="eligibTabEnglanTestHead1"
+            value={sectionDataSingle.eligibTabEnglanTestHead1 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Eligibility Tab 2 Value 1"
-        name="eligibTab2Value1"
-        value={sectionDataSingle.eligibTab2Value1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Eligibility Tab 2 Value 2"
-        name="eligibTab2Value2"
-        value={sectionDataSingle.eligibTab2Value2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Eligibility Tab 2 Value 3"
-        name="eligibTab2Value3"
-        value={sectionDataSingle.eligibTab2Value3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Eligibility Tab 2 Value 4"
-        name="eligibTab2Value4"
-        value={sectionDataSingle.eligibTab2Value4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Eligibility Tab 2 Value 5"
-        name="eligibTab2Value5"
-        value={sectionDataSingle.eligibTab2Value5 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Eligibility Tab 2 Value 6"
-        name="eligibTab2Value6"
-        value={sectionDataSingle.eligibTab2Value6 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Eligibility Tab 2 Value 7"
-        name="eligibTab2Value7"
-        value={sectionDataSingle.eligibTab2Value7 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Eligibility Tab 1 Value 1"
+            name="eligibTab1Value1"
+            value={sectionDataSingle.eligibTab1Value1 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Eligibility Tab 1 Value 2"
+            name="eligibTab1Value2"
+            value={sectionDataSingle.eligibTab1Value2 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Eligibility Tab 1 Value 3"
+            name="eligibTab1Value3"
+            value={sectionDataSingle.eligibTab1Value3 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Eligibility Tab 1 Value 4"
+            name="eligibTab1Value4"
+            value={sectionDataSingle.eligibTab1Value4 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Eligibility Tab 1 Value 5"
+            name="eligibTab1Value5"
+            value={sectionDataSingle.eligibTab1Value5 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Eligibility Tab 1 Value 6"
+            name="eligibTab1Value6"
+            value={sectionDataSingle.eligibTab1Value6 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Eligibility Tab 1 Value 7"
+            name="eligibTab1Value7"
+            value={sectionDataSingle.eligibTab1Value7 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+
+        <div>
+          <input
+            placeholder="Minimum Score Requirement SDS Heading"
+            name="eligibTabMinScReqSDSHead2"
+            value={sectionDataSingle.eligibTabMinScReqSDSHead2 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="Eligibility Tab 2 Value 1"
+            name="eligibTab2Value1"
+            value={sectionDataSingle.eligibTab2Value1 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Eligibility Tab 2 Value 2"
+            name="eligibTab2Value2"
+            value={sectionDataSingle.eligibTab2Value2 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Eligibility Tab 2 Value 3"
+            name="eligibTab2Value3"
+            value={sectionDataSingle.eligibTab2Value3 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Eligibility Tab 2 Value 4"
+            name="eligibTab2Value4"
+            value={sectionDataSingle.eligibTab2Value4 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Eligibility Tab 2 Value 5"
+            name="eligibTab2Value5"
+            value={sectionDataSingle.eligibTab2Value5 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Eligibility Tab 2 Value 6"
+            name="eligibTab2Value6"
+            value={sectionDataSingle.eligibTab2Value6 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Eligibility Tab 2 Value 7"
+            name="eligibTab2Value7"
+            value={sectionDataSingle.eligibTab2Value7 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+      </div>
 
       <input
         placeholder="Check CLB Heading"
@@ -651,153 +659,242 @@ const NonSdsContent = () => {
         disabled={!editMode}
       />
 
-      <input
-        placeholder="Proof Fund Table 1 Head 1"
-        name="ProofFundTable1Head1"
-        value={sectionDataSingle.ProofFundTable1Head1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.twoColumnsTable}>
+        <div>
+          <input
+            placeholder="Proof Fund Table 1 Head 1"
+            name="ProofFundTable1Head1"
+            value={sectionDataSingle.ProofFundTable1Head1 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Proof Fund 1 Table 1"
-        name="ProofFund1Table11"
-        value={sectionDataSingle.ProofFund1Table11 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Proof Fund 1 Table 2"
-        name="ProofFund1Table12"
-        value={sectionDataSingle.ProofFund1Table12 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Proof Fund 1 Table 3"
-        name="ProofFund1Table13"
-        value={sectionDataSingle.ProofFund1Table13 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Proof Fund 1 Table 4"
-        name="ProofFund1Table14"
-        value={sectionDataSingle.ProofFund1Table14 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Proof Fund 1 Table 1"
+            name="ProofFund1Table11"
+            value={sectionDataSingle.ProofFund1Table11 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 1 Table 2"
+            name="ProofFund1Table12"
+            value={sectionDataSingle.ProofFund1Table12 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 1 Table 3"
+            name="ProofFund1Table13"
+            value={sectionDataSingle.ProofFund1Table13 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 1 Table 4"
+            name="ProofFund1Table14"
+            value={sectionDataSingle.ProofFund1Table14 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
 
-      <input
-        placeholder="Proof Fund Table 1 Head 2"
-        name="ProofFundTable1Head2"
-        value={sectionDataSingle.ProofFundTable1Head2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+        <div>
+          <input
+            placeholder="Proof Fund Table 1 Head 2"
+            name="ProofFundTable1Head2"
+            value={sectionDataSingle.ProofFundTable1Head2 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Proof Fund 2 Table 1"
-        name="ProofFund2Table11"
-        value={sectionDataSingle.ProofFund1Table21 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Proof Fund 2 Table 2"
-        name="ProofFund2Table12"
-        value={sectionDataSingle.ProofFund2Table12 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Proof Fund 2 Table 3"
-        name="ProofFund2Table13"
-        value={sectionDataSingle.ProofFund2Table13 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Proof Fund 2 Table 4"
-        name="ProofFund2Table14"
-        value={sectionDataSingle.ProofFund2Table14 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Proof Fund 2 Table 1"
+            name="ProofFund1Table21"
+            value={sectionDataSingle.ProofFund1Table21 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 2 Table 2"
+            name="ProofFund1Table22"
+            value={sectionDataSingle.ProofFund1Table22 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 2 Table 3"
+            name="ProofFund2Table23"
+            value={sectionDataSingle.ProofFund1Table23 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 2 Table 4"
+            name="ProofFund1Table24"
+            value={sectionDataSingle.ProofFund1Table24 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+      </div>
 
-      <input
-        placeholder="Proof Fund Table 2 Head 2"
-        name="ProofFundTable2Head2"
-        value={sectionDataSingle.ProofFundTable2Head2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.twoColumnsTable}>
+        <div>
+          <textarea
+            placeholder="Proof Fund 2 Table 3"
+            name="ProofFundTable2Head1"
+            value={sectionDataSingle.ProofFundTable2Head1 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 2 Table 4"
+            name="ProofFund2Table11"
+            value={sectionDataSingle.ProofFund2Table11 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 2 Table 4"
+            name="ProofFund2Table12"
+            value={sectionDataSingle.ProofFund2Table12 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 2 Table 4"
+            name="ProofFund2Table13"
+            value={sectionDataSingle.ProofFund2Table13 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 2 Table 4"
+            name="ProofFund2Table14"
+            value={sectionDataSingle.ProofFund2Table14 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
 
-      <textarea
-        placeholder="Proof Fund 3 Table 1"
-        name="ProofFund3Table11"
-        value={sectionDataSingle.ProofFund3Table11 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Proof Fund 3 Table 2"
-        name="ProofFund3Table12"
-        value={sectionDataSingle.ProofFund3Table12 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Proof Fund 3 Table 3"
-        name="ProofFund3Table13"
-        value={sectionDataSingle.ProofFund3Table13 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Proof Fund 3 Table 4"
-        name="ProofFund3Table14"
-        value={sectionDataSingle.ProofFund3Table14 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+        <div>
+          <textarea
+            placeholder="Proof Fund 2 Table 3"
+            name="ProofFundTable2Head2"
+            value={sectionDataSingle.ProofFundTable2Head2 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 2 Table 4"
+            name="ProofFund2Table21"
+            value={sectionDataSingle.ProofFund2Table21 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 2 Table 4"
+            name="ProofFund2Table22"
+            value={sectionDataSingle.ProofFund2Table22 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 2 Table 4"
+            name="ProofFund2Table23"
+            value={sectionDataSingle.ProofFund2Table23 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 2 Table 4"
+            name="ProofFund2Table24"
+            value={sectionDataSingle.ProofFund2Table24 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+      </div>
 
-      <input
-        placeholder="Proof Fund Table 3 Head 2"
-        name="ProofFundTable3Head2"
-        value={sectionDataSingle.ProofFundTable3Head2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.twoColumnsTable}>
+        <div>
+          <textarea
+            placeholder="Proof Fund 3 Table 1"
+            name="ProofFundTable3Head1"
+            value={sectionDataSingle.ProofFundTable3Head1 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 3 Table 1"
+            name="ProofFund3Table11"
+            value={sectionDataSingle.ProofFund3Table11 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 3 Table 2"
+            name="ProofFund3Table12"
+            value={sectionDataSingle.ProofFund3Table12 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 3 Table 3"
+            name="ProofFund3Table13"
+            value={sectionDataSingle.ProofFund3Table13 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 3 Table 4"
+            name="ProofFund3Table14"
+            value={sectionDataSingle.ProofFund3Table14 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
 
-      <textarea
-        placeholder="Proof Fund 3 Table 21"
-        name="ProofFund3Table21"
-        value={sectionDataSingle.ProofFund3Table21 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Proof Fund 3 Table 22"
-        name="ProofFund3Table22"
-        value={sectionDataSingle.ProofFund3Table22 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Proof Fund 3 Table 23"
-        name="ProofFund3Table23"
-        value={sectionDataSingle.ProofFund3Table23 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Proof Fund 3 Table 24"
-        name="ProofFund3Table24"
-        value={sectionDataSingle.ProofFund3Table24 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+        <div>
+          <input
+            placeholder="Proof Fund Table 3 Head 2"
+            name="ProofFundTable3Head2"
+            value={sectionDataSingle.ProofFundTable3Head2 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="Proof Fund 3 Table 21"
+            name="ProofFund3Table21"
+            value={sectionDataSingle.ProofFund3Table21 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 3 Table 22"
+            name="ProofFund3Table22"
+            value={sectionDataSingle.ProofFund3Table22 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 3 Table 23"
+            name="ProofFund3Table23"
+            value={sectionDataSingle.ProofFund3Table23 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Proof Fund 3 Table 24"
+            name="ProofFund3Table24"
+            value={sectionDataSingle.ProofFund3Table24 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+      </div>
 
       <input
         placeholder="Open Permit Heading"
@@ -1396,8 +1493,7 @@ const NonSdsContent = () => {
       />
 
       <h1 className={styles.faqEndHeading}>FAQ's Ends here</h1>
-      
-      
+
       <h1 className={styles.faqStartsHeading}>
         Testimonials Visibility Control
       </h1>
@@ -1418,8 +1514,7 @@ const NonSdsContent = () => {
         write "Y" without quotes , anything else will be considered as "N" even
         "y". If not want to display then just write "N" without qoutes.
       </p>
-      
-      
+
       <div className={styles.editIcons}>
         {editMode ? (
           <img
