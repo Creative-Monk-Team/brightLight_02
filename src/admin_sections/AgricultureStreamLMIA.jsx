@@ -259,21 +259,16 @@ const AgricultureStreamLMIAContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
+        <div className={styles.twoColumnsTable}>
+          <div>
+          <input
         placeholder="NOC CODE"
         name="NocCodeIHeading"
         value={sectionDataSingle.NocCodeIHeading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="Occupation Title"
-        name="OccupationTitleIHeading"
-        value={sectionDataSingle.OccupationTitleIHeading || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
+       <input
         placeholder="NOC Code 1"
         name="NocCodeInnerHeading1"
         value={sectionDataSingle.NocCodeInnerHeading1 || ""}
@@ -330,6 +325,16 @@ const AgricultureStreamLMIAContent = () => {
         disabled={!editMode}
       />
 
+          </div>
+          <div>
+          <input
+        placeholder="Occupation Title"
+        name="OccupationTitleIHeading"
+        value={sectionDataSingle.OccupationTitleIHeading || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+     
       <input
         placeholder="Occupation Title 1"
         name="OccupationTitleInnerHeading1"
@@ -386,6 +391,11 @@ const AgricultureStreamLMIAContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+          </div>
+        </div>
+
+      
+     
 
       <input
         placeholder="National Commodity List Heading"

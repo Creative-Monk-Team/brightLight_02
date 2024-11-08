@@ -296,7 +296,7 @@ const Cby = () => {
           {/* <h4>Applications Submitted Before March 19, 2024</h4> */}
           <div>
             <h4>{pData?.eligApplSubmHead1}</h4>
-            <p style={{ marginTop: "-10px" }}>
+            <p style={{ marginTop: "10px" }}>
             {pData?.eligApplSubmPara}
             </p>
             <ul
