@@ -19,9 +19,9 @@ const Testimonials_White = () => {
   const [reviewData, setReviewData] = useState([]);
   const [currentReview, setCurrentReview] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
-  const videoId = videosData[`video${i + 1}`]
-    ? new URL(videosData[`video${i + 1}`]).searchParams.get("v")
-    : "";
+  // const videoId = videosData[`video${i + 1}`]
+  //   ? new URL(videosData[`video${i + 1}`]).searchParams.get("v")
+  //   : "";
 
   useEffect(() => {
     fetch("https://brightlight-node.onrender.com/videos-section")
@@ -167,15 +167,15 @@ const Testimonials_White = () => {
                 videosData[`video${i + 1}`] &&
                 videosData[`video${i + 1}name`] && (
                   <SwiperSlide key={i}>
-                    <iframe
-                      width="560"
-                      height="315"
-                      loading="lazy"
-                      src={`https://www.youtube.com/embed/${videoId}`}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      title={videosData[`video${i + 1}name`] || "Video"}
-                    ></iframe>
+                  <iframe
+                    width="560"
+                    height="315"
+                    loading="lazy"
+                    src={`https://www.youtube.com/embed/${new URL(videosData[`video${i + 1}`]).searchParams.get("v")}`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title={videosData[`video${i + 1}name`]}
+                  ></iframe>
                     <p>{videosData[`video${i + 1}name`]}</p>
                   </SwiperSlide>
                 )
