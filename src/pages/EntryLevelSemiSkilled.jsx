@@ -412,7 +412,7 @@ const EntryLevelSemiSkilled = () => {
             <table className={styles.table}>
               <thead>
                 <tr>
-                  <th className={styles.tableHeader}>{pData?.Occupation}</th>
+                  <th className={styles.tableHeader}>{pData?.t3h1}</th>
                   <th className={styles.tableHeader}>{pData?.t3h2}</th>
                 </tr>
               </thead>

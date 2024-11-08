@@ -441,7 +441,7 @@ const NonSds = () => {
               </tr>
               <tr>
                 <td>{pData?.ProofFund2Table14}</td>
-                <td>{pData?.ProofFund2Table25}</td>
+                <td>{pData?.ProofFund2Table24}</td>
               </tr>
             </tbody>
           </table>

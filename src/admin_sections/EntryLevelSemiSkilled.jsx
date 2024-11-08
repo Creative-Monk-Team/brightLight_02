@@ -361,37 +361,41 @@ const EntryLevelSemiSkilledContent = () => {
         disabled={!editMode}
       />
 
-      <input
-        placeholder="T1H1"
-        name="t1h1"
-        value={sectionDataSingle.t1h1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.twoColumnsTable}>
+        <div>
+          <input
+            placeholder="T1H1"
+            name="t1h1"
+            value={sectionDataSingle.t1h1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <input
+            placeholder="T1R1C1"
+            name="t1r1c1"
+            value={sectionDataSingle.t1r1c1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
 
-      <input
-        placeholder="T1H2"
-        name="t1h2"
-        value={sectionDataSingle.t1h2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-
-      <input
-        placeholder="T1R1C1"
-        name="t1r1c1"
-        value={sectionDataSingle.t1r1c1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-
-      <input
-        placeholder="T1R1C2"
-        name="t1r1c2"
-        value={sectionDataSingle.t1r1c2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+        <div>
+          <input
+            placeholder="T1H2"
+            name="t1h2"
+            value={sectionDataSingle.t1h2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <input
+            placeholder="T1R1C2"
+            name="t1r1c2"
+            value={sectionDataSingle.t1r1c2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+      </div>
 
       <input
         placeholder="Table 2 Heading"
@@ -401,53 +405,74 @@ const EntryLevelSemiSkilledContent = () => {
         disabled={!editMode}
       />
 
-      <input
-        placeholder="T2H1"
-        name="t2h1"
-        value={sectionDataSingle.t2h1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.twoColumnsTable}>
+        <div>
+          <input
+            placeholder="T2H1"
+            name="t2h1"
+            value={sectionDataSingle.t2h1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <input
+            placeholder="T2R1C1"
+            name="t2r1c1"
+            value={sectionDataSingle.t2r1c1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T2H2"
-        name="t2h2"
-        value={sectionDataSingle.t2h2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T2R2C1"
+            name="t2r2c1"
+            value={sectionDataSingle.t2r2c1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T2R1C1"
-        name="t2r1c1"
-        value={sectionDataSingle.t2r1c1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T2R3C1"
+            name="t2r3c1"
+            value={sectionDataSingle.t2r3c1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
 
-      <input
-        placeholder="T2R1C2"
-        name="t2r1c2"
-        value={sectionDataSingle.t2r1c2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+        <div>
+          <input
+            placeholder="T2H2"
+            name="t2h2"
+            value={sectionDataSingle.t2h2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T2R2C1"
-        name="t2r2c1"
-        value={sectionDataSingle.t2r2c1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T2R1C2"
+            name="t2r1c2"
+            value={sectionDataSingle.t2r1c2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T2R2C2"
-        name="t2r2c2"
-        value={sectionDataSingle.t2r2c2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T2R2C2"
+            name="t2r2c2"
+            value={sectionDataSingle.t2r2c2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <input
+            placeholder="T2R3C2"
+            name="t2r3c2"
+            value={sectionDataSingle.t2r3c2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+      </div>
 
       <input
         placeholder="Table 3 Heading"
@@ -457,53 +482,91 @@ const EntryLevelSemiSkilledContent = () => {
         disabled={!editMode}
       />
 
-      <input
-        placeholder="T3H1"
-        name="t3h1"
-        value={sectionDataSingle.t3h1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.twoColumnsTable}>
+        <div>
+          <input
+            placeholder="T3H1"
+            name="t3h1"
+            value={sectionDataSingle.t3h1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T3H2"
-        name="t3h2"
-        value={sectionDataSingle.t3h2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T3R1C1"
+            name="t3r1c1"
+            value={sectionDataSingle.t3r1c1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T3R1C1"
-        name="t3r1c1"
-        value={sectionDataSingle.t3r1c1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T3R2C1"
+            name="t3r2c1"
+            value={sectionDataSingle.t3r2c1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T3R1C2"
-        name="t3r1c2"
-        value={sectionDataSingle.t3r1c2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T3R3C1"
+            name="t3r3c1"
+            value={sectionDataSingle.t3r3c1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T3R2C1"
-        name="t3r2c1"
-        value={sectionDataSingle.t3r2c1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T3R4C1"
+            name="t3r4c1"
+            value={sectionDataSingle.t3r4c1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
 
-      <input
-        placeholder="T3R2C2"
-        name="t3r2c2"
-        value={sectionDataSingle.t3r2c2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+        <div>
+          <input
+            placeholder="T3H2"
+            name="t3h2"
+            value={sectionDataSingle.t3h2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <input
+            placeholder="T3R1C2"
+            name="t3r1c2"
+            value={sectionDataSingle.t3r1c2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <input
+            placeholder="T3R2C2"
+            name="t3r2c2"
+            value={sectionDataSingle.t3r2c2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <input
+            placeholder="T3R3C2"
+            name="t3r3c2"
+            value={sectionDataSingle.t3r3c2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <input
+            placeholder="T3R4C2"
+            name="t3r4c2"
+            value={sectionDataSingle.t3r4c2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+      </div>
 
       <input
         placeholder="Table 4 Heading"
@@ -513,21 +576,91 @@ const EntryLevelSemiSkilledContent = () => {
         disabled={!editMode}
       />
 
-      <input
-        placeholder="T4H1"
-        name="t4h1"
-        value={sectionDataSingle.t4h1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.twoColumnsTable}>
+        <div>
+          <input
+            placeholder="T4H1"
+            name="t4h1"
+            value={sectionDataSingle.t4h1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T4H2"
-        name="t4h2"
-        value={sectionDataSingle.t4h2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="t4r1c1"
+            name="t4r1c1"
+            value={sectionDataSingle.t4r1c1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <input
+            placeholder="t4r2c1"
+            name="t4r2c1"
+            value={sectionDataSingle.t4r2c1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <input
+            placeholder="t4r3c1"
+            name="t4r3c1"
+            value={sectionDataSingle.t4r3c1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <input
+            placeholder="t4r4c1"
+            name="t4r4c1"
+            value={sectionDataSingle.t4r4c1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+
+        <div>
+          <input
+            placeholder="T4H2"
+            name="t4h2"
+            value={sectionDataSingle.t4h2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <input
+            placeholder="t4r1c2"
+            name="t4r1c2"
+            value={sectionDataSingle.t4r1c2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <input
+            placeholder="t4r2c2"
+            name="t4r2c2"
+            value={sectionDataSingle.t4r2c2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <input
+            placeholder="t4r3c2"
+            name="t4r3c2"
+            value={sectionDataSingle.t4r3c2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <input
+            placeholder="t4r4c2"
+            name="t4r4c2"
+            value={sectionDataSingle.t4r4c2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+      </div>
 
       <input
         placeholder="Table 5 Heading"
@@ -537,53 +670,59 @@ const EntryLevelSemiSkilledContent = () => {
         disabled={!editMode}
       />
 
-      <input
-        placeholder="T5H1"
-        name="t5h1"
-        value={sectionDataSingle.t5h1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.twoColumnsTable}>
+        <div>
+          <input
+            placeholder="T5H1"
+            name="t5h1"
+            value={sectionDataSingle.t5h1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T5H2"
-        name="t5h2"
-        value={sectionDataSingle.t5h2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T5R1C1"
+            name="t5r1c1"
+            value={sectionDataSingle.t5r1c1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T5R1C1"
-        name="t5r1c1"
-        value={sectionDataSingle.t5r1c1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T5R2C1"
+            name="t5r2c1"
+            value={sectionDataSingle.t5r2c1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
 
-      <input
-        placeholder="T5R1C2"
-        name="t5r1c2"
-        value={sectionDataSingle.t5r1c2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+        <div>
+          <input
+            placeholder="T5H2"
+            name="t5h2"
+            value={sectionDataSingle.t5h2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T5R2C1"
-        name="t5r2c1"
-        value={sectionDataSingle.t5r2c1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T5R1C2"
+            name="t5r1c2"
+            value={sectionDataSingle.t5r1c2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T5R2C2"
-        name="t5r2c2"
-        value={sectionDataSingle.t5r2c2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T5R2C2"
+            name="t5r2c2"
+            value={sectionDataSingle.t5r2c2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+      </div>
 
       <input
         placeholder="Table 6 Heading"
@@ -593,101 +732,107 @@ const EntryLevelSemiSkilledContent = () => {
         disabled={!editMode}
       />
 
-      <input
-        placeholder="T6H1"
-        name="t6h1"
-        value={sectionDataSingle.t6h1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.twoColumnsTable}>
+        <div>
+          <input
+            placeholder="T6H1"
+            name="t6h1"
+            value={sectionDataSingle.t6h1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T6H2"
-        name="t6h2"
-        value={sectionDataSingle.t6h2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T6R1C1"
+            name="t6r1c1"
+            value={sectionDataSingle.t6r1c1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T6R1C1"
-        name="t6r1c1"
-        value={sectionDataSingle.t6r1c1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T6R2C1"
+            name="t6r2c1"
+            value={sectionDataSingle.t6r2c1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T6R1C2"
-        name="t6r1c2"
-        value={sectionDataSingle.t6r1c2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T6R3C1"
+            name="t6r3c1"
+            value={sectionDataSingle.t6r3c1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T6R2C1"
-        name="t6r2c1"
-        value={sectionDataSingle.t6r2c1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T6R4C1"
+            name="t6r4c1"
+            value={sectionDataSingle.t6r4c1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T6R2C2"
-        name="t6r2c2"
-        value={sectionDataSingle.t6r2c2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T6R5C1"
+            name="t6r5c1"
+            value={sectionDataSingle.t6r5c1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
 
-      <input
-        placeholder="T6R3C1"
-        name="t6r3c1"
-        value={sectionDataSingle.t6r3c1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+        <div>
+          <input
+            placeholder="T6H2"
+            name="t6h2"
+            value={sectionDataSingle.t6h2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T6R3C2"
-        name="t6r3c2"
-        value={sectionDataSingle.t6r3c2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T6R1C2"
+            name="t6r1c2"
+            value={sectionDataSingle.t6r1c2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T6R4C1"
-        name="t6r4c1"
-        value={sectionDataSingle.t6r4c1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T6R2C2"
+            name="t6r2c2"
+            value={sectionDataSingle.t6r2c2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T6R4C2"
-        name="t6r4c2"
-        value={sectionDataSingle.t6r4c2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T6R3C2"
+            name="t6r3c2"
+            value={sectionDataSingle.t6r3c2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T6R5C1"
-        name="t6r5c1"
-        value={sectionDataSingle.t6r5c1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T6R4C2"
+            name="t6r4c2"
+            value={sectionDataSingle.t6r4c2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="T6R5C2"
-        name="t6r5c2"
-        value={sectionDataSingle.t6r5c2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="T6R5C2"
+            name="t6r5c2"
+            value={sectionDataSingle.t6r5c2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+      </div>
 
       <textarea
         placeholder="Table 5 Disclaimer"
@@ -697,7 +842,7 @@ const EntryLevelSemiSkilledContent = () => {
         disabled={!editMode}
       />
 
-      <input
+      {/* <input
         placeholder="Table 6 Heading"
         name="table6Heading"
         value={sectionDataSingle.table6Heading}
@@ -799,7 +944,7 @@ const EntryLevelSemiSkilledContent = () => {
         value={sectionDataSingle.t6r5c2}
         onChange={handleInputChange}
         disabled={!editMode}
-      />
+      /> */}
 
       <textarea
         placeholder="Application Process Heading"
@@ -1130,7 +1275,7 @@ const EntryLevelSemiSkilledContent = () => {
         write "Y" without quotes , anything else will be considered as "N" even
         "y". If not want to display then just write "N" without qoutes.
       </p>
-      
+
       <div className={styles.editIcons}>
         {editMode ? (
           <img

@@ -48,6 +48,7 @@ const CommonLawPartnerTemporaryContent = () => {
   };
 
   const [sectionDataSingle, setSectionDataSingle] = useState({
+    heading: "",
     comLawPartTempHeading: "",
     comLawPartTemprPara1: "",
     comLawPartTempPara2: "",
@@ -149,6 +150,35 @@ const CommonLawPartnerTemporaryContent = () => {
     wcu3: "",
     wcu4: "",
 
+    WageTableHead1: "",
+    WageTableHead2: "",
+    wt1Li1: "",
+    wt2Li1: "",
+    wt1Li2: "",
+    wt2Li2: "",
+    wt1Li3: "",
+    wt2Li3: "",
+    wt1Li4: "",
+    wt2Li4: "",
+    wt1Li5: "",
+    wt2Li5: "",
+    wt1Li6: "",
+    wt2Li6: "",
+    wt1Li7: "",
+    wt2Li7: "",
+    wt1Li8: "",
+    wt2Li8: "",
+    wt1Li9: "",
+    wt2Li9: "",
+    wt1Li10: "",
+    wt2Li10: "",
+    wt1Li11: "",
+    wt2Li11: "",
+    wt1Li12: "",
+    wt2Li12: "",
+    wt1Li13: "",
+    wt2Li13: "",
+
     faq_heading: "",
     q1: "",
     qa1: "",
@@ -241,6 +271,14 @@ const CommonLawPartnerTemporaryContent = () => {
       <ToastContainer />
 
       <input
+        placeholder="Heading"
+        name="heading"
+        value={sectionDataSingle.heading}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <textarea
         placeholder="Common Law Part Temp Heading"
         name="comLawPartTempHeading"
         value={sectionDataSingle.comLawPartTempHeading}
@@ -323,16 +361,357 @@ const CommonLawPartnerTemporaryContent = () => {
         disabled={!editMode}
       />
 
-      {Array.from({ length: 12 }, (_, i) => (
-        <textarea
-          key={`e${i + 1}`}
-          placeholder={`Eligibility Detail ${i + 1}`}
-          name={`e${i + 1}`}
-          value={sectionDataSingle[`e${i + 1}`]}
-          onChange={handleInputChange}
-          disabled={!editMode}
-        />
-      ))}
+      <input
+        placeholder="e1h1"
+        name="e1h1"
+        value={sectionDataSingle.e1h1}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="eh1"
+        name="eh1"
+        value={sectionDataSingle.eh1}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es1h1Lih"
+        name="es1h1Lih"
+        value={sectionDataSingle.es1h1Lih}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es1h1Li1"
+        name="es1h1Li1"
+        value={sectionDataSingle.es1h1Li1}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es1h1Li2"
+        name="es1h1Li2"
+        value={sectionDataSingle.es1h1Li2}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es1h1Li3"
+        name="es1h1Li3"
+        value={sectionDataSingle.es1h1Li3}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es1h2Lih"
+        name="es1h2Lih"
+        value={sectionDataSingle.es1h2Lih}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es1h2Li1"
+        name="es1h2Li1"
+        value={sectionDataSingle.es1h2Li1}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es1h3Lih"
+        name="es1h3Lih"
+        value={sectionDataSingle.es1h3Lih}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es1h3Li1"
+        name="es1h3Li1"
+        value={sectionDataSingle.es1h3Li1}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es1h4Lih"
+        name="es1h4Lih"
+        value={sectionDataSingle.es1h4Lih}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es1h4Li1"
+        name="es1h4Li1"
+        value={sectionDataSingle.es1h4Li1}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es1h5Lih"
+        name="es1h5Lih"
+        value={sectionDataSingle.es1h5Lih}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es1h5Li1"
+        name="es1h5Li1"
+        value={sectionDataSingle.es1h5Li1}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es1h5Li2"
+        name="es1h5Li2"
+        value={sectionDataSingle.es1h5Li2}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es1h5Li3"
+        name="es1h5Li3"
+        value={sectionDataSingle.es1h5Li3}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es1h5Li4"
+        name="es1h5Li4"
+        value={sectionDataSingle.es1h5Li4}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es1h5Li5"
+        name="es1h5Li5"
+        value={sectionDataSingle.es1h5Li5}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es1h5Li6"
+        name="es1h5Li6"
+        value={sectionDataSingle.es1h5Li6}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="e2h2"
+        name="e2h2"
+        value={sectionDataSingle.e2h2}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="eh2"
+        name="eh2"
+        value={sectionDataSingle.eh2}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h6Lih"
+        name="es2h6Lih"
+        value={sectionDataSingle.es2h6Lih}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h6Li1"
+        name="es2h6Li1"
+        value={sectionDataSingle.es2h6Li1}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h6Li2"
+        name="es2h6Li2"
+        value={sectionDataSingle.es2h6Li2}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h6Li3"
+        name="es2h6Li3"
+        value={sectionDataSingle.es2h6Li3}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h7Lih"
+        name="es2h7Lih"
+        value={sectionDataSingle.es2h7Lih}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h7Li1"
+        name="es2h7Li1"
+        value={sectionDataSingle.es2h7Li1}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h8Lih"
+        name="es2h8Lih"
+        value={sectionDataSingle.es2h8Lih}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h8Lih"
+        name="es2h8Lih"
+        value={sectionDataSingle.es2h8Lih}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h9Lih"
+        name="es2h9Lih"
+        value={sectionDataSingle.es2h9Lih}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h9Lih"
+        name="es2h9Lih"
+        value={sectionDataSingle.es2h9Lih}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h10Lih"
+        name="es2h10Lih"
+        value={sectionDataSingle.es2h10Lih}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h10Li1"
+        name="es2h10Li1"
+        value={sectionDataSingle.es2h10Li1}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h11Ph"
+        name="es2h11Ph"
+        value={sectionDataSingle.es2h11Ph}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h11P1"
+        name="es2h11P1"
+        value={sectionDataSingle.es2h11P1}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h12Lih"
+        name="es2h12Lih"
+        value={sectionDataSingle.es2h12Lih}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h12Li1"
+        name="es2h12Li1"
+        value={sectionDataSingle.es2h12Li1}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h12Li2"
+        name="es2h12Li2"
+        value={sectionDataSingle.es2h12Li2}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h12Li3"
+        name="es2h12Li3"
+        value={sectionDataSingle.es2h12Li3}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h12Li4"
+        name="es2h12Li4"
+        value={sectionDataSingle.es2h12Li4}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h12Li5"
+        name="es2h12Li5"
+        value={sectionDataSingle.es2h12Li5}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h12Li6"
+        name="es2h12Li6"
+        value={sectionDataSingle.es2h12Li6}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h12Li7"
+        name="es2h12Li7"
+        value={sectionDataSingle.es2h12Li7}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="es2h12Li8"
+        name="es2h12Li8"
+        value={sectionDataSingle.es2h12Li8}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
 
       <input
         placeholder="Family Member Heading"
@@ -443,6 +822,236 @@ const CommonLawPartnerTemporaryContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+
+      <div className={styles.twoColumnsTable}>
+        <div>
+          <textarea
+            placeholder="WageTableHead1"
+            name="WageTableHead1"
+            value={sectionDataSingle.WageTableHead1 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt1Li1"
+            name="wt1Li1"
+            value={sectionDataSingle.wt1Li1 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt1Li2"
+            name="wt1Li2"
+            value={sectionDataSingle.wt1Li2 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt1Li3"
+            name="wt1Li3"
+            value={sectionDataSingle.wt1Li3 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt1Li4"
+            name="wt1Li4"
+            value={sectionDataSingle.wt1Li4 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt1Li5"
+            name="wt1Li5"
+            value={sectionDataSingle.wt1Li5 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt1Li6"
+            name="wt1Li6"
+            value={sectionDataSingle.wt1Li6 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt1Li7"
+            name="wt1Li7"
+            value={sectionDataSingle.wt1Li7 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt1Li8"
+            name="wt1Li8"
+            value={sectionDataSingle.wt1Li8 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt1Li9"
+            name="wt1Li9"
+            value={sectionDataSingle.wt1Li9 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt1Li10"
+            name="wt1Li10"
+            value={sectionDataSingle.wt1Li10 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt1Li11"
+            name="wt1Li11"
+            value={sectionDataSingle.wt1Li11 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt1Li12"
+            name="wt1Li12"
+            value={sectionDataSingle.wt1Li12 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt1Li13"
+            name="wt1Li13"
+            value={sectionDataSingle.wt1Li13 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+
+        <div>
+          <textarea
+            placeholder="WageTableHead2"
+            name="WageTableHead2"
+            value={sectionDataSingle.WageTableHead2 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt2Li1"
+            name="wt2Li1"
+            value={sectionDataSingle.wt2Li1 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt2Li2"
+            name="wt2Li2"
+            value={sectionDataSingle.wt2Li2 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt2Li3"
+            name="wt2Li3"
+            value={sectionDataSingle.wt2Li3 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt2Li4"
+            name="wt2Li4"
+            value={sectionDataSingle.wt2Li4 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt2Li5"
+            name="wt2Li5"
+            value={sectionDataSingle.wt2Li5 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt2Li6"
+            name="wt2Li6"
+            value={sectionDataSingle.wt2Li6 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt2Li7"
+            name="wt2Li7"
+            value={sectionDataSingle.wt2Li7 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt2Li8"
+            name="wt2Li8"
+            value={sectionDataSingle.wt2Li8 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt2Li9"
+            name="wt2Li9"
+            value={sectionDataSingle.wt2Li9 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt2Li10"
+            name="wt2Li10"
+            value={sectionDataSingle.wt2Li10 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt2Li11"
+            name="wt2Li11"
+            value={sectionDataSingle.wt2Li11 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt2Li12"
+            name="wt2Li12"
+            value={sectionDataSingle.wt2Li12 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+
+          <textarea
+            placeholder="wt2Li13"
+            name="wt2Li13"
+            value={sectionDataSingle.wt2Li13 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+      </div>
 
       <h1 className={styles.faqStartsHeading}>FAQ's Starts Below</h1>
 
@@ -616,7 +1225,7 @@ const CommonLawPartnerTemporaryContent = () => {
         write "Y" without quotes , anything else will be considered as "N" even
         "y". If not want to display then just write "N" without qoutes.
       </p>
-      
+
       <div className={styles.editIcons}>
         {editMode ? (
           <img
