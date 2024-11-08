@@ -64,8 +64,19 @@ const FederalSkilledWorkerProgramContent = () => {
     EligTable1HeadLi1: "",
     EligTable1HeadLi2: "",
     EligTable1HeadLi3: "",
+    OccupReqTabHeading1: "",
+    OccupReqTab1Li1: "",
+    OccupReqTab1Li2: "",
+    OccupReqTab1Li3: "",
     EligTable1HeadLi4: "",
+    OccupReqTabHeading2: "",
+    OccupReqTab2Li1: "",
+    OccupReqTab2Li2: "",
+    OccupReqTab2Li3: "",
     EligTable1HeadLi5: "",
+    OccupReqTabHeading3: "",
+    OccupReqTab3Li1: "",
+    OccupReqTab3Li2: "",
     EligTable1HeadLi6: "",
 
     EligTableHead2: "",
@@ -287,165 +298,242 @@ const FederalSkilledWorkerProgramContent = () => {
         disabled={!editMode}
       />
 
-      <input
-        placeholder="TEER 1"
-        name="EligTable1HeadLi1"
-        value={sectionDataSingle.EligTable1HeadLi1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.threeColumnsTable}>
+        <div>
+          <input
+            placeholder="TEER"
+            name="EligTableHead1"
+            value={sectionDataSingle.EligTableHead1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="TEER 2"
-        name="EligTable1HeadLi2"
-        value={sectionDataSingle.EligTable1HeadLi2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="TEER 1"
+            name="EligTable1HeadLi1"
+            value={sectionDataSingle.EligTable1HeadLi1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="TEER 3"
-        name="EligTable1HeadLi3"
-        value={sectionDataSingle.EligTable1HeadLi3}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="TEER 2"
+            name="EligTable1HeadLi2"
+            value={sectionDataSingle.EligTable1HeadLi2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="TEER 4"
-        name="EligTable1HeadLi4"
-        value={sectionDataSingle.EligTable1HeadLi4}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="TEER 3"
+            name="EligTable1HeadLi3"
+            value={sectionDataSingle.EligTable1HeadLi3}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="TEER 5"
-        name="EligTable1HeadLi5"
-        value={sectionDataSingle.EligTable1HeadLi5}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="TEER 4"
+            name="EligTable1HeadLi4"
+            value={sectionDataSingle.EligTable1HeadLi4}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="TEER 6"
-        name="EligTable1HeadLi6"
-        value={sectionDataSingle.EligTable1HeadLi6}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="TEER 5"
+            name="EligTable1HeadLi5"
+            value={sectionDataSingle.EligTable1HeadLi5}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="Eligibility Table Heading 2"
-        name="EligTableHead2"
-        value={sectionDataSingle.EligTableHead2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="TEER 6"
+            name="EligTable1HeadLi6"
+            value={sectionDataSingle.EligTable1HeadLi6}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+        <div>
+          <input
+            placeholder="Eligibility Table Heading 2"
+            name="EligTableHead2"
+            value={sectionDataSingle.EligTableHead2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="Occupation Type 1"
-        name="EligTable2HeadLi1"
-        value={sectionDataSingle.EligTable2HeadLi1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="Occupation Type 1"
+            name="EligTable2HeadLi1"
+            value={sectionDataSingle.EligTable2HeadLi1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="Occupation Type 2"
-        name="EligTable2HeadLi2"
-        value={sectionDataSingle.EligTable2HeadLi2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="Occupation Type 2"
+            name="EligTable2HeadLi2"
+            value={sectionDataSingle.EligTable2HeadLi2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="Occupation Type 3"
-        name="EligTable2HeadLi3"
-        value={sectionDataSingle.EligTable2HeadLi3}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <div className={styles.fourColumnsTable} style={{ margin: "0 0" }}>
+            <input
+              placeholder="Occupation Type 3"
+              name="OccupReqTabHeading1"
+              value={sectionDataSingle.OccupReqTabHeading1}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+            <input
+              placeholder="Occupation Type 3 Nested 1"
+              name="OccupReqTab1Li1"
+              value={sectionDataSingle.OccupReqTab1Li1}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+            <input
+              placeholder="Occupation Type 3 Nested 2"
+              name="OccupReqTab1Li2"
+              value={sectionDataSingle.OccupReqTab1Li2}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+            <input
+              placeholder="Occupation Type 3 Nested 3"
+              name="OccupReqTab1Li3"
+              value={sectionDataSingle.OccupReqTab1Li3}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
 
-      <input
-        placeholder="Occupation Type 4"
-        name="EligTable2HeadLi4"
-        value={sectionDataSingle.EligTable2HeadLi4}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <div className={styles.fourColumnsTable} style={{ margin: "0 0" }}>
+            <input
+              placeholder="Occupation Type 4"
+              name="OccupReqTabHeading2"
+              value={sectionDataSingle.OccupReqTabHeading2}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+            <input
+              placeholder="Occupation Type 4 Nested 1"
+              name="OccupReqTab2Li1"
+              value={sectionDataSingle.OccupReqTab2Li1}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+            <input
+              placeholder="Occupation Type 4 Nested 2"
+              name="OccupReqTab2Li2"
+              value={sectionDataSingle.OccupReqTab2Li2}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+            <input
+              placeholder="Occupation Type 4 Nested 3"
+              name="OccupReqTab2Li3"
+              value={sectionDataSingle.OccupReqTab2Li3}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
 
-      <input
-        placeholder="Occupation Type 5"
-        name="EligTable2HeadLi5"
-        value={sectionDataSingle.EligTable2HeadLi5}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <div className={styles.threeColumnsTable} style={{ margin: "0 0" }}>
+            <input
+              placeholder="Occupation Type 5"
+              name="OccupReqTabHeading3"
+              value={sectionDataSingle.OccupReqTabHeading3}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+            <input
+              placeholder="Occupation Type 5 Nested 1"
+              name="OccupReqTab3Li1"
+              value={sectionDataSingle.OccupReqTab3Li1}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+            <input
+              placeholder="Occupation Type 5 Nested 2"
+              name="OccupReqTab3Li2"
+              value={sectionDataSingle.OccupReqTab3Li2}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
 
-      <input
-        placeholder="Occupation Type 6"
-        name="EligTable2HeadLi6"
-        value={sectionDataSingle.EligTable2HeadLi6}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="Occupation Type 6"
+            name="EligTable2HeadLi6"
+            value={sectionDataSingle.EligTable2HeadLi6}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
 
-      <input
-        placeholder="Eligibility Table Heading 3"
-        name="EligTableHead3"
-        value={sectionDataSingle.EligTableHead3}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+        <div>
+          <input
+            placeholder="Eligibility Table Heading 3"
+            name="EligTableHead3"
+            value={sectionDataSingle.EligTableHead3}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="Example 1"
-        name="EligTable3HeadLi1"
-        value={sectionDataSingle.EligTable3HeadLi1}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="Example 1"
+            name="EligTable3HeadLi1"
+            value={sectionDataSingle.EligTable3HeadLi1}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="Example 2"
-        name="EligTable3HeadLi2"
-        value={sectionDataSingle.EligTable3HeadLi2}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="Example 2"
+            name="EligTable3HeadLi2"
+            value={sectionDataSingle.EligTable3HeadLi2}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="Example 3"
-        name="EligTable3HeadLi3"
-        value={sectionDataSingle.EligTable3HeadLi3}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="Example 3"
+            name="EligTable3HeadLi3"
+            value={sectionDataSingle.EligTable3HeadLi3}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="Example 4"
-        name="EligTable3HeadLi4"
-        value={sectionDataSingle.EligTable3HeadLi4}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="Example 4"
+            name="EligTable3HeadLi4"
+            value={sectionDataSingle.EligTable3HeadLi4}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="Example 5"
-        name="EligTable3HeadLi5"
-        value={sectionDataSingle.EligTable3HeadLi5}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="Example 5"
+            name="EligTable3HeadLi5"
+            value={sectionDataSingle.EligTable3HeadLi5}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <input
-        placeholder="Example 6"
-        name="EligTable3HeadLi6"
-        value={sectionDataSingle.EligTable3HeadLi6}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <input
+            placeholder="Example 6"
+            name="EligTable3HeadLi6"
+            value={sectionDataSingle.EligTable3HeadLi6}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+      </div>
 
       <textarea
         placeholder="Eligibility Last Paragraph"
@@ -824,7 +912,7 @@ const FederalSkilledWorkerProgramContent = () => {
         write "Y" without quotes , anything else will be considered as "N" even
         "y". If not want to display then just write "N" without qoutes.
       </p>
-      
+
       <div className={styles.editIcons}>
         {editMode ? (
           <img
