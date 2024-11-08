@@ -396,7 +396,9 @@ const SuperVisaContent = () => {
         disabled={!editMode}
       />
 
-      <textarea
+  <div className={styles.twoColumnsTable}> 
+    <div>
+    <textarea
         placeholder="Super Visa Tab 1 Heading"
         name="SupVTabHead1"
         value={sectionDataSingle.SupVTabHead1 || ""}
@@ -467,9 +469,9 @@ const SuperVisaContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-
-      {/* Super Visa Tab 2 */}
-      <textarea
+    </div>
+    <div>
+    <textarea
         placeholder="Super Visa Tab 2 Heading"
         name="SupVTabHead2"
         value={sectionDataSingle.SupVTabHead2 || ""}
@@ -540,6 +542,13 @@ const SuperVisaContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+    </div>
+  </div>
+     
+
+      {/* Super Visa Tab 2 */}
+     
+    
 
       {/* How to Apply */}
       <textarea

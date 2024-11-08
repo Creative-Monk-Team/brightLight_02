@@ -256,7 +256,7 @@ const StudyPermitMinors = () => {
           {pData?.AppProcSubHead}{" "}
             <Link to="/student-visa">student visa page</Link>.
           </p>
-          <ul>
+          <ul >
             <li>
             {pData?.ap1}
             </li>

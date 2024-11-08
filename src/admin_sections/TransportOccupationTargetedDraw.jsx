@@ -334,272 +334,277 @@ const TransportOccupationTarContent = () => {
       />
 
       {/* First Table Section */}
-      <textarea
-        placeholder="Table Header 1"
-        name="etroT1h1"
-        value={sectionDataSingle.etroT1h1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.threeColumnsTable}>
+        <div>
+          <textarea
+            placeholder="Table Header 1"
+            name="etroT1h1"
+            value={sectionDataSingle.etroT1h1 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      {/* Table List Items */}
-      <textarea
-        placeholder="Table List Item 1"
-        name="etroT1Li1"
-        value={sectionDataSingle.etroT1Li1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          {/* Table List Items */}
+          <textarea
+            placeholder="Table List Item 1"
+            name="etroT1Li1"
+            value={sectionDataSingle.etroT1Li1 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Table List Item 2"
-        name="etroT1Li2"
-        value={sectionDataSingle.etroT1Li2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Table List Item 2"
+            name="etroT1Li2"
+            value={sectionDataSingle.etroT1Li2 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Table List Item 3"
-        name="etroT1Li3"
-        value={sectionDataSingle.etroT1Li3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Table List Item 3"
+            name="etroT1Li3"
+            value={sectionDataSingle.etroT1Li3 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Table List Item 4"
-        name="etroT1Li4"
-        value={sectionDataSingle.etroT1Li4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Table List Item 4"
+            name="etroT1Li4"
+            value={sectionDataSingle.etroT1Li4 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Table List Item 5"
-        name="etroT1Li5"
-        value={sectionDataSingle.etroT1Li5 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Table List Item 5"
+            name="etroT1Li5"
+            value={sectionDataSingle.etroT1Li5 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Table List Item 6"
-        name="etroT1Li6"
-        value={sectionDataSingle.etroT1Li6 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Table List Item 6"
+            name="etroT1Li6"
+            value={sectionDataSingle.etroT1Li6 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Table List Item 7"
-        name="etroT1Li7"
-        value={sectionDataSingle.etroT1Li7 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Table List Item 7"
+            name="etroT1Li7"
+            value={sectionDataSingle.etroT1Li7 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Table List Item 8"
-        name="etroT1Li8"
-        value={sectionDataSingle.etroT1Li8 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Table List Item 8"
+            name="etroT1Li8"
+            value={sectionDataSingle.etroT1Li8 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Table List Item 9"
-        name="etroT1Li9"
-        value={sectionDataSingle.etroT1Li9 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Table List Item 9"
+            name="etroT1Li9"
+            value={sectionDataSingle.etroT1Li9 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Table List Item 10"
-        name="etroT1Li10"
-        value={sectionDataSingle.etroT1Li10 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Table List Item 10"
+            name="etroT1Li10"
+            value={sectionDataSingle.etroT1Li10 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+        <div>
+          {/* Second Table Section */}
+          <textarea
+            placeholder="Second Transport Occupation Table Header"
+            name="etroT2h2"
+            value={sectionDataSingle.etroT2h2 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="Second Table List Item 1"
+            name="etroT2Li1"
+            value={sectionDataSingle.etroT2Li1 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      {/* Second Table Section */}
-      <textarea
-        placeholder="Second Transport Occupation Table Header"
-        name="etroT2h2"
-        value={sectionDataSingle.etroT2h2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Second Table List Item 2"
+            name="etroT2Li2"
+            value={sectionDataSingle.etroT2Li2 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Second Table List Item 1"
-        name="etroT2Li1"
-        value={sectionDataSingle.etroT2Li1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Second Table List Item 3"
+            name="etroT2Li3"
+            value={sectionDataSingle.etroT2Li3 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Second Table List Item 2"
-        name="etroT2Li2"
-        value={sectionDataSingle.etroT2Li2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Second Table List Item 4"
+            name="etroT2Li4"
+            value={sectionDataSingle.etroT2Li4 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Second Table List Item 3"
-        name="etroT2Li3"
-        value={sectionDataSingle.etroT2Li3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Second Table List Item 5"
+            name="etroT2Li5"
+            value={sectionDataSingle.etroT2Li5 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Second Table List Item 4"
-        name="etroT2Li4"
-        value={sectionDataSingle.etroT2Li4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Second Table List Item 6"
+            name="etroT2Li6"
+            value={sectionDataSingle.etroT2Li6 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Second Table List Item 5"
-        name="etroT2Li5"
-        value={sectionDataSingle.etroT2Li5 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Second Table List Item 7"
+            name="etroT2Li7"
+            value={sectionDataSingle.etroT2Li7 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Second Table List Item 6"
-        name="etroT2Li6"
-        value={sectionDataSingle.etroT2Li6 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Second Table List Item 8"
+            name="etroT2Li8"
+            value={sectionDataSingle.etroT2Li8 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Second Table List Item 7"
-        name="etroT2Li7"
-        value={sectionDataSingle.etroT2Li7 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Second Table List Item 9"
+            name="etroT2Li9"
+            value={sectionDataSingle.etroT2Li9 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Second Table List Item 8"
-        name="etroT2Li8"
-        value={sectionDataSingle.etroT2Li8 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Second Table List Item 10"
+            name="etroT2Li10"
+            value={sectionDataSingle.etroT2Li10 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+        <div>
+          <textarea
+            placeholder="Third Transport Occupation Table Header"
+            name="etroT3h3"
+            value={sectionDataSingle.etroT3h3 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Second Table List Item 9"
-        name="etroT2Li9"
-        value={sectionDataSingle.etroT2Li9 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          {/* Table List Items for the Third Table */}
+          <textarea
+            placeholder="Table List Item 1"
+            name="etroT3Li1"
+            value={sectionDataSingle.etroT3Li1 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Second Table List Item 10"
-        name="etroT2Li10"
-        value={sectionDataSingle.etroT2Li10 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Table List Item 2"
+            name="etroT3Li2"
+            value={sectionDataSingle.etroT3Li2 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Third Transport Occupation Table Header"
-        name="etroT3h3"
-        value={sectionDataSingle.etroT3h3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Table List Item 3"
+            name="etroT3Li3"
+            value={sectionDataSingle.etroT3Li3 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      {/* Table List Items for the Third Table */}
-      <textarea
-        placeholder="Table List Item 1"
-        name="etroT3Li1"
-        value={sectionDataSingle.etroT3Li1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Table List Item 4"
+            name="etroT3Li4"
+            value={sectionDataSingle.etroT3Li4 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Table List Item 2"
-        name="etroT3Li2"
-        value={sectionDataSingle.etroT3Li2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Table List Item 5"
+            name="etroT3Li5"
+            value={sectionDataSingle.etroT3Li5 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Table List Item 3"
-        name="etroT3Li3"
-        value={sectionDataSingle.etroT3Li3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Table List Item 6"
+            name="etroT3Li6"
+            value={sectionDataSingle.etroT3Li6 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Table List Item 4"
-        name="etroT3Li4"
-        value={sectionDataSingle.etroT3Li4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Table List Item 7"
+            name="etroT3Li7"
+            value={sectionDataSingle.etroT3Li7 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Table List Item 5"
-        name="etroT3Li5"
-        value={sectionDataSingle.etroT3Li5 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Table List Item 8"
+            name="etroT3Li8"
+            value={sectionDataSingle.etroT3Li8 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Table List Item 6"
-        name="etroT3Li6"
-        value={sectionDataSingle.etroT3Li6 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Table List Item 9"
+            name="etroT3Li9"
+            value={sectionDataSingle.etroT3Li9 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="Table List Item 7"
-        name="etroT3Li7"
-        value={sectionDataSingle.etroT3Li7 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-
-      <textarea
-        placeholder="Table List Item 8"
-        name="etroT3Li8"
-        value={sectionDataSingle.etroT3Li8 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-
-      <textarea
-        placeholder="Table List Item 9"
-        name="etroT3Li9"
-        value={sectionDataSingle.etroT3Li9 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-
-      <textarea
-        placeholder="Table List Item 10"
-        name="etroT3Li10"
-        value={sectionDataSingle.etroT3Li10 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="Table List Item 10"
+            name="etroT3Li10"
+            value={sectionDataSingle.etroT3Li10 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+      </div>
 
       {/* Express Entry Section */}
       <textarea
@@ -831,7 +836,7 @@ const TransportOccupationTarContent = () => {
       />
 
       <h1 className={styles.faqEndHeading}>FAQ's Ends here</h1>
-      
+
       <h1 className={styles.faqStartsHeading}>
         Testimonials Visibility Control
       </h1>
@@ -852,7 +857,7 @@ const TransportOccupationTarContent = () => {
         write "Y" without quotes , anything else will be considered as "N" even
         "y". If not want to display then just write "N" without qoutes.
       </p>
-      
+
       <div className={styles.editIcons}>
         {editMode ? (
           <img

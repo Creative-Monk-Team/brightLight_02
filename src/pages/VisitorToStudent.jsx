@@ -239,7 +239,7 @@ const VisitorToStudent = () => {
           <h2 className={styles.subheading}>
           {pData?.BenifitsHeading }
           </h2>
-          <h4>
+          <h4 className={styles.sub_sub_heading}>
           {pData?.BenifitsSubHead }
           </h4>
           <ol style={{ marginLeft: "40px" }} className={styles.benefitsList}>
@@ -258,9 +258,9 @@ const VisitorToStudent = () => {
             <li style={{ marginBottom: "10px" }}>
             {pData?.b5}
             </li>
-            <li style={{ marginBottom: "10px" }}>
+            {/* <li style={{ marginBottom: "10px" }}>
             {pData?.b8}
-            </li>
+            </li> */}
             <li style={{ marginBottom: "10px" }}>
             {pData?.b7}
             </li>
@@ -320,7 +320,7 @@ const VisitorToStudent = () => {
             {pData?.u8}
             </li>
          
-            <ul style={{ marginLeft: "40px", listStyleType: "circle" }}>
+            <ul className={styles.eligibilityAdditionalList02} style={{ marginLeft: "40px", listStyleType: "circle" }}>
          
             <li>{pData?.sdc1}</li>
             <li>{pData?.sdc2}</li>
