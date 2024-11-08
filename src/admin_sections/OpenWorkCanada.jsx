@@ -139,6 +139,21 @@ const OpenWorkCanadaContent = () => {
     LegalMinTab1Head12: "",
     LegalMinTab1Head13: "",
 
+    LegalMinTableHead2: "",
+    LegalMinTab2Head1: "",
+    LegalMinTab2Head2: "",
+    LegalMinTab2Head3: "",
+    LegalMinTab2Head4: "",
+    LegalMinTab2Head5: "",
+    LegalMinTab2Head6: "",
+    LegalMinTab2Head7: "",
+    LegalMinTab2Head8: "",
+    LegalMinTab2Head9: "",
+    LegalMinTab2Head10: "",
+    LegalMinTab2Head11: "",
+    LegalMinTab2Head12: "",
+    LegalMinTab2Head13: "",
+
     LegalMinTableHead3: "",
     LegalMinTab3Head1: "",
     LegalMinTab3Head2: "",
@@ -812,6 +827,106 @@ const OpenWorkCanadaContent = () => {
       />
 
       <input
+        placeholder="Legal Minimum Table Head 2"
+        name="LegalMinTableHead2"
+        value={sectionDataSingle.LegalMinTableHead2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="Legal Minimum Tab 2 Head 1"
+        name="LegalMinTab2Head1"
+        value={sectionDataSingle.LegalMinTab2Head1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Legal Minimum Tab 2 Head 2"
+        name="LegalMinTab2Head2"
+        value={sectionDataSingle.LegalMinTab2Head2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Legal Minimum Tab 2 Head 3"
+        name="LegalMinTab2Head3"
+        value={sectionDataSingle.LegalMinTab2Head3 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Legal Minimum Tab 2 Head 4"
+        name="LegalMinTab2Head4"
+        value={sectionDataSingle.LegalMinTab2Head4 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Legal Minimum Tab 2 Head 5"
+        name="LegalMinTab2Head5"
+        value={sectionDataSingle.LegalMinTab2Head5 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Legal Minimum Tab 2 Head 6"
+        name="LegalMinTab2Head6"
+        value={sectionDataSingle.LegalMinTab2Head6 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Legal Minimum Tab 2 Head 7"
+        name="LegalMinTab2Head7"
+        value={sectionDataSingle.LegalMinTab2Head7 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Legal Minimum Tab 2 Head 8"
+        name="LegalMinTab2Head8"
+        value={sectionDataSingle.LegalMinTab2Head8 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Legal Minimum Tab 2 Head 9"
+        name="LegalMinTab2Head9"
+        value={sectionDataSingle.LegalMinTab2Head9 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Legal Minimum Tab 2 Head 10"
+        name="LegalMinTab2Head10"
+        value={sectionDataSingle.LegalMinTab2Head10 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Legal Minimum Tab 2 Head 11"
+        name="LegalMinTab2Head11"
+        value={sectionDataSingle.LegalMinTab2Head11 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Legal Minimum Tab 2 Head 12"
+        name="LegalMinTab2Head12"
+        value={sectionDataSingle.LegalMinTab2Head12 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Legal Minimum Tab 2 Head 13"
+        name="LegalMinTab2Head13"
+        value={sectionDataSingle.LegalMinTab2Head13 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
         placeholder="Legal Minimum Table Head 3"
         name="LegalMinTableHead3"
         value={sectionDataSingle.LegalMinTableHead3 || ""}
@@ -1218,7 +1333,7 @@ const OpenWorkCanadaContent = () => {
       />
 
       <h1 className={styles.faqEndHeading}>FAQ's Ends here</h1>
-      
+
       <h1 className={styles.faqStartsHeading}>
         Testimonials Visibility Control
       </h1>
@@ -1239,7 +1354,7 @@ const OpenWorkCanadaContent = () => {
         write "Y" without quotes , anything else will be considered as "N" even
         "y". If not want to display then just write "N" without qoutes.
       </p>
-      
+
       <div className={styles.editIcons}>
         {editMode ? (
           <img
