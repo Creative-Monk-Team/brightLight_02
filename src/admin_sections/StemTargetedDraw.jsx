@@ -439,536 +439,544 @@ const StemTargetedDrawContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="STEM Table Heading 1"
-        name="stT1h1"
-        value={sectionDataSingle.stT1h1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 1"
-        name="stT1Li1"
-        value={sectionDataSingle.stT1Li1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 2"
-        name="stT1Li2"
-        value={sectionDataSingle.stT1Li2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 3"
-        name="stT1Li3"
-        value={sectionDataSingle.stT1Li3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 4"
-        name="stT1Li4"
-        value={sectionDataSingle.stT1Li4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 5"
-        name="stT1Li5"
-        value={sectionDataSingle.stT1Li5 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 6"
-        name="stT1Li6"
-        value={sectionDataSingle.stT1Li6 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 7"
-        name="stT1Li7"
-        value={sectionDataSingle.stT1Li7 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.threeColumnsTable}>
+        <div>
+          <input
+            placeholder="STEM Table Heading 1"
+            name="stT1h1"
+            value={sectionDataSingle.stT1h1 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 1"
+            name="stT1Li1"
+            value={sectionDataSingle.stT1Li1 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 2"
+            name="stT1Li2"
+            value={sectionDataSingle.stT1Li2 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 3"
+            name="stT1Li3"
+            value={sectionDataSingle.stT1Li3 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 4"
+            name="stT1Li4"
+            value={sectionDataSingle.stT1Li4 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 5"
+            name="stT1Li5"
+            value={sectionDataSingle.stT1Li5 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 6"
+            name="stT1Li6"
+            value={sectionDataSingle.stT1Li6 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 7"
+            name="stT1Li7"
+            value={sectionDataSingle.stT1Li7 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="STEM Table List Item 8"
-        name="stT1Li8"
-        value={sectionDataSingle.stT1Li8 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 9"
-        name="stT1Li9"
-        value={sectionDataSingle.stT1Li9 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 10"
-        name="stT1Li10"
-        value={sectionDataSingle.stT1Li10 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 11"
-        name="stT1Li11"
-        value={sectionDataSingle.stT1Li11 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 12"
-        name="stT1Li12"
-        value={sectionDataSingle.stT1Li12 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 13"
-        name="stT1Li13"
-        value={sectionDataSingle.stT1Li13 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 14"
-        name="stT1Li14"
-        value={sectionDataSingle.stT1Li14 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 15"
-        name="stT1Li15"
-        value={sectionDataSingle.stT1Li15 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 16"
-        name="stT1Li16"
-        value={sectionDataSingle.stT1Li16 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 17"
-        name="stT1Li17"
-        value={sectionDataSingle.stT1Li17 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 18"
-        name="stT1Li18"
-        value={sectionDataSingle.stT1Li18 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 19"
-        name="stT1Li19"
-        value={sectionDataSingle.stT1Li19 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 20"
-        name="stT1Li20"
-        value={sectionDataSingle.stT1Li20 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 21"
-        name="stT1Li21"
-        value={sectionDataSingle.stT1Li21 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 22"
-        name="stT1Li22"
-        value={sectionDataSingle.stT1Li22 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 23"
-        name="stT1Li23"
-        value={sectionDataSingle.stT1Li23 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table List Item 24"
-        name="stT1Li24"
-        value={sectionDataSingle.stT1Li24 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="STEM Table List Item 8"
+            name="stT1Li8"
+            value={sectionDataSingle.stT1Li8 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 9"
+            name="stT1Li9"
+            value={sectionDataSingle.stT1Li9 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 10"
+            name="stT1Li10"
+            value={sectionDataSingle.stT1Li10 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 11"
+            name="stT1Li11"
+            value={sectionDataSingle.stT1Li11 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 12"
+            name="stT1Li12"
+            value={sectionDataSingle.stT1Li12 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 13"
+            name="stT1Li13"
+            value={sectionDataSingle.stT1Li13 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 14"
+            name="stT1Li14"
+            value={sectionDataSingle.stT1Li14 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 15"
+            name="stT1Li15"
+            value={sectionDataSingle.stT1Li15 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 16"
+            name="stT1Li16"
+            value={sectionDataSingle.stT1Li16 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 17"
+            name="stT1Li17"
+            value={sectionDataSingle.stT1Li17 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 18"
+            name="stT1Li18"
+            value={sectionDataSingle.stT1Li18 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 19"
+            name="stT1Li19"
+            value={sectionDataSingle.stT1Li19 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 20"
+            name="stT1Li20"
+            value={sectionDataSingle.stT1Li20 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 21"
+            name="stT1Li21"
+            value={sectionDataSingle.stT1Li21 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 22"
+            name="stT1Li22"
+            value={sectionDataSingle.stT1Li22 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 23"
+            name="stT1Li23"
+            value={sectionDataSingle.stT1Li23 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table List Item 24"
+            name="stT1Li24"
+            value={sectionDataSingle.stT1Li24 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
 
-      <textarea
-        placeholder="STEM Table 2 Heading"
-        name="stT2h2"
-        value={sectionDataSingle.stT2h2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+        <div>
+          <input
+            placeholder="STEM Table 2 Heading"
+            name="stT2h2"
+            value={sectionDataSingle.stT2h2 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="STEM Table 2 List Item 1"
-        name="stT2Li1"
-        value={sectionDataSingle.stT2Li1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 2"
-        name="stT2Li2"
-        value={sectionDataSingle.stT2Li2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 3"
-        name="stT2Li3"
-        value={sectionDataSingle.stT2Li3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 4"
-        name="stT2Li4"
-        value={sectionDataSingle.stT2Li4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 5"
-        name="stT2Li5"
-        value={sectionDataSingle.stT2Li5 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 6"
-        name="stT2Li6"
-        value={sectionDataSingle.stT2Li6 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 7"
-        name="stT2Li7"
-        value={sectionDataSingle.stT2Li7 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 8"
-        name="stT2Li8"
-        value={sectionDataSingle.stT2Li8 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 9"
-        name="stT2Li9"
-        value={sectionDataSingle.stT2Li9 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 10"
-        name="stT2Li10"
-        value={sectionDataSingle.stT2Li10 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 11"
-        name="stT2Li11"
-        value={sectionDataSingle.stT2Li11 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 12"
-        name="stT2Li12"
-        value={sectionDataSingle.stT2Li12 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 13"
-        name="stT2Li13"
-        value={sectionDataSingle.stT2Li13 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 14"
-        name="stT2Li14"
-        value={sectionDataSingle.stT2Li14 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 15"
-        name="stT2Li15"
-        value={sectionDataSingle.stT2Li15 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 16"
-        name="stT2Li16"
-        value={sectionDataSingle.stT2Li16 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 17"
-        name="stT2Li17"
-        value={sectionDataSingle.stT2Li17 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 18"
-        name="stT2Li18"
-        value={sectionDataSingle.stT2Li18 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 19"
-        name="stT2Li19"
-        value={sectionDataSingle.stT2Li19 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 20"
-        name="stT2Li20"
-        value={sectionDataSingle.stT2Li20 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 21"
-        name="stT2Li21"
-        value={sectionDataSingle.stT2Li21 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 22"
-        name="stT2Li22"
-        value={sectionDataSingle.stT2Li22 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 23"
-        name="stT2Li23"
-        value={sectionDataSingle.stT2Li23 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 2 List Item 24"
-        name="stT2Li24"
-        value={sectionDataSingle.stT2Li24 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="STEM Table 2 List Item 1"
+            name="stT2Li1"
+            value={sectionDataSingle.stT2Li1 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 2"
+            name="stT2Li2"
+            value={sectionDataSingle.stT2Li2 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 3"
+            name="stT2Li3"
+            value={sectionDataSingle.stT2Li3 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 4"
+            name="stT2Li4"
+            value={sectionDataSingle.stT2Li4 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 5"
+            name="stT2Li5"
+            value={sectionDataSingle.stT2Li5 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 6"
+            name="stT2Li6"
+            value={sectionDataSingle.stT2Li6 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 7"
+            name="stT2Li7"
+            value={sectionDataSingle.stT2Li7 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 8"
+            name="stT2Li8"
+            value={sectionDataSingle.stT2Li8 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 9"
+            name="stT2Li9"
+            value={sectionDataSingle.stT2Li9 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 10"
+            name="stT2Li10"
+            value={sectionDataSingle.stT2Li10 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 11"
+            name="stT2Li11"
+            value={sectionDataSingle.stT2Li11 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 12"
+            name="stT2Li12"
+            value={sectionDataSingle.stT2Li12 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 13"
+            name="stT2Li13"
+            value={sectionDataSingle.stT2Li13 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 14"
+            name="stT2Li14"
+            value={sectionDataSingle.stT2Li14 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 15"
+            name="stT2Li15"
+            value={sectionDataSingle.stT2Li15 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 16"
+            name="stT2Li16"
+            value={sectionDataSingle.stT2Li16 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 17"
+            name="stT2Li17"
+            value={sectionDataSingle.stT2Li17 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 18"
+            name="stT2Li18"
+            value={sectionDataSingle.stT2Li18 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 19"
+            name="stT2Li19"
+            value={sectionDataSingle.stT2Li19 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 20"
+            name="stT2Li20"
+            value={sectionDataSingle.stT2Li20 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 21"
+            name="stT2Li21"
+            value={sectionDataSingle.stT2Li21 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 22"
+            name="stT2Li22"
+            value={sectionDataSingle.stT2Li22 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 23"
+            name="stT2Li23"
+            value={sectionDataSingle.stT2Li23 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 2 List Item 24"
+            name="stT2Li24"
+            value={sectionDataSingle.stT2Li24 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
 
-      <textarea
-        placeholder="STEM Table 3 Heading"
-        name="stT3h3"
-        value={sectionDataSingle.stT3h3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+        <div>
+          <input
+            placeholder="STEM Table 3 Heading"
+            name="stT3h3"
+            value={sectionDataSingle.stT3h3 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
 
-      <textarea
-        placeholder="STEM Table 3 List Item 1"
-        name="stT3Li1"
-        value={sectionDataSingle.stT3Li1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 2"
-        name="stT3Li2"
-        value={sectionDataSingle.stT3Li2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 3"
-        name="stT3Li3"
-        value={sectionDataSingle.stT3Li3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 4"
-        name="stT3Li4"
-        value={sectionDataSingle.stT3Li4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 5"
-        name="stT3Li5"
-        value={sectionDataSingle.stT3Li5 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 6"
-        name="stT3Li6"
-        value={sectionDataSingle.stT3Li6 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 7"
-        name="stT3Li7"
-        value={sectionDataSingle.stT3Li7 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 8"
-        name="stT3Li8"
-        value={sectionDataSingle.stT3Li8 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 9"
-        name="stT3Li9"
-        value={sectionDataSingle.stT3Li9 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 10"
-        name="stT3Li10"
-        value={sectionDataSingle.stT3Li10 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 11"
-        name="stT3Li11"
-        value={sectionDataSingle.stT3Li11 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 12"
-        name="stT3Li12"
-        value={sectionDataSingle.stT3Li12 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 13"
-        name="stT3Li13"
-        value={sectionDataSingle.stT3Li13 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 14"
-        name="stT3Li14"
-        value={sectionDataSingle.stT3Li14 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 15"
-        name="stT3Li15"
-        value={sectionDataSingle.stT3Li15 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 16"
-        name="stT3Li16"
-        value={sectionDataSingle.stT3Li16 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 17"
-        name="stT3Li17"
-        value={sectionDataSingle.stT3Li17 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 18"
-        name="stT3Li18"
-        value={sectionDataSingle.stT3Li18 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 19"
-        name="stT3Li19"
-        value={sectionDataSingle.stT3Li19 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 20"
-        name="stT3Li20"
-        value={sectionDataSingle.stT3Li20 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 21"
-        name="stT3Li21"
-        value={sectionDataSingle.stT3Li21 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 22"
-        name="stT3Li22"
-        value={sectionDataSingle.stT3Li22 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 23"
-        name="stT3Li23"
-        value={sectionDataSingle.stT3Li23 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="STEM Table 3 List Item 24"
-        name="stT3Li24"
-        value={sectionDataSingle.stT3Li24 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+          <textarea
+            placeholder="STEM Table 3 List Item 1"
+            name="stT3Li1"
+            value={sectionDataSingle.stT3Li1 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 2"
+            name="stT3Li2"
+            value={sectionDataSingle.stT3Li2 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 3"
+            name="stT3Li3"
+            value={sectionDataSingle.stT3Li3 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 4"
+            name="stT3Li4"
+            value={sectionDataSingle.stT3Li4 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 5"
+            name="stT3Li5"
+            value={sectionDataSingle.stT3Li5 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 6"
+            name="stT3Li6"
+            value={sectionDataSingle.stT3Li6 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 7"
+            name="stT3Li7"
+            value={sectionDataSingle.stT3Li7 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 8"
+            name="stT3Li8"
+            value={sectionDataSingle.stT3Li8 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 9"
+            name="stT3Li9"
+            value={sectionDataSingle.stT3Li9 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 10"
+            name="stT3Li10"
+            value={sectionDataSingle.stT3Li10 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 11"
+            name="stT3Li11"
+            value={sectionDataSingle.stT3Li11 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 12"
+            name="stT3Li12"
+            value={sectionDataSingle.stT3Li12 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 13"
+            name="stT3Li13"
+            value={sectionDataSingle.stT3Li13 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 14"
+            name="stT3Li14"
+            value={sectionDataSingle.stT3Li14 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 15"
+            name="stT3Li15"
+            value={sectionDataSingle.stT3Li15 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 16"
+            name="stT3Li16"
+            value={sectionDataSingle.stT3Li16 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 17"
+            name="stT3Li17"
+            value={sectionDataSingle.stT3Li17 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 18"
+            name="stT3Li18"
+            value={sectionDataSingle.stT3Li18 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 19"
+            name="stT3Li19"
+            value={sectionDataSingle.stT3Li19 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 20"
+            name="stT3Li20"
+            value={sectionDataSingle.stT3Li20 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 21"
+            name="stT3Li21"
+            value={sectionDataSingle.stT3Li21 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 22"
+            name="stT3Li22"
+            value={sectionDataSingle.stT3Li22 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 23"
+            name="stT3Li23"
+            value={sectionDataSingle.stT3Li23 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <textarea
+            placeholder="STEM Table 3 List Item 24"
+            name="stT3Li24"
+            value={sectionDataSingle.stT3Li24 || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        </div>
+      </div>
 
       {/* Still Not Sure Section */}
       <textarea
@@ -1181,7 +1189,7 @@ const StemTargetedDrawContent = () => {
       />
 
       <h1 className={styles.faqEndHeading}>FAQ's Ends here</h1>
-      
+
       <h1 className={styles.faqStartsHeading}>
         Testimonials Visibility Control
       </h1>
@@ -1202,8 +1210,7 @@ const StemTargetedDrawContent = () => {
         write "Y" without quotes , anything else will be considered as "N" even
         "y". If not want to display then just write "N" without qoutes.
       </p>
-      
-      
+
       <div className={styles.editIcons}>
         {editMode ? (
           <img

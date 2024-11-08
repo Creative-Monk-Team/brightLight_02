@@ -7,6 +7,30 @@
   justify-content: space-between;
 }
 
+.threeColumnsTable{
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.twoColumnsTable{
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.threeColumnsTable textarea{
+  height: 50px !important;
+  width: 100% !important;
+}
+
+.twoColumnsTable textarea{
+  height: 50px !important;
+  width: 100% !important;
+}
+
 .faqStartsHeading {
   margin: 40px 0px 20px 5px;
   font-size: 25px;
