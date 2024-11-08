@@ -227,7 +227,7 @@ const CommonLawPartnerTemporary = () => {
           <h2 className={styles.subheading}>
           {pData?.BenifitHeading}
           </h2>
-          <ul style={{marginLeft: "40px"}}>
+          <ul className={styles.benifitsLi} style={{marginLeft: "40px"}}>
             <li>
             {pData?.b1}
             </li>
@@ -513,7 +513,7 @@ const CommonLawPartnerTemporary = () => {
           <h2 className={styles.subheading}>
           {pData?.RefusalHeading}
           </h2>
-          <ul style={{marginLeft: "40px"}}>
+          <ul className={styles.RefusalLi} style={{marginLeft: "40px"}}>
             <li>
             {pData?.r1}
             </li>

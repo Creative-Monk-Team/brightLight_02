@@ -319,6 +319,13 @@ text-decoration: none;
   background-color: #e0e0e0;
 }
 
+.benifitsLi li{
+  margin-top: 8px;
+}
+.RefusalLi li{
+  margin-top: 8px;
+}
+
   @media (max-width: 400px) {
     .container h2 {
       font-size: 20px;
