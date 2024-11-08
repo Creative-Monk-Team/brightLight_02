@@ -42,7 +42,7 @@ const BcPnp = () => {
 
 
   useEffect(() => {
-    fetch("https://brightlight-node.onrender.com//bc-pnp-page")
+    fetch("https://brightlight-node.onrender.com/bc-pnp-page")
       .then((res) => {
         return res.json();
       })
