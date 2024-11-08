@@ -52,23 +52,23 @@ const NonSdsContent = () => {
     nonSdsPara1: "",
     nonSdsPara2: "",
     nonSdsPara3: "",
-    prosConsHeading: "",
-    prosHeading: "",
-    prosLi1: "",
-    prosLi2: "",
-    prosLi3: "",
-    prosLi4: "",
-    consHeading: "",
-    consLi1: "",
-    consLi2: "",
-    consLi3: "",
-    consLi4: "",
-    eligibilityHeading: "",
-    eligibility1: "",
-    eligibility2: "",
-    eligibility3: "",
-    eligibility4: "",
-    eligibility5: "",
+    ProsConsHeading: "",
+    ProsHeading: "",
+    ProsLi1: "",
+    ProsLi2: "",
+    ProsLi3: "",
+    ProsLi4: "",
+    ConsHeading: "",
+    ConsLi1: "",
+    ConsLi2: "",
+    ConsLi3: "",
+    ConsLi4: "",
+    EligibilityHeading: "",
+    e1: "",
+    e2: "",
+    e3: "",
+    e4: "",
+    e5: "",
     eligibTabHeading: "",
     eligibTabEnglanTestHead1: "",
 
@@ -87,75 +87,75 @@ const NonSdsContent = () => {
     eligibTab2Value5: "",
     eligibTab2Value6: "",
     eligibTab2Value7: "",
-    checkCLBHeading: "",
-    appProcesHeading: "",
-    appProcesSubHeading: "",
-    appProc1: "",
-    appProc2: "",
-    appProc3: "",
-    appProc4: "",
-    appProc5: "",
-    appProc6: "",
-    appProc7: "",
-    appProc8: "",
-    appProc9: "",
+    CheckCLBHeading: "",
+    AppProcesHeading: "",
+    AppProcesSubHeading: "",
+    ap1: "",
+    ap2: "",
+    ap3: "",
+    ap4: "",
+    ap5: "",
+    ap6: "",
+    ap7: "",
+    ap8: "",
+    ap9: "",
 
-    proofFundHeading: "",
-    proofFundTable1Head1: "",
-    proofFund1Table11: "",
-    proofFund1Table12: "",
-    proofFund1Table13: "",
-    proofFund1Table14: "",
-    proofFundTable1Head2: "",
-    proofFund1Table21: "",
-    proofFund1Table22: "",
-    proofFund1Table23: "",
-    proofFund1Table24: "",
-    proofFundTable2Head1: "",
-    proofFund2Table11: "",
-    proofFund2Table12: "",
-    proofFund2Table13: "",
-    proofFund2Table14: "",
-    proofFundTable2Head2: "",
-    proofFund2Table21: "",
-    proofFund2Table22: "",
-    proofFund2Table23: "",
-    proofFund2Table24: "",
-    proofFundTable3Head1: "",
-    proofFund3Table11: "",
-    proofFund3Table12: "",
-    proofFund3Table13: "",
-    proofFund3Table14: "",
-    proofFundTable3Head2: "",
-    proofFund3Table21: "",
-    proofFund3Table22: "",
-    proofFund3Table23: "",
-    proofFund3Table24: "",
-    proofFundTableOpenPermitHeading: "",
-    proofFundTableOpenPermitPara: "",
-    gradProgHeading: "",
-    gradProgPara: "",
+    ProofFundHeading: "",
+    ProofFundTable1Head1: "",
+    ProofFund1Table11: "",
+    ProofFund1Table12: "",
+    ProofFund1Table13: "",
+    ProofFund1Table14: "",
+    ProofFundTable1Head2: "",
+    ProofFund1Table21: "",
+    ProofFund1Table22: "",
+    ProofFund1Table23: "",
+    ProofFund1Table24: "",
+    ProofFundTable2Head1: "",
+    ProofFund2Table11: "",
+    ProofFund2Table12: "",
+    ProofFund2Table13: "",
+    ProofFund2Table14: "",
+    ProofFundTable2Head2: "",
+    ProofFund2Table21: "",
+    ProofFund2Table22: "",
+    ProofFund2Table23: "",
+    ProofFund2Table24: "",
+    ProofFundTable3Head1: "",
+    ProofFund3Table11: "",
+    ProofFund3Table12: "",
+    ProofFund3Table13: "",
+    ProofFund3Table14: "",
+    ProofFundTable3Head2: "",
+    ProofFund3Table21: "",
+    ProofFund3Table22: "",
+    ProofFund3Table23: "",
+    ProofFund3Table24: "",
+    ProofFundTableOpenPermitHeading: "",
+    ProofFundTableOpenPermitPara: "",
+    GradProgHeading: "",
+    GradProgPara: "",
 
-    profDegProgHeading: "",
-    profDegProgSubHead: "",
-    profDegProgList1: "",
-    profDegProgList2: "",
-    profDegProgList3: "",
-    profDegProgList4: "",
-    profDegProgList5: "",
-    profDegProgList6: "",
-    profDegProgList7: "",
-    profDegProgList8: "",
-    profDegProgList9: "",
-    refusalHeading: "",
-    refusal1: "",
-    refusal2: "",
-    refusal3: "",
-    refusal4: "",
-    refusal5: "",
-    inCaseHeading: "",
-    inCase1: "",
-    inCase2: "",
+    ProfDegProgHeading: "",
+    ProfDegProgSubHead: "",
+    ProfDegProgList1: "",
+    ProfDegProgList2: "",
+    ProfDegProgList3: "",
+    ProfDegProgList4: "",
+    ProfDegProgList5: "",
+    ProfDegProgList6: "",
+    ProfDegProgList7: "",
+    ProfDegProgList8: "",
+    ProfDegProgList9: "",
+    RefusalHeading: "",
+    r1: "",
+    r2: "",
+    r3: "",
+    r4: "",
+    r4: "",
+    InCaseHeading: "",
+    InCase1: "",
+    InCase2: "",
     submitHeading: "",
     submitSubHead: "",
     submitSubPara: "",
@@ -168,8 +168,8 @@ const NonSdsContent = () => {
     submit3List1: "",
     sub3Li1SubLi1: "",
     sub3Li1SubLi2: "",
-    fieldStudyRequHeading: "",
-    fieldStudyRequSubHead: "",
+    FieldStudyRequHeading: "",
+    FieldStudyRequSubHead: "",
     fsrLi1: "",
     fsrLi2: "",
     fsrLi3: "",
@@ -316,122 +316,122 @@ const NonSdsContent = () => {
 
       <input
         placeholder="Pros and Cons Heading"
-        name="prosConsHeading"
-        value={sectionDataSingle.prosConsHeading || ""}
+        name="ProsConsHeading"
+        value={sectionDataSingle.ProsConsHeading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <input
         placeholder="Pros Heading"
-        name="prosHeading"
-        value={sectionDataSingle.prosHeading || ""}
+        name="ProsHeading"
+        value={sectionDataSingle.ProsHeading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Pros Point 1"
-        name="prosLi1"
-        value={sectionDataSingle.prosLi1 || ""}
+        name="ProsLi1"
+        value={sectionDataSingle.ProsLi1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Pros Point 2"
-        name="prosLi2"
-        value={sectionDataSingle.prosLi2 || ""}
+        name="ProsLi2"
+        value={sectionDataSingle.ProsLi2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Pros Point 3"
-        name="prosLi3"
-        value={sectionDataSingle.prosLi3 || ""}
+        name="ProsLi3"
+        value={sectionDataSingle.ProsLi3 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Pros Point 4"
-        name="prosLi4"
-        value={sectionDataSingle.prosLi4 || ""}
+        name="ProsLi4"
+        value={sectionDataSingle.ProsLi4 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <input
         placeholder="Cons Heading"
-        name="consHeading"
-        value={sectionDataSingle.consHeading || ""}
+        name="ConsHeading"
+        value={sectionDataSingle.ConsHeading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Cons Point 1"
-        name="consLi1"
-        value={sectionDataSingle.consLi1 || ""}
+        name="ConsLi1"
+        value={sectionDataSingle.ConsLi1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Cons Point 2"
-        name="consLi2"
-        value={sectionDataSingle.consLi2 || ""}
+        name="ConsLi2"
+        value={sectionDataSingle.ConsLi2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Cons Point 3"
-        name="consLi3"
-        value={sectionDataSingle.consLi3 || ""}
+        name="ConsLi3"
+        value={sectionDataSingle.ConsLi3 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Cons Point 4"
-        name="consLi4"
-        value={sectionDataSingle.consLi4 || ""}
+        name="ConsLi4"
+        value={sectionDataSingle.ConsLi4 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <input
         placeholder="Eligibility Heading"
-        name="eligibilityHeading"
-        value={sectionDataSingle.eligibilityHeading || ""}
+        name="EligibilityHeading"
+        value={sectionDataSingle.EligibilityHeading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Eligibility Point 1"
-        name="eligibility1"
-        value={sectionDataSingle.eligibility1 || ""}
+        name="e1"
+        value={sectionDataSingle.e1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Eligibility Point 2"
-        name="eligibility2"
-        value={sectionDataSingle.eligibility2 || ""}
+        name="e2"
+        value={sectionDataSingle.e2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Eligibility Point 3"
-        name="eligibility3"
-        value={sectionDataSingle.eligibility3 || ""}
+        name="e3"
+        value={sectionDataSingle.e3 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Eligibility Point 4"
-        name="eligibility4"
-        value={sectionDataSingle.eligibility4 || ""}
+        name="e4"
+        value={sectionDataSingle.e4 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Eligibility Point 5"
-        name="eligibility5"
-        value={sectionDataSingle.eligibility5 || ""}
+        name="e5"
+        value={sectionDataSingle.e5 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -560,420 +560,420 @@ const NonSdsContent = () => {
 
       <input
         placeholder="Check CLB Heading"
-        name="checkCLBHeading"
-        value={sectionDataSingle.checkCLBHeading || ""}
+        name="CheckCLBHeading"
+        value={sectionDataSingle.CheckCLBHeading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <input
         placeholder="Application Process Heading"
-        name="appProcesHeading"
-        value={sectionDataSingle.appProcesHeading || ""}
+        name="AppProcesHeading"
+        value={sectionDataSingle.AppProcesHeading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <input
         placeholder="Application Process Subheading"
-        name="appProcesSubHeading"
-        value={sectionDataSingle.appProcesSubHeading || ""}
+        name="AppProcesSubHeading"
+        value={sectionDataSingle.AppProcesSubHeading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Application Process Step 1"
-        name="appProc1"
-        value={sectionDataSingle.appProc1 || ""}
+        name="ap1"
+        value={sectionDataSingle.ap1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Application Process Step 2"
-        name="appProc2"
-        value={sectionDataSingle.appProc2 || ""}
+        name="ap2"
+        value={sectionDataSingle.ap2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Application Process Step 3"
-        name="appProc3"
-        value={sectionDataSingle.appProc3 || ""}
+        name="ap3"
+        value={sectionDataSingle.ap3 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Application Process Step 4"
-        name="appProc4"
-        value={sectionDataSingle.appProc4 || ""}
+        name="ap4"
+        value={sectionDataSingle.ap4 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Application Process Step 5"
-        name="appProc5"
-        value={sectionDataSingle.appProc5 || ""}
+        name="ap5"
+        value={sectionDataSingle.ap5 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Application Process Step 6"
-        name="appProc6"
-        value={sectionDataSingle.appProc6 || ""}
+        name="ap6"
+        value={sectionDataSingle.ap6 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Application Process Step 7"
-        name="appProc7"
-        value={sectionDataSingle.appProc7 || ""}
+        name="ap7"
+        value={sectionDataSingle.ap7 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Application Process Step 8"
-        name="appProc8"
-        value={sectionDataSingle.appProc8 || ""}
+        name="ap8"
+        value={sectionDataSingle.ap8 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Application Process Step 9"
-        name="appProc9"
-        value={sectionDataSingle.appProc9 || ""}
+        name="ap9"
+        value={sectionDataSingle.ap9 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <input
         placeholder="Proof Fund Heading"
-        name="proofFundHeading"
-        value={sectionDataSingle.proofFundHeading || ""}
+        name="ProofFundHeading"
+        value={sectionDataSingle.ProofFundHeading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <input
         placeholder="Proof Fund Table 1 Head 1"
-        name="proofFundTable1Head1"
-        value={sectionDataSingle.proofFundTable1Head1 || ""}
+        name="ProofFundTable1Head1"
+        value={sectionDataSingle.ProofFundTable1Head1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <textarea
         placeholder="Proof Fund 1 Table 1"
-        name="proofFund1Table11"
-        value={sectionDataSingle.proofFund1Table11 || ""}
+        name="ProofFund1Table11"
+        value={sectionDataSingle.ProofFund1Table11 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Proof Fund 1 Table 2"
-        name="proofFund1Table12"
-        value={sectionDataSingle.proofFund1Table12 || ""}
+        name="ProofFund1Table12"
+        value={sectionDataSingle.ProofFund1Table12 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Proof Fund 1 Table 3"
-        name="proofFund1Table13"
-        value={sectionDataSingle.proofFund1Table13 || ""}
+        name="ProofFund1Table13"
+        value={sectionDataSingle.ProofFund1Table13 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Proof Fund 1 Table 4"
-        name="proofFund1Table14"
-        value={sectionDataSingle.proofFund1Table14 || ""}
+        name="ProofFund1Table14"
+        value={sectionDataSingle.ProofFund1Table14 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <input
         placeholder="Proof Fund Table 1 Head 2"
-        name="proofFundTable1Head2"
-        value={sectionDataSingle.proofFundTable1Head2 || ""}
+        name="ProofFundTable1Head2"
+        value={sectionDataSingle.ProofFundTable1Head2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <textarea
         placeholder="Proof Fund 2 Table 1"
-        name="proofFund2Table11"
-        value={sectionDataSingle.proofFund2Table11 || ""}
+        name="ProofFund2Table11"
+        value={sectionDataSingle.ProofFund1Table21 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Proof Fund 2 Table 2"
-        name="proofFund2Table12"
-        value={sectionDataSingle.proofFund2Table12 || ""}
+        name="ProofFund2Table12"
+        value={sectionDataSingle.ProofFund2Table12 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Proof Fund 2 Table 3"
-        name="proofFund2Table13"
-        value={sectionDataSingle.proofFund2Table13 || ""}
+        name="ProofFund2Table13"
+        value={sectionDataSingle.ProofFund2Table13 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Proof Fund 2 Table 4"
-        name="proofFund2Table14"
-        value={sectionDataSingle.proofFund2Table14 || ""}
+        name="ProofFund2Table14"
+        value={sectionDataSingle.ProofFund2Table14 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <input
         placeholder="Proof Fund Table 2 Head 2"
-        name="proofFundTable2Head2"
-        value={sectionDataSingle.proofFundTable2Head2 || ""}
+        name="ProofFundTable2Head2"
+        value={sectionDataSingle.ProofFundTable2Head2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <textarea
         placeholder="Proof Fund 3 Table 1"
-        name="proofFund3Table11"
-        value={sectionDataSingle.proofFund3Table11 || ""}
+        name="ProofFund3Table11"
+        value={sectionDataSingle.ProofFund3Table11 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Proof Fund 3 Table 2"
-        name="proofFund3Table12"
-        value={sectionDataSingle.proofFund3Table12 || ""}
+        name="ProofFund3Table12"
+        value={sectionDataSingle.ProofFund3Table12 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Proof Fund 3 Table 3"
-        name="proofFund3Table13"
-        value={sectionDataSingle.proofFund3Table13 || ""}
+        name="ProofFund3Table13"
+        value={sectionDataSingle.ProofFund3Table13 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Proof Fund 3 Table 4"
-        name="proofFund3Table14"
-        value={sectionDataSingle.proofFund3Table14 || ""}
+        name="ProofFund3Table14"
+        value={sectionDataSingle.ProofFund3Table14 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <input
         placeholder="Proof Fund Table 3 Head 2"
-        name="proofFundTable3Head2"
-        value={sectionDataSingle.proofFundTable3Head2 || ""}
+        name="ProofFundTable3Head2"
+        value={sectionDataSingle.ProofFundTable3Head2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <textarea
         placeholder="Proof Fund 3 Table 21"
-        name="proofFund3Table21"
-        value={sectionDataSingle.proofFund3Table21 || ""}
+        name="ProofFund3Table21"
+        value={sectionDataSingle.ProofFund3Table21 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Proof Fund 3 Table 22"
-        name="proofFund3Table22"
-        value={sectionDataSingle.proofFund3Table22 || ""}
+        name="ProofFund3Table22"
+        value={sectionDataSingle.ProofFund3Table22 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Proof Fund 3 Table 23"
-        name="proofFund3Table23"
-        value={sectionDataSingle.proofFund3Table23 || ""}
+        name="ProofFund3Table23"
+        value={sectionDataSingle.ProofFund3Table23 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Proof Fund 3 Table 24"
-        name="proofFund3Table24"
-        value={sectionDataSingle.proofFund3Table24 || ""}
+        name="ProofFund3Table24"
+        value={sectionDataSingle.ProofFund3Table24 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <input
         placeholder="Open Permit Heading"
-        name="proofFundTableOpenPermitHeading"
-        value={sectionDataSingle.proofFundTableOpenPermitHeading || ""}
+        name="ProofFundTableOpenPermitHeading"
+        value={sectionDataSingle.ProofFundTableOpenPermitHeading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <textarea
         placeholder="Open Permit Paragraph"
-        name="proofFundTableOpenPermitPara"
-        value={sectionDataSingle.proofFundTableOpenPermitPara || ""}
+        name="ProofFundTableOpenPermitPara"
+        value={sectionDataSingle.ProofFundTableOpenPermitPara || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <input
         placeholder="Graduate Program Heading"
-        name="gradProgHeading"
-        value={sectionDataSingle.gradProgHeading || ""}
+        name="GradProgHeading"
+        value={sectionDataSingle.GradProgHeading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <textarea
         placeholder="Graduate Program Paragraph"
-        name="gradProgPara"
-        value={sectionDataSingle.gradProgPara || ""}
+        name="GradProgPara"
+        value={sectionDataSingle.GradProgPara || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <input
         placeholder="Professional Degree Program Heading"
-        name="profDegProgHeading"
-        value={sectionDataSingle.profDegProgHeading || ""}
+        name="ProfDegProgHeading"
+        value={sectionDataSingle.ProfDegProgHeading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <input
         placeholder="Professional Degree Program Sub Heading"
-        name="profDegProgSubHead"
-        value={sectionDataSingle.profDegProgSubHead || ""}
+        name="ProfDegProgSubHead"
+        value={sectionDataSingle.ProfDegProgSubHead || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <textarea
         placeholder="Professional Degree Program List 1"
-        name="profDegProgList1"
-        value={sectionDataSingle.profDegProgList1 || ""}
+        name="ProfDegProgList1"
+        value={sectionDataSingle.ProfDegProgList1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Professional Degree Program List 2"
-        name="profDegProgList2"
-        value={sectionDataSingle.profDegProgList2 || ""}
+        name="ProfDegProgList2"
+        value={sectionDataSingle.ProfDegProgList2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Professional Degree Program List 3"
-        name="profDegProgList3"
-        value={sectionDataSingle.profDegProgList3 || ""}
+        name="ProfDegProgList3"
+        value={sectionDataSingle.ProfDegProgList3 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Professional Degree Program List 4"
-        name="profDegProgList4"
-        value={sectionDataSingle.profDegProgList4 || ""}
+        name="ProfDegProgList4"
+        value={sectionDataSingle.ProfDegProgList4 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Professional Degree Program List 5"
-        name="profDegProgList5"
-        value={sectionDataSingle.profDegProgList5 || ""}
+        name="ProfDegProgList5"
+        value={sectionDataSingle.ProfDegProgList5 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Professional Degree Program List 6"
-        name="profDegProgList6"
-        value={sectionDataSingle.profDegProgList6 || ""}
+        name="ProfDegProgList6"
+        value={sectionDataSingle.ProfDegProgList6 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Professional Degree Program List 7"
-        name="profDegProgList7"
-        value={sectionDataSingle.profDegProgList7 || ""}
+        name="ProfDegProgList7"
+        value={sectionDataSingle.ProfDegProgList7 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Professional Degree Program List 8"
-        name="profDegProgList8"
-        value={sectionDataSingle.profDegProgList8 || ""}
+        name="ProfDegProgList8"
+        value={sectionDataSingle.ProfDegProgList8 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Professional Degree Program List 9"
-        name="profDegProgList9"
-        value={sectionDataSingle.profDegProgList9 || ""}
+        name="ProfDegProgList9"
+        value={sectionDataSingle.ProfDegProgList9 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <input
         placeholder="Refusal Heading"
-        name="refusalHeading"
-        value={sectionDataSingle.refusalHeading || ""}
+        name="RefusalHeading"
+        value={sectionDataSingle.RefusalHeading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <textarea
         placeholder="Refusal Reason 1"
-        name="refusal1"
-        value={sectionDataSingle.refusal1 || ""}
+        name="r1"
+        value={sectionDataSingle.r1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Refusal Reason 2"
-        name="refusal2"
-        value={sectionDataSingle.refusal2 || ""}
+        name="r2"
+        value={sectionDataSingle.r2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Refusal Reason 3"
-        name="refusal3"
-        value={sectionDataSingle.refusal3 || ""}
+        name="r3"
+        value={sectionDataSingle.r3 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Refusal Reason 4"
-        name="refusal4"
-        value={sectionDataSingle.refusal4 || ""}
+        name="r4"
+        value={sectionDataSingle.r4 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="Refusal Reason 5"
-        name="refusal5"
-        value={sectionDataSingle.refusal5 || ""}
+        name="r5"
+        value={sectionDataSingle.r5 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <input
         placeholder="In Case Heading"
-        name="inCaseHeading"
-        value={sectionDataSingle.inCaseHeading || ""}
+        name="InCaseHeading"
+        value={sectionDataSingle.InCaseHeading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <textarea
         placeholder="In Case Statement 1"
-        name="inCase1"
-        value={sectionDataSingle.inCase1 || ""}
+        name="InCase1"
+        value={sectionDataSingle.InCase1 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
       <textarea
         placeholder="In Case Statement 2"
-        name="inCase2"
-        value={sectionDataSingle.inCase2 || ""}
+        name="InCase2"
+        value={sectionDataSingle.InCase2 || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -1073,16 +1073,16 @@ const NonSdsContent = () => {
 
       <input
         placeholder="Field of Study Requirement Heading"
-        name="fieldStudyRequHeading"
-        value={sectionDataSingle.fieldStudyRequHeading || ""}
+        name="FieldStudyRequHeading"
+        value={sectionDataSingle.FieldStudyRequHeading || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
 
       <input
         placeholder="Field of Study Requirement Sub Heading"
-        name="fieldStudyRequSubHead"
-        value={sectionDataSingle.fieldStudyRequSubHead || ""}
+        name="FieldStudyRequSubHead"
+        value={sectionDataSingle.FieldStudyRequSubHead || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
