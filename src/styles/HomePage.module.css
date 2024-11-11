@@ -49,10 +49,27 @@
 
 .expertiseDiv {
   width: 300px;
-  padding: 80px 20px;
+  padding: 0px 20px;
   border-radius: 10px;
   border: none;
   background-color: white;
+
+}
+
+.servicesCardSwiper .whiteBlockCard{
+  width: 300px;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  height: 350px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.servicesCardSwiper .expertiseDiv{
+  height: auto;
 }
 .expertiseDiv h4{
   color: #132f46

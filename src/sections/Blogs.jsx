@@ -26,14 +26,14 @@ let Blogs = () => {
   let [data, setData] = useState([]);
 
   useEffect(() => {
-    // Fetch blogs data
+    // Fetch blogs data, limit to 5 items
     fetch("https://brightlight-node.onrender.com/adding-blog")
       .then((res) => res.json())
       .then((data) => {
         console.log("Blogs data:", data); // Log the data to see its structure
         // Ensure that the response is an array before setting the state
         if (Array.isArray(data)) {
-          setBlogs(data);
+          setBlogs(data.slice(0, 5)); // Only take the first 5 blogs
         } else {
           console.error("Expected an array, but got:", data);
           setBlogs([]); // In case the data isn't an array, set it to an empty array

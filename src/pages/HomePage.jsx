@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState ,useMemo } from "react";
+import React, { useEffect, useRef, useState, useMemo } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import styles from "../styles/HomePage.module.css";
 import WhiteLogo from "../assets/bright-source.webp";
@@ -20,7 +20,6 @@ import { Helmet } from "react-helmet-async";
 import Odometer from "../components/Odometer";
 
 let HomePage = () => {
-  
   const swiperRef = useRef(null);
 
   let [newsSectionData, setNewsSectionData] = useState([]);
@@ -370,35 +369,39 @@ let HomePage = () => {
       });
     };
   }, []);
-  useEffect(() => {
-    const scrollTwice = () => {
-      if (swiperRef.current) {
-        // Scroll to the next slide twice
-        swiperRef.current.slideNext();
-        setTimeout(() => {
-          swiperRef.current.slideNext();
-        }, 500); // Adjust timing if necessary
-      }
-    };
-
-    // Run the scroll function after page load (when the loader ends)
-    window.addEventListener("load", scrollTwice);
-
-    return () => {
-      window.removeEventListener("load", scrollTwice);
-    };
-  }, []);
 
   useEffect(() => {
     // Start the automatic slide after loading
-    autoSlideIntervalRef.current = setInterval(() => {
+    // autoSlideIntervalRef.current = setInterval(() => {
+    //   if (swiperRef.current) {
+    //     swiperRef.current.slideNext();
+    //   }
+    // }, 3000); 
+
+    let handleClick = () => {
       if (swiperRef.current) {
-        swiperRef.current.slideNext();
+        setTimeout(() => {
+          swiperRef.current.slidePrev();
+        }, 500);
       }
-    }, 3000); // Change slide every 3 seconds
+
+      if (swiperRef.current) {
+        setTimeout(() => {
+          swiperRef.current.slidePrev();
+        }, 1000);
+      }
+
+      if (swiperRef.current) {
+        setTimeout(() => {
+          swiperRef.current.slideNext();
+        }, 1500);
+      }
+    }
+
+    handleClick();
 
     // Clear the interval on component unmount
-    return () => clearInterval(autoSlideIntervalRef.current);
+    // return () => clearInterval(autoSlideIntervalRef.current);
   }, []);
 
   const link = (title) => {
@@ -421,15 +424,18 @@ let HomePage = () => {
         return "#";
     }
   };
-  const linkLookup = useMemo(() => ({
-    "Permanent Residency": "/permanent-residency",
-    BCPNP: "/bc-pnp",
-    "Visitor Visa": "/visitor-visa",
-    "Study Visa": "/student-visa",
-    "Family Sponsorship": "/family-reunification-sponsorship",
-    "Work Permit": "/work-permit",
-    PFL: "/reply-to-pfl-page",
-  }), []);
+  const linkLookup = useMemo(
+    () => ({
+      "Permanent Residency": "/permanent-residency",
+      BCPNP: "/bc-pnp",
+      "Visitor Visa": "/visitor-visa",
+      "Study Visa": "/student-visa",
+      "Family Sponsorship": "/family-reunification-sponsorship",
+      "Work Permit": "/work-permit",
+      PFL: "/reply-to-pfl-page",
+    }),
+    []
+  );
 
   const handleCardClick = (title) => {
     const link = linkLookup[title]; // Lookup the link using the title
@@ -437,7 +443,8 @@ let HomePage = () => {
       window.location.href = link; // Navigate to the URL
     }
   };
-  const rcicAppointmentUrl = "https://api.leadconnectorhq.com/widget/booking/BVqmhNlxRMadz10ir6aM";
+  const rcicAppointmentUrl =
+    "https://api.leadconnectorhq.com/widget/booking/BVqmhNlxRMadz10ir6aM";
 
   const memberInfo = [
     { heading: memberData?.heading1, img: memberData?.heading1Img },
@@ -460,7 +467,30 @@ let HomePage = () => {
     setLoaded(true); // Assuming data is fetched and set here
   }, [services]); // Run when services data is available
 
+  useEffect(() => {
+    // Auto-slide functionality
+    autoSlideIntervalRef.current = setInterval(() => {
+      if (swiperRef.current && swiperRef.current.activeIndex < 2) {
+        swiperRef.current.slideNext();
+      } else {
+        clearInterval(autoSlideIntervalRef.current); // Stop auto-slide after 3 slides
+      }
+    }, 3000); // Change slide every 3 seconds
 
+    return () => clearInterval(autoSlideIntervalRef.current); // Cleanup on unmount
+  }, [services]);
+
+  const handleNextSlide = () => {
+    if (swiperRef.current) {
+      swiperRef.current.slideNext();
+    }
+  };
+
+  const handlePreviousSlide = () => {
+    if (swiperRef.current) {
+      swiperRef.current.slidePrev();
+    }
+  };
 
   return (
     <>
@@ -508,153 +538,159 @@ let HomePage = () => {
       </Helmet>
 
       <Navbar1 showBlue={true} />
-      <div className={styles.bannerParent}>  
-      <div className={styles.bannerMain}> 
-      <TransitionGroup>
-        {loaded && (
-          <CSSTransition
-            classNames={{
-              enter: styles.fadeIn,
-              enterActive: styles.fadeInActive,
-              exit: styles.fadeOut,
-              exitActive: styles.fadeOutActive,
-            }}
-            timeout={1000}
-          >
-            <div className={styles.bannerHeading}>
-              <h1 className={`${styles.slideInFromLeft} ${styles.fadeIn}`}>
-                {headline1Rest}{" "}
-                <span className={styles.bannerBlueHeading}>
-                  {headline1Last}
-                </span>
-              </h1>
-              <h1 className={`${styles.slideInFromRight} ${styles.fadeIn}`}>
-                {headline2Rest}{" "}
-                <span className={styles.bannerBlueHeading}>
-                  {headline2Last}
-                </span>
-              </h1>
-              <h2 className={`${styles.slideInFromBottom} ${styles.fadeIn}`}>
-                {topSection?.SmallHeadline1}
-              </h2>
-            </div>
-          </CSSTransition>
-        )}
-      </TransitionGroup>
-
-      <TransitionGroup>
-        {loaded && (
-          <CSSTransition
-            classNames={{
-              enter: styles.fadeIn,
-              enterActive: styles.fadeInActive,
-              exit: styles.fadeOut,
-              exitActive: styles.fadeOutActive,
-            }}
-            timeout={1000}
-          >
-            <div className={styles.cardContainer}>
-              {services.map((card, index) => (
-                <div
-                  key={index}
-                  className={styles.card}
-                  onClick={() => handleCardClick(card.title)}
-                >
-                  <CSSTransition
-                    classNames={{
-                      enter: styles.fadeIn,
-                      enterActive: styles.fadeInActive,
-                      exit: styles.fadeOut,
-                      exitActive: styles.fadeOutActive,
-                    }}
-                    timeout={500}
+      <div className={styles.bannerParent}>
+        <div className={styles.bannerMain}>
+          <TransitionGroup>
+            {loaded && (
+              <CSSTransition
+                classNames={{
+                  enter: styles.fadeIn,
+                  enterActive: styles.fadeInActive,
+                  exit: styles.fadeOut,
+                  exitActive: styles.fadeOutActive,
+                }}
+                timeout={1000}
+              >
+                <div className={styles.bannerHeading}>
+                  <h1 className={`${styles.slideInFromLeft} ${styles.fadeIn}`}>
+                    {headline1Rest}{" "}
+                    <span className={styles.bannerBlueHeading}>
+                      {headline1Last}
+                    </span>
+                  </h1>
+                  <h1 className={`${styles.slideInFromRight} ${styles.fadeIn}`}>
+                    {headline2Rest}{" "}
+                    <span className={styles.bannerBlueHeading}>
+                      {headline2Last}
+                    </span>
+                  </h1>
+                  <h2
+                    className={`${styles.slideInFromBottom} ${styles.fadeIn}`}
                   >
-                    <img
-                      src={card.img}
-                      alt={card.title}
-                      className={`${styles.icon} ${styles.fadeIn}`}
-                      loading="lazy"
-                    />
-                  </CSSTransition>
-
-                  <div className={styles.title}>
-                    <h2>{card.title}</h2>
-                  </div>
+                    {topSection?.SmallHeadline1}
+                  </h2>
                 </div>
-              ))}
-            </div>
-          </CSSTransition>
-        )}
-      </TransitionGroup>
+              </CSSTransition>
+            )}
+          </TransitionGroup>
 
-        <a href="/more-services">
-          <button className={styles.bookButton17} role="button">
-            More Services
-          </button>
-        </a>
-      </div>
-    </div>
+          <TransitionGroup>
+            {loaded && (
+              <CSSTransition
+                classNames={{
+                  enter: styles.fadeIn,
+                  enterActive: styles.fadeInActive,
+                  exit: styles.fadeOut,
+                  exitActive: styles.fadeOutActive,
+                }}
+                timeout={1000}
+              >
+                <div className={styles.cardContainer}>
+                  {services.map((card, index) => (
+                    <div
+                      key={index}
+                      className={styles.card}
+                      onClick={() => handleCardClick(card.title)}
+                    >
+                      <CSSTransition
+                        classNames={{
+                          enter: styles.fadeIn,
+                          enterActive: styles.fadeInActive,
+                          exit: styles.fadeOut,
+                          exitActive: styles.fadeOutActive,
+                        }}
+                        timeout={500}
+                      >
+                        <img
+                          src={card.img}
+                          alt={card.title}
+                          className={`${styles.icon} ${styles.fadeIn}`}
+                          loading="lazy"
+                        />
+                      </CSSTransition>
 
-    <div className={styles.bannerParent2}>
-      {/* Check if loveneetBgImage exists before using it */}
-      {loveneetBgImage?.image && (
-        <img 
-          src={loveneetBgImage.image} 
-          alt="Background Image" 
-          loading="lazy" 
-          className={styles.backgroundImage} 
-          width="100%"   // Ensure the width stays 100% of the parent container
-          height="auto"  // Maintain the aspect ratio
-        />
-      )}
+                      <div className={styles.title}>
+                        <h2>{card.title}</h2>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </CSSTransition>
+            )}
+          </TransitionGroup>
 
-      <div className={styles.bannerParent2ButtonDiv}>
-        {/* LinkedIn button */}
-        {linkedinLink && (
-          <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
-            <button className={styles.linkedInButton}>
-              <img src={LinkedinLogo} alt="LinkedIn" loading="lazy" />
-            </button>
-          </a>
-        )}
-
-        <div className={styles.bannerParent2HaveQuestions}>
-          <h5>Have Questions ?</h5>
-          <a href={rcicAppointmentUrl} target="_blank" rel="noopener noreferrer">
-            <button className={styles.rcicButton}>
-              <b>RCIC</b>
-              <p>APPOINTEMENT</p>
+          <a href="/more-services">
+            <button className={styles.bookButton17} role="button">
+              More Services
             </button>
           </a>
         </div>
       </div>
 
-      <div className={styles.bannerMain2}></div>
-    </div>
+      <div className={styles.bannerParent2}>
+        {/* Check if loveneetBgImage exists before using it */}
+        {loveneetBgImage?.image && (
+          <img
+            src={loveneetBgImage.image}
+            alt="Background Image"
+            loading="lazy"
+            className={styles.backgroundImage}
+            width="100%" // Ensure the width stays 100% of the parent container
+            height="auto" // Maintain the aspect ratio
+          />
+        )}
 
-    <div className={styles.memberParent} ref={sectionRef}>
-      <div className={styles.memberMain}>
-        <div className={styles.memberCardParent}>
-          {memberInfo.map((member, index) => (
-            <div
-              key={index}
-              className={`${styles.memberCard} ${
-                isVisible ? styles.showMemberCard : ""
-              }`}
+        <div className={styles.bannerParent2ButtonDiv}>
+          {/* LinkedIn button */}
+          {linkedinLink && (
+            <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
+              <button className={styles.linkedInButton}>
+                <img src={LinkedinLogo} alt="LinkedIn" loading="lazy" />
+              </button>
+            </a>
+          )}
+
+          <div className={styles.bannerParent2HaveQuestions}>
+            <h5>Have Questions ?</h5>
+            <a
+              href={rcicAppointmentUrl}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <p>{member?.heading}</p>
-              <div className={styles.memberCardImg}>
-                <img 
-                  src={member?.img} 
-                  alt={member?.heading || 'Member image'} // Accessibility improvement
-                  loading="lazy" 
-                />
+              <button className={styles.rcicButton}>
+                <b>RCIC</b>
+                <p>APPOINTEMENT</p>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div className={styles.bannerMain2}></div>
+      </div>
+
+      <div className={styles.memberParent} ref={sectionRef}>
+        <div className={styles.memberMain}>
+          <div className={styles.memberCardParent}>
+            {memberInfo.map((member, index) => (
+              <div
+                key={index}
+                className={`${styles.memberCard} ${
+                  isVisible ? styles.showMemberCard : ""
+                }`}
+              >
+                <p>{member?.heading}</p>
+                <div className={styles.memberCardImg}>
+                  <img
+                    src={member?.img}
+                    alt={member?.heading || "Member image"} // Accessibility improvement
+                    loading="lazy"
+                  />
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-    </div>
 
       <div
         className={`${styles.simplifyingParent} ${
@@ -707,49 +743,52 @@ let HomePage = () => {
               <a href="/more-services">Know More</a>
             </button>
           </div>
+          <div className={`${styles.testimonialsVideoSection} ${styles.servicesCardSwiper}`}>
+  <Swiper
+    effect={"coverflow"}
+    grabCursor={true}
+    centeredSlides={true}
+    loop={true}  // Set loop to true for infinite scrolling
+    slidesPerView={"auto"}
+    coverflowEffect={{
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 2.5,
+    }}
+    pagination={{ el: ".swiper_pagination", clickable: true }}
+    navigation={{
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }}
+    modules={[EffectCoverflow, Pagination, Navigation]}
+    className={styles.swiper_container}
+    onSwiper={(swiper) => (swiperRef.current = swiper)}
+  >
+    {services?.map((item, index) => (
+      <SwiperSlide key={index} className={styles.whiteBlockCard}>
+        <div className={styles.expertiseDiv}>
+          <h4>{item.title}</h4>
+          <p>{item.desc}</p>
+          <a
+            className={styles.expertiseKnowMore}
+            href={link(item.title)}
+          >
+            Know More
+          </a>
+        </div>
+      </SwiperSlide>
+    ))}
+  </Swiper>
 
-          <div className={styles.testimonialsVideoSection}>
-            <Swiper
-              effect={"coverflow"}
-              grabCursor={true}
-              centeredSlides={true}
-              loop={true}
-              slidesPerView={"auto"}
-              coverflowEffect={{
-                rotate: 0,
-                stretch: 0,
-                depth: 100,
-                modifier: 2.5,
-              }}
-              pagination={{ el: ".swiper_pagination", clickable: true }}
-              navigation={{
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              }}
-              modules={[EffectCoverflow, Pagination, Navigation]}
-              className={styles.swiper_container}
-              onSwiper={(swiper) => (swiperRef.current = swiper)} // Store swiper instance
-            >
-              {services?.map((item, index) => (
-                <SwiperSlide key={index}>
-                  <div className={styles.expertiseDiv}>
-                    <h4>{item.title}</h4>
-                    <p>{item.desc}</p>
-                    <a
-                      className={styles.expertiseKmowMore}
-                      href={link(item.title)}
-                    >
-                      Know More
-                    </a>
-                  </div>
-                </SwiperSlide>
-              ))}
+  {/* Navigation Buttons */}
 
-              <div className={styles.slider_controler}>
-                <div className={styles.swiper_pagination}></div>
-              </div>
-            </Swiper>
-          </div>
+  {/* Pagination Controller */}
+  <div className={styles.slider_controler}>
+    <div className="swiper_pagination"></div>
+  </div>
+</div>
+
           <div
             className={styles.navigationButtons}
             class="navigation_button_02"
@@ -772,7 +811,7 @@ let HomePage = () => {
               className={`${styles.aspectsCard} ${styles.fadeFromLeft}`}
               ref={(el) => (aspectsCardRefs.current[0] = el)}
             >
-              <img src={achiementsData?.achievement1SVG} loading="lazy"/>
+              <img src={achiementsData?.achievement1SVG} loading="lazy" />
               <h1>
                 <Odometer value={achiementsData?.achievement1Numbers} />+
               </h1>
@@ -782,7 +821,7 @@ let HomePage = () => {
               className={`${styles.aspectsCard} ${styles.fadeFromBottom}`}
               ref={(el) => (aspectsCardRefs.current[1] = el)}
             >
-              <img src={achiementsData?.achievement2SVG} loading="lazy"/>
+              <img src={achiementsData?.achievement2SVG} loading="lazy" />
               <h1>
                 <Odometer value={achiementsData?.achievement2Numbers} />+
               </h1>
@@ -792,7 +831,7 @@ let HomePage = () => {
               className={`${styles.aspectsCard} ${styles.fadeFromRight}`}
               ref={(el) => (aspectsCardRefs.current[2] = el)}
             >
-              <img src={achiementsData?.achievement3SVG} loading="lazy"/>
+              <img src={achiementsData?.achievement3SVG} loading="lazy" />
               <h1>
                 <Odometer value={achiementsData?.achievement3Numbers} />+
               </h1>
@@ -807,7 +846,7 @@ let HomePage = () => {
         <div className={styles.sourceMain}>
           <div className={styles.sourceHeadingParent}>
             <div className={styles.sourceHeadingParentFirstDiv}>
-              <img src={WhiteLogo} loading="lazy"/>
+              <img src={WhiteLogo} loading="lazy" />
             </div>
             <div>
               {newsSectionData && <h1>{newsSectionData.heading}</h1>}
