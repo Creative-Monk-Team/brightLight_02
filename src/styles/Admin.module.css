@@ -1,5 +1,5 @@
 .dashboard {
-  width: 1440px;
+  width: 98vw;
   margin: auto;
   padding: 30px 0px;
   display: flex;
@@ -287,7 +287,7 @@
 }
 
 .topBar {
-  width: 1440px;
+  width: 98vw;
   margin: auto;
   background-color: white;
   border-radius: 5px;
@@ -303,7 +303,7 @@
 }
 
 .leftPanel {
-  width: 29%;
+  width: 29.5%;
   padding: 30px 20px;
   background-color: white;
   border-radius: 5px;
@@ -328,7 +328,7 @@
 }
 
 .rightPanel {
-  width: 69%;
+  width: 69.9%;
   padding: 30px 20px;
   background-color: white;
   border-radius: 5px;
@@ -590,7 +590,7 @@
   background-color: #132f46;
 }
 
-@media all and (max-width: 1500px) {
+/* @media all and (max-width: 1500px) {
   .dashboard {
     width: 95%;
   }
@@ -598,7 +598,7 @@
   .topBar {
     width: 95%;
   }
-}
+} */
 
 @media all and (max-width: 750px) {
   .dashboard {
