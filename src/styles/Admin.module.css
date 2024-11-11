@@ -7,7 +7,7 @@
   justify-content: space-between;
 }
 
-.threeColumnsTable{
+.threeColumnsTable {
   display: grid;
   grid-template-columns: repeat(3, 33%);
   align-items: flex-start;
@@ -15,21 +15,45 @@
   margin: 50px 0px;
 }
 
-.twoColumnsTable{
+.twoColumnsTable {
   display: grid;
   grid-template-columns: repeat(2, 49%);
   align-items: flex-start;
   justify-content: space-between;
   margin: 50px 0px;
 }
-.sevenColumnsTable{
+.sevenColumnsTable {
   display: grid;
   grid-template-columns: repeat(7, 14%);
   align-items: flex-start;
   justify-content: space-between;
   margin: 50px 0px;
 }
-.fourColumnsTable{
+
+.twelveColumnsTable {
+  display: grid;
+  grid-template-columns: repeat(12, 8%);
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 50px 0px;
+}
+
+.eleventhColumnsTable {
+  display: grid;
+  grid-template-columns: repeat(11, 9%);
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 50px 0px;
+}
+
+.nineColumnsTable {
+  display: grid;
+  grid-template-columns: repeat(9, 11%);
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 50px 0px;
+}
+.fourColumnsTable {
   display: grid;
   grid-template-columns: repeat(4, 24%);
   align-items: flex-start;
@@ -37,29 +61,67 @@
   margin: 50px 0px;
 }
 
-.fiveColumnsTable{
+.fiveColumnsTable {
   display: grid;
   grid-template-columns: repeat(5, 19%);
   align-items: flex-start;
   justify-content: space-between;
   margin: 50px 0px;
 }
-.fourColumnsTable textarea{
+.fourColumnsTable textarea {
   height: 50px !important;
   width: 100% !important;
 }
 
-.threeColumnsTable textarea{
+.nineColumnsTable textarea {
   height: 50px !important;
   width: 100% !important;
 }
 
-.sevenColumnsTable textarea{
+.twelveColumnsTable textarea {
+  height: 50px !important;
+  width: 100% !important;
+  font-size: 11px;
+  padding: 5px 5px !important;
+}
+
+.twelveColumnsTable input {
+  height: 50px !important;
+  width: 100% !important;
+  font-size: 11px;
+  padding: 5px 5px !important;
+}
+
+.threeColumnsTable textarea {
   height: 50px !important;
   width: 100% !important;
 }
 
-.twoColumnsTable textarea{
+.eleventhColumnsTable textarea {
+  height: 50px !important;
+  width: 100% !important;
+  font-size: 11px;
+  padding: 5px 5px !important;
+}
+
+.eleventhColumnsTable input {
+  height: 50px !important;
+  width: 100% !important;
+  font-size: 11px;
+  padding: 5px 5px !important;
+}
+
+.fiveColumnsTable textarea {
+  height: 50px !important;
+  width: 100% !important;
+}
+
+.sevenColumnsTable textarea {
+  height: 50px !important;
+  width: 100% !important;
+}
+
+.twoColumnsTable textarea {
   height: 50px !important;
   width: 100% !important;
 }
@@ -69,11 +131,11 @@
   font-size: 25px;
 }
 
-.singleSectionData option{
+.singleSectionData option {
   font-size: 13px;
 }
 
-.singleSectionData select{
+.singleSectionData select {
   font-size: 13px;
 }
 

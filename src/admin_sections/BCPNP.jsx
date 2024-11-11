@@ -249,13 +249,6 @@ const BCPNP = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <textarea
-        placeholder="Description 2"
-        name="description2"
-        value={sectionData.description2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
 
       {/* First Section */}
       <input
@@ -272,27 +265,38 @@ const BCPNP = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      {[...Array(7).keys()].map((index) => (
-        <div key={`fsq1o${index + 1}`}>
-          <input
-            placeholder={`FSQ1 Option ${index + 1}`}
-            name={`fsq1o${index + 1}`}
-            value={sectionData[`fsq1o${index + 1}`] || ""}
-            onChange={handleInputChange}
-            disabled={!editMode}
-          />
-          <input
-            placeholder={`FSQ1 Option ${index + 1} Points`}
-            name={`fsq1o${index + 1}p`}
-            value={sectionData[`fsq1o${index + 1}p`] || ""}
-            onChange={handleInputChange}
-            disabled={!editMode}
-          />
-        </div>
-      ))}
 
-      {/* Repeat similar blocks for other sections */}
-      {/* Example for Second Section */}
+      <div className={styles.sevenColumnsTable} style={{ margin: "0 0" }}>
+        {[...Array(7).keys()].map((index) => (
+          <div key={`fsq1o${index + 1}`}>
+            <input
+              placeholder={`FSQ1 Option ${index + 1}`}
+              name={`fsq1o${index + 1}`}
+              value={sectionData[`fsq1o${index + 1}`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
+        ))}
+      </div>
+
+      <div
+        className={styles.sevenColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        {[...Array(7).keys()].map((index) => (
+          <div key={`fsq1o${index + 1}`}>
+            <input
+              placeholder={`FSQ1 Option ${index + 1} Points`}
+              name={`fsq1o${index + 1}p`}
+              value={sectionData[`fsq1o${index + 1}p`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
+        ))}
+      </div>
+
       <input
         placeholder="Second Section Heading"
         name="secondSectionHeading"
@@ -307,26 +311,37 @@ const BCPNP = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      {[...Array(2).keys()].map((index) => (
-        <div key={`ssq1o${index + 1}`}>
-          <input
-            placeholder={`SSQ1 Option ${index + 1}`}
-            name={`ssq1o${index + 1}`}
-            value={sectionData[`ssq1o${index + 1}`] || ""}
-            onChange={handleInputChange}
-            disabled={!editMode}
-          />
-          <input
-            placeholder={`SSQ1 Option ${index + 1} Points`}
-            name={`ssq1o${index + 1}p`}
-            value={sectionData[`ssq1o${index + 1}p`] || ""}
-            onChange={handleInputChange}
-            disabled={!editMode}
-          />
-        </div>
-      ))}
+      <div className={styles.twoColumnsTable} style={{ margin: "0 0" }}>
+        {[...Array(2).keys()].map((index) => (
+          <div key={`ssq1o${index + 1}`}>
+            <input
+              placeholder={`SSQ1 Option ${index + 1}`}
+              name={`ssq1o${index + 1}`}
+              value={sectionData[`ssq1o${index + 1}`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
+        ))}
+      </div>
 
-      {/* Example for Third Section */}
+      <div
+        className={styles.twoColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        {[...Array(2).keys()].map((index) => (
+          <div key={`ssq1o${index + 1}`}>
+            <input
+              placeholder={`SSQ1 Option ${index + 1} Points`}
+              name={`ssq1o${index + 1}p`}
+              value={sectionData[`ssq1o${index + 1}p`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
+        ))}
+      </div>
+
       <input
         placeholder="Third Section Heading"
         name="thirdSectionHeading"
@@ -341,24 +356,36 @@ const BCPNP = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      {[...Array(2).keys()].map((index) => (
-        <div key={`tsq1o${index + 1}`}>
-          <input
-            placeholder={`TSQ1 Option ${index + 1}`}
-            name={`tsq1o${index + 1}`}
-            value={sectionData[`tsq1o${index + 1}`] || ""}
-            onChange={handleInputChange}
-            disabled={!editMode}
-          />
-          <input
-            placeholder={`TSQ1 Option ${index + 1} Points`}
-            name={`tsq1o${index + 1}p`}
-            value={sectionData[`tsq1o${index + 1}p`] || ""}
-            onChange={handleInputChange}
-            disabled={!editMode}
-          />
-        </div>
-      ))}
+      <div className={styles.twoColumnsTable} style={{ margin: "0 0" }}>
+        {[...Array(2).keys()].map((index) => (
+          <div key={`tsq1o${index + 1}`}>
+            <input
+              placeholder={`TSQ1 Option ${index + 1}`}
+              name={`tsq1o${index + 1}`}
+              value={sectionData[`tsq1o${index + 1}`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
+        ))}
+      </div>
+
+      <div
+        className={styles.twoColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        {[...Array(2).keys()].map((index) => (
+          <div key={`tsq1o${index + 1}`}>
+            <input
+              placeholder={`TSQ1 Option ${index + 1} Points`}
+              name={`tsq1o${index + 1}p`}
+              value={sectionData[`tsq1o${index + 1}p`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
+        ))}
+      </div>
 
       <input
         placeholder="Fourth Section Heading"
@@ -368,7 +395,6 @@ const BCPNP = () => {
         disabled={!editMode}
       />
 
-      {/* Fourth Section Questions and Options */}
       <input
         placeholder="FOSQ1"
         name="fosq1"
@@ -376,24 +402,37 @@ const BCPNP = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      {[...Array(7).keys()].map((index) => (
-        <div key={`fosq1o${index + 1}`}>
-          <input
-            placeholder={`FOSQ1 Option ${index + 1}`}
-            name={`fosq1o${index + 1}`}
-            value={sectionData[`fosq1o${index + 1}`] || ""}
-            onChange={handleInputChange}
-            disabled={!editMode}
-          />
-          <input
-            placeholder={`FOSQ1 Option ${index + 1} Points`}
-            name={`fosq1o${index + 1}p`}
-            value={sectionData[`fosq1o${index + 1}p`] || ""}
-            onChange={handleInputChange}
-            disabled={!editMode}
-          />
-        </div>
-      ))}
+
+      <div className={styles.sevenColumnsTable} style={{ margin: "0 0" }}>
+        {[...Array(7).keys()].map((index) => (
+          <div key={`fosq1o${index + 1}`}>
+            <input
+              placeholder={`FOSQ1 Option ${index + 1}`}
+              name={`fosq1o${index + 1}`}
+              value={sectionData[`fosq1o${index + 1}`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
+        ))}
+      </div>
+
+      <div
+        className={styles.sevenColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        {[...Array(7).keys()].map((index) => (
+          <div key={`fosq1o${index + 1}`}>
+            <input
+              placeholder={`FOSQ1 Option ${index + 1} Points`}
+              name={`fosq1o${index + 1}p`}
+              value={sectionData[`fosq1o${index + 1}p`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
+        ))}
+      </div>
 
       <input
         placeholder="Fifth Section Heading"
@@ -403,7 +442,6 @@ const BCPNP = () => {
         disabled={!editMode}
       />
 
-      {/* Fifth Section Questions and Options */}
       <input
         placeholder="FFSQ1"
         name="ffsq1"
@@ -411,24 +449,36 @@ const BCPNP = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      {[...Array(2).keys()].map((index) => (
-        <div key={`ffsq1o${index + 1}`}>
-          <input
-            placeholder={`FFSQ1 Option ${index + 1}`}
-            name={`ffsq1o${index + 1}`}
-            value={sectionData[`ffsq1o${index + 1}`] || ""}
-            onChange={handleInputChange}
-            disabled={!editMode}
-          />
-          <input
-            placeholder={`FFSQ1 Option ${index + 1} Points`}
-            name={`ffsq1o${index + 1}p`}
-            value={sectionData[`ffsq1o${index + 1}p`] || ""}
-            onChange={handleInputChange}
-            disabled={!editMode}
-          />
-        </div>
-      ))}
+      <div className={styles.twoColumnsTable} style={{ margin: "0 0" }}>
+        {[...Array(2).keys()].map((index) => (
+          <div key={`ffsq1o${index + 1}`}>
+            <input
+              placeholder={`FFSQ1 Option ${index + 1}`}
+              name={`ffsq1o${index + 1}`}
+              value={sectionData[`ffsq1o${index + 1}`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
+        ))}
+      </div>
+
+      <div
+        className={styles.twoColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        {[...Array(2).keys()].map((index) => (
+          <div key={`ffsq1o${index + 1}`}>
+            <input
+              placeholder={`FFSQ1 Option ${index + 1} Points`}
+              name={`ffsq1o${index + 1}p`}
+              value={sectionData[`ffsq1o${index + 1}p`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
+        ))}
+      </div>
 
       <input
         placeholder="Sixth Section Heading"
@@ -438,7 +488,6 @@ const BCPNP = () => {
         disabled={!editMode}
       />
 
-      {/* Sixth Section Questions and Options */}
       <input
         placeholder="SXSQ1"
         name="sxsq1"
@@ -446,24 +495,36 @@ const BCPNP = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      {[...Array(2).keys()].map((index) => (
-        <div key={`sxsq1o${index + 1}`}>
-          <input
-            placeholder={`SXSQ1 Option ${index + 1}`}
-            name={`sxsq1o${index + 1}`}
-            value={sectionData[`sxsq1o${index + 1}`] || ""}
-            onChange={handleInputChange}
-            disabled={!editMode}
-          />
-          <input
-            placeholder={`SXSQ1 Option ${index + 1} Points`}
-            name={`sxsq1o${index + 1}p`}
-            value={sectionData[`sxsq1o${index + 1}p`] || ""}
-            onChange={handleInputChange}
-            disabled={!editMode}
-          />
-        </div>
-      ))}
+      <div className={styles.twoColumnsTable} style={{ margin: "0 0" }}>
+        {[...Array(2).keys()].map((index) => (
+          <div key={`sxsq1o${index + 1}`}>
+            <input
+              placeholder={`SXSQ1 Option ${index + 1}`}
+              name={`sxsq1o${index + 1}`}
+              value={sectionData[`sxsq1o${index + 1}`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
+        ))}
+      </div>
+
+      <div
+        className={styles.twoColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        {[...Array(2).keys()].map((index) => (
+          <div key={`sxsq1o${index + 1}`}>
+            <input
+              placeholder={`SXSQ1 Option ${index + 1} Points`}
+              name={`sxsq1o${index + 1}p`}
+              value={sectionData[`sxsq1o${index + 1}p`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
+        ))}
+      </div>
 
       <input
         placeholder="Seventh Section Heading"
@@ -473,7 +534,6 @@ const BCPNP = () => {
         disabled={!editMode}
       />
 
-      {/* Seventh Section Questions and Options */}
       <input
         placeholder="SVSQ1"
         name="svsq1"
@@ -481,36 +541,60 @@ const BCPNP = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      {[...Array(2).keys()].map((index) => (
-        <div key={`svsq1o${index + 1}`}>
-          <input
-            placeholder={`SVSQ1 Option ${index + 1}`}
-            name={`svsq1o${index + 1}`}
-            value={sectionData[`svsq1o${index + 1}`] || ""}
-            onChange={handleInputChange}
-            disabled={!editMode}
-          />
-          <input
-            placeholder={`SVSQ1 Option ${index + 1} Points`}
-            name={`svsq1o${index + 1}p`}
-            value={sectionData[`svsq1o${index + 1}p`] || ""}
-            onChange={handleInputChange}
-            disabled={!editMode}
-          />
-        </div>
-      ))}
 
-      {/* Seventh Section Text Inputs */}
-      {[...Array(11).keys()].map((index) => (
-        <input
-          key={`svt${index + 1}`}
-          placeholder={`SVT${index + 1}`}
-          name={`svt${index + 1}`}
-          value={sectionData[`svt${index + 1}`] || ""}
-          onChange={handleInputChange}
-          disabled={!editMode}
-        />
-      ))}
+      <div className={styles.twoColumnsTable} style={{ margin: "0 0" }}>
+        {[...Array(2).keys()].map((index) => (
+          <div key={`svsq1o${index + 1}`}>
+            <input
+              placeholder={`SVSQ1 Option ${index + 1}`}
+              name={`svsq1o${index + 1}`}
+              value={sectionData[`svsq1o${index + 1}`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
+        ))}
+      </div>
+
+      <div
+        className={styles.twoColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        {[...Array(2).keys()].map((index) => (
+          <div key={`svsq1o${index + 1}`}>
+            <input
+              placeholder={`SVSQ1 Option ${index + 1}`}
+              name={`svsq1o${index + 1}`}
+              value={sectionData[`svsq1o${index + 1}`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+            <input
+              placeholder={`SVSQ1 Option ${index + 1} Points`}
+              name={`svsq1o${index + 1}p`}
+              value={sectionData[`svsq1o${index + 1}p`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
+        ))}
+      </div>
+
+      <div
+        className={styles.eleventhColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        {[...Array(11).keys()].map((index) => (
+          <input
+            key={`svt${index + 1}`}
+            placeholder={`SVT${index + 1}`}
+            name={`svt${index + 1}`}
+            value={sectionData[`svt${index + 1}`] || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+        ))}
+      </div>
 
       <input
         placeholder="Eighth Heading"
@@ -520,7 +604,6 @@ const BCPNP = () => {
         disabled={!editMode}
       />
 
-      {/* Eighth Section Questions and Options */}
       <input
         placeholder="EGSQ1"
         name="egsq1"
@@ -528,24 +611,44 @@ const BCPNP = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      {[...Array(9).keys()].map((index) => (
-        <div key={`egsq1o${index + 1}`}>
-          <input
-            placeholder={`EGSQ1 Option ${index + 1}`}
-            name={`egsq1o${index + 1}`}
-            value={sectionData[`egsq1o${index + 1}`] || ""}
-            onChange={handleInputChange}
-            disabled={!editMode}
-          />
-          <input
-            placeholder={`EGSQ1 Option ${index + 1} Points`}
-            name={`egsq1o${index + 1}p`}
-            value={sectionData[`egsq1o${index + 1}p`] || ""}
-            onChange={handleInputChange}
-            disabled={!editMode}
-          />
-        </div>
-      ))}
+
+      <div className={styles.eleventhColumnsTable} style={{ margin: "0 0" }}>
+        {[...Array(9).keys()].map((index) => (
+          <div key={`egsq1o${index + 1}`}>
+            <input
+              placeholder={`EGSQ1 Option ${index + 1}`}
+              name={`egsq1o${index + 1}`}
+              value={sectionData[`egsq1o${index + 1}`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
+        ))}
+      </div>
+
+      <div
+        className={styles.eleventhColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        {[...Array(9).keys()].map((index) => (
+          <div key={`egsq1o${index + 1}`}>
+            <input
+              placeholder={`EGSQ1 Option ${index + 1}`}
+              name={`egsq1o${index + 1}`}
+              value={sectionData[`egsq1o${index + 1}`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+            <input
+              placeholder={`EGSQ1 Option ${index + 1} Points`}
+              name={`egsq1o${index + 1}p`}
+              value={sectionData[`egsq1o${index + 1}p`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
+        ))}
+      </div>
 
       <input
         placeholder="Ninth Heading"
@@ -555,7 +658,6 @@ const BCPNP = () => {
         disabled={!editMode}
       />
 
-      {/* Ninth Section Questions and Options */}
       <input
         placeholder="NNSQ1"
         name="nnsq1"
@@ -563,24 +665,40 @@ const BCPNP = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      {[...Array(2).keys()].map((index) => (
-        <div key={`nnsq1o${index + 1}`}>
-          <input
-            placeholder={`NNSQ1 Option ${index + 1}`}
-            name={`nnsq1o${index + 1}`}
-            value={sectionData[`nnsq1o${index + 1}`] || ""}
-            onChange={handleInputChange}
-            disabled={!editMode}
-          />
-          <input
-            placeholder={`NNSQ1 Option ${index + 1} Points`}
-            name={`nnsq1o${index + 1}p`}
-            value={sectionData[`nnsq1o${index + 1}p`] || ""}
-            onChange={handleInputChange}
-            disabled={!editMode}
-          />
-        </div>
-      ))}
+
+      <div
+        className={styles.twoColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        {[...Array(2).keys()].map((index) => (
+          <div key={`nnsq1o${index + 1}`}>
+            <input
+              placeholder={`NNSQ1 Option ${index + 1}`}
+              name={`nnsq1o${index + 1}`}
+              value={sectionData[`nnsq1o${index + 1}`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
+        ))}
+      </div>
+
+      <div
+        className={styles.twoColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        {[...Array(2).keys()].map((index) => (
+          <div key={`nnsq1o${index + 1}`}>
+            <input
+              placeholder={`NNSQ1 Option ${index + 1} Points`}
+              name={`nnsq1o${index + 1}p`}
+              value={sectionData[`nnsq1o${index + 1}p`] || ""}
+              onChange={handleInputChange}
+              disabled={!editMode}
+            />
+          </div>
+        ))}
+      </div>
 
       <input
         placeholder="Tenth Heading"
@@ -597,6 +715,7 @@ const BCPNP = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+
       <input
         placeholder="ELSQ1"
         name="elsq1"
@@ -604,48 +723,59 @@ const BCPNP = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="ELSQ1 Option 1"
-        name="elsq1o1"
-        value={sectionData.elsq1o1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="ELSQ1 Option 1 Points"
-        name="elsq1o1p"
-        value={sectionData.elsq1o1p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="ELSQ1 Option 2"
-        name="elsq1o2"
-        value={sectionData.elsq1o2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="ELSQ1 Option 2 Points"
-        name="elsq1o2p"
-        value={sectionData.elsq1o2p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="ELSQ1 Option 3"
-        name="elsq1o3"
-        value={sectionData.elsq1o3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="ELSQ1 Option 3 Points"
-        name="elsq1o3p"
-        value={sectionData.elsq1o3p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+
+      <div className={styles.threeColumnsTable} style={{ margin: "0 0" }}>
+        <input
+          placeholder="ELSQ1 Option 1"
+          name="elsq1o1"
+          value={sectionData.elsq1o1 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="ELSQ1 Option 2"
+          name="elsq1o2"
+          value={sectionData.elsq1o2 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="ELSQ1 Option 3"
+          name="elsq1o3"
+          value={sectionData.elsq1o3 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
+
+      <div
+        className={styles.threeColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        <input
+          placeholder="ELSQ1 Option 1 Points"
+          name="elsq1o1p"
+          value={sectionData.elsq1o1p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="ELSQ1 Option 2 Points"
+          name="elsq1o2p"
+          value={sectionData.elsq1o2p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="ELSQ1 Option 3 Points"
+          name="elsq1o3p"
+          value={sectionData.elsq1o3p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
 
       <input
         placeholder="Twelfth Heading"
@@ -661,48 +791,61 @@ const BCPNP = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="TWSQ1 Option 1"
-        name="twsq1o1"
-        value={sectionData.twsq1o1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="TWSQ1 Option 1 Points"
-        name="twsq1o1p"
-        value={sectionData.twsq1o1p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="TWSQ1 Option 2"
-        name="twsq1o2"
-        value={sectionData.twsq1o2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="TWSQ1 Option 2 Points"
-        name="twsq1o2p"
-        value={sectionData.twsq1o2p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="TWSQ1 Option 3"
-        name="twsq1o3"
-        value={sectionData.twsq1o3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="TWSQ1 Option 3 Points"
-        name="twsq1o3p"
-        value={sectionData.twsq1o3p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div
+        className={styles.threeColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        <input
+          placeholder="TWSQ1 Option 1"
+          name="twsq1o1"
+          value={sectionData.twsq1o1 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="TWSQ1 Option 2"
+          name="twsq1o2"
+          value={sectionData.twsq1o2 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="TWSQ1 Option 3"
+          name="twsq1o3"
+          value={sectionData.twsq1o3 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
+
+      <div
+        className={styles.threeColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        <input
+          placeholder="TWSQ1 Option 1 Points"
+          name="twsq1o1p"
+          value={sectionData.twsq1o1p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="TWSQ1 Option 2 Points"
+          name="twsq1o2p"
+          value={sectionData.twsq1o2p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="TWSQ1 Option 3 Points"
+          name="twsq1o3p"
+          value={sectionData.twsq1o3p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
 
       <div className={styles.editIcons}>
         {editMode ? (
