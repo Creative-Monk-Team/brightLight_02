@@ -811,7 +811,7 @@ let HomePage = () => {
               className={`${styles.aspectsCard} ${styles.fadeFromLeft}`}
               ref={(el) => (aspectsCardRefs.current[0] = el)}
             >
-              <img src={achiementsData?.achievement1SVG} loading="lazy" />
+              <img src={achiementsData?.achievement1SVG} loading="lazy" alt="" />
               <h1>
                 <Odometer value={achiementsData?.achievement1Numbers} />+
               </h1>
@@ -821,7 +821,7 @@ let HomePage = () => {
               className={`${styles.aspectsCard} ${styles.fadeFromBottom}`}
               ref={(el) => (aspectsCardRefs.current[1] = el)}
             >
-              <img src={achiementsData?.achievement2SVG} loading="lazy" />
+              <img src={achiementsData?.achievement2SVG} loading="lazy" alt="" />
               <h1>
                 <Odometer value={achiementsData?.achievement2Numbers} />+
               </h1>
@@ -831,7 +831,7 @@ let HomePage = () => {
               className={`${styles.aspectsCard} ${styles.fadeFromRight}`}
               ref={(el) => (aspectsCardRefs.current[2] = el)}
             >
-              <img src={achiementsData?.achievement3SVG} loading="lazy" />
+              <img src={achiementsData?.achievement3SVG} loading="lazy" alt="" />
               <h1>
                 <Odometer value={achiementsData?.achievement3Numbers} />+
               </h1>
@@ -846,7 +846,7 @@ let HomePage = () => {
         <div className={styles.sourceMain}>
           <div className={styles.sourceHeadingParent}>
             <div className={styles.sourceHeadingParentFirstDiv}>
-              <img src={WhiteLogo} loading="lazy" />
+              <img src={WhiteLogo} loading="lazy" alt="" />
             </div>
             <div>
               {newsSectionData && <h1>{newsSectionData.heading}</h1>}
