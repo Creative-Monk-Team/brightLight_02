@@ -50,6 +50,7 @@ const ExtensionsDraftContent = () => {
   const [sectionDataSingle, setSectionDataSingle] = useState({
     extensionHeading: "",
     extensionPara: "",
+    extensionPara2: "",
 
     BenifitHeading: "",
     b1: "",
@@ -178,6 +179,14 @@ const ExtensionsDraftContent = () => {
         placeholder="Extension Description"
         name="extensionPara"
         value={sectionDataSingle.extensionPara}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <textarea
+        placeholder="Extension Description 2"
+        name="extensionPara2"
+        value={sectionDataSingle.extensionPara2}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -511,7 +520,7 @@ const ExtensionsDraftContent = () => {
         write "Y" without quotes , anything else will be considered as "N" even
         "y". If not want to display then just write "N" without qoutes.
       </p>
-      
+
       <div className={styles.editIcons}>
         {editMode ? (
           <img
