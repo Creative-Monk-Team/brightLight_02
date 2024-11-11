@@ -22,7 +22,6 @@ let FAQ_White_Internal = ({ data }) => {
       }
 
       setFaqData(arrayData);
-      console.log(arrayData);
     }
   }, [data]);
 
