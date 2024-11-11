@@ -22,9 +22,24 @@
   justify-content: space-between;
   margin: 50px 0px;
 }
+.sevenColumnsTable{
+  display: grid;
+  grid-template-columns: repeat(7, 14%);
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 50px 0px;
+}
 .fourColumnsTable{
   display: grid;
   grid-template-columns: repeat(4, 24%);
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 50px 0px;
+}
+
+.fiveColumnsTable{
+  display: grid;
+  grid-template-columns: repeat(5, 19%);
   align-items: flex-start;
   justify-content: space-between;
   margin: 50px 0px;
@@ -35,6 +50,11 @@
 }
 
 .threeColumnsTable textarea{
+  height: 50px !important;
+  width: 100% !important;
+}
+
+.sevenColumnsTable textarea{
   height: 50px !important;
   width: 100% !important;
 }

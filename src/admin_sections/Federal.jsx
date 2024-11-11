@@ -235,13 +235,6 @@ const FederalSkilled = () => {
         disabled={!editMode}
       />
       <input
-        placeholder="Description 2"
-        name="description2"
-        value={sectionData.description2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
         placeholder="First Section Heading"
         name="firstSectionHeading"
         value={sectionData.firstSectionHeading || ""}
@@ -257,62 +250,73 @@ const FederalSkilled = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="FSQ1 Option 1"
-        name="fsq1o1"
-        value={sectionData.fsq1o1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ1 Option 1 Points"
-        name="fsq1o1p"
-        value={sectionData.fsq1o1p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ1 Option 2"
-        name="fsq1o2"
-        value={sectionData.fsq1o2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ1 Option 2 Points"
-        name="fsq1o2p"
-        value={sectionData.fsq1o2p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ1 Option 3"
-        name="fsq1o3"
-        value={sectionData.fsq1o3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ1 Option 3 Points"
-        name="fsq1o3p"
-        value={sectionData.fsq1o3p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ1 Option 4"
-        name="fsq1o4"
-        value={sectionData.fsq1o4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ1 Option 4 Points"
-        name="fsq1o4p"
-        value={sectionData.fsq1o4p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.fourColumnsTable} style={{ margin: "0 0" }}>
+        <input
+          placeholder="FSQ1 Option 1"
+          name="fsq1o1"
+          value={sectionData.fsq1o1 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="FSQ1 Option 2"
+          name="fsq1o2"
+          value={sectionData.fsq1o2 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="FSQ1 Option 3"
+          name="fsq1o3"
+          value={sectionData.fsq1o3 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="FSQ1 Option 4"
+          name="fsq1o4"
+          value={sectionData.fsq1o4 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
+
+      <div
+        className={styles.fourColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        <input
+          placeholder="FSQ1 Option 1 Points"
+          name="fsq1o1p"
+          value={sectionData.fsq1o1p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="FSQ1 Option 2 Points"
+          name="fsq1o2p"
+          value={sectionData.fsq1o2p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="FSQ1 Option 3 Points"
+          name="fsq1o3p"
+          value={sectionData.fsq1o3p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="FSQ1 Option 4 Points"
+          name="fsq1o4p"
+          value={sectionData.fsq1o4p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
 
       <input
         placeholder="FSQ2"
@@ -321,62 +325,73 @@ const FederalSkilled = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="FSQ2 Option 1"
-        name="fsq2o1"
-        value={sectionData.fsq2o1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ2 Option 1 Points"
-        name="fsq2o1p"
-        value={sectionData.fsq2o1p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ2 Option 2"
-        name="fsq2o2"
-        value={sectionData.fsq2o2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ2 Option 2 Points"
-        name="fsq2o2p"
-        value={sectionData.fsq2o2p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ2 Option 3"
-        name="fsq2o3"
-        value={sectionData.fsq2o3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ2 Option 3 Points"
-        name="fsq2o3p"
-        value={sectionData.fsq2o3p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ2 Option 4"
-        name="fsq2o4"
-        value={sectionData.fsq2o4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ2 Option 4 Points"
-        name="fsq2o4p"
-        value={sectionData.fsq2o4p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.fourColumnsTable} style={{ margin: "0 0" }}>
+        <input
+          placeholder="FSQ2 Option 1"
+          name="fsq2o1"
+          value={sectionData.fsq2o1 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="FSQ2 Option 2"
+          name="fsq2o2"
+          value={sectionData.fsq2o2 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="FSQ2 Option 3"
+          name="fsq2o3"
+          value={sectionData.fsq2o3 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="FSQ2 Option 4"
+          name="fsq2o4"
+          value={sectionData.fsq2o4 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
+
+      <div
+        className={styles.fourColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        <input
+          placeholder="FSQ2 Option 1 Points"
+          name="fsq2o1p"
+          value={sectionData.fsq2o1p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="FSQ2 Option 2 Points"
+          name="fsq2o2p"
+          value={sectionData.fsq2o2p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="FSQ2 Option 3 Points"
+          name="fsq2o3p"
+          value={sectionData.fsq2o3p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="FSQ2 Option 4 Points"
+          name="fsq2o4p"
+          value={sectionData.fsq2o4p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
 
       <input
         placeholder="FSQ3"
@@ -385,62 +400,73 @@ const FederalSkilled = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="FSQ3 Option 1"
-        name="fsq3o1"
-        value={sectionData.fsq3o1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ3 Option 1 Points"
-        name="fsq3o1p"
-        value={sectionData.fsq3o1p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ3 Option 2"
-        name="fsq3o2"
-        value={sectionData.fsq3o2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ3 Option 2 Points"
-        name="fsq3o2p"
-        value={sectionData.fsq3o2p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ3 Option 3"
-        name="fsq3o3"
-        value={sectionData.fsq3o3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ3 Option 3 Points"
-        name="fsq3o3p"
-        value={sectionData.fsq3o3p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ3 Option 4"
-        name="fsq3o4"
-        value={sectionData.fsq3o4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ3 Option 4 Points"
-        name="fsq3o4p"
-        value={sectionData.fsq3o4p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.fourColumnsTable} style={{ margin: "0 0" }}>
+        <input
+          placeholder="FSQ3 Option 1"
+          name="fsq3o1"
+          value={sectionData.fsq3o1 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="FSQ3 Option 2"
+          name="fsq3o2"
+          value={sectionData.fsq3o2 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="FSQ3 Option 3"
+          name="fsq3o3"
+          value={sectionData.fsq3o3 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="FSQ3 Option 4"
+          name="fsq3o4"
+          value={sectionData.fsq3o4 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
+
+      <div
+        className={styles.fourColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        <input
+          placeholder="FSQ3 Option 1 Points"
+          name="fsq3o1p"
+          value={sectionData.fsq3o1p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="FSQ3 Option 2 Points"
+          name="fsq3o2p"
+          value={sectionData.fsq3o2p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="FSQ3 Option 3 Points"
+          name="fsq3o3p"
+          value={sectionData.fsq3o3p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="FSQ3 Option 4 Points"
+          name="fsq3o4p"
+          value={sectionData.fsq3o4p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
 
       <input
         placeholder="FSQ4"
@@ -449,62 +475,74 @@ const FederalSkilled = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="FSQ4 Option 1"
-        name="fsq4o1"
-        value={sectionData.fsq4o1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ4 Option 1 Points"
-        name="fsq4o1p"
-        value={sectionData.fsq4o1p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ4 Option 2"
-        name="fsq4o2"
-        value={sectionData.fsq4o2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ4 Option 2 Points"
-        name="fsq4o2p"
-        value={sectionData.fsq4o2p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ4 Option 3"
-        name="fsq4o3"
-        value={sectionData.fsq4o3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ4 Option 3 Points"
-        name="fsq4o3p"
-        value={sectionData.fsq4o3p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ4 Option 4"
-        name="fsq4o4"
-        value={sectionData.fsq4o4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FSQ4 Option 4 Points"
-        name="fsq4o4p"
-        value={sectionData.fsq4o4p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+
+      <div className={styles.fourColumnsTable} style={{ margin: "0 0" }}>
+        <input
+          placeholder="FSQ4 Option 1"
+          name="fsq4o1"
+          value={sectionData.fsq4o1 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="FSQ4 Option 2"
+          name="fsq4o2"
+          value={sectionData.fsq4o2 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="FSQ4 Option 3"
+          name="fsq4o3"
+          value={sectionData.fsq4o3 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="FSQ4 Option 4"
+          name="fsq4o4"
+          value={sectionData.fsq4o4 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
+
+      <div
+        className={styles.fourColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        <input
+          placeholder="FSQ4 Option 1 Points"
+          name="fsq4o1p"
+          value={sectionData.fsq4o1p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="FSQ4 Option 2 Points"
+          name="fsq4o2p"
+          value={sectionData.fsq4o2p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="FSQ4 Option 3 Points"
+          name="fsq4o3p"
+          value={sectionData.fsq4o3p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="FSQ4 Option 4 Points"
+          name="fsq4o4p"
+          value={sectionData.fsq4o4p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
 
       <input
         placeholder="Second Section Heading"
@@ -520,36 +558,44 @@ const FederalSkilled = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="SSQ1 Option 1"
-        name="ssq1o1"
-        value={sectionData.ssq1o1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="SSQ1 Option 1 Points"
-        name="ssq1o1p"
-        value={sectionData.ssq1o1p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="SSQ1 Option 2"
-        name="ssq1o2"
-        value={sectionData.ssq1o2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="SSQ1 Option 2 Points"
-        name="ssq1o2p"
-        value={sectionData.ssq1o2p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
 
-      {/* Continue similarly for thirdSectionHeading, tsq1, tsq1o1, etc. */}
+      <div className={styles.twoColumnsTable} style={{ margin: "0 0" }}>
+        <input
+          placeholder="SSQ1 Option 1"
+          name="ssq1o1"
+          value={sectionData.ssq1o1 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="SSQ1 Option 2"
+          name="ssq1o2"
+          value={sectionData.ssq1o2 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
+
+      <div
+        className={styles.twoColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        <input
+          placeholder="SSQ1 Option 1 Points"
+          name="ssq1o1p"
+          value={sectionData.ssq1o1p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="SSQ1 Option 2 Points"
+          name="ssq1o2p"
+          value={sectionData.ssq1o2p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
 
       <input
         placeholder="Third Section Heading"
@@ -565,111 +611,119 @@ const FederalSkilled = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="TSQ1 Option 1"
-        name="tsq1o1"
-        value={sectionData.tsq1o1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="TSQ1 Option 1 Points"
-        name="tsq1o1p"
-        value={sectionData.tsq1o1p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="TSQ1 Option 2"
-        name="tsq1o2"
-        value={sectionData.tsq1o2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="TSQ1 Option 2 Points"
-        name="tsq1o2p"
-        value={sectionData.tsq1o2p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
 
-      <input
-        placeholder="TSQ1 Option 3"
-        name="tsq1o3"
-        value={sectionData.tsq1o3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="TSQ1 Option 3 Points"
-        name="tsq1o3p"
-        value={sectionData.tsq1o3p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.sevenColumnsTable} style={{ margin: "0 0" }}>
+        <input
+          placeholder="TSQ1 Option 1"
+          name="tsq1o1"
+          value={sectionData.tsq1o1 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="TSQ1 Option 2"
+          name="tsq1o2"
+          value={sectionData.tsq1o2 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="TSQ1 Option 3"
+          name="tsq1o3"
+          value={sectionData.tsq1o3 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="TSQ1 Option 4"
+          name="tsq1o4"
+          value={sectionData.tsq1o4 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="TSQ1 Option 5"
+          name="tsq1o5"
+          value={sectionData.tsq1o5 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="TSQ1 Option 6"
+          name="tsq1o6"
+          value={sectionData.tsq1o6 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="TSQ1 Option 7"
+          name="tsq1o7"
+          value={sectionData.tsq1o7 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
 
-      <input
-        placeholder="TSQ1 Option 4"
-        name="tsq1o4"
-        value={sectionData.tsq1o4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="TSQ1 Option 4 Points"
-        name="tsq1o4p"
-        value={sectionData.tsq1o4p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div
+        className={styles.sevenColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        <input
+          placeholder="TSQ1 Option 1 Points"
+          name="tsq1o1p"
+          value={sectionData.tsq1o1p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
 
-      <input
-        placeholder="TSQ1 Option 5"
-        name="tsq1o5"
-        value={sectionData.tsq1o5 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="TSQ1 Option 5 Points"
-        name="tsq1o5p"
-        value={sectionData.tsq1o5p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+        <input
+          placeholder="TSQ1 Option 2 Points"
+          name="tsq1o2p"
+          value={sectionData.tsq1o2p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
 
-      <input
-        placeholder="TSQ1 Option 6"
-        name="tsq1o6"
-        value={sectionData.tsq1o6 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="TSQ1 Option 6 Points"
-        name="tsq1o6p"
-        value={sectionData.tsq1o6p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+        <input
+          placeholder="TSQ1 Option 3 Points"
+          name="tsq1o3p"
+          value={sectionData.tsq1o3p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
 
-      <input
-        placeholder="TSQ1 Option 7"
-        name="tsq1o7"
-        value={sectionData.tsq1o7 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="TSQ1 Option 7 Points"
-        name="tsq1o7p"
-        value={sectionData.tsq1o7p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+        <input
+          placeholder="TSQ1 Option 4 Points"
+          name="tsq1o4p"
+          value={sectionData.tsq1o4p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
 
-      {/* Continue similarly for tsq1o3, tsq1o4, tsq1o5, tsq1o6, tsq1o7 */}
+        <input
+          placeholder="TSQ1 Option 5 Points"
+          name="tsq1o5p"
+          value={sectionData.tsq1o5p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="TSQ1 Option 6 Points"
+          name="tsq1o6p"
+          value={sectionData.tsq1o6p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="TSQ1 Option 7 Points"
+          name="tsq1o7p"
+          value={sectionData.tsq1o7p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
 
       <input
         placeholder="Fourth Section Heading"
@@ -685,81 +739,89 @@ const FederalSkilled = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="FOSQ1 Option 1"
-        name="fosq1o1"
-        value={sectionData.fosq1o1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FOSQ1 Option 1 Points"
-        name="fosq1o1p"
-        value={sectionData.fosq1o1p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FOSQ1 Option 2"
-        name="fosq1o2"
-        value={sectionData.fosq1o2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FOSQ1 Option 2 Points"
-        name="fosq1o2p"
-        value={sectionData.fosq1o2p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
 
-      <input
-        placeholder="FOSQ1 Option 3"
-        name="fosq1o3"
-        value={sectionData.fosq1o3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FOSQ1 Option 3 Points"
-        name="fosq1o3p"
-        value={sectionData.fosq1o3p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.fiveColumnsTable} style={{ margin: "0 0" }}>
+        <input
+          placeholder="FOSQ1 Option 1"
+          name="fosq1o1"
+          value={sectionData.fosq1o1 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="FOSQ1 Option 2"
+          name="fosq1o2"
+          value={sectionData.fosq1o2 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="FOSQ1 Option 3"
+          name="fosq1o3"
+          value={sectionData.fosq1o3 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="FOSQ1 Option 4"
+          name="fosq1o4"
+          value={sectionData.fosq1o4 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="FOSQ1 Option 5"
+          name="fosq1o5"
+          value={sectionData.fosq1o5 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
 
-      <input
-        placeholder="FOSQ1 Option 4"
-        name="fosq1o4"
-        value={sectionData.fosq1o4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FOSQ1 Option 4 Points"
-        name="fosq1o4p"
-        value={sectionData.fosq1o4p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div
+        className={styles.fiveColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        <input
+          placeholder="FOSQ1 Option 1 Points"
+          name="fosq1o1p"
+          value={sectionData.fosq1o1p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
 
-      <input
-        placeholder="FOSQ1 Option 5"
-        name="fosq1o5"
-        value={sectionData.fosq1o5 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FOSQ1 Option 5 Points"
-        name="fosq1o5p"
-        value={sectionData.fosq1o5p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+        <input
+          placeholder="FOSQ1 Option 2 Points"
+          name="fosq1o2p"
+          value={sectionData.fosq1o2p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
 
-      {/* Continue similarly for fosq1o3, fosq1o4, fosq1o5 */}
+        <input
+          placeholder="FOSQ1 Option 3 Points"
+          name="fosq1o3p"
+          value={sectionData.fosq1o3p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="FOSQ1 Option 4 Points"
+          name="fosq1o4p"
+          value={sectionData.fosq1o4p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="FOSQ1 Option 5 Points"
+          name="fosq1o5p"
+          value={sectionData.fosq1o5p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
 
       <input
         placeholder="Fifth Section Heading"
@@ -775,36 +837,43 @@ const FederalSkilled = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="FFSQ1 Option 1"
-        name="ffsq1o1"
-        value={sectionData.ffsq1o1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FFSQ1 Option 1 Points"
-        name="ffsq1o1p"
-        value={sectionData.ffsq1o1p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FFSQ1 Option 2"
-        name="ffsq1o2"
-        value={sectionData.ffsq1o2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="FFSQ1 Option 2 Points"
-        name="ffsq1o2p"
-        value={sectionData.ffsq1o2p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.twoColumnsTable} style={{ margin: "0 0" }}>
+        <input
+          placeholder="FFSQ1 Option 1"
+          name="ffsq1o1"
+          value={sectionData.ffsq1o1 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="FFSQ1 Option 2"
+          name="ffsq1o2"
+          value={sectionData.ffsq1o2 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
 
-      {/* Continue similarly for sixthSectionHeading, sxsq1, sxsq1o1, etc. */}
+      <div
+        className={styles.twoColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        <input
+          placeholder="FFSQ1 Option 1 Points"
+          name="ffsq1o1p"
+          value={sectionData.ffsq1o1p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="FFSQ1 Option 2 Points"
+          name="ffsq1o2p"
+          value={sectionData.ffsq1o2p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
 
       <input
         placeholder="Sixth Section Heading"
@@ -820,66 +889,73 @@ const FederalSkilled = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="SXSQ1 Option 1"
-        name="sxsq1o1"
-        value={sectionData.sxsq1o1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="SXSQ1 Option 1 Points"
-        name="sxsq1o1p"
-        value={sectionData.sxsq1o1p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="SXSQ1 Option 2"
-        name="sxsq1o2"
-        value={sectionData.sxsq1o2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="SXSQ1 Option 2 Points"
-        name="sxsq1o2p"
-        value={sectionData.sxsq1o2p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.fourColumnsTable} style={{ margin: "0 0" }}>
+        <input
+          placeholder="SXSQ1 Option 1"
+          name="sxsq1o1"
+          value={sectionData.sxsq1o1 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="SXSQ1 Option 2"
+          name="sxsq1o2"
+          value={sectionData.sxsq1o2 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="SXSQ1 Option 3"
+          name="sxsq1o3"
+          value={sectionData.sxsq1o3 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="SXSQ1 Option 4"
+          name="sxsq1o4"
+          value={sectionData.sxsq1o4 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
 
-      <input
-        placeholder="SXSQ1 Option 3"
-        name="sxsq1o3"
-        value={sectionData.sxsq1o3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="SXSQ1 Option 3 Points"
-        name="sxsq1o3p"
-        value={sectionData.sxsq1o3p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div
+        className={styles.fourColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        <input
+          placeholder="SXSQ1 Option 1 Points"
+          name="sxsq1o1p"
+          value={sectionData.sxsq1o1p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
 
-      <input
-        placeholder="SXSQ1 Option 4"
-        name="sxsq1o4"
-        value={sectionData.sxsq1o4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="SXSQ1 Option 4 Points"
-        name="sxsq1o4p"
-        value={sectionData.sxsq1o4p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+        <input
+          placeholder="SXSQ1 Option 2 Points"
+          name="sxsq1o2p"
+          value={sectionData.sxsq1o2p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
 
-      {/* Continue similarly for sxsq1o3, sxsq1o4 */}
+        <input
+          placeholder="SXSQ1 Option 3 Points"
+          name="sxsq1o3p"
+          value={sectionData.sxsq1o3p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="SXSQ1 Option 4 Points"
+          name="sxsq1o4p"
+          value={sectionData.sxsq1o4p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
 
       <input
         placeholder="Seventh Section Heading"
@@ -895,109 +971,118 @@ const FederalSkilled = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-      <input
-        placeholder="SVSQ1 Option 1"
-        name="svsq1o1"
-        value={sectionData.svsq1o1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="SVSQ1 Option 1 Points"
-        name="svsq1o1p"
-        value={sectionData.svsq1o1p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="SVSQ1 Option 2"
-        name="svsq1o2"
-        value={sectionData.svsq1o2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="SVSQ1 Option 2 Points"
-        name="svsq1o2p"
-        value={sectionData.svsq1o2p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div className={styles.sevenColumnsTable} style={{ margin: "0 0" }}>
+        <input
+          placeholder="SVSQ1 Option 1"
+          name="svsq1o1"
+          value={sectionData.svsq1o1 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="SVSQ1 Option 2"
+          name="svsq1o2"
+          value={sectionData.svsq1o2 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="SVSQ1 Option 3"
+          name="svsq1o3"
+          value={sectionData.svsq1o3 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="SVSQ1 Option 4"
+          name="svsq1o4"
+          value={sectionData.svsq1o4 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="SVSQ1 Option 5"
+          name="svsq1o5"
+          value={sectionData.svsq1o5 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="SVSQ1 Option 6"
+          name="svsq1o6"
+          value={sectionData.svsq1o6 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+        <input
+          placeholder="SVSQ1 Option 7"
+          name="svsq1o7"
+          value={sectionData.svsq1o7 || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
 
-      <input
-        placeholder="SVSQ1 Option 3"
-        name="svsq1o3"
-        value={sectionData.svsq1o3 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="SVSQ1 Option 3 Points"
-        name="svsq1o3p"
-        value={sectionData.svsq1o3p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="SVSQ1 Option 4"
-        name="svsq1o4"
-        value={sectionData.svsq1o4 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="SVSQ1 Option 4 Points"
-        name="svsq1o4p"
-        value={sectionData.svsq1o4p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+      <div
+        className={styles.sevenColumnsTable}
+        style={{ margin: "0 0", marginBottom: "50px" }}
+      >
+        <input
+          placeholder="SVSQ1 Option 1 Points"
+          name="svsq1o1p"
+          value={sectionData.svsq1o1p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
 
-      <input
-        placeholder="SVSQ1 Option 5"
-        name="svsq1o5"
-        value={sectionData.svsq1o5 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="SVSQ1 Option 5 Points"
-        name="svsq1o5p"
-        value={sectionData.svsq1o5p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="SVSQ1 Option 6"
-        name="svsq1o6"
-        value={sectionData.svsq1o6 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="SVSQ1 Option 6 Points"
-        name="svsq1o6p"
-        value={sectionData.svsq1o6p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+        <input
+          placeholder="SVSQ1 Option 2 Points"
+          name="svsq1o2p"
+          value={sectionData.svsq1o2p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
 
-      <input
-        placeholder="SVSQ1 Option 7"
-        name="svsq1o7"
-        value={sectionData.svsq1o7 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="SVSQ1 Option 7 Points"
-        name="svsq1o7p"
-        value={sectionData.svsq1o7p || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+        <input
+          placeholder="SVSQ1 Option 3 Points"
+          name="svsq1o3p"
+          value={sectionData.svsq1o3p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
 
-      {/* Continue similarly for svsq1o3, svsq1o4, svsq1o5, svsq1o6, svsq1o7 */}
+        <input
+          placeholder="SVSQ1 Option 4 Points"
+          name="svsq1o4p"
+          value={sectionData.svsq1o4p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="SVSQ1 Option 5 Points"
+          name="svsq1o5p"
+          value={sectionData.svsq1o5p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="SVSQ1 Option 6 Points"
+          name="svsq1o6p"
+          value={sectionData.svsq1o6p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+
+        <input
+          placeholder="SVSQ1 Option 7 Points"
+          name="svsq1o7p"
+          value={sectionData.svsq1o7p || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      </div>
 
       <div className={styles.editIcons}>
         {editMode ? (
