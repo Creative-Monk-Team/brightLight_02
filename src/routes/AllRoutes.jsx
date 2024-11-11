@@ -6,7 +6,6 @@ import BCPNPCalculator from "../pages/BCPNPCalculator";
 import FederalSkilled from "../pages/FederalSkilled";
 import ExpressEntry from "../pages/ExpressEntry";
 import PermanentResidency from "../pages/PermanentResidency";
-import TransportOccupationTwo from "../pages/TranportOccupation-2";
 import CategoryBased from "../pages/CategoryBased";
 import NotFoundPage from "../pages/NotFoundPage";
 import Blogs from "../pages/Blogs";
@@ -42,7 +41,7 @@ import BusinessVisitorVisa from "../pages/BusinessVisitorVisa";
 import VisitorVisa from "../pages/VisitorVisa";
 import TemporaryResidentPermitDraft from "../pages/TemporaryResidentPermitDraft";
 import SuperVisa from "../pages/SuperVisa";
-import Cby from "../pages/Cby"; // not use anywhere
+import Cby from "../pages/Cby";  
 import CommonLawPartnerTemporary from "../pages/CommonLawPartnerTemporary";
 import CommonLawPartnerPermanent from "../pages/CommonLawPartnerPermanent";
 import CommonLawPartnerInternational from "../pages/CommonLawPartnerInternational";
@@ -110,10 +109,6 @@ let AllRoutes = () => {
       <Route path="/contact-us" element={<Contact />} />
       <Route path="/express-entry" element={<ExpressEntry />} />
       <Route path="/permanent-residency" element={<PermanentResidency />} />
-      <Route
-        path="/transport-occupation"
-        element={<TransportOccupationTwo />}
-      />
       <Route path="/blogs" element={<Blogs />} />
       <Route path="/blogs/:id" element={<BlogDetails />} />
       <Route path="/news" element={<News />} />

@@ -185,7 +185,7 @@ const InCaregiverProgramLP = () => {
         </div>
       </div>
 
-      <div className={styles.container}>
+      <div className={styles.container} id="container">
         <header
           className={`${styles.header} ${styles.section}`}
           id="about-program"
@@ -488,7 +488,7 @@ const InCaregiverProgramLP = () => {
         >
          
           <h2 style={{ fontSize: "24px", marginBottom: "20px" }}>  {pData?.WhyChooseUsHeading01 }</h2>
-          <ul style={{marginLeft: "40px"}}>
+          <ul className={styles.whychooseusLi} style={{marginLeft: "40px"}}>
             <li>
               <strong>{strongText91}</strong>{" "} {remainingText91}
             </li>

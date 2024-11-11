@@ -185,7 +185,7 @@ const TemporaryResident = () => {
           </div>
         </div>
       </div>
-      <div className={styles.container}>
+      <div className={styles.container} id="container">
         <h1
           className={`${styles.heading} ${styles.section}`}
           id="about-program"

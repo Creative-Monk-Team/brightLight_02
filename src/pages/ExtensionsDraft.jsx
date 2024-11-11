@@ -187,7 +187,7 @@ const ExtensionsDraft = () => {
         </div>
       </div>
 
-      <div className={styles.container}>
+      <div className={styles.container} id="container">
         <h1
           className={`${styles.heading} ${styles.section}`}
           id="about-program"
@@ -204,11 +204,7 @@ const ExtensionsDraft = () => {
           {pData?.extensionPara}
           </p>
           <p style={{marginTop: "20px"}}>
-            If you are visiting Canada for leisure, work, family visits,
-            studies, or temporary employment, your circumstances may change, and
-            you may need to extend your stay beyond the initially specified
-            duration in your visa. In such cases, you typically need to apply
-            for an extension to maintain valid legal status in Canada.
+           {pData?.extensionPara2}
           </p>
         </section>
 
@@ -301,7 +297,7 @@ const ExtensionsDraft = () => {
           ref={(el) => (sectionsRef.current[9] = el)}
         >
         <h2>  {pData?.WhyChooseUsHeading01 }</h2>
-          <ul style={{marginLeft: "40px"}}>
+          <ul className={styles.whychooseusLi} style={{marginLeft: "40px"}}>
             <li>
               <strong>{strongText91}</strong>{" "} {remainingText91}
             </li>

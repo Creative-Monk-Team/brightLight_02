@@ -228,7 +228,7 @@ const NonSds = () => {
         </div>
       </div>
 
-      <div className={styles.container}>
+      <div className={styles.container} id="container">
         <h1
           c
           className={`${styles.heading} ${styles.section}`}
@@ -648,7 +648,7 @@ const NonSds = () => {
           ref={(el) => (sectionsRef.current[9] = el)}
         >
         <h2>  {pData?.WhyChooseUsHeading01 }</h2>
-          <ul style={{marginLeft: "40px"}}>
+          <ul className={styles.whychooseusLi} style={{marginLeft: "40px"}}>
             <li>
               <strong>{strongText91}</strong>{" "} {remainingText91}
             </li>

@@ -191,7 +191,7 @@ const FederalSkilledTradesProgram = () => {
         </div>
       </div>
 
-      <div className={styles.container}>
+      <div className={styles.container} id="container">
         <h1
           className={`${styles.heading} ${styles.section}`}
           id="about-program"
@@ -391,7 +391,7 @@ const FederalSkilledTradesProgram = () => {
           ref={(el) => (sectionsRef.current[7] = el)}
         >
          <h2>  {pData?.WhyChooseUsHeading01 }</h2>
-          <ul style={{marginLeft: "40px"}}>
+          <ul className={styles.whychooseusLi} style={{marginLeft: "40px"}}>
             <li>
               <strong>{strongText91}</strong>{" "} {remainingText91}
             </li>

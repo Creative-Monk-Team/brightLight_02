@@ -190,14 +190,14 @@ const OpenWorkCanadaLP = () => {
           </div>
         </div>
       </div>
-      <div className={styles.container}>
+      <div className={styles.container} id="container">
         <header
           className={`${styles.header} ${styles.section}`}
           id="about-program"
           ref={(el) => (sectionsRef.current[0] = el)}
         >
           <h1>
-            Open Work Permit for Dependent Child of Foreign Worker in Canada
+          {pData?.openWorkDepHeading}
           </h1>
           <p>
           {pData?.openWorkDepPara}
@@ -556,7 +556,7 @@ const OpenWorkCanadaLP = () => {
           ref={(el) => (sectionsRef.current[9] = el)}
         >
         <h2>  {pData?.WhyChooseUsHeading01 }</h2>
-          <ul style={{marginLeft: "40px"}}>
+          <ul className={styles.whychooseusLi} style={{marginLeft: "40px"}}>
             <li>
               <strong>{strongText91}</strong>{" "} {remainingText91}
             </li>

@@ -184,7 +184,7 @@ const PrioritiesProgram = () => {
         </div>
       </div>
 
-      <div className={styles.container}>
+      <div className={styles.container} id="container">
         <section
           className={`${styles.header} ${styles.section}`}
           id="benefits-2"

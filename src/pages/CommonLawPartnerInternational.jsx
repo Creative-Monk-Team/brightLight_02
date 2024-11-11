@@ -245,7 +245,7 @@ const CommonLawPartnerInternational = () => {
         </div>
       </div>
 
-      <div className={styles.container}>
+      <div className={styles.container} id="container">
         <header
           className={`${styles.header} ${styles.section}`}
           id="testing"
@@ -570,7 +570,7 @@ const CommonLawPartnerInternational = () => {
           ref={(el) => (sectionsRef.current[90] = el)}
         >
         <h2>  {pData?.WhyChooseUsHeading01 }</h2>
-          <ul style={{marginLeft: "40px"}}>
+          <ul className={styles.whychooseusLi} style={{marginLeft: "40px"}}>
             <li>
               <strong>{strongText91}</strong>{" "} {remainingText91}
             </li>

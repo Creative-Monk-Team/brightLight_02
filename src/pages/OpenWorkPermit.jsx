@@ -183,7 +183,7 @@ const OpenWorkPermit = () => {
         </div>
       </div>
 
-      <div className={styles.container}>
+      <div className={styles.container} id="container">
         <main className={styles.mainContent}>
           <section
             className={`${styles.section} ${styles.section}`}
@@ -273,7 +273,7 @@ const OpenWorkPermit = () => {
             ref={(el) => (sectionsRef.current[9] = el)}
           >
         <h2>  {pData?.WhyChooseUsHeading01 }</h2>
-          <ul style={{marginLeft: "40px"}}>
+          <ul className={styles.whychooseusLi} style={{marginLeft: "40px"}}>
             <li>
               <strong>{strongText91}</strong>{" "} {remainingText91}
             </li>

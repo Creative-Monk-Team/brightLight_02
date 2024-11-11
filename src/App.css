@@ -101,6 +101,11 @@ ol li:empty {
 #container h5:empty,
 #container h6:empty,
 #container span:empty,
+#container table:empty,
+#container thead:empty,
+#container tbody:empty,
+#container tr:empty,
+#container td:empty,
 #container strong:empty {
   display: none;
 }
@@ -296,4 +301,4 @@ ol{
   }
 }
 
-/* //CreativeMonk 2024// */
+                                                    /* //CreativeMonk 2024// */

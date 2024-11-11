@@ -346,32 +346,6 @@
     transform: translateX(0);
   }
   
- /* .agriTable table {
-    width: 100%; 
-    border-collapse: collapse; 
-    margin-top: 20px;
-  }
-  
- .agriTable th, td {
-    padding: 12px; 
-    text-align: left; 
-    border: 1px solid #00273f; 
-    color: #00273f;
-  }
-  
- .agriTable th {
-    background-color: #cdcdcd;
-    color: #00273f; /
-  }
-  
- .agriTable tr:nth-child(even) {
-    background-color: #f2f2f2; 
-  }
-  
- .agriTable tr:hover {
-    background-color: #ddd; 
-} */
-
 .occupationTable {
     width: 100%; /* Full width */
     border-collapse: collapse; /* Collapses border spacing */
@@ -407,4 +381,6 @@
       font-size: 26px;
     }
   }
-  
+  .whychooseusLi li{
+    margin-top: 8px;
+  }

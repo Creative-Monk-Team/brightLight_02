@@ -159,7 +159,7 @@ const PermanentResidency = () => {
         </div>
       </div>
 
-      <div id="about-program" className={styles.canadianParent}>
+      <div id="about-program container" className={styles.canadianParent}>
         <div className={styles.canadianContent}>
           <p>{pData?.aboutDescription}</p>
 
@@ -171,13 +171,13 @@ const PermanentResidency = () => {
         </div>
       </div>
 
-      <div id="Pathways-becoming-PR" className={styles.pathwayParent}>
+      <div id="Pathways-becoming-PR container" className={styles.pathwayParent}>
         <div className={styles.pathway}>
           <div className={styles.pathwayHeading}>
             <h1>{pData?.pathHeading}</h1>
           </div>
 
-          <div className={styles.pathwayCardsParent}>
+          <div className={styles.pathwayCardsParent} id="container">
             <div
               className={styles.pathwayCards}
               onClick={() => (window.location.href = "/express-entry")}

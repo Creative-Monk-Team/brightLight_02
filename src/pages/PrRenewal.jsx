@@ -189,7 +189,7 @@ let PrRenewal = () => {
 
       <div
         className={`${styles.section} ${styles.section}`}
-        id="about-the-program"
+        id="about-the-program container"
         ref={(el) => (sectionsRef.current[100] = el)}
       >
         <h2 style={{ textAlign: "center" ,   color: "#e8c47c" }} className={styles.sectionTitle}>
@@ -210,7 +210,7 @@ let PrRenewal = () => {
 
       <div
         className={`${styles.section} ${styles.section}`}
-        id="eligibility"
+        id="eligibility container"
         ref={(el) => (sectionsRef.current[0] = el)}
       >
         <h2 className={styles.sectionTitle}>
@@ -227,7 +227,7 @@ let PrRenewal = () => {
 
       <div
         className={`${styles.section} ${styles.section}`}
-        id="how-to-apply"
+        id="how-to-apply container"
         ref={(el) => (sectionsRef.current[1] = el)}
       >
         <h2 className={styles.sectionTitle}>
@@ -240,7 +240,7 @@ let PrRenewal = () => {
 
       <div
         className={`${styles.section} ${styles.section}`}
-        id="refusal-reason"
+        id="refusal-reason container"
         ref={(el) => (sectionsRef.current[2] = el)}
       >
         <h2 className={styles.sectionTitle}>
@@ -259,7 +259,7 @@ let PrRenewal = () => {
 
       <div
         className={`${styles.section} ${styles.section}`}
-        id="appointment"
+        id="appointment container"
         ref={(el) => (sectionsRef.current[3] = el)}
       >
         <h2 className={styles.sectionTitle}>      {pData?.StillNotSureHeading}</h2>
@@ -282,11 +282,11 @@ let PrRenewal = () => {
 
       <section
         className={`${styles.section} ${styles.section}`}
-        id="why-choose-us"
+        id="why-choose-us container"
         ref={(el) => (sectionsRef.current[9] = el)}
       >
         <h2>  {pData?.WhyChooseUsHeading01 }</h2>
-          <ul style={{marginLeft: "40px"}}>
+          <ul className={styles.whychooseusLi} style={{marginLeft: "40px"}}>
             <li>
               <strong>{strongText91}</strong>{" "} {remainingText91}
             </li>
