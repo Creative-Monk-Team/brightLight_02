@@ -89,6 +89,22 @@ ul li:empty {
   display: none;
 }
 
+ol li:empty {
+  display: none;
+}
+
+#container p:empty,
+#container h1:empty,
+#container h2:empty,
+#container h3:empty,
+#container h4:empty,
+#container h5:empty,
+#container h6:empty,
+#container span:empty,
+#container strong:empty {
+  display: none;
+}
+
 /* ul{
   margin-left: 40px !important;
 }

@@ -180,7 +180,7 @@ const AdditionalDocument = () => {
         </div>
       </div>
 
-      <div className={styles.container}>
+      <div className={styles.container} id="container">
         <header className={styles.header} id="about-program">
           <h1>{pData?.AdditionalDocumentHeading}</h1>
         </header>

@@ -238,6 +238,28 @@ let AdditionalDocument = () => {
         disabled={!editMode}
       />
 
+<input
+        placeholder="Still Not Sure Heading"
+        name="StillNotHeading"
+        value={sectionDataSingle.StillNotHeading || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Still Not Sure Text 1"
+        name="s1"
+        value={sectionDataSingle.s1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <textarea
+        placeholder="Still Not Sure Text 2"
+        name="s2"
+        value={sectionDataSingle.s2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
       <h1 className={styles.faqStartsHeading}>FAQ's Starts Below</h1>
 
       <input
@@ -390,27 +412,6 @@ let AdditionalDocument = () => {
 
       <h1 className={styles.faqEndHeading}>FAQ's Ends here</h1>
 
-      <input
-        placeholder="Still Not Sure Heading"
-        name="StillNotHeading"
-        value={sectionDataSingle.StillNotHeading || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Still Not Sure Text 1"
-        name="s1"
-        value={sectionDataSingle.s1 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <textarea
-        placeholder="Still Not Sure Text 2"
-        name="s2"
-        value={sectionDataSingle.s2 || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
       <input
         placeholder="Why Choose Us Heading"
         name="WhyChooseUsHeading01"
