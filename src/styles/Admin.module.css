@@ -561,6 +561,13 @@
   justify-content: flex-end;
   gap: 20px;
   margin-bottom: 10px;
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  z-index: 20;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px;
 }
 
 .editIcons img {
@@ -612,6 +619,13 @@
 
   .rightPanel {
     width: 100%;
+    height: 120vh;
+  }
+
+  .editIcons {
+    position: relative;
+    bottom: 0;
+    right: 0;
   }
 }
 .leftPanel p {
