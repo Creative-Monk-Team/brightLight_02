@@ -201,6 +201,11 @@ const AddNews = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+      <p className={styles.precautionLine}>
+        Select the option below for your required content type, get the basic
+        text, change the text placed inside the "{"<> </>"}" with your required
+        text, copy the entire text including {"<> </>"} , paste it below.
+      </p>
       <div className={styles.blogContentTageSelectionArea}>
         <div className={styles.tagsArea}>
           <div
