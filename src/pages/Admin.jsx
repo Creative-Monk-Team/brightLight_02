@@ -212,6 +212,7 @@ import AddImmigrationToolsCard from "../admin_sections/AddingImmigrationCard";
 import AllImmigrationToolsCard from "../admin_sections/AllImmigrationCard";
 import AllMoreServicesCard from "../admin_sections/AllMoreServicesCard";
 import AddMoreServicesCard from "../admin_sections/AddMoreServicesCard";
+import magnify from "../assets/search-gray.png";
 
 let Admin = () => {
   let { logout } = useAuth();
@@ -299,12 +300,28 @@ let Admin = () => {
     logout();
     window.location.href = "/auth/panel/dash/bright";
   };
+
+  let handleSearch = () => {};
+
+  let [searchValue, setSearchValue] = useState("");
   return (
     <>
       <div className={styles.grayBg}>
         <div className={styles.topBar}>
           <img src={blueLogo} className={styles.logo} alt="Logo" />
-          
+
+          <form className={styles.topBarSearch} onSubmit={handleSearch}>
+            <input
+              placeholder="Search Pages here"
+              required
+              value={searchValue}
+              onChange={(e) => setSearchValue(e.target.value)}
+            />
+            <button className={styles.searchBtn} type="submit">
+              <img src={magnify} />
+            </button>
+          </form>
+
           <div className={styles.userDiv}>
             <img src={user} onClick={handleDropdownClick} alt="User" />
             <div

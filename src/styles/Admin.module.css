@@ -353,7 +353,7 @@
 }
 
 .topBarSearch {
-  width: 70%;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -363,10 +363,44 @@
   border-bottom: 1px solid rgb(230, 230, 230);
 }
 
+@media all and (max-width: 1200px){
+  .topBarSearch {
+    width: 40%;
+  }
+}
+
+@media all and (max-width: 800px){
+  .topBarSearch {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 600px){
+  .topBarSearch {
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 400px){
+  .topBarSearch {
+    width: 60%;
+  }
+
+  .searchBtn {
+    width: 15%;
+    padding: 0px 5px;
+  }
+  
+  .searchBtn img {
+    width: 10px;
+    height: 10px;
+  }
+}
+
 .topBarSearch input {
   width: 80%;
-  padding: 10px 15px;
-  font-size: 18px;
+  padding: 10px 15px 2px;
+  font-size: 15px;
   border-radius: 5px;
   border: none;
 }
@@ -376,13 +410,27 @@
 }
 
 .searchBtn {
-  width: 10%;
+  width: 15%;
   padding: 10px;
   border-radius: 40px;
   border: none;
   background-image: linear-gradient(to right, #132f46, #5996c8);
   cursor: pointer;
   height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: 0.3s all ease-in-out;
+}
+
+.searchBtn:hover {
+  opacity: 0.7;
+}
+
+.searchBtn img {
+  width: 20px;
+  height: 20px;
 }
 
 .userDiv {
