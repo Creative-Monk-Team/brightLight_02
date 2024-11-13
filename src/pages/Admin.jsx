@@ -304,6 +304,7 @@ let Admin = () => {
       <div className={styles.grayBg}>
         <div className={styles.topBar}>
           <img src={blueLogo} className={styles.logo} alt="Logo" />
+          
           <div className={styles.userDiv}>
             <img src={user} onClick={handleDropdownClick} alt="User" />
             <div

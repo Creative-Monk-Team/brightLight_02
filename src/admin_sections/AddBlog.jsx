@@ -20,7 +20,7 @@ let AddBlog = () => {
         tagValue = "<h2>Your bigger heading goes here</h2>";
         break;
       case "Sub Heading":
-        tagValue = "<h3>Your bigger heading goes here</h3>";
+        tagValue = "<h3>Your sub heading goes here</h3>";
         break;
       case "Bold":
         tagValue = "<strong>Your bold text goes here</strong>";
