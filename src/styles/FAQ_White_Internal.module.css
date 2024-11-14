@@ -1,174 +1,198 @@
 .faqSection {
-    width: 100%;
-    background-image: url("../assets/faqimage1.png");
-    background-repeat: no-repeat;
-    background-position: calc(110% + 1%) calc(100% - 50%);
-    background-size: 40%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0px;
+  width: 100%;
+  background-image: url("../assets/faqimage1.png");
+  background-repeat: no-repeat;
+  background-position: calc(110% + 1%) calc(100% - 50%);
+  background-size: 40%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.faqParentSectionDesktop {
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faqParentSectionMobile{
+  width: 1440px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faqQuestionSection {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+  width: 60%;
+}
+
+.faqAnswersSection {
+  width: 38%;
+  margin-top: -30px;
+  font-size: 20px;
+}
+
+.questionMarkSection {
+  width: 150px;
+  height: 150px;
+  background-image: url("../assets/blue-polygon.webp");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  color: white;
+  font-weight: 800;
+  font-size: 100px;
+}
+
+.faqQuestionsParentSection {
+  width: 75%;
+}
+
+.questions {
+  border-right: 1px solid #132f46;
+  padding: 10px 30px 10px 0px;
+}
+
+.faqQuestionsParentSection h1 {
+  color: #132f46;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.questionSection {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.questionSection svg {
+  display: none;
+}
+
+.questionSection:nth-child(1) {
+  margin-top: 30px;
+}
+
+.questionSection p {
+  width: 90%;
+  color: #132f46;
+  transition: 0.1s all ease-in-out;
+  font-size: 20px;
+}
+
+.questionSection.active p {
+  font-weight: 800;
+}
+.questionSection:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.questionSection.active svg {
+  display: block;
+}
+
+.faqParentSectionMobile {
+  display: none;
+}
+
+@media (max-width: 1380px) {
+  .faqParentSectionDesktop {
+    width: 95%;
   }
-  
-  .faqParentSection {
-    width: 1440px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+  .faqParentSectionMobile{
+    width: 95%;
   }
-  
-  .faqQuestionSection {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 30px;
-    width: 60%;
-  }
-  
-  .faqAnswersSection {
-    width: 38%;
-    margin-top: -30px;
-    font-size: 20px;
-  }
-  
-  .questionMarkSection {
-    width: 150px;
-    height: 150px;
-    background-image: url("../assets/blue-polygon.webp");
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    color: white;
-    font-weight: 800;
-    font-size: 100px;
-  }
-  
-  .faqQuestionsParentSection {
-    width: 75%;
-  }
-  
-  .questions {
-    border-right: 1px solid #132f46;
-    padding: 10px 30px 10px 0px;
-  }
-  
+
   .faqQuestionsParentSection h1 {
-    color: #132f46;
-    font-size: 50px;
-    font-weight: 800;
+    text-align: left;
   }
-  
-  .questionSection {
-    display: flex;
-    align-items: flex-start;
+}
+
+@media all and (max-width: 1100px) {
+  .faqParentSectionDesktop {
+    flex-direction: column;
     justify-content: space-between;
-    margin-top: 20px;
-    cursor: pointer;
-  }
-  
-  .questionSection svg {
     display: none;
   }
-  
-  .questionSection:nth-child(1) {
-    margin-top: 30px;
+
+  .faqParentSectionMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  
+
+  .questions {
+    border-right: none;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .faqQuestionSection {
+    width: 100%;
+  }
+
+  .faqAnswersSection {
+    width: 100%;
+    margin: auto;
+    font-size: 15px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+
+  .questionMarkSection {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+  }
+
+  .questionSection svg {
+    transform: rotate(90deg);
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 820px) {
+  .faqQuestionsParentSection h1 {
+    font-size: 40px;
+  }
+
+  .faqQuestionSection {
+    width: 100%;
+  }
+
   .questionSection p {
-    width: 90%;
-    color: #132f46;
-    transition: 0.1s all ease-in-out;
-    font-size: 20px;
+    font-size: 15px;
   }
-  
-  .questionSection.active p {
-    font-weight: 800;
+
+  .faqQuestionSection {
+    flex-direction: column;
   }
-  .questionSection:hover {
-    transform: translateY(-5px); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  .faqQuestionsParentSection {
+    width: 100%;
   }
-  
-  .questionSection.active svg {
-    display: block;
+
+  .faqAnswersSection {
+    width: 100%;
   }
-  
-  @media (max-width: 1380px) {
-    .faqParentSection {
-      width: 95%;
-    }
-  
-    .faqQuestionsParentSection h1 {
-      text-align: left;
-    }
+
+  .faqAnswersSection p {
+    font-size: 15px;
   }
-  
-  @media all and (max-width: 1100px) {
-    .faqParentSection {
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  
-    .questions {
-      border-right: none;
-      padding: 10px 0px 10px 0px;
-    }
-  
-    .faqQuestionSection {
-      width: 100%;
-    }
-  
-    .faqAnswersSection {
-      width: 75%;
-      margin: auto;
-      font-size: 20px;
-      margin-top: 50px;
-    }
-  
-    .questionMarkSection {
-      width: 100px;
-      height: 100px;
-      font-size: 50px;
-    }
+  .faqAnswersSection {
+    padding-top: 20px;
+    border-top: 1px solid #132f46;
   }
-  
-  @media (max-width: 820px) {
-    .faqQuestionsParentSection h1 {
-      font-size: 40px;
-    }
-  
-    .faqQuestionSection {
-      width: 100%;
-    }
-  
-    .questionSection p {
-      font-size: 15px;
-    }
-  
-    .faqQuestionSection {
-      flex-direction: column;
-    }
-  
-    .faqQuestionsParentSection {
-      width: 100%;
-    }
-  
-    .faqAnswersSection {
-      width: 100%;
-    }
-  
-    .questionSection svg {
-      width: 15px;
-      height: 15px;
-    }
-  
-    .faqAnswersSection p {
-      font-size: 15px;
-    }
-    .faqAnswersSection{
-      padding-top: 20px;
-      border-top: 1px solid #132f46;
-    }
-  }
+}

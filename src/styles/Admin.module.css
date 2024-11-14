@@ -609,7 +609,7 @@
   justify-content: flex-end;
   gap: 20px;
   margin-bottom: 10px;
-  position: absolute;
+  position: fixed;
   bottom: 100px;
   right: 100px;
   z-index: 20;

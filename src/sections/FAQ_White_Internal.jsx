@@ -15,7 +15,7 @@ let FAQ_White_Internal = ({ data }) => {
       for (let i = 1; i <= 15; i++) {
         const question = data[`q${i}`]?.trim();
         const answer = data[`qa${i}`]?.trim();
-  
+
         if (question && answer) {
           arrayData.push({ question, answer });
         }
@@ -37,7 +37,7 @@ let FAQ_White_Internal = ({ data }) => {
     <>
       {faqData.length ? (
         <div className={styles.faqSection}>
-          <div className={styles.faqParentSection}>
+          <div className={styles.faqParentSectionDesktop}>
             <div className={styles.faqQuestionSection}>
               <div className={styles.questionMarkSection}>
                 <p>?</p>
@@ -64,6 +64,42 @@ let FAQ_White_Internal = ({ data }) => {
               className={styles.faqAnswersSection}
               dangerouslySetInnerHTML={{ __html: faqData[activeIndex]?.answer }}
             />
+          </div>
+
+          <div className={styles.faqParentSectionMobile}>
+            <div className={styles.faqQuestionSection}>
+              <div className={styles.questionMarkSection}>
+                <p>?</p>
+              </div>
+              <div className={styles.faqQuestionsParentSection}>
+                <h1>{faqHeading}</h1>
+                <div className={styles.questions}>
+                  {faqData.map((item, index) => (
+                    <>
+                      <div
+                        onClick={() => handleQuestionClick(index)}
+                        key={index}
+                        className={`${styles.questionSection} ${
+                          activeIndex === index ? styles.active : ""
+                        }`}
+                      >
+                        <p>{item.question}</p>
+                        <RightArrow width={30} height={30} />
+                      </div>
+
+                      {activeIndex === index && (
+                        <div
+                          className={styles.faqAnswersSection}
+                          dangerouslySetInnerHTML={{
+                            __html: item.answer,
+                          }}
+                        />
+                      )}
+                    </>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       ) : null}

@@ -15,8 +15,8 @@ const PreviousDrawHistory = () => {
   const [currentPage, setCurrentPage] = useState(1);
   let [metaData, setMetaData] = useState([]);
   const [sortConfig, setSortConfig] = useState({
-    key: "drawNumber",
-    direction: "ascending",
+    key: "drawDateFull",
+    direction: "descending",
   });
   const [selectedRoundType, setSelectedRoundType] = useState(""); // State for round type filter
   const itemsPerPage = 30;
@@ -28,6 +28,7 @@ const PreviousDrawHistory = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data) {
+          console.log(data.rounds);
           setData(data.rounds);
         }
       })
@@ -88,9 +89,9 @@ const PreviousDrawHistory = () => {
 
   // Change sort order
   const handleSort = (key) => {
-    let direction = "ascending";
-    if (sortConfig.key === key && sortConfig.direction === "ascending") {
-      direction = "descending";
+    let direction = "descending";
+    if (sortConfig.key === key && sortConfig.direction === "descending") {
+      direction = "ascending";
     }
     setSortConfig({ key, direction });
   };
