@@ -76,7 +76,7 @@ const AllBlogs = () => {
 
   // Fetch all blogs
   useEffect(() => {
-    fetch("https://brightlight-node.onrender.com/adding-blog")
+    fetch("https://brightlight-node.onrender.com/new-added-blogs")
       .then((res) => res.json())
       .then((data) => {
         setBlogs(data);
@@ -126,7 +126,7 @@ const AllBlogs = () => {
       }
     }
 
-    fetch(`https://brightlight-node.onrender.com/adding-blog/${editBlogId}`, {
+    fetch(`https://brightlight-node.onrender.com/new-added-blogs/${editBlogId}`, {
       method: "PATCH",
       body: formData,
     })
@@ -154,7 +154,7 @@ const AllBlogs = () => {
           metaDescription: "",
         });
         // Refetch blogs
-        fetch("https://brightlight-node.onrender.com/adding-blog")
+        fetch("https://brightlight-node.onrender.com/new-added-blogs")
           .then((res) => res.json())
           .then((data) => {
             setBlogs(data);
@@ -170,12 +170,12 @@ const AllBlogs = () => {
 
   // Handle delete click
   const handleDeleteClick = (blogId) => {
-    fetch(`https://brightlight-node.onrender.com/adding-blog/${blogId}`, {
+    fetch(`https://brightlight-node.onrender.com/new-added-blogs/${blogId}`, {
       method: "DELETE",
     })
       .then(() => {
         notifyDelete();
-        fetch("https://brightlight-node.onrender.com/adding-blog")
+        fetch("https://brightlight-node.onrender.com/new-added-blogs")
           .then((res) => res.json())
           .then((data) => {
             setBlogs(data);

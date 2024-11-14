@@ -283,7 +283,7 @@ let AddBlog = () => {
       formData.append(key, sectionDataSingle[key]);
     });
 
-    fetch("https://brightlight-node.onrender.com/adding-blog", {
+    fetch("https://brightlight-node.onrender.com/new-added-blogs", {
       method: "POST",
       body: formData,
     })
