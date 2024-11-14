@@ -6,7 +6,9 @@ import update from "../assets/update.png";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 
 const AddNews = () => {
-  const [textareaValue, setTextareaValue] = useState("Your Selection Code Here");
+  const [textareaValue, setTextareaValue] = useState(
+    "Your Selection Code Here"
+  );
   const handleTagClick = (tag) => {
     let tagValue = "";
 
@@ -188,6 +190,12 @@ const AddNews = () => {
         disabled={!editMode}
       />
       <input
+        type="file"
+        name="image"
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
         placeholder="News Heading"
         name="news_heading"
         value={sectionDataSingle.news_heading || ""}
@@ -270,7 +278,7 @@ const AddNews = () => {
           value={textareaValue}
           onChange={(e) => setTextareaValue(e.target.value)}
           disabled={!editMode}
-          style={{height: "150px"}}
+          style={{ height: "150px" }}
         />
       </div>
       <textarea
@@ -279,14 +287,9 @@ const AddNews = () => {
         value={sectionDataSingle.news_content || ""}
         onChange={handleInputChange}
         disabled={!editMode}
-        style={{height: "500px"}}
+        style={{ height: "500px" }}
       />
-      <input
-        type="file"
-        name="image"
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+
       {sectionDataSingle.image && (
         <img
           className={styles.existingImageSmall}
