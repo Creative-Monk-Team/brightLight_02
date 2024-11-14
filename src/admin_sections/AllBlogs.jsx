@@ -126,10 +126,13 @@ const AllBlogs = () => {
       }
     }
 
-    fetch(`https://brightlight-node.onrender.com/new-added-blogs/${editBlogId}`, {
-      method: "PATCH",
-      body: formData,
-    })
+    fetch(
+      `https://brightlight-node.onrender.com/new-added-blogs/${editBlogId}`,
+      {
+        method: "PATCH",
+        body: formData,
+      }
+    )
       .then((response) => {
         if (response.status === 413) {
           notifySize();
@@ -200,7 +203,7 @@ const AllBlogs = () => {
             <div className={styles.blogContent}>
               <h4>{blog.blog_heading}</h4>
               <img src={blog.image} alt="Blog" className={styles.blogImage} />
-              <div className={styles.editIcons}>
+              <div className={styles.singleBlogOptions}>
                 {editBlogId === blog._id ? (
                   <>
                     <img
@@ -218,19 +221,19 @@ const AllBlogs = () => {
                   </>
                 ) : (
                   <>
-                    <img
-                      src={editIcon}
-                      className={styles.editIcon}
-                      onClick={() => handleEditClick(blog)}
-                      alt="Edit"
-                    />
-                    <img
-                      src={deleteIcon}
-                      className={styles.deleteIcon}
-                      onClick={() => handleDeleteClick(blog._id)}
-                      alt="Delete"
-                    />
-                  </>
+                  <img
+                    src={editIcon}
+                    className={styles.editIcon}
+                    onClick={() => handleEditClick(blog)}
+                    alt="Edit"
+                  />
+                  <img
+                    src={deleteIcon}
+                    className={styles.deleteIcon}
+                    onClick={() => handleDeleteClick(blog._id)}
+                    alt="Delete"
+                  />
+                </>
                 )}
               </div>
             </div>

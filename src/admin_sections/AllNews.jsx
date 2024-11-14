@@ -198,7 +198,7 @@ const AllNews = () => {
             <div className={styles.blogContent}>
               <h4>{blog.news_heading}</h4>
               <img src={blog.image} alt="Blog" className={styles.blogImage} />
-              <div className={styles.editIcons}>
+              <div className={styles.singleBlogOptions}>
                 {editBlogId === blog._id ? (
                   <>
                     <img

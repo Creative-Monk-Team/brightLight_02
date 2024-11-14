@@ -204,7 +204,7 @@ const AllImmigrationToolsCard = () => {
                 alt="Immigration Tool"
                 className={styles.blogImage2}
               />
-              <div className={styles.editIcons}>
+              <div className={styles.singleBlogOptions}>
                 {editBlogId === blog._id ? (
                   <>
                     <img
