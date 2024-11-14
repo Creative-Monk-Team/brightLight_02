@@ -33,7 +33,7 @@ let Blogs = () => {
     setSearchQuery(query);
     setSortOption(sort);
 
-    fetch("https://brightlight-node.onrender.com/adding-blog")
+    fetch("https://brightlight-node.onrender.com/new-added-blogs")
       .then((res) => res.json())
       .then((data) => {
         if (data.length > 0) {

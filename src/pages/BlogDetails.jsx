@@ -19,7 +19,7 @@ let BlogDetails = () => {
   let [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    fetch(`https://brightlight-node.onrender.com/adding-blog/${id}`)
+    fetch(`https://brightlight-node.onrender.com/new-added-blogs/${id}`)
       .then((res) => res.json())
       .then((data) => {
         if (data) {
@@ -37,7 +37,7 @@ let BlogDetails = () => {
       })
       .catch((error) => console.log(error));
 
-    fetch("https://brightlight-node.onrender.com/adding-blog/")
+    fetch("https://brightlight-node.onrender.com/new-added-blogs/")
       .then((res) => res.json())
       .then((data) => {
         let recentBlogsFilteredData = data.filter((item) => item._id != id);

@@ -14,6 +14,15 @@
   width: 1440px;
 }
 
+.nextBlogButton{
+  display: none;
+} 
+
+.nextBlogButton svg{
+  width: 20px;
+  height: 20px; 
+}
+
 .blogsTopSection {
   display: flex;
   align-items: center;

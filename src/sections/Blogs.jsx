@@ -27,28 +27,26 @@ let Blogs = () => {
 
   useEffect(() => {
     // Fetch blogs data, limit to 5 items
-    fetch("https://brightlight-node.onrender.com/adding-blog")
+    fetch("https://brightlight-node.onrender.com/new-added-blogs")
       .then((res) => res.json())
       .then((data) => {
-        console.log("Blogs data:", data); // Log the data to see its structure
-        // Ensure that the response is an array before setting the state
         if (Array.isArray(data)) {
-          setBlogs(data.slice(0, 5)); // Only take the first 5 blogs
+          setBlogs(data.slice(0, 5));
         } else {
           console.error("Expected an array, but got:", data);
-          setBlogs([]); // In case the data isn't an array, set it to an empty array
+          setBlogs([]); 
         }
       })
       .catch((error) => {
         console.error("Error fetching blogs:", error);
       });
 
-    // Fetch blog section data (top section details like heading, description)
-    fetch("https://brightlight-node.onrender.com/blog-section")
+    
+    fetch("https://brightlight-node.onrender.com/new-added-blogs")
       .then((res) => res.json())
       .then((data) => {
         if (data) {
-          setData(data[0]); // Assuming the first item is the blog section data
+          setData(data[0]); 
         }
       })
       .catch((error) => {
