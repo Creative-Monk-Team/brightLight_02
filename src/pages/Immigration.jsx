@@ -123,28 +123,32 @@ let Immigration = () => {
 
       <div className={styles.containerParent}>
         <div className={styles.containerMain}>
-          <div className={styles.cardParent}>
-            {cardsData?.map((tool, index) => (
-              <div
-                key={index}
-                onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(null)}
-                onClick={() => handleCardClick(tool.tool_link)}
-                style={{ cursor: "pointer" }}
-              >
-                <img
-                  src={
-                    hoveredIndex === index
-                      ? tool.white_stroke_img
-                      : tool.blue_stroke_img
-                  }
-                  alt={tool.tool_name}
-                />
-                <h2>{tool.tool_name}</h2>
-                <p>{tool.tool_desc}</p>
-              </div>
-            ))}
-          </div>
+          {cardsData.length <= 0 ? (
+            <p className={styles.loadingText}>Loading...</p>
+          ) : (
+            <div className={styles.cardParent}>
+              {cardsData?.map((tool, index) => (
+                <div
+                  key={index}
+                  onMouseEnter={() => setHoveredIndex(index)}
+                  onMouseLeave={() => setHoveredIndex(null)}
+                  onClick={() => handleCardClick(tool.tool_link)}
+                  style={{ cursor: "pointer" }}
+                >
+                  <img
+                    src={
+                      hoveredIndex === index
+                        ? tool.white_stroke_img
+                        : tool.blue_stroke_img
+                    }
+                    alt={tool.tool_name}
+                  />
+                  <h2>{tool.tool_name}</h2>
+                  <p>{tool.tool_desc}</p>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
       <Footer1 />

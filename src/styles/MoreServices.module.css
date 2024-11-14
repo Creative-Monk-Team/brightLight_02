@@ -12,6 +12,12 @@
   text-align: center;
 }
 
+.loadingText {
+  text-align: center;
+  font-size: 20px !important;
+  color: #073552 !important;
+}
+
 .bannerHeading {
   width: 95%;
 }
@@ -30,76 +36,75 @@
 }
 
 /* // */
- .containerParent {
-    padding: 50px 0px;
-    width: 1440px;
-    margin: auto;
+.containerParent {
+  padding: 50px 0px;
+  width: 1440px;
+  margin: auto;
+}
 
-  }
-  
-  .cardParent {
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    justify-content: space-between;
-    align-items: stretch;
-    row-gap: 20px;
-  }
-  
-  .cardParent div {
-    width: 100%;
-    text-align: center;
-    padding: 30px 50px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    border-radius: 16px;
-    background-color: #f6f6f6;
-  }
-  
-  .cardParent div img {
-    width: 60px;
-    margin-bottom: 20px;
-  }
-  
-  .cardParent h2 {
-    font-size: 20px;
-    color: #073552;
-  }
-  
-  .cardParent p {
-    font-size: 14px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    color: #999595;
-  }
-  .cardParent h4{
-    color: #e2bc6f;
-    font-size: 14px;
-  }
+.cardParent {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: space-between;
+  align-items: stretch;
+  row-gap: 20px;
+}
 
-  .cardParent h4:hover{
-opacity: 0.9;
-  }
-  .cardParent div:hover {
-    text-decoration: none;
-    transform: translateY(-8px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #073552;
-    color: 2px solid white;
-  }
-  
-  .cardParent div:hover h2 {
-    color: #ffffff;
-  }
-  
-  .cardParent div:hover p {
-    color: #ffffff;
-  }
+.cardParent div {
+  width: 100%;
+  text-align: center;
+  padding: 30px 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 16px;
+  background-color: #f6f6f6;
+}
+
+.cardParent div img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.cardParent h2 {
+  font-size: 20px;
+  color: #073552;
+}
+
+.cardParent p {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #999595;
+}
+.cardParent h4 {
+  color: #e2bc6f;
+  font-size: 14px;
+}
+
+.cardParent h4:hover {
+  opacity: 0.9;
+}
+.cardParent div:hover {
+  text-decoration: none;
+  transform: translateY(-8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #073552;
+  color: 2px solid white;
+}
+
+.cardParent div:hover h2 {
+  color: #ffffff;
+}
+
+.cardParent div:hover p {
+  color: #ffffff;
+}
 /*   
   .cardParent div:hover {
     background-color: #073552;
   }
    */
-  
+
 @media all and (max-width: 1420px) {
   .cardParent {
     display: grid;
@@ -112,7 +117,7 @@ opacity: 0.9;
     width: 95%;
   }
 }
-  
+
 @media all and (max-width: 1450px) {
   .bannerMain {
     width: 95%;
@@ -123,41 +128,39 @@ opacity: 0.9;
   }
 }
 
-
 @media (max-width: 1060px) {
-    .bannerHeading h1{
-        font-size: 40px;
-    }
-    .bannerHeading p{
-        font-size: 14px;
-    }
-    .cardParent {
-      display: grid;
-      grid-template-columns: repeat(1, 80%);
-      margin: auto;
-      justify-content: center;
-      align-items: stretch;
-      row-gap: 30px;
-    }
-    .cardParent div {
-      width: 80%;
-      text-align: center;
-      padding: 30px 50px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      border-radius: 16px;
-      margin: auto;
-      background-color: #f6f6f6;
-    }
+  .bannerHeading h1 {
+    font-size: 40px;
+  }
+  .bannerHeading p {
+    font-size: 14px;
+  }
+  .cardParent {
+    display: grid;
+    grid-template-columns: repeat(1, 80%);
+    margin: auto;
+    justify-content: center;
+    align-items: stretch;
+    row-gap: 30px;
+  }
+  .cardParent div {
+    width: 80%;
+    text-align: center;
+    padding: 30px 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 16px;
+    margin: auto;
+    background-color: #f6f6f6;
+  }
 }
 
-
 @media (max-width: 560px) {
-  .bannerHeading h1{
-      font-size: 40px;
+  .bannerHeading h1 {
+    font-size: 40px;
   }
-  .bannerHeading p{
-      font-size: 14px;
+  .bannerHeading p {
+    font-size: 14px;
   }
   .cardParent {
     display: grid;
@@ -179,14 +182,12 @@ opacity: 0.9;
   }
 }
 
-  @media (max-width: 485px) {
-    .bannerHeading h1{
-        font-size: 26px;
-    }
-    .bannerHeading p{
-        font-size: 11px;
-        line-height: 20px;
-    }
-
+@media (max-width: 485px) {
+  .bannerHeading h1 {
+    font-size: 26px;
   }
-  
+  .bannerHeading p {
+    font-size: 11px;
+    line-height: 20px;
+  }
+}

@@ -175,29 +175,33 @@ const MoreServices = () => {
 
       <div className={styles.containerParent}>
         <div className={styles.containerMain}>
-          <div className={styles.cardParent}>
-            {cardsData?.map((section, index) => (
-              <div
-                key={index}
-                onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(null)}
-                onClick={() => handleHeadingClick(section.tool_link)}
-                style={{ cursor: "pointer" }}
-              >
-                <img
-                  src={
-                    hoveredIndex === index
-                      ? section.white_stroke_img
-                      : section.blue_stroke_img
-                  }
-                  alt={section.tool_name}
-                />
-                <h2>{section.tool_name}</h2>
-                <p>{section.tool_desc}</p>
-                <h4>{pData?.read_more}</h4>
-              </div>
-            ))}
-          </div>
+          {cardsData.length <= 0 ? (
+            <p className={styles.loadingText}>Loading...</p>
+          ) : (
+            <div className={styles.cardParent}>
+              {cardsData?.map((section, index) => (
+                <div
+                  key={index}
+                  onMouseEnter={() => setHoveredIndex(index)}
+                  onMouseLeave={() => setHoveredIndex(null)}
+                  onClick={() => handleHeadingClick(section.tool_link)}
+                  style={{ cursor: "pointer" }}
+                >
+                  <img
+                    src={
+                      hoveredIndex === index
+                        ? section.white_stroke_img
+                        : section.blue_stroke_img
+                    }
+                    alt={section.tool_name}
+                  />
+                  <h2>{section.tool_name}</h2>
+                  <p>{section.tool_desc}</p>
+                  <h4>{pData?.read_more}</h4>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
       <Footer1 />

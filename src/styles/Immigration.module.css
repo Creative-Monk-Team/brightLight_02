@@ -37,6 +37,12 @@
   margin-top: 20px;
 }
 
+.loadingText {
+  text-align: center;
+  font-size: 20px !important;
+  color: #073552 !important;
+}
+
 .containerParent {
   padding: 50px 0px;
   width: 1440px;
