@@ -50,14 +50,20 @@ let MemberOf = () => {
   let [sectionDataSingle, setSectionDataSingle] = useState({});
   let [editMode, setEditMode] = useState(false);
 
-  const handleInputChange = (e) => {
+  let handleInputChange = (e) => {
     if (e.target.type === "file") {
-      const file = e.target.files[0];
+      let file = e.target.files[0];
+      let reader = new FileReader();
+
+      reader.onloadend = () => {
+        setSectionDataSingle({
+          ...sectionDataSingle,
+          [e.target.name]: reader.result,
+        });
+      };
+
       if (file) {
-        setSectionDataSingle((prevData) => ({
-          ...prevData,
-          [e.target.name]: file,
-        }));
+        reader.readAsDataURL(file);
       }
     } else {
       setSectionDataSingle({

@@ -143,7 +143,7 @@ let Services = () => {
         disabled={!editMode}
       />
 
-      {[1, 2, 3, 4, 5, 6, 7, 8].map((service, index) => (
+      {[1, 2, 3, 4, 5, 6, 7].map((service, index) => (
         <div key={index}>
           <input
             placeholder={`Service ${service} Name`}
