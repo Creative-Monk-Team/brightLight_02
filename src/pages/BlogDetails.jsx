@@ -115,7 +115,7 @@ let BlogDetails = () => {
                   <p className={styles.haveAQuestion}>Have Questions?</p>
                   <a
                     className={styles.imageSection}
-                    href="https://api.leadconnectorhq.com/widget/booking/BVqmhNlxRMadz10ir6aM"
+                    href="/booking"
                   >
                     <img src={rcic} />
                   </a>

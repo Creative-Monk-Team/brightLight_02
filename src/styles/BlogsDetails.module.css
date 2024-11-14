@@ -67,10 +67,14 @@
 }
 
 .blogDescriptionSection a {
-  display: inline;
+  display: inline !important;
   color: #132f46;
   text-decoration: none;
   font-weight: 600;
+}
+
+.blogDescriptionSection strong{
+  display: inline !important;
 }
 
 .freeAssesmentSection {
