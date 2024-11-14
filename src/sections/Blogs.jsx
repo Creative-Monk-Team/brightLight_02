@@ -42,7 +42,7 @@ let Blogs = () => {
       });
 
     
-    fetch("https://brightlight-node.onrender.com/new-added-blogs")
+    fetch("https://brightlight-node.onrender.com/blog-section")
       .then((res) => res.json())
       .then((data) => {
         if (data) {

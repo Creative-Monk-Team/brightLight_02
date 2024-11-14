@@ -462,6 +462,17 @@ let Admin = () => {
 
     setFilteredPages(filtered);
   };
+
+  let handleSearchForEmptyValue = (e) => {
+    e.preventDefault();
+    const searchQuery = "";
+
+    const filtered = pages.filter((page) =>
+      page.label.toLowerCase().includes(searchQuery)
+    );
+
+    setFilteredPages(filtered);
+  };
   return (
     <>
       <div className={styles.grayBg}>
@@ -471,13 +482,21 @@ let Admin = () => {
           <form className={styles.topBarSearch} onSubmit={handleSearch}>
             <input
               placeholder="Search Pages here"
-              required
               value={searchValue}
               onChange={(e) => setSearchValue(e.target.value)}
             />
-            <button className={styles.searchBtn} type="submit">
-              <img src={magnify} />
-            </button>
+            <span>
+              <button className={styles.searchBtn} type="submit">
+                <img src={magnify} />
+              </button>
+
+              <button
+                className={styles.searchBtn2}
+                onClick={handleSearchForEmptyValue}
+              >
+                Set back to Default
+              </button>
+            </span>
           </form>
 
           <div className={styles.userDiv}>
