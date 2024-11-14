@@ -286,7 +286,7 @@ const CommonLawPartnerPermanent = () => {
           </ul>
         </section>
 
-        <section className={`${styles.assistance} ${styles.section}`} id="testing2" ref={(el) => sectionsRef.current[5] = el}>
+        <section className={`${styles.assistance} ${styles.section}`} id="book-appointment" ref={(el) => sectionsRef.current[5] = el}>
           <h2 className={styles.subheading}>{pData?.NeedAssisHeading}</h2>
           <p>
           {pData?.NeedAssisPara}

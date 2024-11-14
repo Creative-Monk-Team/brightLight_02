@@ -376,7 +376,7 @@ let HomePage = () => {
     //   if (swiperRef.current) {
     //     swiperRef.current.slideNext();
     //   }
-    // }, 3000); 
+    // }, 3000);
 
     let handleClick = () => {
       if (swiperRef.current) {
@@ -396,7 +396,7 @@ let HomePage = () => {
           swiperRef.current.slideNext();
         }, 1500);
       }
-    }
+    };
 
     handleClick();
 
@@ -443,8 +443,7 @@ let HomePage = () => {
       window.location.href = link; // Navigate to the URL
     }
   };
-  const rcicAppointmentUrl =
-    "https://api.leadconnectorhq.com/widget/booking/BVqmhNlxRMadz10ir6aM";
+  const rcicAppointmentUrl = "/booking";
 
   const memberInfo = [
     { heading: memberData?.heading1, img: memberData?.heading1Img },
@@ -743,51 +742,53 @@ let HomePage = () => {
               <a href="/more-services">Know More</a>
             </button>
           </div>
-          <div className={`${styles.testimonialsVideoSection} ${styles.servicesCardSwiper}`}>
-  <Swiper
-    effect={"coverflow"}
-    grabCursor={true}
-    centeredSlides={true}
-    loop={true}  // Set loop to true for infinite scrolling
-    slidesPerView={"auto"}
-    coverflowEffect={{
-      rotate: 0,
-      stretch: 0,
-      depth: 100,
-      modifier: 2.5,
-    }}
-    pagination={{ el: ".swiper_pagination", clickable: true }}
-    navigation={{
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    }}
-    modules={[EffectCoverflow, Pagination, Navigation]}
-    className={styles.swiper_container}
-    onSwiper={(swiper) => (swiperRef.current = swiper)}
-  >
-    {services?.map((item, index) => (
-      <SwiperSlide key={index} className={styles.whiteBlockCard}>
-        <div className={styles.expertiseDiv}>
-          <h4>{item.title}</h4>
-          <p>{item.desc}</p>
-          <a
-            className={styles.expertiseKnowMore}
-            href={link(item.title)}
+          <div
+            className={`${styles.testimonialsVideoSection} ${styles.servicesCardSwiper}`}
           >
-            Know More
-          </a>
-        </div>
-      </SwiperSlide>
-    ))}
-  </Swiper>
+            <Swiper
+              effect={"coverflow"}
+              grabCursor={true}
+              centeredSlides={true}
+              loop={true} // Set loop to true for infinite scrolling
+              slidesPerView={"auto"}
+              coverflowEffect={{
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2.5,
+              }}
+              pagination={{ el: ".swiper_pagination", clickable: true }}
+              navigation={{
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              }}
+              modules={[EffectCoverflow, Pagination, Navigation]}
+              className={styles.swiper_container}
+              onSwiper={(swiper) => (swiperRef.current = swiper)}
+            >
+              {services?.map((item, index) => (
+                <SwiperSlide key={index} className={styles.whiteBlockCard}>
+                  <div className={styles.expertiseDiv}>
+                    <h4>{item.title}</h4>
+                    <p>{item.desc}</p>
+                    <a
+                      className={styles.expertiseKnowMore}
+                      href={link(item.title)}
+                    >
+                      Know More
+                    </a>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
 
-  {/* Navigation Buttons */}
+            {/* Navigation Buttons */}
 
-  {/* Pagination Controller */}
-  <div className={styles.slider_controler}>
-    <div className="swiper_pagination"></div>
-  </div>
-</div>
+            {/* Pagination Controller */}
+            <div className={styles.slider_controler}>
+              <div className="swiper_pagination"></div>
+            </div>
+          </div>
 
           <div
             className={styles.navigationButtons}
@@ -811,7 +812,11 @@ let HomePage = () => {
               className={`${styles.aspectsCard} ${styles.fadeFromLeft}`}
               ref={(el) => (aspectsCardRefs.current[0] = el)}
             >
-              <img src={achiementsData?.achievement1SVG} loading="lazy" alt="" />
+              <img
+                src={achiementsData?.achievement1SVG}
+                loading="lazy"
+                alt=""
+              />
               <h1>
                 <Odometer value={achiementsData?.achievement1Numbers} />+
               </h1>
@@ -821,7 +826,11 @@ let HomePage = () => {
               className={`${styles.aspectsCard} ${styles.fadeFromBottom}`}
               ref={(el) => (aspectsCardRefs.current[1] = el)}
             >
-              <img src={achiementsData?.achievement2SVG} loading="lazy" alt="" />
+              <img
+                src={achiementsData?.achievement2SVG}
+                loading="lazy"
+                alt=""
+              />
               <h1>
                 <Odometer value={achiementsData?.achievement2Numbers} />+
               </h1>
@@ -831,7 +840,11 @@ let HomePage = () => {
               className={`${styles.aspectsCard} ${styles.fadeFromRight}`}
               ref={(el) => (aspectsCardRefs.current[2] = el)}
             >
-              <img src={achiementsData?.achievement3SVG} loading="lazy" alt="" />
+              <img
+                src={achiementsData?.achievement3SVG}
+                loading="lazy"
+                alt=""
+              />
               <h1>
                 <Odometer value={achiementsData?.achievement3Numbers} />+
               </h1>
