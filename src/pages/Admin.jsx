@@ -215,12 +215,161 @@ import AddMoreServicesCard from "../admin_sections/AddMoreServicesCard";
 import magnify from "../assets/search-gray.png";
 
 let Admin = () => {
+  const pages = [
+    { id: "home", label: "Homepage" },
+    { id: "about", label: "About Us" },
+    { id: "contact", label: "Contact Us" },
+    { id: "privacy-policy", label: "Privacy Policy" },
+    { id: "terms-and-conditions", label: "Terms & Conditions" },
+    { id: "transport", label: "Testimonials" },
+    { id: "blogs", label: "Blogs" },
+    { id: "news", label: "News" },
+    { id: "federal", label: "Federal Skilled" },
+    { id: "category", label: "Category Based Draws" },
+    { id: "clb", label: "CLB Calculator" },
+    { id: "bcpnp", label: "BCPNP Calculator" },
+    { id: "immigration_tools", label: "Immigration Tools" },
+    { id: "more_services", label: "More Services" },
+
+    { id: "additional_documents", label: "Additional Documents Page" },
+    { id: "adoption_page", label: "Adoption Page" },
+    {
+      id: "agriculture_and_agri_food_page",
+      label: "Agriculture And Agri Food Occupation Page",
+    },
+    {
+      id: "agriculture_stream_lmia_page",
+      label: "Agriculture Stream LMIA Page",
+    },
+    { id: "agri_food_pilot_page", label: "Agri Food Pilot Program Page" },
+    { id: "bcpnp_page", label: "BCPNP Page" },
+    {
+      id: "bridging_open_work_permit_page",
+      label: "Bridging Open Work Permit LP Page",
+    },
+    { id: "business_visitor_visa_page", label: "Business Visitor Visa Page" },
+    {
+      id: "canadian_experience_class_page",
+      label: "Canadian Experience Class Page",
+    },
+    { id: "cby_page", label: "Cby Page" },
+    { id: "change_college_program_page", label: "Change College Program Page" },
+    { id: "category_based_express_page", label: "Category Based Express Page" },
+    { id: "citizenship_page", label: "Citizenship Page" },
+    {
+      id: "common_law_partner_temporary_page",
+      label: "Common Law Partner Temporary Page",
+    },
+    {
+      id: "common_law_partner_permanent_page",
+      label: "Common Law Partner Permanent Page",
+    },
+    {
+      id: "common_law_partner_international_page",
+      label: "Common Law Partner International Page",
+    },
+    { id: "dependent_children_page", label: "Dependent Children Page" },
+    { id: "dual_intent_visa_page", label: "Dual Intent Visa Page" },
+    { id: "express", label: "Express Entry" },
+    {
+      id: "entry_level_semi_skilled_page",
+      label: "Entry Level Semi Skilled Page",
+    },
+    { id: "extensions_draft_page", label: "Extensions Draft Page" },
+
+    { id: "family_reunification", label: "Family Reunification Page" },
+    {
+      id: "federal_skilled_trade_program",
+      label: "Federal Skilled Trade Program Page",
+    },
+    {
+      id: "federal_skilled_worker_program",
+      label: "Federal Skilled Worker Program Page",
+    },
+    { id: "flag_poling", label: "Flag Poling Page" },
+    { id: "francophone", label: "Framcophone Mobility Page" },
+    { id: "french_tageted_draw", label: "French Targeted Draw Page" },
+    { id: "global_stream_lmia", label: "Global Stream LMIA Page" },
+    {
+      id: "health_authorities_stream",
+      label: "Health Authorities Stream Page",
+    },
+    { id: "healthcare_targated_draw", label: "Healthcare Tageted Draws Page" },
+    {
+      id: "humanitarian_compassionate",
+      label: "Humanitarian Compassionate Page",
+    },
+    { id: "in_home_caregiver", label: "In Home Caregiver Program Page" },
+    { id: "inside_canada_caregiver", label: "Inside Canada Page" },
+    { id: "international_graduate", label: "International Graduate Page" },
+    {
+      id: "international_post_graduate",
+      label: "International Post Graduate Page",
+    },
+    { id: "lmia_reviewed", label: "LMIA Page" },
+    { id: "lonely_canadian", label: "Lonely Canadian Page" },
+    { id: "low_wage_lmia", label: "Low Wage LMIA Page" },
+    { id: "non_sds", label: "Non Sds Page" },
+    { id: "open_work_dependent", label: "Open Work Dependent Children Page" },
+    { id: "open_work_permit", label: "Open Work Permit Page" },
+    {
+      id: "open_work_permit_for_spousal",
+      label: "Open Work Permit For Spousal Inland Page",
+    },
+
+    {
+      id: "open_work_permit_vulnerable",
+      label: "Open Work Permit Vulnerable Page",
+    },
+    { id: "orphan", label: "Orphan Page" },
+    { id: "outside_canada", label: "Outside Canada Page" },
+    { id: "parents_grandparents", label: "Parents Grandparents Page" },
+    { id: "pathways_for_caregiver", label: "Pathways For Caregiver Page" },
+    {
+      id: "pr_pathways_for_caregiver",
+      label: "PR Pathways For Caregiver Page",
+    },
+    { id: "pgwp", label: "PGWP Page" },
+    { id: "pilot_programs", label: "Pilot Programs Page" },
+    { id: "pnp_page", label: "PNP Page" },
+    { id: "previous_draw_history", label: "Previous Draw History Page" },
+    { id: "priorities_program", label: "Priorities Program Page" },
+    { id: "pr_renewal", label: "Pr Renewal Page" },
+    { id: "permanent_residency", label: "Permanent Residency Page" },
+    { id: "restoration_status", label: "Restoration Status Page" },
+    { id: "reconsideration", label: "Reconsideration Page" },
+    { id: "reply_to_pfl", label: "Reply To PFL Page" },
+    { id: "rnip", label: "RNIP Page" },
+    { id: "same_sex", label: "Same Sex Page" },
+    { id: "sds", label: "Sds Page" },
+    { id: "skilled_worker_stream", label: "Skilled Worker Stream Page" },
+    { id: "spousal_open_work_permit", label: "Spousal Open Work Permit Page" },
+
+    {
+      id: "spose_common_law_spon",
+      label: "Spouse Common Law Sponsorship Page",
+    },
+    { id: "spousal_inland", label: "Spousal Inland Page" },
+    { id: "spousal_outland", label: "Spousal Outland Page" },
+    { id: "stem_target", label: "Stem Targeted Draw Page" },
+    { id: "student_visa", label: "Student Visa Page" },
+    { id: "study_permit_minors", label: "Study Permit Minors Page" },
+    { id: "super_visa", label: "Super Visa Page" },
+    { id: "temp", label: "Temporary Residency Page" },
+    { id: "temp_per", label: "Temporary Residency Permit Page" },
+    { id: "trade_occu", label: "Trade Occupation Targeted Draw Page" },
+    { id: "trans_occu", label: "Transport Occupation Targeted Draw Page" },
+    { id: "visi_stu", label: "Visitor to Student Page" },
+    { id: "visi_visa", label: "Visitor Visa Page" },
+    { id: "work_per", label: "Work Permit Page" },
+  ];
   let { logout } = useAuth();
   let [showDropdown, setShowDropdown] = useState(false);
   let [activePage, setActivePage] = useState("home");
   let [activeSection, setActiveSection] = useState("home-top");
   let [displayParam, setDisplayParam] = useState("main_pages");
   let [paginationValue, setPaginationValue] = useState(1);
+  let [filteredPages, setFilteredPages] = useState(pages);
 
   useEffect(() => {
     let params = new URLSearchParams(window.location.search);
@@ -289,8 +438,10 @@ let Admin = () => {
     setShowDropdown(!showDropdown);
   };
 
-  let handlePageClick = (page) => {
-    setActivePage(page);
+  let [searchValue, setSearchValue] = useState("");
+
+  const handlePageClick = (pageId) => {
+    setActivePage(pageId);
   };
 
   let handleSectionClick = (section) => {
@@ -301,9 +452,16 @@ let Admin = () => {
     window.location.href = "/auth/panel/dash/bright";
   };
 
-  let handleSearch = () => {};
+  let handleSearch = (e) => {
+    e.preventDefault();
+    const searchQuery = searchValue.toLowerCase();
 
-  let [searchValue, setSearchValue] = useState("");
+    const filtered = pages.filter((page) =>
+      page.label.toLowerCase().includes(searchQuery)
+    );
+
+    setFilteredPages(filtered);
+  };
   return (
     <>
       <div className={styles.grayBg}>
@@ -336,134 +494,34 @@ let Admin = () => {
         {displayParam == "main_pages" ? (
           <div className={styles.dashboard}>
             <div className={styles.leftPanel}>
-              <div
-                className={`${styles.page} ${
-                  activePage === "home" ? styles.activePage : ""
-                }`}
-                onClick={() => handlePageClick("home")}
-              >
-                <p>Homepage</p>
-              </div>
-              <div
-                className={`${styles.page} ${
-                  activePage === "about" ? styles.activePage : ""
-                }`}
-                onClick={() => handlePageClick("about")}
-              >
-                <p>About Us</p>
-              </div>
-              <div
-                className={`${styles.page} ${
-                  activePage === "contact" ? styles.activePage : ""
-                }`}
-                onClick={() => handlePageClick("contact")}
-              >
-                <p>Contact Us</p>
-              </div>
-              <div
-                className={`${styles.page} ${
-                  activePage === "privacy-policy" ? styles.activePage : ""
-                }`}
-                onClick={() => handlePageClick("privacy-policy")}
-              >
-                <p>Privacy Policy</p>
-              </div>
-              <div
-                className={`${styles.page} ${
-                  activePage === "terms-and-conditions" ? styles.activePage : ""
-                }`}
-                onClick={() => handlePageClick("terms-and-conditions")}
-              >
-                <p>Terms & Conditions</p>
-              </div>
-              <div
-                className={`${styles.page} ${
-                  activePage === "transport" ? styles.activePage : ""
-                }`}
-                onClick={() => handlePageClick("transport")}
-              >
-                <p>Testimonials</p>
-              </div>
-              <div
-                className={`${styles.page} ${
-                  activePage === "blogs" ? styles.activePage : ""
-                }`}
-                onClick={() => handlePageClick("blogs")}
-              >
-                <p>Blogs</p>
-              </div>
+              {filteredPages.length > 0 ? (
+                filteredPages.slice(0, 14).map((page) => (
+                  <div
+                    key={page.id}
+                    className={`${styles.page} ${
+                      activePage === page.id ? styles.activePage : ""
+                    }`}
+                    onClick={() => handlePageClick(page.id)}
+                  >
+                    <p>{page.label}</p>
+                  </div>
+                ))
+              ) : (
+                <div className={styles.noResults}>
+                  <p>No Pages Found</p>
+                </div>
+              )}
 
-              <div
-                className={`${styles.page} ${
-                  activePage === "news" ? styles.activePage : ""
-                }`}
-                onClick={() => handlePageClick("news")}
-              >
-                <p>News</p>
-              </div>
-
-              <div
-                className={`${styles.page} ${
-                  activePage === "federal" ? styles.activePage : ""
-                }`}
-                onClick={() => handlePageClick("federal")}
-              >
-                <p>Federal Skilled</p>
-              </div>
-
-              <div
-                className={`${styles.page} ${
-                  activePage === "category" ? styles.activePage : ""
-                }`}
-                onClick={() => handlePageClick("category")}
-              >
-                <p>Category Based Draws</p>
-              </div>
-
-              <div
-                className={`${styles.page} ${
-                  activePage === "clb" ? styles.activePage : ""
-                }`}
-                onClick={() => handlePageClick("clb")}
-              >
-                <p>CLB Calculator</p>
-              </div>
-
-              <div
-                className={`${styles.page} ${
-                  activePage === "bcpnp" ? styles.activePage : ""
-                }`}
-                onClick={() => handlePageClick("bcpnp")}
-              >
-                <p>BCPNP Calculator</p>
-              </div>
-
-              <div
-                className={`${styles.page} ${
-                  activePage === "immigration_tools" ? styles.activePage : ""
-                }`}
-                onClick={() => handlePageClick("immigration_tools")}
-              >
-                <p>Immigration Tools</p>
-              </div>
-
-              <div
-                className={`${styles.page} ${
-                  activePage === "more_services" ? styles.activePage : ""
-                }`}
-                onClick={() => handlePageClick("more_services")}
-              >
-                <p>More Services</p>
-              </div>
-
-              <div
-                className={styles.page}
-                onClick={() => {
-                  setInternalPages();
-                }}
-              >
-                <p>Internal Pages {"->"}</p>
-              </div>
+              {!searchValue ? (
+                <div
+                  className={styles.page}
+                  onClick={() => {
+                    setInternalPages();
+                  }}
+                >
+                  <p>Internal Pages {"->"}</p>
+                </div>
+              ) : null}
             </div>
             <div className={styles.rightPanel}>
               {activePage === "home" && (

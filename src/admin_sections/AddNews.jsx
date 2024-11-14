@@ -6,7 +6,7 @@ import update from "../assets/update.png";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 
 const AddNews = () => {
-  const [textareaValue, setTextareaValue] = useState("Bigger Heading");
+  const [textareaValue, setTextareaValue] = useState("Your Selection Code Here");
   const handleTagClick = (tag) => {
     let tagValue = "";
 
@@ -174,6 +174,20 @@ const AddNews = () => {
     <div className={styles.singleSectionData}>
       <ToastContainer />
       <input
+        placeholder="Meta Title"
+        name="metaTitle"
+        value={sectionDataSingle.metaTitle || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Meta Description"
+        name="metaDescription"
+        value={sectionDataSingle.metaDescription || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
         placeholder="News Heading"
         name="news_heading"
         value={sectionDataSingle.news_heading || ""}
@@ -256,6 +270,7 @@ const AddNews = () => {
           value={textareaValue}
           onChange={(e) => setTextareaValue(e.target.value)}
           disabled={!editMode}
+          style={{height: "150px"}}
         />
       </div>
       <textarea
@@ -264,20 +279,7 @@ const AddNews = () => {
         value={sectionDataSingle.news_content || ""}
         onChange={handleInputChange}
         disabled={!editMode}
-      />
-      <input
-        placeholder="Meta Title"
-        name="metaTitle"
-        value={sectionDataSingle.metaTitle || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="Meta Description"
-        name="metaDescription"
-        value={sectionDataSingle.metaDescription || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
+        style={{height: "500px"}}
       />
       <input
         type="file"

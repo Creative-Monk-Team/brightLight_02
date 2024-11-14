@@ -6,7 +6,7 @@ import update from "../assets/update.png";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 
 let AddBlog = () => {
-  const [textareaValue, setTextareaValue] = useState("Bigger Heading");
+  const [textareaValue, setTextareaValue] = useState("Your Selection Code Here");
   const [ytIframe, setYtIframe] = useState(null);
   const [ytLink, setYtLink] = useState("");
   const [ytShortcode, setYtShortcode] = useState("");
@@ -320,6 +320,20 @@ let AddBlog = () => {
     <div className={styles.singleSectionData}>
       <ToastContainer />
       <input
+        placeholder="Meta Title"
+        name="metaTitle"
+        value={sectionDataSingle.metaTitle || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Meta Description"
+        name="metaDescription"
+        value={sectionDataSingle.metaDescription || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
         placeholder="Blog Heading"
         name="blog_heading"
         value={sectionDataSingle.blog_heading || ""}
@@ -402,6 +416,7 @@ let AddBlog = () => {
           value={textareaValue}
           onChange={(e) => setTextareaValue(e.target.value)}
           disabled={!editMode}
+          style={{height: "150px"}}
         />
       </div>
       <textarea
@@ -410,21 +425,9 @@ let AddBlog = () => {
         value={sectionDataSingle.blog_content || ""}
         onChange={handleInputChange}
         disabled={!editMode}
+        style={{height: "500px"}}
       />
-      <input
-        placeholder="Meta Title"
-        name="metaTitle"
-        value={sectionDataSingle.metaTitle || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
-      <input
-        placeholder="Meta Description"
-        name="metaDescription"
-        value={sectionDataSingle.metaDescription || ""}
-        onChange={handleInputChange}
-        disabled={!editMode}
-      />
+
       <input
         type="file"
         name="image"
