@@ -230,6 +230,10 @@
   text-decoration: none;
 }
 
+.RefusalList li{
+  margin-top: 8px;
+}
+
 @media (max-width: 1080px) {
   .benefits {
     flex-direction: column;

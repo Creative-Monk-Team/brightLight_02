@@ -212,7 +212,7 @@ const FrancophoneMobilityProgram = () => {
           <h4>
           {pData?.BenifitsSubHeading}
           </h4>
-          <ul style={{ marginLeft: "40px" }}>
+          <ul className={styles.BenifitList} style={{ marginLeft: "40px" }}>
             <li>
             {pData?.BenifitsList1}
             </li>

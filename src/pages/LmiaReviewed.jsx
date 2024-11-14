@@ -289,7 +289,7 @@ const LmiaReviewed = () => {
             <h2>{pData?.ApplyHeading}</h2>
             <div className={styles.applicationProcess}>
               <h3>{pData?.ApplyEmployerSubHeading}</h3>
-              <ul
+              <ul className={styles.RefusalList}
                 style={{
                   marginTop: "10px",
                   marginLeft: "40px",
@@ -310,7 +310,7 @@ const LmiaReviewed = () => {
                 </li>
               </ul>
               <h3>{pData?.ApplyForeignSubHeading}</h3>
-              <ul
+              <ul className={styles.RefusalList}
                 style={{
                   marginTop: "10px",
                   marginLeft: "40px",
@@ -341,7 +341,7 @@ const LmiaReviewed = () => {
             <h4>
             {pData?.RefusalSubHeading}
             </h4>
-            <ul
+            <ul className={styles.RefusalList} 
               style={{
                 marginTop: "10px",
                 marginLeft: "40px",

@@ -177,6 +177,10 @@ p {
   /* list-style-type: none; */
 }
 
+.BenifitList li{
+  margin-top: 8px;
+}
+
 .tefButton  {
   background-color: #00273f;
   color: #fff;
