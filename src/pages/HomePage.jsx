@@ -18,6 +18,7 @@ import Blogs from "../sections/Blogs";
 import ogImage from "../assets/ogImage.png";
 import { Helmet } from "react-helmet-async";
 import Odometer from "../components/Odometer";
+import { debounce } from 'lodash';
 
 let HomePage = () => {
   const swiperRef = useRef(null);
@@ -53,26 +54,41 @@ let HomePage = () => {
   let [metaData, setMetaData] = useState([]);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Check if 80% of the section is visible
-        setIsVisible(entry.intersectionRatio >= 0.8);
-      },
-      {
-        threshold: 0.8,
+    const sections = [
+      { ref: sectionRef, callback: setIsVisible },
+      { ref: featuresSectionRef, callback: setIsFeaturesVisible },
+      { ref: testimonialsSectionRef, callback: setIsTestimonialsVisible },
+      // Add other sections here
+    ];
+  
+    const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const target = entry.target;
+        const callback = sections.find((section) => section.ref.current === target)?.callback;
+        if (entry.isIntersecting && callback) {
+          callback(true);
+        } else {
+          callback(false);
+        }
+      });
+    }, observerOptions);
+  
+    sections.forEach(({ ref }) => {
+      if (ref.current) {
+        observer.observe(ref.current);
       }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
+    });
+  
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
+      sections.forEach(({ ref }) => {
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+      });
     };
   }, []);
+  
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -249,6 +265,11 @@ let HomePage = () => {
       }
     };
   }, []);
+  const debouncedSlideNext = debounce(() => {
+    if (swiperRef.current) {
+      swiperRef.current.slideNext();
+    }
+  }, 500);
 
   useEffect(() => {
     const observerOptions = {
@@ -457,27 +478,31 @@ let HomePage = () => {
       img.src = url;
     });
   };
-
+  
+  // Modify the effect to preload only the visible images
   useEffect(() => {
-    // Preload service images
-    const serviceImages = services.map((service) => service.img);
+    // Preload service images that are visible (or a subset for initial load)
+    const serviceImages = services.slice(0, 3).map((service) => service.img);  // Preload only the first few
     preloadImages(serviceImages);
-
+  
     setLoaded(true); // Assuming data is fetched and set here
-  }, [services]); // Run when services data is available
+  }, [services]);
+  
 
   useEffect(() => {
-    // Auto-slide functionality
+    if (!swiperRef.current) return;
+  
     autoSlideIntervalRef.current = setInterval(() => {
       if (swiperRef.current && swiperRef.current.activeIndex < 2) {
         swiperRef.current.slideNext();
       } else {
-        clearInterval(autoSlideIntervalRef.current); // Stop auto-slide after 3 slides
+        clearInterval(autoSlideIntervalRef.current);
       }
-    }, 3000); // Change slide every 3 seconds
-
-    return () => clearInterval(autoSlideIntervalRef.current); // Cleanup on unmount
-  }, [services]);
+    }, 3000);
+  
+    return () => clearInterval(autoSlideIntervalRef.current);
+  }, []);  // Remove `services` from the dependency list, unless absolutely needed
+  
 
   const handleNextSlide = () => {
     if (swiperRef.current) {
@@ -548,7 +573,7 @@ let HomePage = () => {
                   exit: styles.fadeOut,
                   exitActive: styles.fadeOutActive,
                 }}
-                timeout={1000}
+                timeout={0}
               >
                 <div className={styles.bannerHeading}>
                   <h1 className={`${styles.slideInFromLeft} ${styles.fadeIn}`}>
@@ -582,7 +607,7 @@ let HomePage = () => {
                   exit: styles.fadeOut,
                   exitActive: styles.fadeOutActive,
                 }}
-                timeout={1000}
+                timeout={0}
               >
                 <div className={styles.cardContainer}>
                   {services.map((card, index) => (
@@ -598,7 +623,7 @@ let HomePage = () => {
                           exit: styles.fadeOut,
                           exitActive: styles.fadeOutActive,
                         }}
-                        timeout={500}
+                        timeout={0}
                       >
                         <img
                           src={card.img}
