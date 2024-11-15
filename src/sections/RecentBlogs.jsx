@@ -5,7 +5,7 @@ import { useEffect } from "react";
 let RecentBlogs = () => {
   let [blogs, setBlogs] = useState([]);
   useEffect(() => {
-    fetch("https://brightlight-node.onrender.com/adding-blog")
+    fetch("https://brightlight-node.onrender.com/new-added-blogs")
       .then((res) => {
         return res.json();
       })
