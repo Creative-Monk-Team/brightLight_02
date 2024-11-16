@@ -101,23 +101,80 @@ let RecentBlogs = () => {
   let [blogs, setBlogs] = useState([]);
   let [filterBlogsParam, setFilterBlogsParam] = useState("");
   let [shouldFetch, setShouldFetch] = useState(true);
-
-  useEffect(() => {
-    let urlPath = window.location.pathname;
-    let serviceName = urlPath.split("/")[1];
-
-    if (serviceName) {
-      if (serviceName === "visitor-visa") {
-        setFilterBlogsParam("Visitor Visa");
-      } else if (serviceName === "work-permit") {
-        setFilterBlogsParam("Work Permit");
+  
+    useEffect(() => {
+      let urlPath = window.location.pathname;
+      let serviceName = urlPath.split("/")[1];
+    
+      if (serviceName) {
+        if (serviceName === "visitor-visa") {
+          setFilterBlogsParam("Visitor Visa");
+        } else if (serviceName === "work-permit") {
+          setFilterBlogsParam("Work Permit");
+        } else if (serviceName === "skilled-worker-stream") {
+          setFilterBlogsParam("Skilled Worker Stream");
+        } else if (serviceName === "priorities-program") {
+          setFilterBlogsParam("Priorities Program");
+        } else if (serviceName === "international-post-graduate-program") {
+          setFilterBlogsParam("International Post Graduate Program");
+        } else if (serviceName === "international-graduate-program") {
+          setFilterBlogsParam("International Graduate Program");
+        } else if (serviceName === "health-authority-stream") {
+          setFilterBlogsParam("Health Authority Stream");
+        } else if (serviceName === "stem-targeted-draw") {
+          setFilterBlogsParam("STEM Targeted Draw");
+        } else if (serviceName === "trade-occupation-targeted-draw") {
+          setFilterBlogsParam("Trade Occupation Targeted Draw");
+        } else if (serviceName === "canadian-experience-class") {
+          setFilterBlogsParam("Canadian Experience Class");
+        } else if (serviceName === "same-sex") {
+          setFilterBlogsParam("Same Sex");
+        } else if (serviceName === "visitor-to-student") {
+          setFilterBlogsParam("Visitor to Student");
+        } else if (serviceName === "change-college-program") {
+          setFilterBlogsParam("Change College Program");
+        } else if (serviceName === "study-permit-minors") {
+          setFilterBlogsParam("Study Permit Minors");
+        } else if (serviceName === "super-visa") {
+          setFilterBlogsParam("Super Visa");
+        } else if (serviceName === "bc-pnp") {
+          setFilterBlogsParam("BC PNP");
+        } else if (serviceName === "pilot-programs") {
+          setFilterBlogsParam("Pilot Programs");
+        } else if (serviceName === "dual-intent-visa") {
+          setFilterBlogsParam("Dual Intent Visa");
+        } else if (serviceName === "business-visitor-visa") {
+          setFilterBlogsParam("Business Visitor Visa");
+        } else if (serviceName === "family-reunification-sponsorship") {
+          setFilterBlogsParam("Family Reunification Sponsorship");
+        } else if (serviceName === "dependent-children") {
+          setFilterBlogsParam("Dependent Children");
+        } else if (serviceName === "adoption") {
+          setFilterBlogsParam("Adoption");
+        } else if (serviceName === "humanitarian-compassionate") {
+          setFilterBlogsParam("Humanitarian and Compassionate");
+        } else if (serviceName === "spouse-inland") {
+          setFilterBlogsParam("Spouse Inland");
+        } else if (serviceName === "spouse-outland") {
+          setFilterBlogsParam("Spouse Outland");
+        } else if (serviceName === "spousal-open-work-permit") {
+          setFilterBlogsParam("Spousal Open Work Permit");
+        } else if (serviceName === "low-wage-lmia") {
+          setFilterBlogsParam("Low Wage LMIA");
+        } else if (serviceName === "global-stream-lmia") {
+          setFilterBlogsParam("Global Stream LMIA");
+        } else if (serviceName === "permanent-residence-pathways-caregivers-lp") {
+          setFilterBlogsParam("Permanent Residence Pathways Caregivers");
+        } else if (serviceName === "category-based-express") {
+          setFilterBlogsParam("Category Based Express");
+        } else {
+          setFilterBlogsParam("All");
+        }
       } else {
         setFilterBlogsParam("All");
       }
-    } else {
-      setFilterBlogsParam("All");
-    }
-  }, []);
+    }, []);
+    
 
   useEffect(() => {
     if (filterBlogsParam === "") return;
