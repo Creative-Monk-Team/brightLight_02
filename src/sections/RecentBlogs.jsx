@@ -184,14 +184,13 @@ let RecentBlogs = () => {
               latestBlogs = sortedData.slice(0, 3);
             }
           }
-          console.log("latestBlogs", latestBlogs);
           setBlogs(latestBlogs);
-        }
+        }    
       } catch (error) {
         console.error("Error fetching blogs:", error);
       }
     };
-
+ 
     fetchBlogs();
   }, [filterBlogsParam]);
 
