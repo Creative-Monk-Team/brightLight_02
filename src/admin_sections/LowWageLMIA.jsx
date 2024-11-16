@@ -94,6 +94,23 @@ const LowWageLMIAContent = () => {
     MediHouTable12: "",
     MediHouTable13: "",
 
+
+
+    MediHouTableHeading2: "",
+    MediHouTable1Col2: "",
+    MediHouTable2Col2: "",
+    MediHouTable3Col2: "",
+    MediHouTable4Col2: "",
+    MediHouTable5Col2: "",
+    MediHouTable6Col2: "",
+    MediHouTable7Col2: "",
+    MediHouTable8Col2: "",
+    MediHouTable9Col2: "",
+    MediHouTable10Col2: "",
+    MediHouTable11Col2: "",
+    MediHouTable12Col2: "",
+    MediHouTable13Col2: "",
+
     ProvincialPara2: "",
     HighWageHeading: "",
     HighWagePara: "",
@@ -364,7 +381,7 @@ const LowWageLMIAContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
-  <div className={styles.twoColumnsTable}>
+  <div className={styles.threeColumnsTable}>
     <div>
     <input
         placeholder="Province/Territory Table Heading"
@@ -406,6 +423,27 @@ const LowWageLMIAContent = () => {
         />
       ))}
 
+    </div>
+
+    <div>
+    <input
+        placeholder="Median Hourly Table Heading 2"
+        name="MediHouTableHeading2"
+        value={sectionDataSingle.MediHouTableHeading2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      {Array.from({ length: 13 }, (_, index) => (
+        <input
+          key={index}
+          placeholder={`Median Hourly Table ${index + 1} Col 2`}
+          name={`MediHouTable${index + 1}Col2`}
+          value={sectionDataSingle[`MediHouTable${index + 1}Col2`] || ""}
+          onChange={handleInputChange}
+          disabled={!editMode}
+        />
+      ))}
     </div>
   </div>
      

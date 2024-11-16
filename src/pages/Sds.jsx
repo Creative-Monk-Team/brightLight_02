@@ -185,6 +185,18 @@ const Sds = () => {
       <Navbar1 />
       <div className={styles.bannerParent}>
         <div className={styles.banner}>
+        <div className={styles.flashingNote}>
+            <p>{pData?.noteHeading}</p>
+            <p>
+            {pData?.notContent}
+            </p>
+            {pData?.showNonSDSButton == "Y" ? <button
+              className={styles.button}
+              onClick={() => (window.location.href = "/non-sds")}
+            >
+              Non SDS
+            </button> : null}
+          </div>
           <div
             className={`${styles.bannerHeadingRotateParent} ${
               isDropdownOpen ? styles.active : ""

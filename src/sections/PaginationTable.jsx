@@ -9,8 +9,8 @@ const PaginationTable = () => {
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [sortConfig, setSortConfig] = useState({
-    key: "drawNumber",
-    direction: "ascending",
+    key: "drawDateFull",
+    direction: "descending",
   });
   const [selectedRoundType, setSelectedRoundType] = useState(""); // State for round type filter
   const itemsPerPage = 30;

@@ -51,6 +51,9 @@ const ChangeCollegeProgramContent = () => {
     ChangeCollProgHeading: "",
     ChangeCollProgPara1: "",
     ChangeCollProgCan2: "",
+    noteHeading: "",
+    notContent: "",
+    showFreeAppointmentButton: "",
     EligibilityHeading: "",
     e1: "",
     e2: "",
@@ -190,6 +193,21 @@ const ChangeCollegeProgramContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+
+<div className={styles.testimonialsVisibility}>
+        <p>Show Free Appointment Button ?</p>
+        <input
+        placeholder="Show Free Appointment Button"
+        name="showFreeAppointmentButton"
+        value={sectionDataSingle.showFreeAppointmentButton || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      </div>
+
+      <p className={styles.precautionLine}>
+      For Displaying the above button , enter the value as Y else N . This is a strictly based value comparison , so please match the value for your requirements.
+      </p>
 
       <input
         placeholder="Eligibility Criteria Heading"

@@ -50,6 +50,7 @@ const SdsContent = () => {
   const [sectionDataSingle, setSectionDataSingle] = useState({
     SdsHeading: "",
     SdsPara: "",
+    noteHeading: "",
     WhatisStudyPerHeading: "",
     WhatisStudyPerSubHead: "",
     wspLi1: "",
@@ -373,6 +374,37 @@ const SdsContent = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+
+<input
+        placeholder="Note Heading"
+        name="noteHeading"
+        value={sectionDataSingle.noteHeading || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+<input
+        placeholder="Note Content"
+        name="notContent"
+        value={sectionDataSingle.notContent || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <div className={styles.testimonialsVisibility}>
+        <p>Show Non SDS Button ? </p>
+        <input
+        placeholder="Show Non SDS Button"
+        name="showNonSDSButton"
+        value={sectionDataSingle.showNonSDSButton || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      </div>
+
+      <p className={styles.precautionLine}>
+      For Displaying the above button , enter the value as Y else N . This is a strictly based value comparison , so please match the value for your requirements.
+      </p>
 
       <input
         placeholder="What is Study Permit Heading"

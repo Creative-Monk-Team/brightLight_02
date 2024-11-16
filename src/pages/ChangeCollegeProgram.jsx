@@ -12,7 +12,7 @@ import FAQ_White_Internal from "../sections/FAQ_White_Internal";
 const ChangeCollegeProgram = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   let [metaData, setMetaData] = useState([]);
-  let [pData,setPData]=useState([])
+  let [pData, setPData] = useState([]);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -90,15 +90,15 @@ const ChangeCollegeProgram = () => {
   const fetchedValue91 = pData?.wcu1;
   const strongText91 = extractStrongText(fetchedValue91);
   const remainingText91 = extractRemainingText(fetchedValue91);
-  
+
   const fetchedValue92 = pData?.wcu2;
   const strongText92 = extractStrongText(fetchedValue92);
   const remainingText92 = extractRemainingText(fetchedValue92);
-  
+
   const fetchedValue93 = pData?.wcu3;
   const strongText93 = extractStrongText(fetchedValue93);
   const remainingText93 = extractRemainingText(fetchedValue93);
-  
+
   const fetchedValue94 = pData?.wcu4;
   const strongText94 = extractStrongText(fetchedValue94);
   const remainingText94 = extractRemainingText(fetchedValue94);
@@ -150,6 +150,18 @@ const ChangeCollegeProgram = () => {
       <Navbar1 />
       <div className={styles.bannerParent}>
         <div className={styles.banner}>
+          <div className={styles.flashingNote}>
+            <p>{pData?.noteHeading}</p>
+            <p>{pData?.notContent}</p>
+            {pData?.showFreeAppointmentButton == "Y" ? (
+              <button
+                className={styles.button}
+                onClick={() => (window.location.href = "/booking")}
+              >
+                Book Free Appointment
+              </button>
+            ) : null}
+          </div>
           <div
             className={`${styles.bannerHeadingRotateParent} ${
               isDropdownOpen ? styles.active : ""
@@ -194,27 +206,19 @@ const ChangeCollegeProgram = () => {
           id="about-program"
           ref={(el) => (sectionsRef.current[0] = el)}
         >
-         {pData?.ChangeCollProgHeading}
+          {pData?.ChangeCollProgHeading}
         </h1>
-        <p className={styles.intro}>
-        {pData?.ChangeCollProgPara1}
-        </p>
-        <p className={styles.intro}>
-        {pData?.ChangeCollProgCan2}
-        </p>
+        <p className={styles.intro}>{pData?.ChangeCollProgPara1}</p>
+        <p className={styles.intro}>{pData?.ChangeCollProgCan2}</p>
 
         <section
           className={`${styles.eligibility} ${styles.section}`}
           id="eligibility"
           ref={(el) => (sectionsRef.current[1] = el)}
         >
-          <h2 className={styles.subheading}>
-          {pData?.EligibilityHeading}
-          </h2>
-          <ul style={{marginLeft: "40px"}} className={styles.eligibilityList}>
-            <li>
-            {pData?.e1}
-            </li>
+          <h2 className={styles.subheading}>{pData?.EligibilityHeading}</h2>
+          <ul style={{ marginLeft: "40px" }} className={styles.eligibilityList}>
+            <li>{pData?.e1}</li>
             <li>{pData?.e2}</li>
           </ul>
         </section>
@@ -224,34 +228,22 @@ const ChangeCollegeProgram = () => {
           id="how-to-apply"
           ref={(el) => (sectionsRef.current[2] = el)}
         >
-          <h2 className={styles.subheading}>
-          {pData?.HowtoChangeHeading}
-          </h2>
+          <h2 className={styles.subheading}>{pData?.HowtoChangeHeading}</h2>
           <h4 className={styles.processDescription}>
-          {pData?.HowtoChangeSubHead1}
+            {pData?.HowtoChangeSubHead1}
           </h4>
           <ul className={styles.processList}>
-            <li>
-            {pData?.hc1}
-            </li>
+            <li>{pData?.hc1}</li>
             <li> {pData?.hc2}</li>
           </ul>
           <h4 className={styles.processDescription}>
-          {pData?.HowtoChangeSubHead2}
+            {pData?.HowtoChangeSubHead2}
           </h4>
           <ul className={styles.processList}>
-            <li>
-            {pData?.e3}
-            </li>
-            <li>
-            {pData?.e4}
-            </li>
-            <li>
-            {pData?.e5}
-            </li>
-            <li>
-            {pData?.e6}
-            </li>
+            <li>{pData?.e3}</li>
+            <li>{pData?.e4}</li>
+            <li>{pData?.e5}</li>
+            <li>{pData?.e6}</li>
           </ul>
         </section>
 
@@ -260,20 +252,12 @@ const ChangeCollegeProgram = () => {
           id="refusal-reasons"
           ref={(el) => (sectionsRef.current[3] = el)}
         >
-          <h2 className={styles.subheading}>
-          {pData?.RefusalHeading}
-          </h2>
-          <ul style={{marginLeft: "40px"}} className={styles.refusalList}>
-            <li>
-            {pData?.r1}
-            </li>
-            <li>
-            {pData?.r2}
-            </li>
+          <h2 className={styles.subheading}>{pData?.RefusalHeading}</h2>
+          <ul style={{ marginLeft: "40px" }} className={styles.refusalList}>
+            <li>{pData?.r1}</li>
+            <li>{pData?.r2}</li>
             <li>{pData?.r3}</li>
-            <li>
-            {pData?.r4}
-            </li>
+            <li>{pData?.r4}</li>
             <li>{pData?.r5}</li>
           </ul>
         </section>
@@ -284,18 +268,11 @@ const ChangeCollegeProgram = () => {
           ref={(el) => (sectionsRef.current[4] = el)}
         >
           <h2 className={styles.subheading}>{pData?.StillNotHeading}</h2>
-          <p className={styles.callToActionText}>
-          {pData?.s1}
-          </p>
-          <p className={styles.callToActionText}>
-          {pData?.s2}
-          </p>
+          <p className={styles.callToActionText}>{pData?.s1}</p>
+          <p className={styles.callToActionText}>{pData?.s2}</p>
           <button
             className={styles.button}
-            onClick={() =>
-              (window.location.href =
-                "/booking")
-            }
+            onClick={() => (window.location.href = "/booking")}
           >
             Start your process now
           </button>
@@ -306,32 +283,32 @@ const ChangeCollegeProgram = () => {
           id="why-choose-us"
           ref={(el) => (sectionsRef.current[9] = el)}
         >
-         <h2>  {pData?.WhyChooseUsHeading01 }</h2>
-          <ul className={styles.whychooseusLi} style={{marginLeft: "40px"}}>
+          <h2> {pData?.WhyChooseUsHeading01}</h2>
+          <ul className={styles.whychooseusLi} style={{ marginLeft: "40px" }}>
             <li>
-              <strong>{strongText91}</strong>{" "} {remainingText91}
+              <strong>{strongText91}</strong> {remainingText91}
             </li>
             <li>
-            <strong>{strongText92}</strong>{" "} {remainingText92}
+              <strong>{strongText92}</strong> {remainingText92}
             </li>
             <li>
-            <strong>{strongText93}</strong>{" "} {remainingText93}
+              <strong>{strongText93}</strong> {remainingText93}
             </li>
             <li>
-            <strong>{strongText94}</strong>{" "} {remainingText94}
+              <strong>{strongText94}</strong> {remainingText94}
             </li>
           </ul>
         </section>
       </div>
 
       <div id="faqs">
-      <FAQ_White_Internal data={pData} />
+        <FAQ_White_Internal data={pData} />
       </div>
       {pData?.show_testimonials == "Y" && (
         <div id="testimonials">
-          <Testimonials />
-        </div>
-      )}
+          <Testimonials /> 
+        </div>
+      )}
       <div id="blogs">
         <RecentBlogs />
       </div>
