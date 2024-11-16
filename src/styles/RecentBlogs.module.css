@@ -58,6 +58,7 @@
   color: gray;
   font-weight: 600;
   font-size: 14px;
+  margin-top: 10px;
 }
 .blog:hover {
   transform: translateY(-10px); /* Adjust this value as needed */
