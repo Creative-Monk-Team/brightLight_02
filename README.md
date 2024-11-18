@@ -68,9 +68,11 @@ These endpoints are protected, ensuring only authorised users can access them. _
 
 Use these Instructions to Run Website on "[localhost](http://localhost/3000)" _OR_ to run in on your 'System'.
 
+(1)First run this Command on your Terminal. Then
 ```bash
 npm i
 ```
+(2)Run this Second Command
 ```bash
 npm run start
 ```
