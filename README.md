@@ -61,6 +61,18 @@ The backend exposes several RESTful APIs that power the dynamic nature of the pl
 
 These endpoints are protected, ensuring only authorised users can access them. _Please note, this is an example structure and does not represent real endpoints to maintain security measures._
 
+## Installation
+
+Use these Instructions to Run Website on "[localhost](http://localhost/3000)" OR to run in on your System.
+
+```bash
+npm i
+```
+```bash
+npm run start
+```
+
+
 ## Credits
 
 This project was developed by **Creative-Monk** in 2024 with contributions from team members UttamVerma and SakshamVerma.
