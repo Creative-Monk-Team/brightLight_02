@@ -78,6 +78,7 @@ npm run start
 
 ## Credits
 
-This project was developed by **Creative-Monk** in 2024 with contributions from team members UttamVerma and SakshamVerma.
+
+This project was developed by **Creative-Monk** in **2024**, with all work carried out by _UttamVerma_ and _SakshamVerma_.
 
 
