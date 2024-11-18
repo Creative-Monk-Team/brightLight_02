@@ -72,7 +72,7 @@ Use these Instructions to Run Website on "[localhost](http://localhost/3000)" _O
 ```bash
 npm i
 ```
-(2)Run this Second Command
+(2)Run this Second Command on your Terminal 
 ```bash
 npm run start
 ```
