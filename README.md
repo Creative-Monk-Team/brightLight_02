@@ -66,7 +66,7 @@ These endpoints are protected, ensuring only authorised users can access them. _
 
 ## Installation
 
-Use these Instructions to Run Website on "[localhost](http://localhost/3000)" OR to run in on your System.
+Use these Instructions to Run Website on "[localhost](http://localhost/3000)" _OR_ to run in on your 'System'.
 
 ```bash
 npm i
