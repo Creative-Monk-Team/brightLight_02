@@ -31,7 +31,10 @@ To get started with Bright Light Immigration, follow these steps:
 1. **Admin Access**: Use the admin login page to access the backend GUI. Credentials can be configured through environment variables or initial setup.
 
 
-(Dashboard Overview) ![image](https://github.com/user-attachments/assets/31d9f5fa-8fd3-4d66-b1c0-d6864432cfc8)
+(Dashboard Overview) ![image](https://github.com/user-attachments/assets/77237771-96c2-4fc2-a9a8-555167445478)
+
+
+
 
 2. **Dashboard Overview**: Once logged in, navigate through the admin dashboard to access the following:
 
