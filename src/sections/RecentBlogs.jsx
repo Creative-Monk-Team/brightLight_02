@@ -167,6 +167,11 @@ let RecentBlogs = () => {
           setFilterBlogsParam("Permanent Residence Pathways Caregivers");
         } else if (serviceName === "category-based-express") {
           setFilterBlogsParam("Category Based Express");
+        } else if (serviceName === "pgwp") {
+          setFilterBlogsParam("PGWP");
+        }
+        else if (serviceName === "temporary-resident") {
+          setFilterBlogsParam("Temporary Residency");
         } else {
           setFilterBlogsParam("All");
         }

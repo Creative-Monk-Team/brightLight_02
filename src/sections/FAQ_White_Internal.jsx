@@ -12,7 +12,7 @@ let FAQ_White_Internal = ({ data }) => {
       setFaqHeading(data.faq_heading);
       const arrayData = [];
 
-      for (let i = 1; i <= 15; i++) {
+      for (let i = 1; i <= 21; i++) {
         const question = data[`q${i}`]?.trim();
         const answer = data[`qa${i}`]?.trim();
 
