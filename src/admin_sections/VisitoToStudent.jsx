@@ -168,6 +168,30 @@ const VisitorToStudentContent = () => {
     q10: "",
     qa10: "",
 
+    q11: "",
+    qa11: "",
+    q12: "",
+    qa12: "",
+    q13: "",
+    qa13: "",
+    q14: "",
+    qa14: "",
+    q15: "",
+    qa15: "",
+    q16: "",
+    qa16: "",
+    q17: "",
+    qa17: "",
+    q18: "",
+    qa18: "",
+    q19: "",
+    qa19: "",
+    q20: "",
+    qa20: "",
+
+    q21: "",
+    qa21: "",
+
     show_testimonials: "",
   });
 
@@ -1076,6 +1100,181 @@ const VisitorToStudentContent = () => {
   placeholder="Answer 10"
   name="qa10"
   value={sectionDataSingle.qa10 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input
+  placeholder="Question 11"
+  name="q11"
+  value={sectionDataSingle.q11 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<textarea
+  placeholder="Answer 11"
+  name="qa11"
+  value={sectionDataSingle.qa11 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<input
+  placeholder="Question 12"
+  name="q12"
+  value={sectionDataSingle.q12 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<textarea
+  placeholder="Answer 12"
+  name="qa12"
+  value={sectionDataSingle.qa12 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<input
+  placeholder="Question 13"
+  name="q13"
+  value={sectionDataSingle.q13 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<textarea
+  placeholder="Answer 13"
+  name="qa13"
+  value={sectionDataSingle.qa13 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<input
+  placeholder="Question 14"
+  name="q14"
+  value={sectionDataSingle.q14 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<textarea
+  placeholder="Answer 14"
+  name="qa14"
+  value={sectionDataSingle.qa14 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<input
+  placeholder="Question 15"
+  name="q15"
+  value={sectionDataSingle.q15 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<textarea
+  placeholder="Answer 15"
+  name="qa15"
+  value={sectionDataSingle.qa15 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<input
+  placeholder="Question 16"
+  name="q16"
+  value={sectionDataSingle.q16 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<textarea
+  placeholder="Answer 16"
+  name="qa16"
+  value={sectionDataSingle.qa16 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<input
+  placeholder="Question 17"
+  name="q17"
+  value={sectionDataSingle.q7 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<textarea
+  placeholder="Answer 17"
+  name="qa17"
+  value={sectionDataSingle.qa17 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<input
+  placeholder="Question 18"
+  name="q18"
+  value={sectionDataSingle.q18 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<textarea
+  placeholder="Answer 18"
+  name="qa18"
+  value={sectionDataSingle.qa18 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<input
+  placeholder="Question 19"
+  name="q19"
+  value={sectionDataSingle.q19 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<textarea
+  placeholder="Answer 19"
+  name="qa19"
+  value={sectionDataSingle.qa19 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<input
+  placeholder="Question 20"
+  name="q20"
+  value={sectionDataSingle.q20 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<textarea
+  placeholder="Answer 20"
+  name="qa20"
+  value={sectionDataSingle.qa20 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+
+
+<input
+  placeholder="Question 21"
+  name="q21"
+  value={sectionDataSingle.q21 || ""}
+  onChange={handleInputChange}
+  disabled={!editMode}
+/>
+<textarea
+  placeholder="Answer 21"
+  name="qa21"
+  value={sectionDataSingle.qa21 || ""}
   onChange={handleInputChange}
   disabled={!editMode}
 />
