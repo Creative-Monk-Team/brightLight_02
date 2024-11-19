@@ -57,7 +57,7 @@ const CommonLawPartnerInternational = () => {
   }, []);
 
   useEffect(() => {
-    fetch("https://brightlight-node.onrender.com/changeCollegeProgram")
+    fetch("https://brightlight-node.onrender.com/comLawPartnerIntern")
       .then((res) => {
         return res.json();
       })
