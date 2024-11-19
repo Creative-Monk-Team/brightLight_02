@@ -14,6 +14,8 @@ let AddBlog = () => {
   const [ytShortcode, setYtShortcode] = useState("");
   const [imageBase64, setImageBase64] = useState("");
 
+  let [blogTag, setBlogTag] = useState("");
+
   const handleTagClick = (tag) => {
     let tagValue = "";
 
@@ -91,6 +93,30 @@ let AddBlog = () => {
     const match = link.match(regExp);
     return match ? match[1] : null;
   };
+
+  useEffect(() => {
+    if (blogTag) {
+      // Copy the blogTag to clipboard
+      navigator.clipboard.writeText(blogTag)
+        .then(() => {
+          // Show success toast
+          toast.success(`${blogTag} copied to clipboard`, {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            transition: Bounce,
+          });
+        })
+        .catch((err) => {
+          console.error("Failed to copy text to clipboard", err);
+        });
+    }
+  }, [blogTag]);
 
   // Function to handle copy button click for YouTube video shortcode
   const handleCopyClickYT = () => {
@@ -348,6 +374,235 @@ let AddBlog = () => {
         onChange={handleInputChange}
         disabled={!editMode}
       />
+      <div className={styles.blogContentTageSelectionArea}>
+        <div className={styles.tagsArea}>
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Visitor Visa")}
+          >
+            <p>Visitor Visa</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Work Permit")}
+          >
+            <p>Work Permit</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Skilled Worker Stream")}
+          >
+            <p>Skilled Worker Stream</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Priorities Program")}
+          >
+            <p>Priorities Program</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("International Post Graduate Program")}
+          >
+            <p>International Post Graduate Program</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("International Graduate Program")}
+          >
+            <p>International Graduate Program</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Health Authority Stream")}
+          >
+            <p>Health Authority Stream</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("STEM Targeted Draw")}
+          >
+            <p>STEM Targeted Draw</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Trade Occupation Targeted Draw")}
+          >
+            <p>Trade Occupation Targeted Draw</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Canadian Experience Class")}
+          >
+            <p>Canadian Experience Class</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Same Sex")}
+          >
+            <p>Same Sex</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Visitor to Student")}
+          >
+            <p>Visitor to Student</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Change College Program")}
+          >
+            <p>Change College Program</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Study Permit Minors")}
+          >
+            <p>Study Permit Minors</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Super Visa")}
+          >
+            <p>Super Visa</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("BC PNP")}
+          >
+            <p>BC PNP</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Pilot Programs")}
+          >
+            <p>Pilot Programs</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Dual Intent Visa")}
+          >
+            <p>Dual Intent Visa</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Business Visitor Visa")}
+          >
+            <p>Business Visitor Visa</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Family Reunification Sponsorship")}
+          >
+            <p>Family Reunification Sponsorship</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Dependent Children")}
+          >
+            <p>Dependent Children</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Adoption")}
+          >
+            <p>Adoption</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Humanitarian and Compassionate")}
+          >
+            <p>Humanitarian and Compassionate</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Spouse Inland")}
+          >
+            <p>Spouse Inland</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Spouse Outland")}
+          >
+            <p>Spouse Outland</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Spousal Open Work Permit")}
+          >
+            <p>Spousal Open Work Permit</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Low Wage LMIA")}
+          >
+            <p>Low Wage LMIA</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Global Stream LMIA")}
+          >
+            <p>Global Stream LMIA</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() =>
+              setBlogTag("Permanent Residence Pathways Caregivers")
+            }
+          >
+            <p>Permanent Residence Pathways Caregivers</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Category Based Express")}
+          >
+            <p>Category Based Express</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("PGWP")}
+          >
+            <p>PGWP</p>
+          </div>
+
+          <div
+            className={`${styles.tag} ${!editMode ? styles.disabled : ""}`}
+            onClick={() => setBlogTag("Temporary Residency")}
+          >
+            <p>Temporary Residency</p>
+          </div>
+        </div>
+      </div>
       <input
         placeholder="Tag 1"
         name="tag_1"

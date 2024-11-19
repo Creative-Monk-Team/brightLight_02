@@ -167,7 +167,6 @@ const VisitorToStudentContent = () => {
     qa9: "",
     q10: "",
     qa10: "",
-
     q11: "",
     qa11: "",
     q12: "",
@@ -198,6 +197,7 @@ const VisitorToStudentContent = () => {
   const [editMode, setEditMode] = useState(false);
 
   const handleInputChange = (e) => {
+    console.log(e.target.name, "->", e.target.value);
     setSectionDataSingle({
       ...sectionDataSingle,
       [e.target.name]: e.target.value,
