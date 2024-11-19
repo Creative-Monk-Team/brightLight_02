@@ -1209,7 +1209,7 @@ const VisitorToStudentContent = () => {
 <input
   placeholder="Question 17"
   name="q17"
-  value={sectionDataSingle.q7 || ""}
+  value={sectionDataSingle.q17 || ""}
   onChange={handleInputChange}
   disabled={!editMode}
 />
