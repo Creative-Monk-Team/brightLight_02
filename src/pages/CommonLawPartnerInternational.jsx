@@ -273,7 +273,7 @@ const CommonLawPartnerInternational = () => {
           className={`${styles.benefits} ${styles.section}`}
           id="testing"
           ref={(el) => (sectionsRef.current[2] = el)}
-        >
+         >
           <h2>
           {pData?.BenifitHeading}
           </h2>
