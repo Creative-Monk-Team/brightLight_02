@@ -41,7 +41,7 @@ const TransportOccupationTargetedDraw = () => {
   }, []);
 
   useEffect(() => {
-    fetch("https://brightlight-node.onrender.com/transport-occupation")
+    fetch("https://brightlight-node.onrender.com/transportOccupaationTargetedDraw")
       .then((res) => {
         return res.json();
       })
@@ -341,7 +341,7 @@ const TransportOccupationTargetedDraw = () => {
               <tr>
                 <td>{pData?.etroT1Li7 }</td>
                 <td>{pData?.etroT2Li7 }</td>
-                <td>{pData?.etroT3Li17}</td>
+                <td>{pData?.etroT3Li7}</td>
               </tr>
               <tr>
                 <td>{pData?.etroT1Li8 }</td>

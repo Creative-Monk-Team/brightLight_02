@@ -13,15 +13,14 @@
   margin-bottom: 50px;
 }
 
-.flashingNote p:first-of-type{
-  font-size: 20px;
+.flashingNote h1{
+  color: red;
   margin-bottom: 5px;
 }
 
 .flashingNote p{
   color: red;
   font-weight: 600;
-  text-shadow: 1px 1px 1px black;
 }
 
 .flashingNote button{

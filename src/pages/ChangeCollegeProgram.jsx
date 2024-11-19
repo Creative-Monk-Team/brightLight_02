@@ -150,18 +150,7 @@ const ChangeCollegeProgram = () => {
       <Navbar1 />
       <div className={styles.bannerParent}>
         <div className={styles.banner}>
-          <div className={styles.flashingNote}>
-            <p>{pData?.noteHeading}</p>
-            <p>{pData?.notContent}</p>
-            {pData?.showFreeAppointmentButton == "Y" ? (
-              <button
-                className={styles.button}
-                onClick={() => (window.location.href = "/booking")}
-              >
-                Book Free Appointment
-              </button>
-            ) : null}
-          </div>
+          
           <div
             className={`${styles.bannerHeadingRotateParent} ${
               isDropdownOpen ? styles.active : ""
@@ -208,8 +197,21 @@ const ChangeCollegeProgram = () => {
         >
           {pData?.ChangeCollProgHeading}
         </h1>
+        <div className={styles.flashingNote}>
+            <h1 className={styles.heading}>{pData?.noteHeading}</h1>
+            <p>{pData?.notContent}</p>
+            {pData?.showFreeAppointmentButton == "Y" ? (
+              <button
+                className={styles.button}
+                onClick={() => (window.location.href = "/booking")}
+              >
+                Book Free Appointment
+              </button>
+            ) : null}
+          </div>
         <p className={styles.intro}>{pData?.ChangeCollProgPara1}</p>
         <p className={styles.intro}>{pData?.ChangeCollProgCan2}</p>
+        
 
         <section
           className={`${styles.eligibility} ${styles.section}`}
