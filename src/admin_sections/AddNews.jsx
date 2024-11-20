@@ -9,6 +9,142 @@ const AddNews = () => {
   const [textareaValue, setTextareaValue] = useState(
     "Your Selection Code Here"
   );
+
+  const [ytIframe, setYtIframe] = useState(null);
+  const [ytLink, setYtLink] = useState("");
+  const [ytShortcode, setYtShortcode] = useState("");
+  const [imageBase64, setImageBase64] = useState("");
+
+
+  const handleYtLinkChange = (e) => {
+    const link = e.target.value;
+    setYtLink(link);
+
+    const videoId = extractYtVideoId(link);
+    if (videoId) {
+      const iframeCode = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}"  frameborder="0" loading="lazy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+      setYtShortcode(iframeCode);
+      setYtIframe(
+        <iframe
+          width="560"
+          height="315"
+          loading="lazy"
+          src={`https://www.youtube.com/embed/${videoId}`}
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          title="YouTube Video Preview"
+        ></iframe>
+      );
+    } else {
+      setYtShortcode("");
+      setYtIframe(null); // Clear iframe if invalid video link
+    }
+  };
+
+  // Regex to extract YouTube video ID from share link
+  const extractYtVideoId = (link) => {
+    const regExp =
+      /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+    const match = link.match(regExp);
+    return match ? match[1] : null;
+  };
+
+
+  const handleCopyClickYT = () => {
+    const shortcode = ytShortcode;
+    if (shortcode) {
+      navigator.clipboard
+        .writeText(shortcode)
+        .then(() => {
+          toast.success("YouTube Video Shortcode Copied", {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            transition: Bounce,
+          });
+        })
+        .catch((err) => {
+          toast.error("Failed to copy the shortcode.", {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            transition: Bounce,
+          });
+        });
+    } else {
+      toast.error("No YouTube video shortcode to copy.", {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce,
+      });
+    }
+  };
+
+  let getImageShortcode = () => {
+    return imageBase64 ? `<img src="${imageBase64}" />` : "";
+  };
+  let handleCopyClick = () => {
+    let shortcode = getImageShortcode();
+    if (shortcode) {
+      navigator.clipboard
+        .writeText(shortcode)
+        .then(() => {
+          toast.success("Image shortcode Copied", {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            transition: Bounce,
+          });
+        })
+        .catch((err) => {
+          toast.error("Failed to copy the shortcode.", {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            transition: Bounce,
+          });
+        });
+    } else {
+      toast.error("No image shortcode to copy.", {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce,
+      });
+    }
+  };
+
   const handleTagClick = (tag) => {
     let tagValue = "";
 
@@ -52,6 +188,19 @@ const AddNews = () => {
     // Update the textarea value
     setTextareaValue(tagValue);
   };
+
+  let handleFileChange = (event) => {
+    let file = event.target.files[0];
+    if (file) {
+      let reader = new FileReader();
+      reader.onloadend = () => {
+        let base64Image = reader.result;
+        setImageBase64(base64Image);
+      };
+      reader.readAsDataURL(file);
+    }
+  }; 
+  
   let notifySuccess = () => {
     toast.success("Success", {
       position: "top-center",
@@ -289,6 +438,62 @@ const AddNews = () => {
         disabled={!editMode}
         style={{ height: "500px" }}
       />
+
+<p className={styles.precautionLine}>
+        For Uploading Image in the blog , upload the image below, get the
+        shortcode, copy it and paste it anywhere in the blog content.
+      </p>
+      <input type="file" disabled={!editMode} onChange={handleFileChange} />
+      <textarea
+        className={styles.imageShortCodeTextarea}
+        placeholder="Above Image Shortcode"
+        disabled={!editMode}
+        value={getImageShortcode()}
+      />
+      <button
+        type="button"
+        className={styles.copyButton}
+        onClick={handleCopyClick}
+        disabled={!editMode || !getImageShortcode()}
+      >
+        Copy Image Shortcode
+      </button>
+      {imageBase64 && (
+        <img
+          className={styles.shortCodeImage}
+          src={imageBase64}
+          alt="Uploaded Image Preview"
+        />
+      )}
+
+      <p className={styles.precautionLine}>
+        For Uploading Video in the blog, paste the YouTube video share link
+        below, get the shortcode, copy it, and paste it anywhere in the blog
+        content.
+      </p>
+      <input
+        type="text"
+        placeholder="YouTube Video Share Link"
+        disabled={!editMode}
+        loading="lazy"
+        value={ytLink}
+        onChange={handleYtLinkChange}
+      />
+      <textarea
+        className={styles.imageShortCodeTextarea}
+        placeholder="Above YT Video Shortcode"
+        disabled={!editMode}
+        value={ytShortcode}
+      />
+      <button
+        type="button"
+        className={styles.copyButton}
+        onClick={handleCopyClickYT}
+        disabled={!editMode || !ytShortcode}
+      >
+        Copy YT Video Shortcode
+      </button>
+      {ytIframe && <div className={styles.youtubeIframe}>{ytIframe}</div>}
 
       {sectionDataSingle.image && (
         <img
