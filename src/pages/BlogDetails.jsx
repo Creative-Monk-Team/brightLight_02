@@ -108,14 +108,15 @@ let BlogDetails = () => {
               </div>
               <h4>{loveneetData.tagline}</h4>
               <div className={styles.loveneetLinks}>
-                <a className={styles.imageSection} href={loveneetData.linkedin}>
-                  <img src={Linkedin} />
+                <a className={styles.imageSection} href={loveneetData.linkedin}  target="_blank">
+                  <img src={Linkedin}  />
                 </a>
                 <div>
                   <p className={styles.haveAQuestion}>Have Questions?</p>
                   <a
                     className={styles.imageSection}
                     href="/booking"
+                    target="_blank"
                   >
                     <img src={rcic} />
                   </a>
@@ -165,9 +166,7 @@ let BlogDetails = () => {
           <div className={styles.freeAssesmentSection}>
             <h4>Start You Process Today With Us!</h4>
             <p>Book A Free Assement With Us Right Now.</p>
-            <a href="/booking">
-              Free Assesment
-            </a>
+            <a href="/booking" target="_blank">Free Assesment</a>
           </div>
         </div>
       </div>
@@ -212,9 +211,7 @@ let BlogDetails = () => {
         <div className={styles.freeAssesmentSection}>
           <h4>Start You Process Today With Us!</h4>
           <p>Book A Free Assement With Us Right Now.</p>
-          <a href="/booking">
-            Free Assesment
-          </a>
+          <a href="/booking" target="_blank">Free Assesment</a>
         </div>
       </div>
       <Footer1 />

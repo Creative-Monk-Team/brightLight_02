@@ -1487,7 +1487,7 @@ const Navbar3 = (props) => {
                   <a
                     href="https://g.co/kgs/9BZVS85"
                     className={styles.lowerFooterText}
-                    style={showBlue ? { color: "#164c95" } : { color: "white" }}
+                    style={showBlue ? { color: "#164c95" } : { color: "white" }}  target="_blank"
                   >
                     Vancouver
                   </a>
@@ -1498,7 +1498,7 @@ const Navbar3 = (props) => {
                   <img
                     src={EmailBlue}
                     alt="Email blue"
-                    className={styles.icon}
+                    className={styles.icon}  target="_blank"
                   />
                 ) : (
                   <img src={EmailIcon} alt="Email" className={styles.icon} />
@@ -1506,7 +1506,7 @@ const Navbar3 = (props) => {
 
                 <span
                   className={styles.lowerFooterText}
-                  style={showBlue ? { color: "#164c95" } : { color: "white" }}
+                  style={showBlue ? { color: "#164c95" } : { color: "white" }}  target="_blank"
                 >
                   info@brightlightimmigration.ca
                 </span>

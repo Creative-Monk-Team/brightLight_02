@@ -123,7 +123,7 @@ let NewsDetails = () => {
           <div className={styles.freeAssesmentSection}>
             <h4>Start You Process Today With Us!</h4>
             <p>Book A Free Assement With Us Right Now.</p>
-            <a href="/booking">
+            <a href="/booking" target="_blank">
               Free Assesment
             </a>
           </div>
@@ -170,7 +170,7 @@ let NewsDetails = () => {
         <div className={styles.freeAssesmentSection}>
           <h4>Start You Process Today With Us!</h4>
           <p>Book A Free Assement With Us Right Now.</p>
-          <a href="/booking">
+          <a href="/booking" target="_blank">
             Free Assesment
           </a>
         </div>

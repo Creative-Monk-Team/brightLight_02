@@ -26,10 +26,7 @@ const Footer1 = () => {
         </div>
         <button
           className={styles.freeAssesmentButton}
-          onClick={() =>
-            (window.location.href =
-              "/booking")
-          }
+          onClick={() => window.open("/booking", "_blank")}
         >
           FREE ASSESSMENT
         </button>
@@ -95,14 +92,23 @@ const Footer1 = () => {
 
           <div className={styles.centerFooter}>
             <div className={styles.footerLogo}>
-              <img src={FooterLogo} alt="" loading="lazy" className={styles.footerLogo1} />
+              <img
+                src={FooterLogo}
+                alt=""
+                loading="lazy"
+                className={styles.footerLogo1}
+              />
               <div className={styles.footerLogo2Para}>
                 <img
                   onClick={() =>
-                    (window.location.href =
-                      "https://register.college-ic.ca/Public-Register-EN/RCIC_Search.aspx")
+                    window.open(
+                      "https://register.college-ic.ca/Public-Register-EN/RCIC_Search.aspx",
+                      "_blank"
+                    )
                   }
-                  src={FooterLogo2} alt="" loading="lazy"
+                  src={FooterLogo2}
+                  alt=""
+                  loading="lazy"
                   className={styles.footerLogo2}
                 />
                 <p>RCIC License # R522969</p>
@@ -112,36 +118,46 @@ const Footer1 = () => {
             <div className={styles.socialMediaFooter}>
               <TikTokIcon
                 onClick={() =>
-                  (window.location.href =
-                    "https://www.tiktok.com/@brightlightimmigration?_t=8lzyE6vJG0E&_r=1")
+                  window.open(
+                    "https://www.tiktok.com/@brightlightimmigration?_t=8lzyE6vJG0E&_r=1",
+                    "_blank"
+                  )
                 }
                 className={styles.socialIcon}
               />
               <LinkedInIcon
                 onClick={() =>
-                  (window.location.href =
-                    "https://ca.linkedin.com/in/loveneet-paneswar-5b2377198")
+                  window.open(
+                    "https://ca.linkedin.com/in/loveneet-paneswar-5b2377198",
+                    "_blank"
+                  )
                 }
                 className={styles.socialIcon}
               />
               <InstagramIcon
                 onClick={() =>
-                  (window.location.href =
-                    "https://www.instagram.com/brightlightimmigration?igsh=b2xmdzh5eDdsc29p")
+                  window.open(
+                    "https://www.instagram.com/brightlightimmigration?igsh=b2xmdzh5eDdsc29p",
+                    "_blank"
+                  )
                 }
                 className={styles.socialIcon}
               />
               <FacebookIcon
                 onClick={() =>
-                  (window.location.href =
-                    "https://www.facebook.com/brightlightimmigration")
+                  window.open(
+                    "https://www.facebook.com/brightlightimmigration",
+                    "_blank"
+                  )
                 }
                 className={styles.socialIcon}
               />
               <YouTubeIcon
                 onClick={() =>
-                  (window.location.href =
-                    "https://www.youtube.com/channel/UC2NJoKhIOconAE_IFCxX7uA")
+                  window.open(
+                    "/https://www.youtube.com/channel/UC2NJoKhIOconAE_IFCxX7uA",
+                    "_blank"
+                  )
                 }
                 className={styles.socialIcon}
               />
@@ -195,7 +211,8 @@ const Footer1 = () => {
             <div className={styles.leftFooter}>
               <div className={styles.leftDiv}>
                 <div className={styles.iconHeading}>
-                  <img loading="lazy"
+                  <img
+                    loading="lazy"
                     src={HoursIcon}
                     alt="Hours Icon"
                     className={styles.socialIcon}
