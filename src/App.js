@@ -78,6 +78,7 @@ import PermanentResidencePathwaysCaregiversLP from "./pages/PermanentResidencePa
 import NewsDetails from "./pages/NewsDetails";
 import News from "./pages/News";
 import Odometer from "./components/Odometer";
+import FloatingButton from "./components/FloatingButton";
 
 
 function App() {
@@ -113,6 +114,7 @@ function App() {
       <HelmetProvider>
         <AllRoutes />
       </HelmetProvider>
+      <FloatingButton/>
     </div>
   );
 }
