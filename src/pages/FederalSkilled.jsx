@@ -1028,10 +1028,7 @@ const FederalSkilled = () => {
                         </p>
                       </div>
                       <div
-                        onClick={() =>
-                          (window.location.href =
-                            "https://api.leadconnectorhq.com/widget/booking/BVqmhNlxRMadz10ir6aM")
-                        }
+                       onClick={() => window.open("/booking", "_blank")}
                         className={styles.actionButton}
                       >
                         <h2>RCIC Appointment</h2>
