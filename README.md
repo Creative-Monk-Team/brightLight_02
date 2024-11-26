@@ -30,7 +30,7 @@ Follow these step-by-step videos to easily understand how to use the platform:
 2. [Video 2: Setting Up Blogs _or_ News (Part 2)](https://www.loom.com/share/e4366251442d41588841e3daff468548?sid=f31f1fb8-60f9-49dc-a0be-c0f1566fb069)
 3. [Video 3: Adding Images and Videos to Blogs _or_ News (Part 3)](https://www.loom.com/share/32f554dae6f34d9dbc095beeb4b9948a?sid=562c233f-9e61-4d19-bb8f-1e7eee8a0c1f)
 4. [Video 4: Basic Features - How to Use the Platform](https://www.loom.com/share/220df9fc58c64ddfa42cc408cc20bfd0?sid=6309f87c-a168-4eee-96d8-f3d0f2628010)
-5. [Video 5: Adding Cards in More Services _or_ Immigration Tools](https://www.loom.com/share/1507ef364c484eb3a7a96770135d2375?sid=ae9a43cf-76e1-46fb-ae0b-714cfc35fafd)
+5. [Video 5: Adding Cards in More Services _or_ Immigration Tools Page](https://www.loom.com/share/1507ef364c484eb3a7a96770135d2375?sid=ae9a43cf-76e1-46fb-ae0b-714cfc35fafd)
 6. [Video 6: How to Add Frequently Asked Questions (FAQs)](https://www.loom.com/share/d96e9f89a68b4ac28b8a9c08a509fa9e?sid=e4e9c56c-c079-45b8-90fd-29b5d136156f)
 7. [Video 7: How to Log Out from the Platform](https://www.loom.com/share/732809f717984e87b772f08c32fafe31?sid=4c493516-0edd-44c4-be2d-1748fb7b2dc3)
 
