@@ -24,8 +24,6 @@ Developed by **Creative-Monk**, Bright Light Immigration is a dynamic web applic
 
 A preview of how to use the Backend Efficiently. The following videos will walk you through the necessary steps:
 
-# Getting Started Guide
-
 Follow these step-by-step videos to easily understand how to use the platform:
 
 1. [Video 1: Getting Started - Setting Up Blogs _o_r News (Part 1)](https://www.loom.com/share/6cc4994bee56408f9ab5a9523b106f35?sid=88159d0a-582d-42c2-829d-6d17c5b050c3)
