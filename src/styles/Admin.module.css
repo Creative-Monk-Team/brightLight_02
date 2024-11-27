@@ -7,6 +7,74 @@
   justify-content: space-between;
 }
 
+.deletePopupParent{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.788);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all ease-in-out;
+}
+
+.showDeletePopup{
+  opacity: 1;
+  visibility: visible;
+}
+
+.deletePopup{
+  width: 320px;
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
+}
+
+.deletePopup div{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.deletePopup .yesBtn{
+  background-color: green;
+  color: white;
+}
+
+.deletePopup .noBtn{
+  background-color: red;
+  color: white;
+}
+
+.deletePopup div button{
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  opacity: 1;
+  transition: 0.3s all ease-in-out;
+}
+
+.deletePopup div button:hover{
+  opacity: 0.5;
+}
+
+.deletePopup .noBtn:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
 .threeColumnsTable {
   display: grid;
   grid-template-columns: repeat(3, 33%);

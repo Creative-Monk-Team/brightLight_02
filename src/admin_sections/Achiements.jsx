@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import editIcon from "../assets/edit.png";
 import deleteIcon from "../assets/delete.png";
 import update from "../assets/update.png";
-import {ToastContainer, toast, Bounce } from "react-toastify";
+import { ToastContainer, toast, Bounce } from "react-toastify";
 
 let Achievements = () => {
   let notifySuccess = () => {
@@ -88,21 +88,21 @@ let Achievements = () => {
       {
         method: "PUT",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(sectionDataSingle),
       }
     )
-    .then((response) => {
-      if (response.status === 413) {
-        notifySize();
-        throw new Error("Payload too large");
-      } else if (!response.ok) {
-        notifyError();
-        throw new Error("Network response was not ok.");
-      }
-      return response.json();
-    })
+      .then((response) => {
+        if (response.status === 413) {
+          notifySize();
+          throw new Error("Payload too large");
+        } else if (!response.ok) {
+          notifyError();
+          throw new Error("Network response was not ok.");
+        }
+        return response.json();
+      })
       .then((data) => {
         notifySuccess();
         setEditMode(false);
@@ -127,7 +127,7 @@ let Achievements = () => {
 
   return (
     <div className={styles.singleSectionData}>
-      <ToastContainer/>
+      <ToastContainer />
       <div>
         <input
           placeholder="Heading"
@@ -145,12 +145,19 @@ let Achievements = () => {
         />
       </div>
 
-      {['1', '2', '3'].map((num) => (
+      {["1", "2", "3"].map((num) => (
         <div key={num}>
           <input
             placeholder="Numbers"
             name={`achievement${num}Numbers`}
             value={sectionDataSingle[`achievement${num}Numbers`] || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
+          />
+          <input
+            placeholder="Alt Text"
+            name={`achievement${num}Alt`}
+            value={sectionDataSingle[`achievement${num}Alt`] || ""}
             onChange={handleInputChange}
             disabled={!editMode}
           />
@@ -190,7 +197,6 @@ let Achievements = () => {
             onClick={handleEditClick}
           />
         )}
-        
       </div>
     </div>
   );

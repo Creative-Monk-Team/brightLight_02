@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import editIcon from "../assets/edit.png";
 import deleteIcon from "../assets/delete.png";
 import update from "../assets/update.png";
-import {ToastContainer, toast, Bounce } from "react-toastify";
+import { ToastContainer, toast, Bounce } from "react-toastify";
 
 let Services = () => {
   let notifySuccess = () => {
@@ -127,7 +127,7 @@ let Services = () => {
 
   return (
     <div className={styles.singleSectionData}>
-      <ToastContainer/>
+      <ToastContainer />
       <input
         placeholder="Heading"
         name="heading"
@@ -162,6 +162,13 @@ let Services = () => {
           <img
             className={styles.existingImageSmall}
             src={sectionDataSingle[`service${service}svg`]}
+          />
+          <input
+            placeholder={`Service ${service} Alt`}
+            name={`service${service}alt`}
+            value={sectionDataSingle[`service${service}alt`] || ""}
+            onChange={handleInputChange}
+            disabled={!editMode}
           />
           <input
             name={`service${service}svg`}
