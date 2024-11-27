@@ -315,7 +315,7 @@ const AllNews = () => {
                     onChange={handleInputChange}
                   />
                   <input
-                    placeholder="Image Alt"
+                    placeholder="Alt Tag"
                     name="alt_tag"
                     value={newBlogData.alt_tag || ""}
                     onChange={handleInputChange}

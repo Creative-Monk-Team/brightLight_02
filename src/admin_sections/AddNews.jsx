@@ -352,7 +352,7 @@ const AddNews = () => {
         disabled={!editMode}
       />
       <input
-        placeholder="Image Alt"
+        placeholder="Alt Tag"
         name="alt_tag"
         value={sectionDataSingle.alt_tag || ""}
         onChange={handleInputChange}
