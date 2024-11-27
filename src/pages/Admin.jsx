@@ -214,6 +214,8 @@ import AllMoreServicesCard from "../admin_sections/AllMoreServicesCard";
 import AddMoreServicesCard from "../admin_sections/AddMoreServicesCard";
 import magnify from "../assets/search-gray.png";
 import BannerSectionAlt from "../admin_sections/BannerSectionAlt";
+import MemberSectionAlt from "../admin_sections/MemberOfAlt";
+import WhyUsAlt from "../admin_sections/WhyUsAlt";
 
 let Admin = () => {
   const pages = [
@@ -2808,6 +2810,12 @@ let Admin = () => {
                   {activePage === "home" && activeSection === "section14" && (
                     <BannerSectionAlt />
                   )}
+                  {activePage === "home" && activeSection === "section15" && (
+                    <MemberSectionAlt />
+                  )}
+                  {activePage === "home" && activeSection === "section16" && (
+                    <WhyUsAlt />
+                  )}
                   {activePage === "express" &&
                     activeSection === "express-content" && <ExpressEntry />}
 
@@ -3487,7 +3495,7 @@ let Admin = () => {
                       }`}
                       onClick={() => handleSectionClick("section14")}
                     >
-                      Banner Section Alt
+                      Banner Section Image Alt
                     </div>
                     <div
                       className={`${styles.section} ${
@@ -3499,11 +3507,29 @@ let Admin = () => {
                     </div>
                     <div
                       className={`${styles.section} ${
+                        activeSection === "section15"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("section15")}
+                    >
+                      Member Of Section Image Alt
+                    </div>
+                    <div
+                      className={`${styles.section} ${
                         activeSection === "section4" ? styles.activeSection : ""
                       }`}
                       onClick={() => handleSectionClick("section4")}
                     >
                       Why US?
+                    </div>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "section16" ? styles.activeSection : ""
+                      }`}
+                      onClick={() => handleSectionClick("section16")}
+                    >
+                      Why US Image Alt
                     </div>
                     <div
                       className={`${styles.section} ${
@@ -3572,6 +3598,18 @@ let Admin = () => {
 
                 {activePage === "home" && activeSection === "section2" && (
                   <LoveneetBanner />
+                )}
+
+                {activePage === "home" && activeSection === "section14" && (
+                  <BannerSectionAlt />
+                )}
+
+                {activePage === "home" && activeSection === "section15" && (
+                  <MemberSectionAlt />
+                )}
+
+                {activePage === "home" && activeSection === "section16" && (
+                  <WhyUsAlt />
                 )}
 
                 {activePage === "home" && activeSection === "section3" && (
@@ -7483,6 +7521,12 @@ let Admin = () => {
                 <div className={styles.roshiSection}>
                   {activePage === "home" && activeSection === "section14" && (
                     <BannerSectionAlt />
+                  )}
+                  {activePage === "home" && activeSection === "section15" && (
+                    <MemberSectionAlt />
+                  )}
+                  {activePage === "home" && activeSection === "section16" && (
+                    <WhyUsAlt />
                   )}
                   {activePage === "express" &&
                     activeSection === "express-content" && <ExpressEntry />}

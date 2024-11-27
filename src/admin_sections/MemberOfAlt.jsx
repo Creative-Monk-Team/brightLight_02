@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 import editIcon from "../assets/edit.png";
 import deleteIcon from "../assets/delete.png";
 import update from "../assets/update.png";
-import {ToastContainer, toast, Bounce } from "react-toastify";
+import { ToastContainer, toast, Bounce } from "react-toastify";
 
-let LoveneetBanner = () => {
+let MemberSectionAlt = () => {
   let notifySuccess = () => {
     toast.success("Success", {
       position: "top-center",
@@ -47,66 +47,67 @@ let LoveneetBanner = () => {
       transition: Bounce,
     });
   };
-  const [sectionDataSingle, setSectionDataSingle] = useState({});
-  const [editMode, setEditMode] = useState(false);
-  const [imageFile, setImageFile] = useState(null);
 
-  const handleInputChange = (e) => {
-    if (e.target.name === "image") {
-      setImageFile(e.target.files[0]);
-    } else {
-      setSectionDataSingle({
-        ...sectionDataSingle,
-        [e.target.name]: e.target.value,
-      });
-    }
+  let [metaData, setMetaData] = useState({
+    alt1: "",
+    alt2: "",
+    alt3: "",
+  });
+  let [editMode, setEditMode] = useState(false);
+
+  let handleInputChange = (e) => {
+    setMetaData({
+      ...metaData,
+      [e.target.name]: e.target.value,
+    });
   };
 
-  const handleEditClick = () => {
+  let handleEditClick = () => {
     setEditMode(true);
   };
 
-  const handleUpdateClick = () => {
-    if (!sectionDataSingle._id) {
+  let handleUpdateClick = () => {
+    if (!metaData._id) {
       console.error("No ID found for update.");
       return;
     }
 
-    const formData = new FormData();
-    formData.append('file', imageFile);
-
     fetch(
-      `https://brightlight-node.onrender.com/loveneetBg/${sectionDataSingle._id}`,
+      `https://brightlight-node.onrender.com/memberOfAlt/${metaData._id}`,
       {
         method: "PUT",
-        body: formData,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(metaData),
       }
     )
-    .then((response) => {
-      if (response.status === 413) {
-        notifySize();
-        throw new Error("Payload too large");
-      } else if (!response.ok) {
-        notifyError();
-        throw new Error("Network response was not ok.");
-      }
-      return response.json();
-    })
+      .then((response) => {
+        if (response.status === 413) {
+          notifySize();
+          throw new Error("Payload too large");
+        } else if (!response.ok) {
+          notifyError();
+          throw new Error("Network response was not ok.");
+        }
+        return response.json();
+      })
       .then(() => {
         notifySuccess();
         setEditMode(false);
       })
       .catch((error) => {
         notifyError();
+        console.error("Error updating data:", error);
       });
   };
 
   useEffect(() => {
-    fetch("https://brightlight-node.onrender.com/loveneetBg")
+    fetch("https://brightlight-node.onrender.com/memberOfAlt")
       .then((res) => res.json())
       .then((data) => {
         if (data && data.length > 0) {
-          setSectionDataSingle(data[0]);
+          setMetaData(data[0]);
         }
       })
       .catch((error) => {
@@ -115,35 +116,50 @@ let LoveneetBanner = () => {
   }, []);
 
   return (
-    <>
     <div className={styles.singleSectionData}>
-      <ToastContainer/>
-      <img className={styles.existingImage} src={sectionDataSingle.image} />
-      {editMode ? (
-        <>
-          <input name="image" type="file" onChange={handleInputChange} />
-          <div className={styles.editIcons}>
-            <img
-              src={update}
-              className={styles.updateIcon}
-              onClick={handleUpdateClick}
-              alt="Update"
-            />
-          </div>
-        </>
-      ) : (
-        <div className={styles.editIcons}>
+      <ToastContainer />
+      <input
+        placeholder="Alt 1"
+        name="alt1"
+        value={metaData.alt1 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="Alt 2"
+        name="alt2"
+        value={metaData.alt2 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+
+      <input
+        placeholder="Alt 3"
+        name="alt3"
+        value={metaData.alt3 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <div className={styles.editIcons}>
+        {editMode ? (
+          <img
+            src={update}
+            className={styles.updateIcon}
+            onClick={handleUpdateClick}
+            alt="Update"
+          />
+        ) : (
           <img
             src={editIcon}
             className={styles.editIcon}
             onClick={handleEditClick}
             alt="Edit"
           />
-        </div>
-      )}
+        )}
+      </div>
     </div>
-    </>
   );
 };
 
-export default LoveneetBanner;
+export default MemberSectionAlt;
