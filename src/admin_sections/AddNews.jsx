@@ -15,7 +15,6 @@ const AddNews = () => {
   const [ytShortcode, setYtShortcode] = useState("");
   const [imageBase64, setImageBase64] = useState("");
 
-
   const handleYtLinkChange = (e) => {
     const link = e.target.value;
     setYtLink(link);
@@ -48,7 +47,6 @@ const AddNews = () => {
     const match = link.match(regExp);
     return match ? match[1] : null;
   };
-
 
   const handleCopyClickYT = () => {
     const shortcode = ytShortcode;
@@ -199,8 +197,8 @@ const AddNews = () => {
       };
       reader.readAsDataURL(file);
     }
-  }; 
-  
+  };
+
   let notifySuccess = () => {
     toast.success("Success", {
       position: "top-center",
@@ -248,6 +246,7 @@ const AddNews = () => {
     tag_1: "",
     tag_2: "",
     tag_3: "",
+    image_alt: "",
     news_content: "",
     metaTitle: "",
     metaDescription: "",
@@ -311,6 +310,7 @@ const AddNews = () => {
           tag_1: "",
           tag_2: "",
           tag_3: "",
+          image_alt: "",
           news_content: "",
           metaTitle: "",
           metaDescription: "",
@@ -348,6 +348,13 @@ const AddNews = () => {
         placeholder="News Heading"
         name="news_heading"
         value={sectionDataSingle.news_heading || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Image Alt"
+        name="image_alt"
+        value={sectionDataSingle.image_alt || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
@@ -439,7 +446,7 @@ const AddNews = () => {
         style={{ height: "500px" }}
       />
 
-<p className={styles.precautionLine}>
+      <p className={styles.precautionLine}>
         For Uploading Image in the blog , upload the image below, get the
         shortcode, copy it and paste it anywhere in the blog content.
       </p>

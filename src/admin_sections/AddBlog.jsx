@@ -272,6 +272,7 @@ let AddBlog = () => {
     tag_1: "",
     tag_2: "",
     tag_3: "",
+    image_alt: "",
     blog_content: "",
     metaTitle: "",
     metaDescription: "",
@@ -335,6 +336,7 @@ let AddBlog = () => {
           tag_1: "",
           tag_2: "",
           tag_3: "",
+          image_alt: "",
           blog_content: "",
           metaTitle: "",
           metaDescription: "",
@@ -372,6 +374,13 @@ let AddBlog = () => {
         placeholder="Blog Heading"
         name="blog_heading"
         value={sectionDataSingle.blog_heading || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <input
+        placeholder="Image Alt"
+        name="image_alt"
+        value={sectionDataSingle.image_alt || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />

@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import editIcon from "../assets/edit.png";
 import deleteIcon from "../assets/delete.png";
 import update from "../assets/update.png";
-
 import { ToastContainer, toast, Bounce } from "react-toastify";
 
 const AllNews = () => {
@@ -73,6 +72,7 @@ const AllNews = () => {
     tag_1: "",
     tag_2: "",
     tag_3: "",
+    image_alt: "",
     news_content: "",
     metaTitle: "",
     metaDescription: "",
@@ -153,6 +153,7 @@ const AllNews = () => {
           tag_1: "",
           tag_2: "",
           tag_3: "",
+          image_alt: "",
           news_content: "",
           metaTitle: "",
           metaDescription: "",
@@ -300,6 +301,13 @@ const AllNews = () => {
                     name="tag_2"
                     value={newBlogData.tag_2}
                     onChange={handleInputChange}
+                  />
+                  <input
+                    placeholder="Image Alt"
+                    name="image_alt"
+                    value={newBlogData.image_alt || ""}
+                    onChange={handleInputChange}
+                    disabled={!editMode}
                   />
                   <input
                     placeholder="Tag 3"

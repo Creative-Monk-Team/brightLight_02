@@ -72,6 +72,7 @@ const AllBlogs = () => {
     tag_1: "",
     tag_2: "",
     tag_3: "",
+    image_alt: "",
     blog_content: "",
     metaTitle: "",
     metaDescription: "",
@@ -155,6 +156,7 @@ const AllBlogs = () => {
           tag_1: "",
           tag_2: "",
           tag_3: "",
+          image_alt: "",
           blog_content: "",
           metaTitle: "",
           metaDescription: "",
@@ -319,6 +321,13 @@ const AllBlogs = () => {
                     onChange={handleInputChange}
                   />
                   <input
+                    placeholder="Image Alt"
+                    name="image_alt"
+                    value={newBlogData.image_alt || ""}
+                    onChange={handleInputChange}
+                    disabled={!editMode}
+                  />
+                  <input
                     placeholder="Meta Title"
                     name="metaTitle"
                     value={newBlogData.metaTitle}
@@ -354,7 +363,7 @@ const AllBlogs = () => {
               className={styles.noBtn}
               onClick={() => {
                 setConfirmDelete(null);
-                setShowDeletePopup(false)
+                setShowDeletePopup(false);
               }}
             >
               No

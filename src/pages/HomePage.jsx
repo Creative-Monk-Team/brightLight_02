@@ -18,7 +18,7 @@ import Blogs from "../sections/Blogs";
 import ogImage from "../assets/ogImage.png";
 import { Helmet } from "react-helmet-async";
 import Odometer from "../components/Odometer";
-import { debounce } from 'lodash';
+import { debounce } from "lodash";
 
 let HomePage = () => {
   const swiperRef = useRef(null);
@@ -52,6 +52,9 @@ let HomePage = () => {
   const simplifyingRef = useRef(null); // Ref for the simplifying section
 
   let [metaData, setMetaData] = useState([]);
+  let [loveneetAlt, setLoveneetAlt] = useState([]);
+  let [memberOfAlt, setMemberOfAlt] = useState([]);
+  let [simplifyData, setSimplifyData] = useState([]);
 
   useEffect(() => {
     const sections = [
@@ -60,12 +63,14 @@ let HomePage = () => {
       { ref: testimonialsSectionRef, callback: setIsTestimonialsVisible },
       // Add other sections here
     ];
-  
-    const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+
+    const observerOptions = { root: null, rootMargin: "0px", threshold: 0.1 };
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         const target = entry.target;
-        const callback = sections.find((section) => section.ref.current === target)?.callback;
+        const callback = sections.find(
+          (section) => section.ref.current === target
+        )?.callback;
         if (entry.isIntersecting && callback) {
           callback(true);
         } else {
@@ -73,13 +78,13 @@ let HomePage = () => {
         }
       });
     }, observerOptions);
-  
+
     sections.forEach(({ ref }) => {
       if (ref.current) {
         observer.observe(ref.current);
       }
     });
-  
+
     return () => {
       sections.forEach(({ ref }) => {
         if (ref.current) {
@@ -88,7 +93,6 @@ let HomePage = () => {
       });
     };
   }, []);
-  
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -162,6 +166,45 @@ let HomePage = () => {
             console.log(error);
           });
 
+        fetch("https://brightlight-node.onrender.com/loveneetBgAlt")
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            if (data) {
+              setLoveneetAlt(data[0]);
+            }
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+
+        fetch("https://brightlight-node.onrender.com/featuresAlt")
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            if (data) {
+              setSimplifyData(data[0]);
+            }
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+
+        fetch("https://brightlight-node.onrender.com/memberOfAlt")
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            if (data) {
+              setMemberOfAlt(data[0]);
+            }
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+
         fetch("https://brightlight-node.onrender.com/news")
           .then((res) => {
             return res.json();
@@ -224,7 +267,7 @@ let HomePage = () => {
                 title: serviceName,
                 img: serviceSvg,
                 desc: serviceDesc,
-                alt: serviceAlt
+                alt: serviceAlt,
               });
             }
           }
@@ -480,20 +523,19 @@ let HomePage = () => {
       img.src = url;
     });
   };
-  
+
   // Modify the effect to preload only the visible images
   useEffect(() => {
     // Preload service images that are visible (or a subset for initial load)
-    const serviceImages = services.slice(0, 3).map((service) => service.img);  // Preload only the first few
+    const serviceImages = services.slice(0, 3).map((service) => service.img); // Preload only the first few
     preloadImages(serviceImages);
-  
+
     setLoaded(true); // Assuming data is fetched and set here
   }, [services]);
-  
 
   useEffect(() => {
     if (!swiperRef.current) return;
-  
+
     autoSlideIntervalRef.current = setInterval(() => {
       if (swiperRef.current && swiperRef.current.activeIndex < 2) {
         swiperRef.current.slideNext();
@@ -501,10 +543,9 @@ let HomePage = () => {
         clearInterval(autoSlideIntervalRef.current);
       }
     }, 3000);
-  
+
     return () => clearInterval(autoSlideIntervalRef.current);
-  }, []);  // Remove `services` from the dependency list, unless absolutely needed
-  
+  }, []); // Remove `services` from the dependency list, unless absolutely needed
 
   const handleNextSlide = () => {
     if (swiperRef.current) {
@@ -629,11 +670,10 @@ let HomePage = () => {
                       >
                         <img
                           src={card.img}
-                          
                           className={`${styles.icon} ${styles.fadeIn}`}
                           loading="lazy"
                           alt={card.alt}
-                  title={card.alt}
+                          title={card.alt}
                         />
                       </CSSTransition>
 
@@ -660,7 +700,8 @@ let HomePage = () => {
         {loveneetBgImage?.image && (
           <img
             src={loveneetBgImage.image}
-            alt="Background Image"
+            alt={loveneetAlt.alt}
+            title={loveneetAlt.alt}
             loading="lazy"
             className={styles.backgroundImage}
             width="100%" // Ensure the width stays 100% of the parent container
@@ -699,23 +740,27 @@ let HomePage = () => {
       <div className={styles.memberParent} ref={sectionRef}>
         <div className={styles.memberMain}>
           <div className={styles.memberCardParent}>
-            {memberInfo.map((member, index) => (
-              <div
-                key={index}
-                className={`${styles.memberCard} ${
-                  isVisible ? styles.showMemberCard : ""
-                }`}
-              >
-                <p>{member?.heading}</p>
-                <div className={styles.memberCardImg}>
-                  <img
-                    src={member?.img}
-                    alt={member?.heading || "Member image"} // Accessibility improvement
-                    loading="lazy"
-                  />
+            {memberInfo.map((member, index) => {
+              let altData = [memberOfAlt.alt1, memberOfAlt.alt2, memberOfAlt.alt3];
+              return (
+                <div
+                  key={index}
+                  className={`${styles.memberCard} ${
+                    isVisible ? styles.showMemberCard : ""
+                  }`}
+                >
+                  <p>{member?.heading}</p>
+                  <div className={styles.memberCardImg}>
+                    <img
+                      src={member?.img}
+                      alt={altData[index]}
+                      title={altData[index]} 
+                      loading="lazy"
+                    /> 
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
@@ -742,8 +787,9 @@ let HomePage = () => {
                     <div className={styles.simplifyingImg}>
                       <img
                         src={featuresData[`feature${num}SVG`]}
-                        alt={`Feature ${num} Image`}
-                        loading="lazy"
+                        alt={simplifyData[`alt${num}`]}
+                        title={simplifyData[`alt${num}`]}
+                        loading="lazy" 
                       />
                     </div>
                     <div className={styles.simplifyingContent}>
