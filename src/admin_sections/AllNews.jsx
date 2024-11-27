@@ -303,12 +303,6 @@ const AllNews = () => {
                     onChange={handleInputChange}
                   />
                   <input
-                    placeholder="Image Alt"
-                    name="image_alt"
-                    value={newBlogData.image_alt || ""}
-                    onChange={handleInputChange}
-                  />
-                  <input
                     placeholder="Tag 3"
                     name="tag_3"
                     value={newBlogData.tag_3}
@@ -318,6 +312,12 @@ const AllNews = () => {
                     placeholder="News Content"
                     name="news_content"
                     value={newBlogData.news_content}
+                    onChange={handleInputChange}
+                  />
+                  <input
+                    placeholder="Image Alt"
+                    name="image_alt"
+                    value={newBlogData.image_alt || ""}
                     onChange={handleInputChange}
                   />
                   <input
