@@ -171,30 +171,30 @@ const AllNews = () => {
   };
 
   // Handle delete click
-  const handleDeleteClick = (blogId) => {
-    fetch(`https://brightlight-node.onrender.com/news/${blogId}`, {
-      method: "DELETE",
-    })
-      .then(() => {
-        notifyDelete();
-        fetch("https://brightlight-node.onrender.com/news")
-          .then((res) => res.json())
-          .then((data) => {
-            setBlogs(data);
-          })
-          .catch((error) => {
-            console.log("Error fetching data:", error);
-          });
-      })
-      .catch((error) => {
-        notifyError();
-      });
-  };
+  // const handleDeleteClick = (blogId) => {
+  //   fetch(`https://brightlight-node.onrender.com/news/${blogId}`, {
+  //     method: "DELETE",
+  //   })
+  //     .then(() => {
+  //       notifyDelete();
+  //       fetch("https://brightlight-node.onrender.com/news")
+  //         .then((res) => res.json())
+  //         .then((data) => {
+  //           setBlogs(data);
+  //         })
+  //         .catch((error) => {
+  //           console.log("Error fetching data:", error);
+  //         });
+  //     })
+  //     .catch((error) => {
+  //       notifyError();
+  //     });
+  // };
 
   useEffect(() => {
     if (confirmDelete && clickedOnYes) {
       fetch(
-        `https://brightlight-node.onrender.com/new-added-blogs/${confirmDelete}`,
+        `https://brightlight-node.onrender.com/news/${confirmDelete}`,
         {
           method: "DELETE",
         }
@@ -202,7 +202,7 @@ const AllNews = () => {
         .then(() => {
           notifyDelete();
           setShowDeletePopup(false);
-          fetch("https://brightlight-node.onrender.com/new-added-blogs")
+          fetch("https://brightlight-node.onrender.com/news")
             .then((res) => res.json())
             .then((data) => {
               setBlogs(data);
