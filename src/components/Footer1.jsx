@@ -18,8 +18,8 @@ const Footer1 = () => {
       <div className={styles.upperFooter}>
         <img
           src={UpperFooterImage}
-          alt="BrightlightImmigration"
-          title="BrightlightImmigration"
+          alt="Free Assessment"
+          title="Free Assessment"
         />
         <div>
           <h1>Start your process today</h1>
@@ -46,8 +46,8 @@ const Footer1 = () => {
               <div className={styles.iconHeading}>
                 <img
                   src={HoursIcon}
-                  alt="Hours Icon"
-                  title="BrightlightImmigration"
+                  alt="Our Working Hours"
+                  title="Our Working Hours"
                   className={styles.socialIcon}
                 />
                 <p>OUR WORKING HOURS</p>
@@ -61,7 +61,8 @@ const Footer1 = () => {
               <div className={styles.iconHeading}>
                 <img
                   src={Address}
-                  alt="Address Icon"
+                  alt="Our Address"
+                  title="Our Address"
                   className={styles.socialIcon}
                 />
                 <p>OUR ADDRESS</p>
@@ -80,6 +81,8 @@ const Footer1 = () => {
                   height="18"
                   width="18"
                   xmlns="http://www.w3.org/2000/svg"
+                  alt="Get in Touch"
+                  title="Get in Touch"
                 >
                   <path fill="none" d="M0 0h24v24H0z"></path>
                   <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"></path>
@@ -99,8 +102,8 @@ const Footer1 = () => {
             <div className={styles.footerLogo}>
               <img
                 src={FooterLogo}
-                alt="BrightlightImmigration"
-                title="BrightlightImmigration"
+                alt="Brightlight Immigration"
+                title="Brightlight Immigration"
                 loading="lazy"
                 className={styles.footerLogo1}
               />
@@ -113,8 +116,8 @@ const Footer1 = () => {
                     )
                   }
                   src={FooterLogo2}
-                  alt="BrightlightImmigration"
-                  title="BrightlightImmigration"
+                  alt="https://register.college-ic.ca/Public-Register-EN/RCIC_Search.aspx"
+                  title="CICC"
                   loading="lazy"
                   className={styles.footerLogo2}
                 />
@@ -131,8 +134,8 @@ const Footer1 = () => {
                   )
                 }
                 className={styles.socialIcon}
-                alt="BrightlightImmigration"
-                title="BrightlightImmigration"
+                alt="https://www.tiktok.com/@brightlightimmigration?_t=8lzyE6vJG0E&_r=1"
+                title="TikTok"
               />
               <LinkedInIcon
                 onClick={() =>
@@ -142,8 +145,8 @@ const Footer1 = () => {
                   )
                 }
                 className={styles.socialIcon}
-                alt="BrightlightImmigration"
-                title="BrightlightImmigration"
+                alt="https://ca.linkedin.com/in/loveneet-paneswar-5b2377198"
+                title="Linkedin"
               />
               <InstagramIcon
                 onClick={() =>
@@ -153,8 +156,8 @@ const Footer1 = () => {
                   )
                 }
                 className={styles.socialIcon}
-                alt="BrightlightImmigration"
-                title="BrightlightImmigration"
+                alt="https://www.instagram.com/brightlightimmigration?igsh=b2xmdzh5eDdsc29p"
+                title="Instagram"
               />
               <FacebookIcon
                 onClick={() =>
@@ -164,19 +167,19 @@ const Footer1 = () => {
                   )
                 }
                 className={styles.socialIcon}
-                alt="BrightlightImmigration"
-                title="BrightlightImmigration"
+                alt="https://www.facebook.com/brightlightimmigration"
+                title="Facebook"
               />
               <YouTubeIcon
                 onClick={() =>
                   window.open(
-                    "/https://www.youtube.com/channel/UC2NJoKhIOconAE_IFCxX7uA",
+                    "https://www.youtube.com/channel/UC2NJoKhIOconAE_IFCxX7uA",
                     "_blank"
                   )
                 }
                 className={styles.socialIcon}
-                alt="BrightlightImmigration"
-                title="BrightlightImmigration"
+                alt="https://www.youtube.com/channel/UC2NJoKhIOconAE_IFCxX7uA"
+                title="Youtube"
               />
             </div>
             <div className={styles.privacyDiv}>
@@ -231,9 +234,9 @@ const Footer1 = () => {
                   <img
                     loading="lazy"
                     src={HoursIcon}
-                    alt="Hours Icon"
+                    alt="Our Working Hours"
                     className={styles.socialIcon}
-                    title="BrightlightImmigration"
+                    title="Our Working Hours"
                   />
                   <p>OUR WORKING HOURS</p>
                 </div>
@@ -247,8 +250,8 @@ const Footer1 = () => {
                   <img
                     loading="lazy"
                     src={Address}
-                    alt="Address Icon"
-                    title="BrightlightImmigration"
+                    alt="Our Address"
+                     title="Our Address"
                     className={styles.socialIcon}
                   />
                   <p>OUR ADDRESS</p>
@@ -267,6 +270,8 @@ const Footer1 = () => {
                     height="18"
                     width="18"
                     xmlns="http://www.w3.org/2000/svg"
+                    alt="Get in Touch"
+                    title="Get in Touch"
                   >
                     <path fill="none" d="M0 0h24v24H0z"></path>
                     <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"></path>
