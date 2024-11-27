@@ -5,11 +5,11 @@ let FloatingButton = () => {
   let [showButton, setShowButton] = useState(true);
 
   useEffect(() => {
-    if (window.location.href == "/auth/panel/dash/bright") {
+    if (window.location.pathname == "/auth/panel/dash/bright") {
       setShowButton(false);
-    } else if (window.location.href == "/dash/panel/overwrite") {
+    } else if (window.location.pathname == "/dash/panel/overwrite") {
       setShowButton(false);
-    } else if (window.location.href == "/booking") {
+    } else if (window.location.pathname == "/booking") {
       setShowButton(false);
     } else {
       setShowButton(true);

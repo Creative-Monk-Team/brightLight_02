@@ -213,6 +213,7 @@ import AllImmigrationToolsCard from "../admin_sections/AllImmigrationCard";
 import AllMoreServicesCard from "../admin_sections/AllMoreServicesCard";
 import AddMoreServicesCard from "../admin_sections/AddMoreServicesCard";
 import magnify from "../assets/search-gray.png";
+import BannerSectionAlt from "../admin_sections/BannerSectionAlt";
 
 let Admin = () => {
   const pages = [
@@ -2804,6 +2805,9 @@ let Admin = () => {
                 )}
 
                 <div className={styles.roshiSection}>
+                  {activePage === "home" && activeSection === "section14" && (
+                    <BannerSectionAlt />
+                  )}
                   {activePage === "express" &&
                     activeSection === "express-content" && <ExpressEntry />}
 
@@ -3474,6 +3478,16 @@ let Admin = () => {
                       onClick={() => handleSectionClick("section2")}
                     >
                       Banner Section
+                    </div>
+                    <div
+                      className={`${styles.section} ${
+                        activeSection === "section14"
+                          ? styles.activeSection
+                          : ""
+                      }`}
+                      onClick={() => handleSectionClick("section14")}
+                    >
+                      Banner Section Alt
                     </div>
                     <div
                       className={`${styles.section} ${
@@ -7467,6 +7481,9 @@ let Admin = () => {
                 )}
 
                 <div className={styles.roshiSection}>
+                  {activePage === "home" && activeSection === "section14" && (
+                    <BannerSectionAlt />
+                  )}
                   {activePage === "express" &&
                     activeSection === "express-content" && <ExpressEntry />}
 
