@@ -272,7 +272,7 @@ let AddBlog = () => {
     tag_1: "",
     tag_2: "",
     tag_3: "",
-    image_alt: "",
+    alt_tag: "",
     blog_content: "",
     metaTitle: "",
     metaDescription: "",
@@ -336,7 +336,7 @@ let AddBlog = () => {
           tag_1: "",
           tag_2: "",
           tag_3: "",
-          image_alt: "",
+          alt_tag: "",
           blog_content: "",
           metaTitle: "",
           metaDescription: "",
@@ -378,11 +378,10 @@ let AddBlog = () => {
         disabled={!editMode}
       />
       <input
-        placeholder="Image Alt"
-        name="image_alt"
-        value={sectionDataSingle.image_alt || ""}
+        placeholder="Alt Tag"
+        name="alt_tag"
+        value={sectionDataSingle.alt_tag || ""}
         onChange={handleInputChange}
-        disabled={!editMode}
       />
       <div className={styles.blogContentTageSelectionArea}>
         <div className={styles.tagsArea}>

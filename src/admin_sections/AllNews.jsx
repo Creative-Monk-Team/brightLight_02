@@ -72,7 +72,7 @@ const AllNews = () => {
     tag_1: "",
     tag_2: "",
     tag_3: "",
-    image_alt: "",
+    alt_tag: "",
     news_content: "",
     metaTitle: "",
     metaDescription: "",
@@ -83,7 +83,7 @@ const AllNews = () => {
     fetch("https://brightlight-node.onrender.com/news")
       .then((res) => res.json())
       .then((data) => {
-        setBlogs(data);
+        setBlogs(data.reverse());
       })
       .catch((error) => {
         console.log("Error fetching data:", error);
@@ -153,7 +153,7 @@ const AllNews = () => {
           tag_1: "",
           tag_2: "",
           tag_3: "",
-          image_alt: "",
+          alt_tag: "",
           news_content: "",
           metaTitle: "",
           metaDescription: "",
@@ -316,8 +316,8 @@ const AllNews = () => {
                   />
                   <input
                     placeholder="Image Alt"
-                    name="image_alt"
-                    value={newBlogData.image_alt || ""}
+                    name="alt_tag"
+                    value={newBlogData.alt_tag || ""}
                     onChange={handleInputChange}
                   />
                   <input

@@ -79,7 +79,7 @@ const AllMoreServicesCard = () => {
     fetch("https://brightlight-node.onrender.com/more-services-card")
       .then((res) => res.json())
       .then((data) => {
-        setBlogs(data);
+        setBlogs(data.reverse());
       })
       .catch((error) => {
         console.log("Error fetching data:", error);

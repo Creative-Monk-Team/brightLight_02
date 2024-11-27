@@ -72,7 +72,7 @@ const AllBlogs = () => {
     tag_1: "",
     tag_2: "",
     tag_3: "",
-    image_alt: "",
+    alt_tag: "",
     blog_content: "",
     metaTitle: "",
     metaDescription: "",
@@ -83,7 +83,7 @@ const AllBlogs = () => {
     fetch("https://brightlight-node.onrender.com/new-added-blogs")
       .then((res) => res.json())
       .then((data) => {
-        setBlogs(data);
+        setBlogs(data.reverse());
       })
       .catch((error) => {
         console.log("Error fetching data:", error);
@@ -156,7 +156,7 @@ const AllBlogs = () => {
           tag_1: "",
           tag_2: "",
           tag_3: "",
-          image_alt: "",
+          alt_tag: "",
           blog_content: "",
           metaTitle: "",
           metaDescription: "",
@@ -321,9 +321,9 @@ const AllBlogs = () => {
                     onChange={handleInputChange}
                   />
                   <input
-                    placeholder="Image Alt"
-                    name="image_alt"
-                    value={newBlogData.image_alt || ""}
+                    placeholder="Alt Tag"
+                    name="alt_tag"
+                    value={newBlogData.alt_tag}
                     onChange={handleInputChange}
                   />
                   <input

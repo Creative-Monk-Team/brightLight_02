@@ -79,7 +79,7 @@ const AllImmigrationToolsCard = () => {
     fetch("https://brightlight-node.onrender.com/adding-immigration-tools")
       .then((res) => res.json())
       .then((data) => {
-        setBlogs(data);
+        setBlogs(data.reverse());
       })
       .catch((error) => {
         console.log("Error fetching data:", error);

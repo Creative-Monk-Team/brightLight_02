@@ -246,7 +246,7 @@ const AddNews = () => {
     tag_1: "",
     tag_2: "",
     tag_3: "",
-    image_alt: "",
+    alt_tag: "",
     news_content: "",
     metaTitle: "",
     metaDescription: "",
@@ -310,7 +310,7 @@ const AddNews = () => {
           tag_1: "",
           tag_2: "",
           tag_3: "",
-          image_alt: "",
+          alt_tag: "",
           news_content: "",
           metaTitle: "",
           metaDescription: "",
@@ -353,8 +353,8 @@ const AddNews = () => {
       />
       <input
         placeholder="Image Alt"
-        name="image_alt"
-        value={sectionDataSingle.image_alt || ""}
+        name="alt_tag"
+        value={sectionDataSingle.alt_tag || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />
