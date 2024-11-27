@@ -310,7 +310,7 @@ const Testimonials_White = () => {
       <div className={styles.testimonialsContentSection}>
         <h1>{data?.heading}</h1>
         <div className={styles.googleImageSection}>
-          <img src={google} alt="Google Ratings" />
+          <img src={google}  alt="Google" title="Google" />
           <p>{data?.googleRatings}/5</p>
         </div>
         <div className={styles.clientReviewsOverflowSection}>

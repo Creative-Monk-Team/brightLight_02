@@ -25,8 +25,6 @@ let OurProcess = () => {
 
   return (
     <>
-
-
       <div className={styles.ourProcessSection}>
         <div className={styles.fourCardParent}>
           <div className={styles.fourCard}>
@@ -41,7 +39,12 @@ let OurProcess = () => {
                   onMouseEnter={() => setPlanePosition(270)}
                 >
                   <div className={styles.pointerImageSection}>
-                    <img src={BluePointer} alt="err" loading="lazy" />
+                    <img
+                      src={BluePointer}
+                      alt="Step 1"
+                      loading="lazy"
+                      title="Step 1"
+                    />
                     <p>1</p>
                   </div>
                   <h3>{ourProcessData?.step1heading}</h3>
@@ -68,7 +71,12 @@ let OurProcess = () => {
                   onMouseEnter={() => setPlanePosition(480)}
                 >
                   <div className={styles.pointerImageSection}>
-                    <img src={GoldenPointer} alt="err" loading="lazy" />
+                    <img
+                      src={GoldenPointer}
+                      loading="lazy"
+                      alt="Step 2"
+                      title="Step 2"
+                    />
                     <p>2</p>
                   </div>
                   <h3>{ourProcessData?.step2heading}</h3>
@@ -95,7 +103,12 @@ let OurProcess = () => {
                   onMouseEnter={() => setPlanePosition(690)}
                 >
                   <div className={styles.pointerImageSection}>
-                    <img src={BluePointer} alt="err" loading="lazy" />
+                    <img
+                      src={BluePointer}
+                      loading="lazy"
+                      alt="Step 3"
+                      title="Step 3"
+                    />
                     <p>3</p>
                   </div>
                   <h3>{ourProcessData?.step3heading}</h3>
@@ -122,7 +135,12 @@ let OurProcess = () => {
                   onMouseEnter={() => setPlanePosition(890)}
                 >
                   <div className={styles.pointerImageSection}>
-                    <img src={GoldenPointer} alt="err" loading="lazy" />
+                    <img
+                      src={GoldenPointer}
+                      loading="lazy"
+                      alt="Step 4"
+                      title="Step 4"
+                    />
                     <p>4</p>
                   </div>
                   <h3>{ourProcessData?.step4heading}</h3>
@@ -147,11 +165,12 @@ let OurProcess = () => {
               </div>
             </div>
             <div className={styles.runwayParent}>
-              <img src={Runway} alt="err" />
+              <img src={Runway} alt="Plane" title="Plane" />
               <img
                 src={Plane}
                 className={styles.plane}
-                alt="err"
+                alt="Plane"
+                title="Plane"
                 style={{ left: `${planePosition}px` }}
               />
             </div>

@@ -217,12 +217,14 @@ let HomePage = () => {
             let serviceSvg = data[0][`service${i}svg`];
             let serviceName = data[0][`service${i}name`];
             let serviceDesc = data[0][`service${i}desc`];
+            let serviceAlt = data[0][`service${i}alt`];
 
             if (serviceSvg && serviceName) {
               filteredArray.push({
                 title: serviceName,
                 img: serviceSvg,
                 desc: serviceDesc,
+                alt: serviceAlt
               });
             }
           }
@@ -627,9 +629,11 @@ let HomePage = () => {
                       >
                         <img
                           src={card.img}
-                          alt={card.title}
+                          
                           className={`${styles.icon} ${styles.fadeIn}`}
                           loading="lazy"
+                          alt={card.alt}
+                  title={card.alt}
                         />
                       </CSSTransition>
 
@@ -840,7 +844,8 @@ let HomePage = () => {
               <img
                 src={achiementsData?.achievement1SVG}
                 loading="lazy"
-                alt=""
+                alt={achiementsData?.achievement1Alt}
+                title={achiementsData?.achievement1Alt}
               />
               <h1>
                 <Odometer value={achiementsData?.achievement1Numbers} />+
@@ -854,7 +859,8 @@ let HomePage = () => {
               <img
                 src={achiementsData?.achievement2SVG}
                 loading="lazy"
-                alt=""
+                alt={achiementsData?.achievement2Alt}
+                title={achiementsData?.achievement2Alt}
               />
               <h1>
                 <Odometer value={achiementsData?.achievement2Numbers} />+
@@ -868,7 +874,8 @@ let HomePage = () => {
               <img
                 src={achiementsData?.achievement3SVG}
                 loading="lazy"
-                alt=""
+                alt={achiementsData?.achievement3Alt}
+                title={achiementsData?.achievement3Alt}
               />
               <h1>
                 <Odometer value={achiementsData?.achievement3Numbers} />+

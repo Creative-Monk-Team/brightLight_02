@@ -16,7 +16,11 @@ const Footer1 = () => {
   return (
     <footer id="footer">
       <div className={styles.upperFooter}>
-        <img src={UpperFooterImage} alt="Footer background" />
+        <img
+          src={UpperFooterImage}
+          alt="BrightlightImmigration"
+          title="BrightlightImmigration"
+        />
         <div>
           <h1>Start your process today</h1>
           <p>
@@ -43,6 +47,7 @@ const Footer1 = () => {
                 <img
                   src={HoursIcon}
                   alt="Hours Icon"
+                  title="BrightlightImmigration"
                   className={styles.socialIcon}
                 />
                 <p>OUR WORKING HOURS</p>
@@ -94,7 +99,8 @@ const Footer1 = () => {
             <div className={styles.footerLogo}>
               <img
                 src={FooterLogo}
-                alt=""
+                alt="BrightlightImmigration"
+                title="BrightlightImmigration"
                 loading="lazy"
                 className={styles.footerLogo1}
               />
@@ -107,7 +113,8 @@ const Footer1 = () => {
                     )
                   }
                   src={FooterLogo2}
-                  alt=""
+                  alt="BrightlightImmigration"
+                  title="BrightlightImmigration"
                   loading="lazy"
                   className={styles.footerLogo2}
                 />
@@ -124,6 +131,8 @@ const Footer1 = () => {
                   )
                 }
                 className={styles.socialIcon}
+                alt="BrightlightImmigration"
+                title="BrightlightImmigration"
               />
               <LinkedInIcon
                 onClick={() =>
@@ -133,6 +142,8 @@ const Footer1 = () => {
                   )
                 }
                 className={styles.socialIcon}
+                alt="BrightlightImmigration"
+                title="BrightlightImmigration"
               />
               <InstagramIcon
                 onClick={() =>
@@ -142,6 +153,8 @@ const Footer1 = () => {
                   )
                 }
                 className={styles.socialIcon}
+                alt="BrightlightImmigration"
+                title="BrightlightImmigration"
               />
               <FacebookIcon
                 onClick={() =>
@@ -151,6 +164,8 @@ const Footer1 = () => {
                   )
                 }
                 className={styles.socialIcon}
+                alt="BrightlightImmigration"
+                title="BrightlightImmigration"
               />
               <YouTubeIcon
                 onClick={() =>
@@ -160,6 +175,8 @@ const Footer1 = () => {
                   )
                 }
                 className={styles.socialIcon}
+                alt="BrightlightImmigration"
+                title="BrightlightImmigration"
               />
             </div>
             <div className={styles.privacyDiv}>
@@ -216,6 +233,7 @@ const Footer1 = () => {
                     src={HoursIcon}
                     alt="Hours Icon"
                     className={styles.socialIcon}
+                    title="BrightlightImmigration"
                   />
                   <p>OUR WORKING HOURS</p>
                 </div>
@@ -230,6 +248,7 @@ const Footer1 = () => {
                     loading="lazy"
                     src={Address}
                     alt="Address Icon"
+                    title="BrightlightImmigration"
                     className={styles.socialIcon}
                   />
                   <p>OUR ADDRESS</p>
