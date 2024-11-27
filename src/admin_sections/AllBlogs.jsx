@@ -325,7 +325,6 @@ const AllBlogs = () => {
                     name="image_alt"
                     value={newBlogData.image_alt || ""}
                     onChange={handleInputChange}
-                    disabled={!editMode}
                   />
                   <input
                     placeholder="Meta Title"

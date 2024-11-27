@@ -307,7 +307,6 @@ const AllNews = () => {
                     name="image_alt"
                     value={newBlogData.image_alt || ""}
                     onChange={handleInputChange}
-                    disabled={!editMode}
                   />
                   <input
                     placeholder="Tag 3"
