@@ -246,7 +246,7 @@ const AddNews = () => {
     tag_1: "",
     tag_2: "",
     tag_3: "",
-    alt_tag: "",
+    alt_tag_featured: "",
     news_content: "",
     metaTitle: "",
     metaDescription: "",
@@ -310,7 +310,7 @@ const AddNews = () => {
           tag_1: "",
           tag_2: "",
           tag_3: "",
-          alt_tag: "",
+          alt_tag_featured: "",
           news_content: "",
           metaTitle: "",
           metaDescription: "",
@@ -353,8 +353,8 @@ const AddNews = () => {
       />
       <input
         placeholder="Alt Tag"
-        name="alt_tag"
-        value={sectionDataSingle.alt_tag || ""}
+        name="alt_tag_featured"
+        value={sectionDataSingle.alt_tag_featured || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />

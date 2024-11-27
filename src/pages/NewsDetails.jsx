@@ -85,7 +85,7 @@ let NewsDetails = () => {
       </div>
       <div className={styles.blogsFlexSection}>
         <div className={styles.blogImgSection}>
-          <img src={blog.image} alt={blog.alt_tag} title={blog.alt_tag} />
+          <img src={blog.image} alt={blog.alt_tag_featured} title={blog.alt_tag_featured} />
         </div>
         <div className={styles.blogSearchSection1}>
           <div className={styles.searchDiv}>

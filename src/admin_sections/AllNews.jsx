@@ -72,7 +72,7 @@ const AllNews = () => {
     tag_1: "",
     tag_2: "",
     tag_3: "",
-    alt_tag: "",
+    alt_tag_featured: "",
     news_content: "",
     metaTitle: "",
     metaDescription: "",
@@ -153,7 +153,7 @@ const AllNews = () => {
           tag_1: "",
           tag_2: "",
           tag_3: "",
-          alt_tag: "",
+          alt_tag_featured: "",
           news_content: "",
           metaTitle: "",
           metaDescription: "",
@@ -316,8 +316,8 @@ const AllNews = () => {
                   />
                   <input
                     placeholder="Alt Tag"
-                    name="alt_tag"
-                    value={newBlogData.alt_tag || ""}
+                    name="alt_tag_featured"
+                    value={newBlogData.alt_tag_featured}
                     onChange={handleInputChange}
                   />
                   <input
