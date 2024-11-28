@@ -72,7 +72,7 @@ const Search = () => {
     Cby: "/cby",
     "Common Law Partner Temporary": "/common-law-partner-temporary",
     "Common Law Partner Permanent": "/common-law-partner-permanent",
-    "Common Law Partner International":"/common-law-partner-international",
+    "Common Law Partner International": "/common-law-partner-international",
     "Restoration Status Draft": "/restoration-status-draft",
     "Spousal Open Work Permit": "/spousal-open-work-permit",
     "Spouse Common Law Partner Sponsership": "/spouse-common-law-sponsership",
@@ -111,7 +111,7 @@ const Search = () => {
     "Permanent Residence Pathways Caregivers Lp":
       "/permanent-residence-pathways-caregivers-lp",
     "Immigration Tools": "/immigration-tools",
-    "Temporary Residency":"/temporary-resident",
+    "Temporary Residency": "/temporary-resident",
   }).map(([name, link]) => ({ name, link }));
 
   useEffect(() => {
@@ -136,7 +136,9 @@ const Search = () => {
               filteredServices.push({
                 name: serviceName,
                 description: serviceDesc,
-                link: linkMappingArray.find(item => item.name === serviceName)?.link || "#",
+                link:
+                  linkMappingArray.find((item) => item.name === serviceName)
+                    ?.link || "#",
               });
             }
           }
@@ -197,7 +199,11 @@ const Search = () => {
     // Show no results message after 10 seconds
     if (!showNoResults) {
       const timer = setTimeout(() => {
-        if (servicesData.length === 0 && blogsData.length === 0 && newsData.length === 0) {
+        if (
+          servicesData.length === 0 &&
+          blogsData.length === 0 &&
+          newsData.length === 0
+        ) {
           setShowNoResults(true);
         }
       }, 10000);
@@ -244,7 +250,17 @@ const Search = () => {
                 <h2 className={styles.sectionHeading}>Blogs</h2>
                 <div className={styles.blogsGridSection}>
                   {blogsData.map((item, index) => (
-                    <a key={index} href={`/blogs/${item._id}`}>
+                    <a
+                      key={index}
+                      onClick={() => {
+                        localStorage.setItem("blog_heading", item.blog_heading);
+                      }}
+                      href={`/blogs/${item.blog_heading
+                        .trim()
+                        .toLowerCase()
+                        .replace(/[^\w\s]/g, "")
+                        .replace(/\s+/g, "-")}`}
+                    >
                       {item.image && <img src={item.image} alt="Blog" />}
                       {item.blog_heading && <h3>{item.blog_heading}</h3>}
                       {item.blog_content && (
@@ -261,7 +277,17 @@ const Search = () => {
                 <h2 className={styles.sectionHeading}>News</h2>
                 <div className={styles.newsGridSection}>
                   {newsData.map((item, index) => (
-                    <a key={index} href={`/news/${item._id}`}>
+                    <a
+                      key={index}
+                      onClick={() => {
+                        localStorage.setItem("news_heading", item.news_heading);
+                      }}
+                      href={`/news/${item.news_heading
+                        .trim()
+                        .toLowerCase()
+                        .replace(/[^\w\s]/g, "")
+                        .replace(/\s+/g, "-")}`}
+                    >
                       {item.image && <img src={item.image} alt="News" />}
                       {item.news_heading && <h3>{item.news_heading}</h3>}
                       {item.news_content && (

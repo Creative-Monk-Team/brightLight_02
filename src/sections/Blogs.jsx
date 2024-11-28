@@ -34,19 +34,18 @@ let Blogs = () => {
           setBlogs(data.slice(0, 5));
         } else {
           console.error("Expected an array, but got:", data);
-          setBlogs([]); 
+          setBlogs([]);
         }
       })
       .catch((error) => {
         console.error("Error fetching blogs:", error);
       });
 
-    
     fetch("https://brightlight-node.onrender.com/blog-section")
       .then((res) => res.json())
       .then((data) => {
         if (data) {
-          setData(data[0]); 
+          setData(data[0]);
         }
       })
       .catch((error) => {
@@ -89,7 +88,19 @@ let Blogs = () => {
           {Array.isArray(blogs) && blogs.length > 0 ? (
             <Slider {...settings}>
               {blogs.map((item, index) => (
-                <a className={styles.blog} key={index} href={`/blogs/${item._id}`}>
+                <a
+                  className={styles.blog}
+                  key={index}
+                  onClick={() => {
+                    localStorage.setItem("blog_heading", item.blog_heading);
+                  }}
+                  href={!item.custom_url ? 
+                    `/blogs/${item.blog_heading
+                    .trim()
+                    .toLowerCase()
+                    .replace(/[^\w\s]/g, "")
+                    .replace(/\s+/g, "-")}` : item.custom_url}
+                >
                   <img src={item.image} alt={item.blog_heading} />
                   <h2>{item.blog_heading}</h2>
                   <h6>
@@ -101,7 +112,7 @@ let Blogs = () => {
               ))}
             </Slider>
           ) : (
-            <p></p>  
+            <p></p>
           )}
         </div>
         <a className={styles.knowMoreAnchor} href="/blogs">

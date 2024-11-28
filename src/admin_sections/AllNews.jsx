@@ -72,6 +72,7 @@ const AllNews = () => {
     tag_1: "",
     tag_2: "",
     tag_3: "",
+    custom_url: "",
     alt_tag_featured: "",
     news_content: "",
     metaTitle: "",
@@ -153,6 +154,7 @@ const AllNews = () => {
           tag_1: "",
           tag_2: "",
           tag_3: "",
+          custom_url: "",
           alt_tag_featured: "",
           news_content: "",
           metaTitle: "",
@@ -306,6 +308,12 @@ const AllNews = () => {
                     placeholder="Tag 3"
                     name="tag_3"
                     value={newBlogData.tag_3}
+                    onChange={handleInputChange}
+                  />
+                  <input
+                    placeholder="Custom URL"
+                    name="custom_url"
+                    value={newBlogData.custom_url}
                     onChange={handleInputChange}
                   />
                   <textarea

@@ -741,7 +741,11 @@ let HomePage = () => {
         <div className={styles.memberMain}>
           <div className={styles.memberCardParent}>
             {memberInfo.map((member, index) => {
-              let altData = [memberOfAlt.alt1, memberOfAlt.alt2, memberOfAlt.alt3];
+              let altData = [
+                memberOfAlt.alt1,
+                memberOfAlt.alt2,
+                memberOfAlt.alt3,
+              ];
               return (
                 <div
                   key={index}
@@ -754,9 +758,9 @@ let HomePage = () => {
                     <img
                       src={member?.img}
                       alt={altData[index]}
-                      title={altData[index]} 
+                      title={altData[index]}
                       loading="lazy"
-                    /> 
+                    />
                   </div>
                 </div>
               );
@@ -789,7 +793,7 @@ let HomePage = () => {
                         src={featuresData[`feature${num}SVG`]}
                         alt={simplifyData[`alt${num}`]}
                         title={simplifyData[`alt${num}`]}
-                        loading="lazy" 
+                        loading="lazy"
                       />
                     </div>
                     <div className={styles.simplifyingContent}>
@@ -1001,7 +1005,25 @@ let HomePage = () => {
                     <div className={styles.sourceContentData}>
                       <h3>{item.news_heading}</h3>
                       <p>{truncateText(item.news_content, 150)}</p>
-                      <a href={`/news/${item._id}`}>Read more</a>
+                      <a
+                        onClick={() => {
+                          localStorage.setItem(
+                            "news_heading",
+                            item.news_heading
+                          );
+                        }}
+                        href={
+                          !item.custom_url
+                            ? `/news/${item.news_heading
+                                .trim()
+                                .toLowerCase()
+                                .replace(/[^\w\s]/g, "")
+                                .replace(/\s+/g, "-")}`
+                            : `/news${item.custom_url}`
+                        }
+                      >
+                        Read more
+                      </a>
                     </div>
                   </div>
                 </>

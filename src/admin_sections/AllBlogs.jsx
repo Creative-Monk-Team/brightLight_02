@@ -72,6 +72,7 @@ const AllBlogs = () => {
     tag_1: "",
     tag_2: "",
     tag_3: "",
+    custom_url: "",
     alt_tag: "",
     blog_content: "",
     metaTitle: "",
@@ -156,6 +157,7 @@ const AllBlogs = () => {
           tag_1: "",
           tag_2: "",
           tag_3: "",
+          custom_url: "",
           alt_tag: "",
           blog_content: "",
           metaTitle: "",
@@ -312,6 +314,12 @@ const AllBlogs = () => {
                     placeholder="Tag 3"
                     name="tag_3"
                     value={newBlogData.tag_3}
+                    onChange={handleInputChange}
+                  />
+                  <input
+                    placeholder="Custom URL"
+                    name="custom_url"
+                    value={newBlogData.custom_url}
                     onChange={handleInputChange}
                   />
                   <textarea

@@ -246,6 +246,7 @@ const AddNews = () => {
     tag_1: "",
     tag_2: "",
     tag_3: "",
+    custom_url: "",
     alt_tag_featured: "",
     news_content: "",
     metaTitle: "",
@@ -310,6 +311,7 @@ const AddNews = () => {
           tag_1: "",
           tag_2: "",
           tag_3: "",
+          custom_url: "",
           alt_tag_featured: "",
           news_content: "",
           metaTitle: "",
@@ -376,6 +378,16 @@ const AddNews = () => {
         placeholder="Tag 3"
         name="tag_3"
         value={sectionDataSingle.tag_3 || ""}
+        onChange={handleInputChange}
+        disabled={!editMode}
+      />
+      <p className={styles.precautionLine}>
+        Add a custom url to your blog, if left empty , the blog title will be converted in the link.If you want to add then only write in the following way:- "/your-custom-url" without qoutes.
+      </p>
+      <input
+        placeholder="Custom URL"
+        name="custom_url"
+        value={sectionDataSingle.custom_url || ""}
         onChange={handleInputChange}
         disabled={!editMode}
       />

@@ -22,6 +22,7 @@ let News = () => {
   let blogsPerPage = 7;
   let location = useLocation();
   let navigate = useNavigate();
+  let [firstBlogLink, setFirstBlogLink] = useState(null);
 
   useEffect(() => {
     let queryParams = new URLSearchParams(location.search);
@@ -36,6 +37,13 @@ let News = () => {
         if (data.length > 0) {
           let lastItem = data[data.length - 1];
           setFirstBlog(lastItem);
+          setFirstBlogLink(
+            lastItem.news_heading
+              .trim()
+              .toLowerCase()
+              .replace(/[^\w\s]/g, "")
+              .replace(/\s+/g, "-")
+          );
 
           let remainingItems = data.slice(0, -1);
           setRemainingBlogs(remainingItems);
@@ -129,7 +137,7 @@ let News = () => {
   }, []);
   return (
     <>
-              <Helmet>
+      <Helmet>
         <title>
           {metaData?.metaTitle
             ? metaData?.metaTitle
@@ -211,8 +219,19 @@ let News = () => {
           <div>
             <p>
               Sort By{" "}
-              <button className={styles.sortButtonHover} onClick={() => handleSortChange("newest")}>Newest</button>{" "}
-              <button  className={styles.sortButtonHover}  onClick={() => handleSortChange("relevance")}>  Relevance </button>
+              <button
+                className={styles.sortButtonHover}
+                onClick={() => handleSortChange("newest")}
+              >
+                Newest
+              </button>{" "}
+              <button
+                className={styles.sortButtonHover}
+                onClick={() => handleSortChange("relevance")}
+              >
+                {" "}
+                Relevance{" "}
+              </button>
             </p>
           </div>
         </div>
@@ -222,7 +241,18 @@ let News = () => {
           <div className={styles.firstBlogContentSection}>
             <h4>{firstBlog.date && firstBlog.date.trim().split("T")[0]}</h4>
             {firstBlog.news_heading && <h1>{firstBlog.news_heading}</h1>}
-            <a href={`/news/${firstBlog._id}`}>Read More</a>
+            <a
+              href={
+                !firstBlog.custom_url
+                  ? `/news/${firstBlogLink}`
+                  : `/news${firstBlog.custom_url}`
+              }
+              onClick={() => {
+                localStorage.setItem("news_heading", firstBlog.news_heading);
+              }}
+            >
+              Read More
+            </a>
           </div>
           <div>{firstBlog.image && <img src={firstBlog.image} />}</div>
         </div>
@@ -241,9 +271,20 @@ let News = () => {
               };
               return (
                 <a
+                  onClick={() => {
+                    localStorage.setItem("news_heading", item.news_heading);
+                  }}
                   key={index}
                   className={styles.blog}
-                  href={`/news/${item._id}`}
+                  href={
+                    !item.custom_url
+                      ? `/news/${item.news_heading
+                          .trim()
+                          .toLowerCase()
+                          .replace(/[^\w\s]/g, "")
+                          .replace(/\s+/g, "-")}`
+                      : `/news${item.custom_url}`
+                  }
                 >
                   {item.image && <img src={item.image} />}
 
@@ -272,7 +313,22 @@ let News = () => {
               <div key={index}>
                 {item.news_heading && <h2>{item.news_heading}</h2>}
                 <p>{item.date && item.date.trim().split("T")[0]}</p>
-                <a href={`/news/${item._id}`}>Read more</a>
+                <a
+                  onClick={() => {
+                    localStorage.setItem("news_heading", item.news_heading);
+                  }}
+                  href={
+                    !item.custom_url
+                      ? `/news/${item.news_heading
+                          .trim()
+                          .toLowerCase()
+                          .replace(/[^\w\s]/g, "")
+                          .replace(/\s+/g, "-")}`
+                      : `/news${item.custom_url}`
+                  }
+                >
+                  Read more
+                </a>
               </div>
             ))}
           </div>

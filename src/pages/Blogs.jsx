@@ -11,7 +11,6 @@ import BrightBlogs from "../assets/brightblogs.webp";
 import ogImage from "../assets/ogImage.png";
 import { Helmet } from "react-helmet-async";
 
-
 let Blogs = () => {
   let [firstBlog, setFirstBlog] = useState([]);
 
@@ -25,6 +24,7 @@ let Blogs = () => {
   let blogsPerPage = 7;
   let location = useLocation();
   let navigate = useNavigate();
+  let [firstBlogLink, setFirstBlogLink] = useState(null);
 
   useEffect(() => {
     let queryParams = new URLSearchParams(location.search);
@@ -39,6 +39,13 @@ let Blogs = () => {
         if (data.length > 0) {
           let lastItem = data[data.length - 1];
           setFirstBlog(lastItem);
+          setFirstBlogLink(
+            lastItem.blog_heading
+              .trim()
+              .toLowerCase()
+              .replace(/[^\w\s]/g, "")
+              .replace(/\s+/g, "-")
+          );
 
           let remainingItems = data.slice(0, -1);
           setRemainingBlogs(remainingItems);
@@ -118,25 +125,24 @@ let Blogs = () => {
     setSearchQuery("");
     navigate("?sort=" + sortOption); // Clear the search parameter while keeping the sort parameter
   };
-  useEffect(()=>{
+  useEffect(() => {
     fetch("https://brightlight-node.onrender.com/blogs-meta")
-    .then((res) => {
-      return res.json();
-    })
-    .then((data) => {
-      if (data) {
-        setMetaData(data[0]);
-      }
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-  },[])
-
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        if (data) {
+          setMetaData(data[0]);
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
   return (
     <>
-<Helmet>
+      <Helmet>
         <title>
           {metaData?.metaTitle
             ? metaData?.metaTitle
@@ -217,8 +223,19 @@ let Blogs = () => {
           <div>
             <p>
               Sort By{" "}
-              <button className={styles.sortButtonHover}  onClick={() => handleSortChange("newest")}>Newest</button>{" "}
-              <button className={styles.sortButtonHover}  onClick={() => handleSortChange("relevance")}> Relevance </button>
+              <button
+                className={styles.sortButtonHover}
+                onClick={() => handleSortChange("newest")}
+              >
+                Newest
+              </button>{" "}
+              <button
+                className={styles.sortButtonHover}
+                onClick={() => handleSortChange("relevance")}
+              >
+                {" "}
+                Relevance{" "}
+              </button>
             </p>
           </div>
         </div>
@@ -228,7 +245,15 @@ let Blogs = () => {
           <div className={styles.firstBlogContentSection}>
             <h4>{firstBlog.date && firstBlog.date.trim().split("T")[0]}</h4>
             <h1>{firstBlog.blog_heading}</h1>
-            <a href={`/blogs/${firstBlog._id}`}>Read More</a>
+            <a
+              href={!firstBlog.custom_url ? 
+                `/blogs/${firstBlogLink}` : `/blogs${firstBlog.custom_url}`}
+              onClick={() => {
+                localStorage.setItem("blog_heading", firstBlog.blog_heading);
+              }}
+            >
+              Read More
+            </a>
           </div>
           <div>
             <img src={firstBlog.image} />
@@ -251,7 +276,15 @@ let Blogs = () => {
                 <a
                   key={index}
                   className={styles.blog}
-                  href={`/blogs/${item._id}`}
+                  onClick={() => {
+                    localStorage.setItem("blog_heading", item.blog_heading);
+                  }}
+                  href={!item.custom_url ? 
+                    `/blogs/${item.blog_heading
+                    .trim()
+                    .toLowerCase()
+                    .replace(/[^\w\s]/g, "")
+                    .replace(/\s+/g, "-")}` : item.custom_url}
                 >
                   {item.image && <img src={item.image} />}
 
@@ -282,7 +315,19 @@ let Blogs = () => {
               <div key={index}>
                 <h2>{item.blog_heading}</h2>
                 <p>{item.date && item.date.trim().split("T")[0]}</p>
-                <a href={`/blogs/${item._id}`}>Read more</a>
+                <a
+                  onClick={() => {
+                    localStorage.setItem("blog_heading", item.blog_heading);
+                  }}
+                  href={!item.custom_url ? 
+                    `/blogs/${item.blog_heading
+                    .trim()
+                    .toLowerCase()
+                    .replace(/[^\w\s]/g, "")
+                    .replace(/\s+/g, "-")}` : item.custom_url}
+                >
+                  Read more
+                </a>
               </div>
             ))}
           </div>
