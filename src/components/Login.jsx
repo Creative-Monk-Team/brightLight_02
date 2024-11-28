@@ -1,12 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../styles/Login.module.css";
 import { useAuth } from "../context/AuthContext";
 import { ToastContainer, toast, Bounce } from "react-toastify";
-let predefinedUsername = "brightlightImmigrationBCV3S2A1";
-let predefinedPassword = "7mz2a,H_4B)J";
+let predefinedUsername;
+let predefinedPassword;
 
 let Login = () => {
+  useEffect(() => {
+    fetch("https://brightlight-node.onrender.com/login-cred")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        if (data) {
+          predefinedUsername = data[0].user;
+          predefinedPassword = data[0].pass;
+        }
+      });
+  }, []);
   let [username, setUsername] = useState("");
   let [password, setPassword] = useState("");
   let { login } = useAuth();
