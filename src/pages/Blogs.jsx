@@ -39,6 +39,7 @@ let Blogs = () => {
         if (data.length > 0) {
           let lastItem = data[data.length - 1];
           setFirstBlog(lastItem);
+          console.log(lastItem);
           setFirstBlogLink(
             lastItem.blog_heading
               .trim()
