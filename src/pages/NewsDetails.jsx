@@ -22,10 +22,25 @@ let NewsDetails = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data) {
-          let filteredData = data.filter((item) => {
-            return item.news_heading == newsHeading;
-          });
-          setBlog(filteredData[0]);
+          if (newsHeading) {
+            let filteredData = data.filter((item) => {
+              return item.news_heading == newsHeading;
+            });
+            setBlog(filteredData[0]);
+          } else {
+            let idValueArray = id.split("-").splice(0, 3).join(" ");
+            let filteredData = data.filter((item) => {
+              return item.news_heading
+                .toLowerCase()
+                .includes(idValueArray.toLowerCase());
+            });
+            if(filteredData){
+              setBlog(filteredData[0]);
+            }
+            else{
+              setBlog(data[0]);
+            }
+          }
         }
       })
       .catch((error) => console.log(error));

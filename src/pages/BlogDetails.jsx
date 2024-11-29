@@ -26,10 +26,25 @@ let BlogDetails = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data) {
-          let filteredData = data.filter((item) => {
-            return item.blog_heading == blogHeading;
-          });
-          setBlog(filteredData[0]);
+          if (blogHeading) {
+            let filteredData = data.filter((item) => {
+              return item.blog_heading == blogHeading;
+            });
+            setBlog(filteredData[0]);
+          } else {
+            let idValueArray = id.split("-").splice(0, 3).join(" ");
+            let filteredData = data.filter((item) => {
+              return item.blog_heading
+                .toLowerCase()
+                .includes(idValueArray.toLowerCase());
+            });
+            if(filteredData){
+              setBlog(filteredData[0]);
+            }
+            else{
+              setBlog(data[0]);
+            }
+          }
         }
       })
       .catch((error) => console.log(error));
@@ -169,12 +184,15 @@ let BlogDetails = () => {
                   onClick={() => {
                     localStorage.setItem("blog_heading", item.blog_heading);
                   }}
-                  href={!item.custom_url ? 
-                    `/blogs/${item.blog_heading
-                    .trim()
-                    .toLowerCase()
-                    .replace(/[^\w\s]/g, "")
-                    .replace(/\s+/g, "-")}` : item.custom_url}
+                  href={
+                    !item.custom_url
+                      ? `/blogs/${item.blog_heading
+                          .trim()
+                          .toLowerCase()
+                          .replace(/[^\w\s]/g, "")
+                          .replace(/\s+/g, "-")}`
+                      : item.custom_url
+                  }
                   key={index}
                   className={styles.recentBlog}
                 >
@@ -224,12 +242,15 @@ let BlogDetails = () => {
                 onClick={() => {
                   localStorage.setItem("blog_heading", item.blog_heading);
                 }}
-                href={!item.custom_url ? 
-                  `/blogs/${item.blog_heading
-                  .trim()
-                  .toLowerCase()
-                  .replace(/[^\w\s]/g, "")
-                  .replace(/\s+/g, "-")}` : item.custom_url}
+                href={
+                  !item.custom_url
+                    ? `/blogs/${item.blog_heading
+                        .trim()
+                        .toLowerCase()
+                        .replace(/[^\w\s]/g, "")
+                        .replace(/\s+/g, "-")}`
+                    : item.custom_url
+                }
                 key={index}
                 className={styles.recentBlog}
               >
