@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 
 import { HelmetProvider } from "react-helmet-async";
@@ -12,19 +12,19 @@ import "react-toastify/dist/ReactToastify.css";
 import PrRenewal from "./pages/PrRenewal"; // Done Animation
 import Citizenship from "./pages/Citizenship"; // Done Animation
 import Reconsideration from "./pages/Reconsideration"; // Done Animation
-import AdditionalDocument from "./pages/AdditionalDocument";// Done Animation
-import ReplyToPflPage from "./pages/ReplyToPflPage";// Done Animation
+import AdditionalDocument from "./pages/AdditionalDocument"; // Done Animation
+import ReplyToPflPage from "./pages/ReplyToPflPage"; // Done Animation
 import LmiaReviewed from "./pages/LmiaReviewed"; // Done Animation
 import OpenWorkPermit from "./pages/OpenWorkPermit"; // Done Animation
 import AgricultureStreamLmia from "./pages/AgricultureStreamLmia"; // Done Animation
-import GlobalStreamLmia from "./pages/GlobalStreamLmia";// Done Animation
-import LowWageLmia from "./pages/LowWageLmia";//Done Animation
+import GlobalStreamLmia from "./pages/GlobalStreamLmia"; // Done Animation
+import LowWageLmia from "./pages/LowWageLmia"; //Done Animation
 import BridgingOpenWorkPermitLP from "./pages/BridgingOpenWorkPermitLP"; //Done Animation
 import FrancophoneMobilityProgram from "./pages/FrancophoneMobilityProgram"; //Done Animation
 import OpenWorkVulnerableLP from "./pages/OpenWorkVulnerableLP"; //Done Animation
 import OpenWorkCanadaLP from "./pages/OpenWorkCanadaLP"; // Done Animation
 import Pgwp from "./pages/Pgwp"; //Done Animation
-import FamilyReunificationSponsorship from "./pages/FamilyReunificationSponsorship";  // Done Animation
+import FamilyReunificationSponsorship from "./pages/FamilyReunificationSponsorship"; // Done Animation
 import Adoption from "./pages/Adoption"; //Done Animation
 import DependentChildren from "./pages/DependentChildren"; //Done Animation
 import HumanitarianCompassionate from "./pages/HumanitarianCompassionate"; //Done Animation
@@ -35,25 +35,25 @@ import Orphan from "./pages/Orphan"; //Done  Animation
 import InsideCanada from "./pages/InsideCanada"; //Done Animation
 import ChangeCollegeProgram from "./pages/ChangeCollegeProgram"; //Done Animation
 import VisitorToStudent from "./pages/VisitorToStudent"; //Done Animation
-import OutsideCananda from "./pages/OutsideCananda";//Done Animation
-import NonSds from "./pages/NonSds"; //Done Animation 
-import Sds from "./pages/Sds";  //Done Animation
+import OutsideCananda from "./pages/OutsideCananda"; //Done Animation
+import NonSds from "./pages/NonSds"; //Done Animation
+import Sds from "./pages/Sds"; //Done Animation
 import StudyPermitMinors from "./pages/StudyPermitMinors"; //Done Animation
 import ExtensionsDraft from "./pages/ExtensionsDraft"; //Done Animation
-import Flagpoling from "./pages/Flagpoling";  //Done Animation
+import Flagpoling from "./pages/Flagpoling"; //Done Animation
 import RestorationStatusDraft from "./pages/RestorationStatusDraft"; //Done Animation
 import SpousalOpenWorkPermit from "./pages/SpousalOpenWorkPermit"; //Done Animation
 import CommonLawPartnerPermanent from "./pages/CommonLawPartnerPermanent"; //Done Animation
-import CommonLawPartnerTemporary from "./pages/CommonLawPartnerTemporary";  //Done Animation
+import CommonLawPartnerTemporary from "./pages/CommonLawPartnerTemporary"; //Done Animation
 import Cby from "./pages/Cby"; //not use
 import SuperVisa from "./pages/SuperVisa"; //Done Animation
 import TemporaryResidentPermitDraft from "./pages/TemporaryResidentPermitDraft"; //Done Animation
 import TemporaryResident from "./pages/TemporaryResident";
 import VisitorVisa from "./pages/VisitorVisa"; //Done  Animation
-import BusinessVisitorVisa from "./pages/BusinessVisitorVisa";//Done one part Animation
+import BusinessVisitorVisa from "./pages/BusinessVisitorVisa"; //Done one part Animation
 import DualIntentVisa from "./pages/DualIntentVisa"; //Done one part Animation
 import CanadianExperienceClass from "./pages/CanadianExperienceClass"; //Done Animation
-import FederalSkilledTradesProgram from "./pages/FederalSkilledTradesProgram";//Done Animation
+import FederalSkilledTradesProgram from "./pages/FederalSkilledTradesProgram"; //Done Animation
 import FederalSkilledWorkerProgram from "./pages/FederalSkilledWorkerProgram"; // Done Animation
 import FrenchTargetedDraw from "./pages/FrenchTargetedDraw"; //Done Animation Meta
 import HealthcareTargetedDraw from "./pages/HealthcareTargetedDraw"; //Done Animation
@@ -65,7 +65,7 @@ import AgriFoodPilotProgram from "./pages/AgriFoodPilotProgram"; //Done Animatio
 import Rnip from "./pages/Rnip"; //Done Animation
 import Pnp from "./pages/Pnp"; //Done Animation
 import BcPnp from "./pages/BcPnp"; //Done Animation
-import EntryLevelSemiSkilled from "./pages/EntryLevelSemiSkilled";//Done no yet
+import EntryLevelSemiSkilled from "./pages/EntryLevelSemiSkilled"; //Done no yet
 import HealthAuthoritiesStream from "./pages/HealthAuthoritiesStream"; //Done Animation
 import InternationalGraduateProgram from "./pages/InternationalGraduateProgram"; //Done Animation
 import InternationalPostGraduateProgram from "./pages/InternationalPostGraduateProgram"; //Done Animation
@@ -80,9 +80,33 @@ import News from "./pages/News";
 import Odometer from "./components/Odometer";
 import FloatingButton from "./components/FloatingButton";
 
-
 function App() {
+  let [redirectsData, setRedirectsData] = useState([]);
   useEffect(() => {
+    fetch("https://brightlight-node.onrender.com/redirects")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data) {
+          let mappedData = [];
+          for (let i = 1; i <= 99; i++) {
+            let redirectFromKey = `redirectFrom${i}`;
+            let redirectToKey = `redirectTo${i}`;
+            if (data[0][redirectFromKey] && data[0][redirectToKey]) {
+              mappedData.push({
+                from: data[0][redirectFromKey],
+                to: data[0][redirectToKey],
+              });
+            }
+          }
+          if (mappedData.length > 0) {
+            setRedirectsData(mappedData);
+          }
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+
     window.scrollTo({
       top: 0,
       behavior: "smooth",
@@ -90,31 +114,38 @@ function App() {
   }, []);
 
   useEffect(() => {
+    for (let i = 0; i < redirectsData.length; i++) {
+      if (window.location.pathname == redirectsData[i].from) {
+        window.location.href = `/${redirectsData[i].to}`;
+      }
+    }
+  }, [redirectsData]);
+
+  useEffect(() => {
     let handleBackgroundColor = () => {
-      if (window.location.pathname === '/dash/panel/overwrite') {
-        document.body.style.backgroundColor = 'rgb(241, 241, 241)'; 
+      if (window.location.pathname === "/dash/panel/overwrite") {
+        document.body.style.backgroundColor = "rgb(241, 241, 241)";
       } else {
-        document.body.style.backgroundColor = 'white';
+        document.body.style.backgroundColor = "white";
       }
     };
     handleBackgroundColor();
-    window.addEventListener('popstate', handleBackgroundColor);
+    window.addEventListener("popstate", handleBackgroundColor);
     return () => {
-      window.removeEventListener('popstate', handleBackgroundColor);
-      document.body.style.backgroundColor = 'white';
+      window.removeEventListener("popstate", handleBackgroundColor);
+      document.body.style.backgroundColor = "white";
     };
   }, []);
 
   return (
     <div className="App">
-  
       <ToastContainer />
 
-      <Loader />   
+      <Loader />
       <HelmetProvider>
         <AllRoutes />
       </HelmetProvider>
-      <FloatingButton/>
+      <FloatingButton />
     </div>
   );
 }

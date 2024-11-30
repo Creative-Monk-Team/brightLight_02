@@ -7,7 +7,18 @@
   justify-content: space-between;
 }
 
-.deletePopupParent{
+.selectTagStyles select {
+  height: 40px;
+  border: 1px solid rgb(215, 211, 211);
+}
+
+.selectTagStyles p {
+  text-align: center;
+  color: #132f46;
+  margin-top: 8px;
+}
+
+.deletePopupParent {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -23,12 +34,12 @@
   transition: 0.3s all ease-in-out;
 }
 
-.showDeletePopup{
+.showDeletePopup {
   opacity: 1;
   visibility: visible;
 }
 
-.deletePopup{
+.deletePopup {
   width: 320px;
   background-color: white;
   padding: 30px 20px;
@@ -38,7 +49,7 @@
   text-align: center;
 }
 
-.deletePopup div{
+.deletePopup div {
   margin-top: 20px;
   display: flex;
   align-items: center;
@@ -46,17 +57,17 @@
   gap: 20px;
 }
 
-.deletePopup .yesBtn{
+.deletePopup .yesBtn {
   background-color: green;
   color: white;
 }
 
-.deletePopup .noBtn{
+.deletePopup .noBtn {
   background-color: red;
   color: white;
 }
 
-.deletePopup div button{
+.deletePopup div button {
   width: 100px;
   padding: 10px;
   border-radius: 5px;
@@ -67,12 +78,14 @@
   transition: 0.3s all ease-in-out;
 }
 
-.deletePopup div button:hover{
+.deletePopup div button:hover {
   opacity: 0.5;
 }
 
-.deletePopup .noBtn:hover{
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+.deletePopup .noBtn:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .threeColumnsTable {
@@ -431,25 +444,25 @@
   border-bottom: 1px solid rgb(230, 230, 230);
 }
 
-@media all and (max-width: 1200px){
+@media all and (max-width: 1200px) {
   .topBarSearch {
     width: 40%;
   }
 }
 
-@media all and (max-width: 800px){
+@media all and (max-width: 800px) {
   .topBarSearch {
     width: 50%;
   }
 }
 
-@media all and (max-width: 600px){
+@media all and (max-width: 600px) {
   .topBarSearch {
     width: 70%;
   }
 }
 
-@media all and (max-width: 400px){
+@media all and (max-width: 400px) {
   .topBarSearch {
     width: 60%;
   }
@@ -458,7 +471,7 @@
     width: 15%;
     padding: 0px 5px;
   }
-  
+
   .searchBtn img {
     width: 10px;
     height: 10px;
@@ -477,7 +490,7 @@
   outline: none;
 }
 
-.topBarSearch span{
+.topBarSearch span {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -500,7 +513,7 @@
   transition: 0.3s all ease-in-out;
 }
 
-.searchBtn2{
+.searchBtn2 {
   width: 100px;
   padding: 10px;
   border-radius: 40px;
@@ -530,26 +543,26 @@
   height: 20px;
 }
 
-@media all and (max-width: 450px){
-  .topBarSearch span{
+@media all and (max-width: 450px) {
+  .topBarSearch span {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
     width: 150px;
   }
-  
+
   .searchBtn {
     width: 30px;
     padding: 2px;
   }
 
-  .searchBtn img{
+  .searchBtn img {
     width: 15px !important;
     height: 15px !important;
   }
-  
-  .searchBtn2{
+
+  .searchBtn2 {
     width: 100px;
     padding: 5px;
     font-size: 11px;
@@ -741,7 +754,7 @@
   padding: 20px;
 }
 
-.singleBlogOptions{
+.singleBlogOptions {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
@@ -756,7 +769,7 @@
   cursor: pointer;
 }
 
-.singleBlogOptions img{
+.singleBlogOptions img {
   width: 17px;
   cursor: pointer;
 }

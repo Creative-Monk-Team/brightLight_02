@@ -216,6 +216,7 @@ import magnify from "../assets/search-gray.png";
 import BannerSectionAlt from "../admin_sections/BannerSectionAlt";
 import MemberSectionAlt from "../admin_sections/MemberOfAlt";
 import WhyUsAlt from "../admin_sections/WhyUsAlt";
+import Redirects from "../admin_sections/Redirects";
 
 let Admin = () => {
   const pages = [
@@ -233,6 +234,7 @@ let Admin = () => {
     { id: "bcpnp", label: "BCPNP Calculator" },
     { id: "immigration_tools", label: "Immigration Tools" },
     { id: "more_services", label: "More Services" },
+    { id: "redirects", label: "Redirects (URL)" },
 
     { id: "additional_documents", label: "Additional Documents Page" },
     { id: "adoption_page", label: "Adoption Page" },
@@ -450,7 +452,7 @@ let Admin = () => {
 
     const pageIndex = pages.findIndex((page) => page.id === pageId);
     if (
-      pageIndex <= 13 &&
+      pageIndex <= 14 &&
       displayParam != "internal_pages" &&
       paginationValue != "1" &&
       paginationValue != "2" &&
@@ -541,7 +543,7 @@ let Admin = () => {
           <div className={styles.dashboard}>
             <div className={styles.leftPanel}>
               {filteredPages.length > 0 ? (
-                filteredPages.slice(0, 14).map((page) => (
+                filteredPages.slice(0, 15).map((page) => (
                   <div
                     key={page.id}
                     className={`${styles.page} ${
@@ -3525,7 +3527,9 @@ let Admin = () => {
                     </div>
                     <div
                       className={`${styles.section} ${
-                        activeSection === "section16" ? styles.activeSection : ""
+                        activeSection === "section16"
+                          ? styles.activeSection
+                          : ""
                       }`}
                       onClick={() => handleSectionClick("section16")}
                     >
@@ -4225,6 +4229,8 @@ let Admin = () => {
                   activeSection === "immigration_tools_add_tool" && (
                     <AddImmigrationToolsCard />
                   )}
+
+                {activePage == "redirects" && <Redirects />}
 
                 {activePage === "more_services" && (
                   <div className={styles.sections}>
