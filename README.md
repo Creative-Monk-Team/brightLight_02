@@ -80,23 +80,12 @@ The backend exposes several RESTful APIs that power the dynamic nature of the pl
 
 These endpoints are protected, ensuring only authorised users can access them. _Please note, this is an example structure and does not represent real endpoints to maintain security measures._
 
-## Installation
 
-Use these Instructions to Run Website on "[localhost](http://localhost/3000)" _OR_ to run in on your 'System'.
-
-(1)_First run this Command on your Terminal._ Then
-```bash
-npm i
-```
-(2)_Run this Second Command on your Terminal._ 
-```bash
-npm run start
-```
 
 
 ## Credits
 
 
-This project was developed by **Creative-Monk** in **2024**, with all work carried out by _UttamVerma_ and _SakshamVerma-(sakshamverma799@gmail.com)_.
+This project was developed by **Creative-Monk** in **2024**, with all work carried out by _UttamVerma-(vermauttam104@gmail.com)_ and _SakshamVerma-(sakshamverma799@gmail.com)_.
 
 
